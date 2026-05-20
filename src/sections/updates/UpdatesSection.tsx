@@ -1,6 +1,9 @@
 ﻿import { GlassPanel } from '../../components/ui/GlassPanel'
 import { updates } from '../../data/updates.generated'
 
+const MAX_VISIBLE_UPDATES = 4
+const COMMITS_HISTORY_URL = 'https://github.com/Ivimanhm/TigerByte/commits/main'
+
 const tagStyles: Record<string, string> = {
   NUEVO: 'bg-emerald-400/20 text-emerald-300',
   MEJORA: 'bg-cyan/20 text-cyan',
@@ -11,11 +14,14 @@ const tagStyles: Record<string, string> = {
 }
 
 export function UpdatesSection() {
+  const visibleUpdates = updates.slice(0, MAX_VISIBLE_UPDATES)
+  const hasMore = updates.length > MAX_VISIBLE_UPDATES
+
   return (
     <GlassPanel class="reveal p-6">
       <h3 class="mb-5 text-2xl">Ultimas actualizaciones</h3>
       <ol class="space-y-4 text-sm">
-        {updates.map((update) => (
+        {visibleUpdates.map((update) => (
           <li class="relative border-l border-violet/40 pl-4">
             <div class="mb-1 flex flex-wrap items-center gap-2">
               <strong>{update.version}</strong>
@@ -26,6 +32,16 @@ export function UpdatesSection() {
           </li>
         ))}
       </ol>
+      {hasMore ? (
+        <a
+          href={COMMITS_HISTORY_URL}
+          target="_blank"
+          rel="noreferrer"
+          class="mt-4 inline-flex rounded-lg border border-cyan/30 px-3 py-2 text-sm text-cyan transition hover:border-cyan/55 hover:text-text"
+        >
+          Ver historial completo
+        </a>
+      ) : null}
     </GlassPanel>
   )
 }

@@ -1,4 +1,4 @@
-import { mkdirSync, writeFileSync } from 'node:fs'
+import { existsSync, mkdirSync, readFileSync, writeFileSync } from 'node:fs'
 import { resolve } from 'node:path'
 
 const OUTPUT = resolve('src/data/updates.generated.ts')
@@ -39,6 +39,20 @@ async function getRemoteUpdates() {
   const perPage = 100
   let page = 1
   const allCommits = []
+  const tagByCommit = new Map()
+
+  let tagsPage = 1
+  while (true) {
+    const tags = await fetchJson(`${GITHUB_API}/tags?per_page=${perPage}&page=${tagsPage}`)
+    if (!Array.isArray(tags) || tags.length === 0) break
+    for (const tag of tags) {
+      const sha = tag?.commit?.sha
+      const name = tag?.name
+      if (sha && name && !tagByCommit.has(sha)) tagByCommit.set(sha, name)
+    }
+    if (tags.length < perPage) break
+    tagsPage += 1
+  }
 
   while (true) {
     const commits = await fetchJson(
@@ -51,15 +65,29 @@ async function getRemoteUpdates() {
   }
 
   return allCommits.map((commit) => {
+    const sha = commit.sha || ''
     const subject = commit?.commit?.message?.split('\n')[0] || 'Sin descripcion'
     const dateRaw = commit?.commit?.author?.date?.slice(0, 10) || ''
     return {
-      version: (commit.sha || 'commit').slice(0, 7),
+      version: tagByCommit.get(sha) || (sha || 'commit').slice(0, 7),
       tag: 'COMMIT',
       date: dateRaw ? formatDate(dateRaw) : 'Fecha desconocida',
       note: subject,
     }
   })
+}
+
+function getExistingUpdatesFromFile() {
+  if (!existsSync(OUTPUT)) return []
+  try {
+    const raw = readFileSync(OUTPUT, 'utf8')
+    const match = raw.match(/export const updates: UpdateItem\[] = (\[[\s\S]*\])\s*$/)
+    if (!match) return []
+    const parsed = JSON.parse(match[1])
+    return Array.isArray(parsed) ? parsed : []
+  } catch {
+    return []
+  }
 }
 
 let updates = []
@@ -70,14 +98,17 @@ try {
 }
 
 if (updates.length === 0) {
-  updates = [
-    {
-      version: 'Sin datos',
-      tag: 'INFO',
-      date: 'Pendiente',
-      note: `No fue posible obtener versiones del repo ${GITHUB_REPO}.`,
-    },
-  ]
+  const existing = getExistingUpdatesFromFile()
+  updates = existing.length > 0
+    ? existing
+    : [
+        {
+          version: 'Sin datos',
+          tag: 'INFO',
+          date: 'Pendiente',
+          note: `No fue posible obtener commits de ${MAIN_BRANCH} en ${GITHUB_REPO}.`,
+        },
+      ]
 }
 
 const source = `export interface UpdateItem {\n  version: string\n  tag: string\n  date: string\n  note: string\n}\n\nexport const updates: UpdateItem[] = ${JSON.stringify(updates, null, 2)}\n`

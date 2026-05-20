@@ -7,9 +7,9 @@ export interface UpdateItem {
 
 export const updates: UpdateItem[] = [
   {
-    "version": "Sin datos",
-    "tag": "INFO",
-    "date": "Pendiente",
-    "note": "No fue posible obtener versiones del repo Ivimanhm/TigerByte."
+    "version": "0.0.1",
+    "tag": "COMMIT",
+    "date": "20 May, 2026",
+    "note": "Primer commit"
   }
 ]
