@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@500;600;700&family=Orbitron:wght@500;600;700&family=Manrope:wght@400;500;600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg: #060b16;
+  --bg-deep: #040711;
+  --panel: rgba(6, 12, 24, 0.72);
+  --text: #d8e7ff;
+  --muted: #91a9c8;
+  --cyan: #39d8ff;
+  --violet: #8e6bff;
+  --electric: #2f69ff;
+  --rust: #de7f4c;
+  --line: rgba(56, 189, 248, 0.26);
+  --panel-border: rgba(95, 170, 255, 0.26);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#app {
+  width: 100%;
+  min-height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: 'Manrope', sans-serif;
+  color: var(--text);
+  background: radial-gradient(circle at 75% 20%, rgba(79, 70, 229, 0.2), transparent 40%),
+    radial-gradient(circle at 20% 10%, rgba(14, 165, 233, 0.17), transparent 38%),
+    linear-gradient(145deg, var(--bg-deep), var(--bg));
+  overflow-x: hidden;
+}
+
+h1,
+h2,
+h3,
+.logo-font {
+  font-family: 'Orbitron', 'Exo 2', sans-serif;
+  letter-spacing: 0.01em;
+}
+
+.text-balance {
+  text-wrap: balance;
+}
+
+.hud-grid {
+  background-image: linear-gradient(rgba(59, 130, 246, 0.08) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(59, 130, 246, 0.08) 1px, transparent 1px);
+  background-size: 56px 56px;
+}
+
+.scanlines::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: repeating-linear-gradient(
+    to bottom,
+    rgba(160, 191, 255, 0.03),
+    rgba(160, 191, 255, 0.03) 1px,
+    transparent 1px,
+    transparent 3px
+  );
+  pointer-events: none;
+  mix-blend-mode: screen;
+}
+
+.glass-panel {
+  background: var(--panel);
+  border: 1px solid var(--panel-border);
+  backdrop-filter: blur(12px);
+}
+
+.neon-border {
+  border: 1px solid var(--line);
+  box-shadow: inset 0 0 14px rgba(56, 189, 248, 0.12), 0 0 22px rgba(79, 70, 229, 0.16);
+}
+
+.reveal {
+  opacity: 0;
+  transform: translateY(14px);
+}
+
+.card-border-violet::after,
+.card-border-orange::after,
+.card-border-green::after,
+.card-border-rust::after {
+  content: none;
+}
+
+.card-electric {
+  position: relative;
+  isolation: isolate;
+}
+
+.card-electric::before {
+  content: '';
+  position: absolute;
+  top: -16px;
+  left: -16px;
+  width: 120px;
+  height: 120px;
+  border-radius: 999px;
+  background: radial-gradient(circle, var(--electric-border-soft, rgba(56, 189, 248, 0.28)) 0%, transparent 72%);
+  pointer-events: none;
+  z-index: -1;
+}
+
+.card-electric::after {
+  content: '';
+  position: absolute;
+  right: -16px;
+  bottom: -16px;
+  width: 120px;
+  height: 120px;
+  border-radius: 999px;
+  background: radial-gradient(circle, var(--electric-border-soft, rgba(56, 189, 248, 0.24)) 0%, transparent 72%);
+  pointer-events: none;
+  z-index: -1;
+}
+
+.card-border-violet {
+  --electric-border: rgba(167, 139, 250, 0.8);
+  --electric-border-soft: rgba(167, 139, 250, 0.42);
+}
+
+.card-border-orange {
+  --electric-border: rgba(251, 146, 60, 0.82);
+  --electric-border-soft: rgba(251, 146, 60, 0.4);
+}
+
+.card-border-green {
+  --electric-border: rgba(74, 222, 128, 0.82);
+  --electric-border-soft: rgba(74, 222, 128, 0.4);
+}
+
+.card-border-rust {
+  --electric-border: rgba(222, 127, 76, 0.82);
+  --electric-border-soft: rgba(222, 127, 76, 0.4);
+}
+
