@@ -9,6 +9,7 @@ export interface GameCardData {
   id: string
   game: string
   alias: string
+  href?: string
   description: string
   tone: GameTone
   image: string

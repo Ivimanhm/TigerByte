@@ -2,6 +2,8 @@
 import { TroubleshootingPage } from './pages/TroubleshootingPage'
 import { GuidesPage } from './pages/GuidesPage'
 import { ConfigPage } from './pages/ConfigPage'
+import { SpecialFeaturesPage } from './pages/SpecialFeaturesPage'
+import { GameToolsPage } from './pages/GameToolsPage'
 import { useEffect, useState } from 'preact/hooks'
 import { appMeta } from './data/app-meta.generated'
 import { applyVisualSettings, loadSettings } from './utils/settings'
@@ -72,9 +74,43 @@ export function App() {
       ? <TroubleshootingPage />
       : hash === '#guides'
         ? <GuidesPage />
-        : hash === '#config'
-          ? <ConfigPage />
-          : <LandingPage />
+      : hash === '#config'
+        ? <ConfigPage />
+        : hash === '#special-features'
+          ? <SpecialFeaturesPage />
+          : hash === '#tools-lol'
+            ? (
+              <GameToolsPage
+                gameName="League of Legends"
+                subtitle="Creador de equipos y tierlist de campeones."
+                features={['Generador de composiciones', 'Tierlist por parche', 'Sinergias y counters']}
+              />
+            )
+            : hash === '#tools-dbd'
+              ? (
+                <GameToolsPage
+                  gameName="Dead by Daylight"
+                  subtitle="Creador de builds."
+                  features={['Builds por asesino/superviviente', 'Perks recomendadas', 'Preset por estilo de juego']}
+                />
+              )
+              : hash === '#tools-tarkov'
+                ? (
+                  <GameToolsPage
+                    gameName="Escape from Tarkov"
+                    subtitle="Mapas, builds de armas."
+                    features={['Mapas interactivos', 'Builds por presupuesto', 'Comparador de municion']}
+                  />
+                )
+                : hash === '#tools-rust'
+                  ? (
+                    <GameToolsPage
+                      gameName="Rust"
+                      subtitle="Planos de casas y calculadora de raids."
+                      features={['Editor de planos', 'Calculadora de c4/cohetes', 'Checklist de defensa de base']}
+                    />
+                  )
+            : <LandingPage />
 
   return (
     <>
@@ -108,3 +144,4 @@ export function App() {
     </>
   )
 }
+

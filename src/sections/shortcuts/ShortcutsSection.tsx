@@ -2,7 +2,7 @@
 import { GlassPanel } from '../../components/ui/GlassPanel'
 
 const shortcuts = [
-  { label: 'Funciones principales', href: '#' },
+  { label: 'Funciones principales', href: '#special-features' },
   { label: 'Configuracion', href: '#config' },
   { label: 'Guias', href: '#guides' },
   { label: 'Solucion de problemas', href: '#troubleshooting' },
@@ -28,5 +28,6 @@ export function ShortcutsSection() {
     </GlassPanel>
   )
 }
+
 
 

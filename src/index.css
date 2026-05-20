@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@500;600;700&family=Orbitron:wght@500;600;700&family=Manrope:wght@400;500;600&display=swap');
+﻿@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@500;600;700&family=Orbitron:wght@500;600;700&family=Manrope:wght@400;500;600&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -16,6 +16,34 @@
   --rust: #de7f4c;
   --line: rgba(56, 189, 248, 0.26);
   --panel-border: rgba(95, 170, 255, 0.26);
+  --bg-radial-a: rgba(79, 70, 229, 0.2);
+  --bg-radial-b: rgba(14, 165, 233, 0.17);
+}
+:root[data-theme='light'] {
+  --bg: #f4f8ff;
+  --bg-deep: #eaf2ff;
+  --panel: rgba(255, 255, 255, 0.84);
+  --text: #12233f;
+  --muted: #486486;
+  --line: rgba(56, 189, 248, 0.22);
+  --panel-border: rgba(37, 99, 235, 0.24);
+  --bg-radial-a: rgba(96, 165, 250, 0.2);
+  --bg-radial-b: rgba(45, 212, 191, 0.18);
+}
+
+:root[data-theme='light'] .hud-grid {
+  background-image: linear-gradient(rgba(37, 99, 235, 0.07) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(37, 99, 235, 0.07) 1px, transparent 1px);
+}
+
+:root[data-theme='light'] .scanlines::before {
+  background: repeating-linear-gradient(
+    to bottom,
+    rgba(20, 41, 72, 0.03),
+    rgba(20, 41, 72, 0.03) 1px,
+    transparent 1px,
+    transparent 3px
+  );
 }
 
 * {
@@ -33,8 +61,8 @@ body {
   margin: 0;
   font-family: 'Manrope', sans-serif;
   color: var(--text);
-  background: radial-gradient(circle at 75% 20%, rgba(79, 70, 229, 0.2), transparent 40%),
-    radial-gradient(circle at 20% 10%, rgba(14, 165, 233, 0.17), transparent 38%),
+  background: radial-gradient(circle at 75% 20%, var(--bg-radial-a), transparent 40%),
+    radial-gradient(circle at 20% 10%, var(--bg-radial-b), transparent 38%),
     linear-gradient(145deg, var(--bg-deep), var(--bg));
   overflow-x: hidden;
 }
@@ -78,6 +106,10 @@ h3,
   backdrop-filter: blur(12px);
 }
 
+:root[data-theme='light'] .glass-panel {
+  box-shadow: 0 14px 28px rgba(78, 110, 156, 0.16);
+}
+
 .neon-border {
   border: 1px solid var(--line);
   box-shadow: inset 0 0 14px rgba(56, 189, 248, 0.12), 0 0 22px rgba(79, 70, 229, 0.16);
@@ -92,6 +124,11 @@ h3,
 .modern-btn:hover {
   border-color: rgba(56, 189, 248, 0.6);
   box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.11), 0 12px 22px rgba(10, 24, 49, 0.5);
+}
+
+:root[data-theme='light'] .modern-btn {
+  background: linear-gradient(180deg, rgba(237, 247, 255, 0.95), rgba(225, 240, 255, 0.92));
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.9), 0 8px 16px rgba(51, 85, 136, 0.18);
 }
 
 .field-control {
@@ -237,4 +274,14 @@ h3,
   --electric-border: rgba(222, 127, 76, 0.82);
   --electric-border-soft: rgba(222, 127, 76, 0.4);
 }
+
+.games-carousel .card-electric::before,
+.games-carousel .card-electric::after {
+  display: none;
+}
+
+.games-carousel .card-electric {
+  box-shadow: none !important;
+}
+
 

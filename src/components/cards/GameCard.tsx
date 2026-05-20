@@ -32,16 +32,17 @@ const valueToneStyles = {
 }
 
 const badgeEmotes = {
-  violet: '?',
-  orange: '?',
-  green: '?',
-  rust: '?',
+  violet: '⚔',
+  orange: '☠',
+  green: '✦',
+  rust: '⚙',
 }
 
 export function GameCard({ game }: { game: GameCardData }) {
   return (
-    <article
-      class={`group card-electric relative flex min-h-[41rem] flex-col overflow-hidden rounded-panel border bg-slate-950/65 transition duration-300 ${toneStyles[game.tone]}`}
+    <a
+      href={game.href ?? '#'}
+      class={`group card-electric relative flex min-h-[41rem] flex-col overflow-hidden rounded-panel border bg-slate-950/65 ${toneStyles[game.tone]}`}
     >
       <img
         src={game.image}
@@ -50,10 +51,10 @@ export function GameCard({ game }: { game: GameCardData }) {
         style={{ objectPosition: game.imagePosition ?? '50% 0%' }}
       />
 
-      <div class="pointer-events-none absolute inset-0 bg-gradient-to-b from-transparent from-[22%] via-slate-950/74 via-[48%] to-slate-950/100 to-[78%]" />
-      <div class="pointer-events-none absolute inset-x-0 bottom-0 h-[42%] bg-gradient-to-b from-slate-950/72 to-slate-950" />
+      <div class="pointer-events-none absolute inset-0 bg-gradient-to-b from-transparent from-[44%] via-slate-950/82 via-[62%] to-slate-950/100 to-[74%]" />
+      <div class="pointer-events-none absolute inset-x-0 bottom-0 h-[48%] bg-gradient-to-b from-slate-950/84 to-slate-950" />
 
-      <div class="relative z-[1] mt-[clamp(19rem,31vw,23rem)] flex grow flex-col bg-slate-950/78 px-4 pb-4 pt-3">
+      <div class="relative z-[1] mt-[clamp(19rem,31vw,23rem)] flex grow flex-col bg-slate-950/92 px-4 pb-4 pt-3">
         <div class={`mb-2 mt-auto inline-flex w-fit items-center gap-1.5 self-start rounded-full border px-2 py-0.5 text-[0.65rem] font-semibold tracking-[0.1em] ${badgeToneStyles[game.tone]}`}>
           <span class="text-[0.7rem]">{badgeEmotes[game.tone]}</span>
           <span>{game.alias}</span>
@@ -67,14 +68,11 @@ export function GameCard({ game }: { game: GameCardData }) {
             </div>
           ))}
         </div>
-        <button
-          type="button"
-          class={`flex w-full items-center justify-between text-sm font-semibold transition ${ctaToneStyles[game.tone]}`}
-        >
+        <div class={`flex w-full items-center justify-between text-sm font-semibold transition ${ctaToneStyles[game.tone]}`}>
           <span>Ver herramientas</span>
           <ArrowRight size={16} />
-        </button>
+        </div>
       </div>
-    </article>
+    </a>
   )
 }
