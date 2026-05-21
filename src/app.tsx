@@ -8,6 +8,8 @@ import { useEffect, useState } from 'preact/hooks'
 import { appMeta } from './data/app-meta.generated'
 import { applyVisualSettings, loadSettings } from './utils/settings'
 
+const UPDATE_NOTICE_STORAGE_KEY = 'tb_update_notice_dismissed_tag'
+
 function normalizeVersion(version: string) {
   return version.trim().replace(/^v/i, '')
 }
@@ -58,6 +60,19 @@ export function App() {
         const latestTag = release?.tag_name as string | undefined
         const releaseUrl = (release?.html_url as string | undefined) || `https://github.com/${appMeta.repo}/releases`
         if (!latestTag) return
+        const dismissedRaw = localStorage.getItem(UPDATE_NOTICE_STORAGE_KEY)
+        let dismissed: { version?: string } | null = null
+        if (dismissedRaw) {
+          try {
+            dismissed = JSON.parse(dismissedRaw) as { version?: string }
+          } catch {
+            dismissed = null
+          }
+        }
+        const alreadyDismissedForThisRelease =
+          normalizeVersion(dismissed?.version || '') === normalizeVersion(latestTag)
+
+        if (alreadyDismissedForThisRelease) return
         if (isRemoteNewer(appMeta.currentVersion, latestTag)) {
           setUpdateNotice({ version: latestTag, url: releaseUrl })
         }
@@ -131,7 +146,15 @@ export function App() {
               </a>
               <button
                 type="button"
-                onClick={() => setUpdateNotice(null)}
+                onClick={() => {
+                  if (updateNotice?.version) {
+                    localStorage.setItem(
+                      UPDATE_NOTICE_STORAGE_KEY,
+                      JSON.stringify({ version: updateNotice.version })
+                    )
+                  }
+                  setUpdateNotice(null)
+                }}
                 class="rounded-lg border border-cyan/25 px-3 py-1.5 text-muted transition hover:border-cyan/45 hover:text-text"
               >
                 Cerrar

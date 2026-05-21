@@ -1,5 +1,7 @@
 ﻿import { Database, Download, RefreshCw, Server } from 'lucide-preact'
+import { useState } from 'preact/hooks'
 import { GlassPanel } from '../../components/ui/GlassPanel'
+import { appMeta } from '../../data/app-meta.generated'
 import { systemStatus } from '../../data/system-status.generated'
 
 const iconById = {
@@ -16,17 +18,119 @@ const valueToneByLevel = {
   action: 'text-cyan',
 } as const
 
+function normalizeVersion(version: string) {
+  return version.trim().replace(/^v/i, '')
+}
+
+function daysBetween(isoDate: string) {
+  const start = new Date(`${isoDate}T00:00:00Z`)
+  const now = new Date()
+  const utcNow = Date.UTC(now.getUTCFullYear(), now.getUTCMonth(), now.getUTCDate())
+  const utcStart = Date.UTC(start.getUTCFullYear(), start.getUTCMonth(), start.getUTCDate())
+  return Math.max(0, Math.floor((utcNow - utcStart) / 86400000))
+}
+
+type ReleaseInfo = {
+  tagName: string
+  publishedDate: string
+  url: string
+}
+
+async function fetchLatestRelease(repo: string): Promise<ReleaseInfo | null> {
+  const base = `https://api.github.com/repos/${repo}`
+  const headers = {
+    Accept: 'application/vnd.github+json',
+  }
+
+  const mapRelease = (release: any): ReleaseInfo | null => {
+    const tagName = String(release?.tag_name || '')
+    if (!tagName) return null
+    const publishedDate = String(release?.published_at || release?.created_at || '').slice(0, 10)
+    const url = String(
+      release?.assets?.[0]?.browser_download_url || release?.html_url || `https://github.com/${repo}/releases`
+    )
+    return { tagName, publishedDate, url }
+  }
+
+  try {
+    const res = await fetch(`${base}/releases/latest`, { headers })
+    if (res.ok) return mapRelease(await res.json())
+  } catch {
+    // fallback below
+  }
+
+  try {
+    const res = await fetch(`${base}/releases?per_page=1&page=1`, { headers })
+    if (!res.ok) return null
+    const releases = await res.json()
+    if (!Array.isArray(releases) || releases.length === 0) return null
+    return mapRelease(releases[0])
+  } catch {
+    return null
+  }
+}
+
 export function StatusSection() {
-  const updatesUpToDate = systemStatus.some((item) => item.id === 'updates' && item.level === 'ok')
+  const [statusRows, setStatusRows] = useState(systemStatus)
+  const [checkingUpdates, setCheckingUpdates] = useState(false)
+
+  const updatesRow = statusRows.find((item) => item.id === 'updates')
+  const updatesUpToDate = updatesRow?.level === 'ok'
+  const updatesWithoutData = updatesRow?.value === 'Sin datos'
+
+  const refreshUpdatesStatus = async () => {
+    if (checkingUpdates) return
+    setCheckingUpdates(true)
+
+    const release = await fetchLatestRelease(appMeta.repo)
+
+    setStatusRows((prev) =>
+      prev.map((row) => {
+        if (row.id === 'updates') {
+          if (!release) {
+            return { ...row, value: 'Sin datos', level: 'warn', detail: 'No se pudo comprobar GitHub ahora' }
+          }
+
+          const isSameVersion = normalizeVersion(appMeta.currentVersion) === normalizeVersion(release.tagName)
+          if (isSameVersion) {
+            return {
+              ...row,
+              value: 'Actualizado',
+              level: 'ok',
+              detail: `Version actual: ${appMeta.currentVersion}`,
+            }
+          }
+
+          const days = release.publishedDate ? daysBetween(release.publishedDate) : 0
+          return {
+            ...row,
+            value: days === 0 ? 'Nueva version disponible' : `${days} dia${days === 1 ? '' : 's'} sin actualizar`,
+            level: 'warn',
+            detail: `Ultima release: ${release.tagName}`,
+          }
+        }
+
+        if (row.id === 'action') {
+          return release ? { ...row, actionUrl: release.url } : row
+        }
+
+        return row
+      })
+    )
+
+    setCheckingUpdates(false)
+  }
 
   return (
     <GlassPanel class="reveal p-6">
       <h3 class="mb-5 text-2xl">Estado del sistema</h3>
       <div class="space-y-3 text-sm">
-        {systemStatus.map((row) => {
+        {statusRows.map((row) => {
           const Icon = iconById[row.id]
+          const isRepo = row.id === 'repo'
+          const isUpdates = row.id === 'updates'
           const isAction = row.id === 'action'
-          const actionDisabled = isAction && updatesUpToDate
+          const actionDisabled = isAction && (updatesUpToDate || updatesWithoutData)
 
           if (isAction) {
             return (
@@ -45,8 +149,46 @@ export function StatusSection() {
                   <Icon size={15} class={actionDisabled ? 'text-muted' : 'text-cyan'} />
                   {row.label}
                 </span>
-                <strong>{actionDisabled ? 'Al dia' : row.value}</strong>
+                <strong>{updatesUpToDate ? 'Al dia' : row.value}</strong>
               </a>
+            )
+          }
+
+          if (isRepo && row.actionUrl) {
+            return (
+              <a
+                href={row.actionUrl}
+                target="_blank"
+                rel="noreferrer"
+                class="block w-full rounded-lg border border-cyan/20 bg-bg/50 px-3 py-2 transition hover:border-cyan/40 hover:bg-bg/65"
+              >
+                <div class="flex items-center justify-between gap-3">
+                  <span class="inline-flex items-center gap-2 text-muted">
+                    <Icon size={15} class="text-cyan" />
+                    {row.label}
+                  </span>
+                  <strong class={valueToneByLevel[row.level]}>{row.value}</strong>
+                </div>
+              </a>
+            )
+          }
+
+          if (isUpdates) {
+            return (
+              <button
+                type="button"
+                onClick={refreshUpdatesStatus}
+                disabled={checkingUpdates}
+                class="w-full rounded-lg border border-cyan/20 bg-bg/50 px-3 py-2 text-left transition hover:border-cyan/40 hover:bg-bg/65 disabled:cursor-wait disabled:opacity-80"
+              >
+                <div class="flex items-center justify-between gap-3">
+                  <span class="inline-flex items-center gap-2 text-muted">
+                    <Icon size={15} class={`text-cyan ${checkingUpdates ? 'animate-spin' : ''}`} />
+                    {row.label}
+                  </span>
+                  <strong class={valueToneByLevel[row.level]}>{checkingUpdates ? 'Comprobando...' : row.value}</strong>
+                </div>
+              </button>
             )
           }
 

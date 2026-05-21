@@ -10,10 +10,11 @@ export interface SystemStatusItem {
 export const systemStatus: SystemStatusItem[] = [
   {
     "id": "repo",
-    "label": "Repositorio Git",
+    "label": "Repositorio GitHub",
     "value": "Operativo",
     "level": "ok",
-    "detail": "Rama main accesible"
+    "detail": "GitHub online (main) accesible",
+    "actionUrl": "https://github.com/Ivimanhm/TigerByte"
   },
   {
     "id": "db",
@@ -25,16 +26,16 @@ export const systemStatus: SystemStatusItem[] = [
   {
     "id": "updates",
     "label": "Actualizaciones",
-    "value": "0.0.1",
+    "value": "Actualizado",
     "level": "ok",
-    "detail": "Ultimo commit: 20 May, 2026"
+    "detail": "Version actual: 0.0.1"
   },
   {
     "id": "action",
     "label": "Actualizar app",
     "value": "Descargar",
     "level": "action",
-    "detail": "https://github.com/Ivimanhm/TigerByte/releases",
-    "actionUrl": "https://github.com/Ivimanhm/TigerByte/releases"
+    "detail": "https://github.com/Ivimanhm/TigerByte/releases/tag/0.0.1",
+    "actionUrl": "https://github.com/Ivimanhm/TigerByte/releases/tag/0.0.1"
   }
 ]

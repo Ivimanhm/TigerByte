@@ -66,7 +66,7 @@ export function Navbar() {
           <span class="rounded-lg border border-violet/50 bg-violet/20 p-2">
             <Gamepad2 size={18} class="text-violet" />
           </span>
-          <strong class="logo-font text-lg">Gamekit</strong>
+          <strong class="logo-font text-lg">TigerByte</strong>
         </div>
         <ul class="hidden items-center gap-7 text-sm text-muted lg:flex">
           {navItems.map((item) => (

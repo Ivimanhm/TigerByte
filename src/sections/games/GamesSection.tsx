@@ -112,14 +112,16 @@ export function GamesSection() {
 
   const canGoPrev = currentIndex > 0
   const canGoNext = currentIndex < Math.max(0, games.length - cardsPerView)
-  const itemWidth = viewportWidth > 0 ? (viewportWidth - gapPx * (cardsPerView - 1)) / cardsPerView : 0
+  const itemWidth = viewportWidth > 0
+    ? Math.floor((viewportWidth - gapPx * (cardsPerView - 1) - 3) / cardsPerView)
+    : 0
   const stepPx = itemWidth + gapPx
 
   return (
     <section class="reveal-group games-carousel relative py-4">
       <div class="mb-7 text-center">
         <h2 class="reveal text-[clamp(1.8rem,2.8vw,2.4rem)]">Herramientas por juego</h2>
-        <p class="reveal text-muted">Funcionalidades especializadas para cada mundo</p>
+        <p class="reveal text-muted">FFuncionalidades unicas para cadajuego</p>
       </div>
 
       <div class="relative">
@@ -165,7 +167,7 @@ export function GamesSection() {
         </button>
       </div>
 
-      <div class="mt-4 flex items-center justify-center gap-2">
+      <div class="mt-11 flex items-center justify-center gap-4">
         {games.map((_, idx) => {
           const start = currentIndex
           const end = start + cardsPerView
@@ -177,7 +179,7 @@ export function GamesSection() {
             key={`dot-${idx}`}
             type="button"
             onClick={() => setCurrentIndex(targetIndex)}
-            class={`h-2.5 w-2.5 rounded-full transition ${
+            class={`indicator-dot h-2.5 w-2.5 rounded-full transition ${
               isVisible ? 'bg-violet shadow-[0_0_10px_rgba(139,92,246,0.8)]' : 'bg-slate-500/60 hover:bg-slate-400/75'
             }`}
             aria-label={`Ir al contenedor ${idx + 1}`}

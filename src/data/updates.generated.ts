@@ -8,8 +8,8 @@ export interface UpdateItem {
 export const updates: UpdateItem[] = [
   {
     "version": "0.0.1",
-    "tag": "COMMIT",
-    "date": "20 May, 2026",
-    "note": "Primer commit"
+    "tag": "ACTUALIZACION",
+    "date": "21 May, 2026",
+    "note": "TigerByte"
   }
 ]
