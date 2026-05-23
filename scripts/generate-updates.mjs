@@ -1,17 +1,30 @@
-import { mkdirSync, writeFileSync } from 'node:fs'
+import { existsSync, mkdirSync, readFileSync, writeFileSync } from 'node:fs'
 import { resolve } from 'node:path'
 
 const OUTPUT = resolve('src/data/updates.generated.ts')
 const GITHUB_REPO = 'Ivimanhm/TigerByte'
 const GITHUB_API = `https://api.github.com/repos/${GITHUB_REPO}`
-const MAIN_BRANCH = 'main'
 
-function classify(message) {
-  const lower = message.toLowerCase()
-  if (lower.includes('fix') || lower.includes('bug') || lower.includes('hotfix')) return 'FIX'
-  if (lower.includes('refactor') || lower.includes('cleanup')) return 'MEJORA'
-  if (lower.includes('feat') || lower.includes('add') || lower.includes('new')) return 'NUEVO'
-  return 'UPDATE'
+function parseSemver(version) {
+  const normalized = String(version || '')
+    .trim()
+    .replace(/^v/i, '')
+    .split('-')[0]
+
+  const parts = normalized.split('.').map((x) => Number.parseInt(x, 10))
+  if (parts.length < 3 || parts.some((x) => Number.isNaN(x))) return null
+  return { major: parts[0], minor: parts[1], patch: parts[2] }
+}
+
+function classifyBySemver(currentVersion, previousVersion) {
+  const current = parseSemver(currentVersion)
+  const previous = parseSemver(previousVersion)
+  if (!current || !previous) return 'ACTUALIZACION'
+
+  if (current.major > previous.major) return 'CAMBIO MAYOR'
+  if (current.minor > previous.minor) return 'NUEVA FUNCION'
+  if (current.patch > previous.patch) return 'CAMBIO MENOR'
+  return 'ACTUALIZACION'
 }
 
 function formatDate(isoDate) {
@@ -37,29 +50,38 @@ async function fetchJson(url) {
 
 async function getRemoteUpdates() {
   const perPage = 100
-  let page = 1
-  const allCommits = []
+  const releases = await fetchJson(`${GITHUB_API}/releases?per_page=${perPage}&page=1`)
+  if (!Array.isArray(releases) || releases.length === 0) return []
 
-  while (true) {
-    const commits = await fetchJson(
-      `${GITHUB_API}/commits?sha=${MAIN_BRANCH}&per_page=${perPage}&page=${page}`
-    )
-    if (!Array.isArray(commits) || commits.length === 0) break
-    allCommits.push(...commits)
-    if (commits.length < perPage) break
-    page += 1
-  }
-
-  return allCommits.map((commit) => {
-    const subject = commit?.commit?.message?.split('\n')[0] || 'Sin descripcion'
-    const dateRaw = commit?.commit?.author?.date?.slice(0, 10) || ''
+  return releases.map((release, index) => {
+    const currentTag = String(release?.tag_name || '').trim()
+    const nextTag = String(releases[index + 1]?.tag_name || '').trim()
+    const note =
+      String(release?.name || '').trim() ||
+      String(release?.body || '').split('\n').find((line) => line.trim())?.trim() ||
+      'Sin descripcion'
+    const dateRaw = String(release?.published_at || release?.created_at || '').slice(0, 10)
     return {
-      version: (commit.sha || 'commit').slice(0, 7),
-      tag: 'COMMIT',
+      version: currentTag || 'Sin version',
+      tag: nextTag ? classifyBySemver(currentTag, nextTag) : 'ACTUALIZACION',
       date: dateRaw ? formatDate(dateRaw) : 'Fecha desconocida',
-      note: subject,
+      note,
     }
   })
+}
+
+function getExistingUpdatesFromFile() {
+  if (!existsSync(OUTPUT)) return []
+  try {
+    const raw = readFileSync(OUTPUT, 'utf8')
+    const match = raw.match(/export const updates: UpdateItem\[] = (\[[\s\S]*\])\s*$/)
+    if (!match) return []
+    const parsed = JSON.parse(match[1])
+    if (!Array.isArray(parsed)) return []
+    return parsed.filter((x) => x && x.version !== 'Sin datos')
+  } catch {
+    return []
+  }
 }
 
 let updates = []
@@ -70,14 +92,17 @@ try {
 }
 
 if (updates.length === 0) {
-  updates = [
-    {
-      version: 'Sin datos',
-      tag: 'INFO',
-      date: 'Pendiente',
-      note: `No fue posible obtener versiones del repo ${GITHUB_REPO}.`,
-    },
-  ]
+  const existing = getExistingUpdatesFromFile()
+  updates = existing.length > 0
+    ? existing
+    : [
+        {
+          version: 'Sin datos',
+          tag: 'INFO',
+          date: 'Pendiente',
+          note: `No fue posible obtener releases de ${GITHUB_REPO}.`,
+        },
+      ]
 }
 
 const source = `export interface UpdateItem {\n  version: string\n  tag: string\n  date: string\n  note: string\n}\n\nexport const updates: UpdateItem[] = ${JSON.stringify(updates, null, 2)}\n`
