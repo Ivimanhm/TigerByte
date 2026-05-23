@@ -1,4 +1,4 @@
-﻿import { ArrowRight, Crosshair, Hammer, Skull, Swords } from 'lucide-preact'
+import { ArrowRight, Crosshair, Hammer, Skull, Swords } from 'lucide-preact'
 import type { GameCardData } from '../../types/game'
 
 const toneStyles = {
@@ -56,13 +56,13 @@ export function GameCard({ game }: { game: GameCardData }) {
       <div class="pointer-events-none absolute inset-0 bg-gradient-to-b from-transparent from-[44%] via-slate-950/82 via-[62%] to-slate-950/100 to-[74%]" />
       <div class="pointer-events-none absolute inset-x-0 bottom-0 h-[48%] bg-gradient-to-b from-slate-950/84 to-slate-950" />
 
-      <div class="relative z-[1] mt-[clamp(19rem,31vw,23rem)] flex grow flex-col bg-slate-950/92 px-4 pb-4 pt-3">
+      <div class="relative z-[1] mt-[clamp(19rem,31vw,23rem)] flex grow flex-col bg-slate-950/92 px-6 pb-5 pt-4">
         <div
-          class={`mb-2 mt-auto inline-flex w-fit items-center gap-1.5 self-start rounded-full px-2.5 py-1 text-[0.78rem] font-semibold tracking-[0.1em] ${badgeToneStyles[game.tone]}`}
+          class={`mb-2 mt-auto inline-flex w-fit items-center justify-center gap-1.5 self-start rounded-full px-2.5 py-1 text-[0.78rem] font-semibold leading-none tracking-[0.1em] ${badgeToneStyles[game.tone]}`}
           style={{ backgroundColor: '#02080E' }}
         >
-          <BadgeIcon size={14} class="shrink-0" />
-          <span class="uppercase">{game.alias}</span>
+          <BadgeIcon size={14} class="shrink-0 align-middle" />
+          <span class="uppercase leading-none">{game.alias}</span>
         </div>
         <p class="mb-2 text-sm text-slate-200/90">{game.description}</p>
         <div class="mb-3 border-y border-white/10 py-1 text-sm">
@@ -81,3 +81,4 @@ export function GameCard({ game }: { game: GameCardData }) {
     </a>
   )
 }
+

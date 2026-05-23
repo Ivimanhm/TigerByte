@@ -112,8 +112,9 @@ export function GamesSection() {
 
   const canGoPrev = currentIndex > 0
   const canGoNext = currentIndex < Math.max(0, games.length - cardsPerView)
+  const showSideNav = cardsPerView === 4
   const itemWidth = viewportWidth > 0
-    ? Math.floor((viewportWidth - gapPx * (cardsPerView - 1) - 3) / cardsPerView)
+    ? (viewportWidth - gapPx * (cardsPerView - 1)) / cardsPerView
     : 0
   const stepPx = itemWidth + gapPx
 
@@ -121,23 +122,31 @@ export function GamesSection() {
     <section class="reveal-group games-carousel relative py-4">
       <div class="mb-7 text-center">
         <h2 class="reveal text-[clamp(1.8rem,2.8vw,2.4rem)]">Herramientas por juego</h2>
-        <p class="reveal text-muted">FFuncionalidades unicas para cadajuego</p>
+        <p class="reveal text-muted">Funcionalidades unicas para cada juego</p>
       </div>
 
       <div class="relative">
-        <button
-          type="button"
-          onClick={() => canGoPrev && setCurrentIndex((p) => p - 1)}
-          class={`absolute -left-12 top-1/2 z-10 hidden h-10 w-10 -translate-y-1/2 items-center justify-center rounded-full border lg:flex ${
-            canGoPrev
-              ? 'modern-btn border-cyan/35 text-cyan hover:text-text'
-              : 'border-cyan/10 bg-bg/40 text-muted/45 opacity-45'
-          }`}
-          aria-label="Anterior"
-          aria-disabled={!canGoPrev}
-        >
-          <ChevronLeft size={18} />
-        </button>
+        {showSideNav && (
+          <button
+            type="button"
+            onClick={() => canGoPrev && setCurrentIndex((p) => p - 1)}
+            class={`carousel-nav-btn absolute -left-16 top-1/2 z-10 hidden h-11 w-11 -translate-y-1/2 items-center justify-center rounded-full border-2 lg:flex ${
+              canGoPrev
+                ? 'border-cyan/55 bg-slate-950/90 text-cyan'
+                : 'border-cyan/10 bg-bg/40 text-muted/45 opacity-45'
+            }`}
+            aria-label="Anterior"
+            title="Anterior"
+            aria-disabled={!canGoPrev}
+          >
+            <ChevronLeft size={18} />
+            {canGoPrev && (
+              <span class="pointer-events-none absolute -bottom-6 text-[0.55rem] font-semibold uppercase tracking-[0.16em] text-cyan/80">
+                Navegar
+              </span>
+            )}
+          </button>
+        )}
 
         <div ref={viewportRef} class="overflow-hidden">
           <div
@@ -152,40 +161,106 @@ export function GamesSection() {
           </div>
         </div>
 
-        <button
-          type="button"
-          onClick={() => canGoNext && setCurrentIndex((p) => p + 1)}
-          class={`absolute -right-12 top-1/2 z-10 hidden h-10 w-10 -translate-y-1/2 items-center justify-center rounded-full border lg:flex ${
-            canGoNext
-              ? 'modern-btn border-cyan/35 text-cyan hover:text-text'
-              : 'border-cyan/10 bg-bg/40 text-muted/45 opacity-45'
-          }`}
-          aria-label="Siguiente"
-          aria-disabled={!canGoNext}
-        >
-          <ChevronRight size={18} />
-        </button>
+        {showSideNav && (
+          <button
+            type="button"
+            onClick={() => canGoNext && setCurrentIndex((p) => p + 1)}
+            class={`carousel-nav-btn absolute -right-16 top-1/2 z-10 hidden h-11 w-11 -translate-y-1/2 items-center justify-center rounded-full border-2 lg:flex ${
+              canGoNext
+                ? 'border-cyan/55 bg-slate-950/90 text-cyan'
+                : 'border-cyan/10 bg-bg/40 text-muted/45 opacity-45'
+            }`}
+            aria-label="Siguiente"
+            title="Siguiente"
+            aria-disabled={!canGoNext}
+          >
+            <ChevronRight size={18} />
+            {canGoNext && (
+              <span class="pointer-events-none absolute -bottom-6 text-[0.55rem] font-semibold uppercase tracking-[0.16em] text-cyan/80">
+                Navegar
+              </span>
+            )}
+          </button>
+        )}
       </div>
 
-      <div class="mt-11 flex items-center justify-center gap-4">
-        {games.map((_, idx) => {
-          const start = currentIndex
-          const end = start + cardsPerView
-          const isVisible = idx >= start && idx < end
-          const maxStart = Math.max(0, games.length - cardsPerView)
-          const targetIndex = Math.min(idx, maxStart)
-          return (
+      {!showSideNav && (
+        <div class="mt-11 flex h-9 items-center justify-center gap-4">
           <button
-            key={`dot-${idx}`}
             type="button"
-            onClick={() => setCurrentIndex(targetIndex)}
-            class={`indicator-dot h-2.5 w-2.5 rounded-full transition ${
-              isVisible ? 'bg-violet shadow-[0_0_10px_rgba(139,92,246,0.8)]' : 'bg-slate-500/60 hover:bg-slate-400/75'
+            onClick={() => canGoPrev && setCurrentIndex((p) => p - 1)}
+            class={`carousel-nav-btn relative top-[18px] flex h-9 w-9 items-center justify-center rounded-full border-2 ${
+              canGoPrev
+                ? 'border-cyan/55 bg-slate-950/90 text-cyan'
+                : 'border-cyan/10 bg-bg/40 text-muted/45 opacity-45'
             }`}
-            aria-label={`Ir al contenedor ${idx + 1}`}
-          />
-        )})}
-      </div>
+            aria-label="Anterior"
+            title="Anterior"
+            aria-disabled={!canGoPrev}
+          >
+            <ChevronLeft size={16} />
+          </button>
+
+          <div class="flex h-9 items-center justify-center gap-4">
+            {games.map((_, idx) => {
+              const start = currentIndex
+              const end = start + cardsPerView
+              const isVisible = idx >= start && idx < end
+              const maxStart = Math.max(0, games.length - cardsPerView)
+              const targetIndex = Math.min(idx, maxStart)
+              return (
+                <button
+                  key={`dot-mobile-${idx}`}
+                  type="button"
+                  onClick={() => setCurrentIndex(targetIndex)}
+                  class={`indicator-dot h-2.5 w-2.5 rounded-full transition ${
+                    isVisible ? 'bg-violet shadow-[0_0_10px_rgba(139,92,246,0.8)]' : 'bg-slate-500/60 hover:bg-slate-400/75'
+                  }`}
+                  aria-label={`Ir al contenedor ${idx + 1}`}
+                />
+              )
+            })}
+          </div>
+
+          <button
+            type="button"
+            onClick={() => canGoNext && setCurrentIndex((p) => p + 1)}
+            class={`carousel-nav-btn relative top-[18px] flex h-9 w-9 items-center justify-center rounded-full border-2 ${
+              canGoNext
+                ? 'border-cyan/55 bg-slate-950/90 text-cyan'
+                : 'border-cyan/10 bg-bg/40 text-muted/45 opacity-45'
+            }`}
+            aria-label="Siguiente"
+            title="Siguiente"
+            aria-disabled={!canGoNext}
+          >
+            <ChevronRight size={16} />
+          </button>
+        </div>
+      )}
+
+      {showSideNav && (
+        <div class="mt-11 hidden items-center justify-center gap-4 lg:flex">
+          {games.map((_, idx) => {
+            const start = currentIndex
+            const end = start + cardsPerView
+            const isVisible = idx >= start && idx < end
+            const maxStart = Math.max(0, games.length - cardsPerView)
+            const targetIndex = Math.min(idx, maxStart)
+            return (
+              <button
+                key={`dot-${idx}`}
+                type="button"
+                onClick={() => setCurrentIndex(targetIndex)}
+                class={`indicator-dot h-2.5 w-2.5 rounded-full transition ${
+                  isVisible ? 'bg-violet shadow-[0_0_10px_rgba(139,92,246,0.8)]' : 'bg-slate-500/60 hover:bg-slate-400/75'
+                }`}
+                aria-label={`Ir al contenedor ${idx + 1}`}
+              />
+            )
+          })}
+        </div>
+      )}
     </section>
   )
 }

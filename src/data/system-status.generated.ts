@@ -13,7 +13,7 @@ export const systemStatus: SystemStatusItem[] = [
     "label": "Repositorio GitHub",
     "value": "Operativo",
     "level": "ok",
-    "detail": "GitHub online (main) accesible",
+    "detail": "GitHub API online (main) accesible",
     "actionUrl": "https://github.com/Ivimanhm/TigerByte"
   },
   {

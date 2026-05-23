@@ -1,19 +1,20 @@
-﻿import { Bell, Gamepad2, Info, Moon, Sun } from 'lucide-preact'
+﻿import { Bell, BookOpen, Boxes, Gamepad2, Headset, Home, Info, Moon, Search, Settings, Sun, UserCircle2 } from 'lucide-preact'
 import { useEffect, useRef, useState } from 'preact/hooks'
 import { updates } from '../../data/updates.generated'
 
 const THEME_STORAGE_KEY = 'tb_theme'
 
 const navItems = [
-  { label: 'Inicio', href: '#' },
-  { label: 'Funciones', href: '#special-features' },
-  { label: 'Guias', href: '#guides' },
-  { label: 'Config', href: '#config' },
-  { label: 'Soporte', href: '#troubleshooting' },
+  { label: 'Inicio', href: '#', icon: Home },
+  { label: 'Funciones', href: '#special-features', icon: Boxes },
+  { label: 'Guias', href: '#guides', icon: BookOpen },
+  { label: 'Config', href: '#config', icon: Settings },
+  { label: 'Soporte', href: '#troubleshooting', icon: Headset },
 ]
 
 export function Navbar() {
   const [theme, setTheme] = useState<'dark' | 'light'>('dark')
+  const [currentHash, setCurrentHash] = useState(typeof window !== 'undefined' ? window.location.hash : '')
   const [isNotificationsOpen, setIsNotificationsOpen] = useState(false)
   const [notifications, setNotifications] = useState(
     updates.slice(0, 3).map((u) => ({
@@ -30,6 +31,12 @@ export function Navbar() {
     const next = saved === 'light' ? 'light' : 'dark'
     setTheme(next)
     document.documentElement.setAttribute('data-theme', next)
+  }, [])
+
+  useEffect(() => {
+    const onHashChange = () => setCurrentHash(window.location.hash)
+    window.addEventListener('hashchange', onHashChange)
+    return () => window.removeEventListener('hashchange', onHashChange)
   }, [])
 
   useEffect(() => {
@@ -60,34 +67,61 @@ export function Navbar() {
   }
 
   return (
-    <header class="sticky top-0 z-20 border-b border-cyan/20 bg-bg/60 backdrop-blur-md">
-      <nav class="mx-auto flex w-[min(96%,1600px)] items-center justify-between py-4">
+    <header class="sticky top-0 z-30 px-2 py-3">
+      <nav class="mx-auto flex w-[min(98%,1800px)] items-center justify-between rounded-xl border border-cyan/20 bg-[#041126]/78 px-5 py-3 shadow-[0_10px_34px_rgba(5,12,30,0.52)] backdrop-blur-md">
         <div class="flex items-center gap-3">
-          <span class="rounded-lg border border-violet/50 bg-violet/20 p-2">
-            <Gamepad2 size={18} class="text-violet" />
+          <span class="rounded-lg border border-violet/60 bg-violet/15 p-2 shadow-[0_0_12px_rgba(139,92,246,0.42)]">
+            <Gamepad2 size={17} class="text-violet" />
           </span>
-          <strong class="logo-font text-lg">TigerByte</strong>
+          <strong class="logo-font text-xl">TigerByte</strong>
+          <span class="ml-4 hidden h-7 w-px bg-cyan/20 xl:block" />
         </div>
-        <ul class="hidden items-center gap-7 text-sm text-muted lg:flex">
-          {navItems.map((item) => (
-            <li>
-              <a href={item.href} class="cursor-pointer border-b-2 border-transparent pb-1 transition hover:border-violet hover:text-text">
-                {item.label}
-              </a>
-            </li>
-          ))}
+
+        <ul class="hidden items-center gap-2 text-sm text-muted lg:flex">
+          {navItems.map((item) => {
+            const isActive = item.href === '#' ? currentHash === '' || currentHash === '#' : currentHash === item.href
+            const Icon = item.icon
+
+            return (
+              <li>
+                <a
+                  href={item.href}
+                  class={`group relative inline-flex items-center gap-1.5 rounded-md px-3 py-2 transition ${
+                    isActive ? 'text-text' : 'text-muted hover:text-text'
+                  }`}
+                >
+                  <Icon size={13} class="text-cyan/85 transition group-hover:text-cyan" />
+                  <span>{item.label}</span>
+                  {isActive ? (
+                    <span class="absolute inset-x-2 -bottom-1 h-[2px] rounded-full bg-violet shadow-[0_0_12px_rgba(139,92,246,0.95)]" />
+                  ) : null}
+                </a>
+              </li>
+            )
+          })}
         </ul>
+
         <div class="flex items-center gap-2">
+          <button
+            type="button"
+            class="nav-icon-btn inline-flex h-8 w-8 items-center justify-center text-cyan transition hover:text-text"
+            aria-label="Buscar"
+            title="Buscar"
+          >
+            <Search size={15} />
+          </button>
+          <span class="nav-divider h-6 w-px" />
+
           <div class="relative" ref={notificationsRef}>
             <button
               type="button"
               onClick={() => setIsNotificationsOpen((v) => !v)}
-              class="modern-btn relative inline-flex h-10 w-10 items-center justify-center rounded-lg text-cyan transition hover:text-text"
+              class="nav-icon-btn relative inline-flex h-8 w-8 items-center justify-center text-cyan transition hover:text-text"
               aria-label="Notificaciones"
               title="Notificaciones"
               aria-expanded={isNotificationsOpen}
             >
-              <Bell size={16} />
+              <Bell size={15} />
               {notifications.length > 0 ? (
                 <span class="absolute right-2 top-2 h-2 w-2 rounded-full bg-violet shadow-[0_0_10px_rgba(139,92,246,0.8)]" />
               ) : null}
@@ -133,11 +167,19 @@ export function Navbar() {
           <button
             type="button"
             onClick={toggleTheme}
-            class="modern-btn inline-flex h-10 w-10 items-center justify-center rounded-lg text-cyan transition hover:text-text"
+            class="nav-icon-btn inline-flex h-8 w-8 items-center justify-center text-cyan transition hover:text-text"
             aria-label={theme === 'dark' ? 'Cambiar a tema claro' : 'Cambiar a tema oscuro'}
             title={theme === 'dark' ? 'Tema claro' : 'Tema oscuro'}
           >
-            {theme === 'dark' ? <Sun size={16} /> : <Moon size={16} />}
+            {theme === 'dark' ? <Sun size={15} /> : <Moon size={15} />}
+          </button>
+          <button
+            type="button"
+            class="nav-icon-btn inline-flex h-8 w-8 items-center justify-center rounded-full text-cyan transition hover:text-text"
+            aria-label="Perfil"
+            title="Perfil"
+          >
+            <UserCircle2 size={16} />
           </button>
         </div>
       </nav>

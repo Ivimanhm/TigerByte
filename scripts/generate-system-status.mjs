@@ -168,17 +168,25 @@ async function buildStatus() {
     }
   }
 
+  const webReachable = await isUrlReachable(`https://github.com/${GITHUB_REPO}`)
+  const repoAvailable = repoReachable || webReachable
+  const repoValue = repoAvailable ? (repoReachable ? 'Operativo' : 'Web accesible') : 'Sin conexion'
+  const repoLevel = repoAvailable ? (repoReachable ? 'ok' : 'warn') : 'error'
+  const repoDetail = repoReachable
+    ? commitsReachable
+      ? `GitHub API online (${MAIN_BRANCH}) accesible`
+      : 'GitHub API online (releases) accesible'
+    : webReachable
+      ? 'La web del repositorio responde, pero la API de GitHub no esta disponible ahora'
+      : 'No se pudo contactar GitHub online'
+
   const items = [
     {
       id: 'repo',
       label: 'Repositorio GitHub',
-      value: repoReachable ? 'Operativo' : 'Sin conexion',
-      level: repoReachable ? 'ok' : 'error',
-      detail: repoReachable
-        ? commitsReachable
-          ? `GitHub online (${MAIN_BRANCH}) accesible`
-          : 'GitHub online (releases) accesible'
-        : 'No se pudo contactar GitHub online',
+      value: repoValue,
+      level: repoLevel,
+      detail: repoDetail,
       actionUrl: `https://github.com/${GITHUB_REPO}`,
     },
     {
@@ -205,18 +213,11 @@ async function buildStatus() {
     },
   ]
 
-  if (!repoReachable) {
-    const webReachable = await isUrlReachable(`https://github.com/${GITHUB_REPO}`)
-    if (webReachable) {
-      repoReachable = true
-    }
-  }
-
-  if (!repoReachable) {
+  if (!repoAvailable) {
     const existing = getExistingSystemStatus()
     const existingRepo = existing?.find((x) => x?.id === 'repo')
     // Reuse only if previous snapshot had a healthy repo status.
-    if (existing && existing.length > 0 && existingRepo?.value === 'Operativo') {
+    if (existing && existing.length > 0 && (existingRepo?.value === 'Operativo' || existingRepo?.value === 'Web accesible')) {
       return existing
     }
   }

@@ -385,9 +385,36 @@ h3,
   transform: scale(1.05) !important;
 }
 
+.games-carousel .carousel-nav-btn {
+  transition: none !important;
+  transform: translateY(-50%) !important;
+  box-shadow: inset 0 0 0 1px rgba(56, 189, 248, 0.3), 0 10px 20px rgba(8, 20, 42, 0.58);
+}
+
+.games-carousel .carousel-nav-btn:hover,
+.games-carousel .carousel-nav-btn:active {
+  transform: translateY(-50%) !important;
+  box-shadow: inset 0 0 0 1px rgba(56, 189, 248, 0.3), 0 10px 20px rgba(8, 20, 42, 0.58);
+}
+
 a[href],
 button {
   cursor: pointer;
+}
+
+.nav-icon-btn {
+  border: none;
+  background: transparent;
+  filter: drop-shadow(0 0 0 rgba(139, 92, 246, 0));
+}
+
+.nav-icon-btn:hover {
+  filter: drop-shadow(0 0 7px rgba(139, 92, 246, 0.75));
+}
+
+.nav-divider {
+  background: rgba(103, 232, 249, 0.5);
+  box-shadow: 0 0 8px rgba(103, 232, 249, 0.35);
 }
 
 .game-card-frame {
