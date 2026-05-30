@@ -10,7 +10,7 @@ export function TroubleshootingPage() {
     <div class="relative pb-10">
       <HUDBackground />
       <Navbar />
-      <main class="mx-auto w-[min(96%,900px)] space-y-6 pt-7">
+      <main class="mx-auto w-[min(98%,1800px)] space-y-6 pt-7">
         <a
           href="#"
           class="modern-btn inline-flex items-center gap-2 rounded-lg px-3 py-2 text-sm text-cyan transition hover:text-text"

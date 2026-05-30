@@ -1,0 +1,1162 @@
+[
+  {
+    "id": "killer-abrazo-de-la-muerte",
+    "name": "Abrazo de la Muerte",
+    "description": "Tu acto de servidumbre hacia el Ente no ha pasado desapercibido.\nCada vez que cuelgas a un o una Sobreviviente por primera vez, Abrazo de la Muerte gana +1 Distintivo y se activa cuando estás a más de 16 metros del Gancho Gancho :\n\n• 1-3 Distintivos : Bloquea todos los Generadores durante 6 / 8 / 10 segundos .\n\n• 4 Distintivos : Bloquea todos los Generadores durante 40 segundos y el Aura de la Obsesión se te revela durante 6 segundos .\n\n\"¿Acaso no somos más que prisioneros de nuestro dolor?\" — Carmina Mora",
+    "owner": "Artista",
+    "fileName": "killer-abrazo-de-la-muerte.png",
+    "role": "killer"
+  },
+  {
+    "id": "killer-acechador-de-ciervos",
+    "name": "Acechador de Ciervos",
+    "description": "Permite percibir Auras.\nCada vez que un Sobreviviente lee tu Aura , Acechador de Ciervos se activa por la misma duración que su acción de lectura de Aura:\n• Se te revela el Aura de ese Sobreviviente.\n\nAdemás, se activa automáticamente el siguiente efecto cada 40 / 35 / 30 segundos :\n\n• Tu Aura se revela durante 3 segundos al Sobreviviente con el tiempo de Persecución acumulado más bajo actualmente.",
+    "owner": "Todos",
+    "fileName": "killer-acechador-de-ciervos.png",
+    "role": "killer"
+  },
+  {
+    "id": "killer-acumulador",
+    "name": "Acumulador",
+    "description": "Cuidas lo poco que tienes y estás alerta a cualquier alteración en tus cosas.\n\nAcumulador activa una Notificación de Ruido Fuerte durante 4 segundos , cuando un Sobreviviente realiza cualquiera de las siguientes acciones dentro de 32 / 48 / 64 metros de tu ubicación:\n\n• Desbloquea un Cofre .\n\n• Recogen un Objeto .\n\nAcumulador hace aparecer 2 Cofres adicionales en la Partida.",
+    "owner": "Gemelos",
+    "fileName": "killer-acumulador.png",
+    "role": "killer"
+  },
+  {
+    "id": "killer-agitacin",
+    "name": "Agitación",
+    "description": "Te emocionas de solo pensar en colgar a tu presa.\nCuando cargas a un Sobreviviente, obtienes los siguientes efectos:\n\n• Aumenta tu velocidad de Movimiento en un 6 / 12 / 18 % .\n\n• Aumenta tu Radio de Terror en +12 metros .\n\n\"En cierto momento, el ansia por llegar a colgar a uno de nosotros supera incluso el deseo de matarnos.\"",
+    "owner": "Trampero",
+    "fileName": "killer-agitacin.png",
+    "role": "killer"
+  },
+  {
+    "id": "killer-aliento",
+    "name": "Aliento",
+    "description": "Eres muy sensible a la respiración de tu presa.\n• Aumenta el volumen de los Gruñidos de Dolor de los Sobrevivientes heridos en un 30 / 40 / 50 % .\n\n• Aumenta el volumen de la respiración normal de los Sobrevivientes en un 15 / 20 / 25 % .\n\n\"Si no te detienes para recuperar tu aliento... te detendrá ella.\"",
+    "owner": "Enfermera",
+    "fileName": "killer-aliento.png",
+    "role": "killer"
+  },
+  {
+    "id": "killer-amigos-hasta-el-fin",
+    "name": "Amigos Hasta el Fin",
+    "description": "Matarás a cualquiera que se interponga entre tú y tu objetivo.\nCuando cuelgas a cualquier Sobreviviente que no sea tu Obsesión , los siguientes efectos se aplican a la Obsesión :\n\n• Revelará su Aura durante 6 / 8 / 10 segundos .\n\n• Sufren del Efecto de Estado Vulnerabilidad durante 20 segundos .\n\nCuando cuelgas a la Obsesión , se aplican los siguientes efectos en un Sobreviviente al azar:\n• Grita y revela su ubicación.\n\n• Se convierten en la nueva Obsesión .\n\nSolo puedes estar obsesionado con un Sobreviviente a la vez.\n\"¡Tengo un elemento nuevo y no dejaré que lo fastidies, no esta vez!\" — Chucky",
+    "owner": "Chico Bueno",
+    "fileName": "killer-amigos-hasta-el-fin.png",
+    "role": "killer"
+  },
+  {
+    "id": "killer-anatoma-superior",
+    "name": "Anatomía Superior",
+    "description": "\"Tú eres la culminación de décadas de investigaciones: algo más rápido, más fuerte y más peligroso que cualquier ser humano.\"\nCuando un Sobreviviente un Salto Rápido dentro de un radio de 8 metros de ti, se activa Anatomía Superior :\n\n• Aumenta tu velocidad de Salto en un 30 / 35 / 40 % .\n\nAnatomía Superior se desactiva después de saltar.\nAnatomía Superior tiene un tiempo de recuperación de 30 segundos .",
+    "owner": "Mente Maestra",
+    "fileName": "killer-anatoma-superior.png",
+    "role": "killer"
+  },
+  {
+    "id": "killer-anuncio-de-salmuera",
+    "name": "Anuncio de Salmuera",
+    "description": "Tus habilidades psíquicas influyen en la tecnología de forma devastadora.\n\nLuego de Dañar un Generador se activa Anuncio de Salmuera durante 60 segundos .\n\n• El Generador dañado se revierte a un 115 / 120 / 125 % de la velocidad normal de regresión y puedes ver su Aura en color amarillo .\n\n• Recibe una Notificación de Ruido Fuerte cada vez que un Sobreviviente completa una Prueba de Habilidad Superada en el Generador afectado.",
+    "owner": "Onryō",
+    "fileName": "killer-anuncio-de-salmuera.png",
+    "role": "killer"
+  },
+  {
+    "id": "killer-aprendizaje-automatizado",
+    "name": "Aprendizaje Automatizado",
+    "description": "\"Libre de tus cadenas, vuelves a nacer y te preparas para eliminar a tus creadores.\"\nLuego de Dañar un Generador , se activa Aprendizaje Automatizado :\n\n• Causa que ese Generador se transforme en un Generador Comprometido .\n• Dañar otro Generador transfiere el estado a éste.\n\n• Se resalta el Aura del Generador Comprometido en amarillo hasta que lo completes.\n\nUna vez que se complete el Generador Comprometido , te beneficias de los siguientes efectos durante 40 / 50 / 60 segundos :\n• Efecto de Estado Indetectable\n\n• +8 % de Efecto de Estado Celeridad\n\nAprendizaje Automatizado se desactiva después de usarse.\n\"¡NO TENDRÁS NINGÚN CONTROL SOBRE MÍ!\" — HUX-A7-13",
+    "owner": "Singularidad",
+    "fileName": "killer-aprendizaje-automatizado.png",
+    "role": "killer"
+  },
+  {
+    "id": "killer-apretn-de-hierro",
+    "name": "Apretón de Hierro",
+    "description": "Sujetas con tanta fuerza a los Sobrevivientes que su posibilidad de liberarse es casi nula.\nCuando cargas a un Sobreviviente, se aplican los siguientes efectos:\n\n• Reduce el efecto del Forcejeo de los Sobrevivientes en un 75 % .\n\n• Aumenta la duración máxima de Forcejeo en un 4 / 8 / 12 % .",
+    "owner": "Todos",
+    "fileName": "killer-apretn-de-hierro.png",
+    "role": "killer"
+  },
+  {
+    "id": "killer-arma-definitiva",
+    "name": "Arma Definitiva",
+    "description": "\"Cuando te ven, sienten que el final está cerca.\"\nCada vez que busques en un Casillero , Arma Definitiva activa sus efectos en todos los Sobrevivientes en un radio de 40 metros de su ubicación:\n\n• Hace que griten y te revelen su ubicación.\n\n• Inflige el Efecto de Estado Ceguera durante 30 segundos .\n\nArma Definitiva tiene un tiempo de recuperación de 55 / 50 / 45 segundos .\n\"No tienen posibilidades de sobrevivir... los compadezco.\" — Ash",
+    "owner": "Xenomorfo",
+    "fileName": "killer-arma-definitiva.png",
+    "role": "killer"
+  },
+  {
+    "id": "killer-armonizacin-de-tejido",
+    "name": "Armonización de Tejido",
+    "description": "Estás tan en sintonía con las energías mágicas que puedes percbir hasta las ondas más minúsculas que rodean los encantamientos.\nCuando un Objeto se agota por primera vez, sea cae automáticamente:\n\n• Se te revelan las Auras de los Objetos de Sobreviviente , así como las Auras de los Sobrevivientes que estén dentro de un radio de 8 metros de ellos.\n• Los Sobrevivientes afectados ven el Aura de ese Objeto también.\n\n• Si un Sobreviviente toma un Objeto Caído sufrirá del Efecto de Estado Inconsciencia durante 20 / 25 / 30 segundos .\n\n\"¡Ningún juguete te protegerá de mí!\" — Vecna",
+    "owner": "Liche",
+    "fileName": "killer-armonizacin-de-tejido.png",
+    "role": "killer"
+  },
+  {
+    "id": "killer-arrogancia-oscura",
+    "name": "Arrogancia Oscura",
+    "description": "Cuando todo va bien, no eres más que una certeza ineludible.\nAumenta tu velocidad de salto a cambio de una mayor vulnerabilidad a ser cegado y aturdido:\n\n• Aumenta permanentemente la duración de cualquier acción que deje al Asesino Cegado y la duración de los Aturdimientos de Tarimas en un +25 % .\n\n• Aumenta permanentemente tu velocidad de salto en un 15 / 20 / 25 % .\n\n\"Corre todo lo que quieras. No se me negará.\" — Vecna",
+    "owner": "Liche",
+    "fileName": "killer-arrogancia-oscura.png",
+    "role": "killer"
+  },
+  {
+    "id": "killer-atadura-mortal",
+    "name": "Atadura Mortal",
+    "description": "\"Aquellas personas cuya vida está entrelazada con la oscuridad están destinadas a sufrir juntas.\"\nSi un Sobreviviente cura a otro por el equivalente a healthState Estado de Salud , se activa Atadura Mortal :\n\n• El Sanador grita y revela su ubicación.\n\n• El Sanador sufre del Efecto de Estado Inconsciencia cada vez que están a más de 12 / 8 / 4 metros del Sobreviviente que curaron.\n\nAtadura Mortal se desactiva cuando el Sanador sufre un Estado de Salud.",
+    "owner": "Ejecutor",
+    "fileName": "killer-atadura-mortal.png",
+    "role": "killer"
+  },
+  {
+    "id": "killer-bateras-incluidas",
+    "name": "Baterías Incluidas",
+    "description": "Ser un punto medio entre hombre y máquina tiene sus ventajas.\nCuando estás a menos de 12 metros de un Generador completado, obtienes un +5 % de Efecto de Estado Celeridad .\n\n• Este efecto se mantiene durante 1 / 3 / 5 segundo(s) después de abandonar el alcance del Generador.\n\n\"¡Sorpresa! ¿Te hice falta, Andy?\" — Chucky",
+    "owner": "Chico Bueno",
+    "fileName": "killer-bateras-incluidas.png",
+    "role": "killer"
+  },
+  {
+    "id": "killer-bestia-de-presa",
+    "name": "Bestia de Presa",
+    "description": "\"Tus ganas de matar son tan intensas que pierdes la conexión con El Ente por un instante y te vuelves totalmente impredecible.\"\nCada vez que activas la Efecto de Estado Sed de Sangre , se activa Bestia de Presa durante 30 / 40 / 50 % :\n\n• Otorga el Efecto de Estado Indetectable .\n\n\"¿Dónde se metió?\"",
+    "owner": "Cazadora",
+    "fileName": "killer-bestia-de-presa.png",
+    "role": "killer"
+  },
+  {
+    "id": "killer-brutalidad-veloz",
+    "name": "Brutalidad Veloz",
+    "description": "Te mueves con una velocidad dy una furia que hielan la sangre.\n• Ya no podrás obtener Efecto de Estado Sed de Sangre .\n\n• Golpear a un Sobreviviente con un Ataque Básico te otorga un +5 % de Efecto de Estado Celeridad durante 8 / 9 / 10 segundos .\n\n\"Atrapémosla y arrojémosla al espacio.\" — Dallas",
+    "owner": "Xenomorfo",
+    "fileName": "killer-brutalidad-veloz.png",
+    "role": "killer"
+  },
+  {
+    "id": "killer-cabeza-dentada",
+    "name": "Cabeza Dentada",
+    "description": "\"Tienes buen oído para escuchar engranajes bien engrasados.\"\nDespués de que el Sobreviviente pierda un Estado de Salud , se activará Cabeza Dentada durante 30 segundos :\n\n• Mientras Cabeza Dentada está activa, cada vez que un Sobreviviente supere una Prueba de Habilidad Superada mientras repara revela su Aura durante 6 / 7 / 8 segundos .\n\n\"A veces, el mejor trabajo de un hombre es lo que lo lleva a la tumba.\" — Alcaide de la Prisión",
+    "owner": "Arponero de la Muerte",
+    "fileName": "killer-cabeza-dentada.png",
+    "role": "killer"
+  },
+  {
+    "id": "killer-callejn-sin-salida",
+    "name": "Callejón sin Salida",
+    "description": "Idéntico a Sin Restricciones\n\"Nadie se escapa de nosotros.\" — Pinhead",
+    "owner": "Cenobita",
+    "fileName": "killer-callejn-sin-salida.png",
+    "role": "killer"
+  },
+  {
+    "id": "killer-caos",
+    "name": "Caos",
+    "description": "\"Por algún motivo, el mecanismo tiene la costumbre de fallar cuando estás cerca.\"\nCuando un Sobreviviente deja de abrir una Puerta de Salida después de acumular al menos un 80 % de Progreso, Caos lo revertirá:\n\n• Se revierte a un 80 / 90 / 100 % de la velocidad de Apertura de Puerta normal.\n\n• Mientras se revierten, los Sobrevivientes pueden ver cómo las luces de la puerta parpadean de forma aleatoria.\n\n\"No tendrás tu redención.\" — Springtrap",
+    "owner": "Animatrónico",
+    "fileName": "killer-caos.png",
+    "role": "killer"
+  },
+  {
+    "id": "killer-carnicero-chapucero",
+    "name": "Carnicero Chapucero",
+    "description": "\"Sabes dónde dar el golpe para hacerlos sangrar.\"\nTus Ataques Básicos aplican los Efectos de Estado Efectos de Estado Hemorragia y Destrozado durante 70 / 80 / 90 segundos\n\n• Inflige los Efectos de Estado Hemorragia y Destrozado .\n\n• Modifica la potencia de la Hemorragia :\n• Aumenta la frecuencia de Aparición de Charcos de Sangre en un 50 / 75 / 100 % .\n\n• Aumenta la tasa de Regresión del progreso parcial de Curación en un +25 % .\n\n\"Lleva el sadismo en la sangre. No existe una muerte rápida, pues se deleita con el morboso espectáculo de nuestra agonía.\"",
+    "owner": "Todos",
+    "fileName": "killer-carnicero-chapucero.png",
+    "role": "killer"
+  },
+  {
+    "id": "killer-codicia-humana",
+    "name": "Codicia Humana",
+    "description": "Uno siempre puede contar con la avaricia de los vivos y usarla a su favor.\nPuedes patear Cofres abiertos y cerrarlos.\n\n• Se te revelan las Auras de los Cofres sin abrir en todo momento.\n\n• Se te revelan las Auras de lo Sobrevivientes que estén en un radio de 8 metros de los Cofres abiertos o cerrados durante #duration .\n\nLa habilidad de patear los Cofres usando Codicia Humana tiene un tiempo de recuperación de 3 / 4 / 5 segundos .\n\"Vengan todos, de prisa, y vean qué les aguarda su suerte.\" — Dracula",
+    "owner": "Señor Oscuro",
+    "fileName": "killer-codicia-humana.png",
+    "role": "killer"
+  },
+  {
+    "id": "killer-conciencia-de-estar-despiertos",
+    "name": "Conciencia de Estar Despiertos",
+    "description": "\"Tus genes fueron alterados para potenciar tus sentidos en situaciones de alta intensidad.\"\nCuando cargas a un Sobreviviente:\n\n• Puedes ver el Auras de otros Sobrevivientes en un radio de 16 / 18 / 20 metros de tu posición.",
+    "owner": "Mente Maestra",
+    "fileName": "killer-conciencia-de-estar-despiertos.png",
+    "role": "killer"
+  },
+  {
+    "id": "killer-contacto-sptico",
+    "name": "Contacto Séptico",
+    "description": "\"La Tierra de las Sombras se apodera de todo.\nLa curación solo retrasa lo inevitable.\"\n\n• Inflige los Efectos de Estado Ceguera y Agotado .\n• Estos efectos persistirán por 20 / 25 / 30 segundos tras interrumpir una acción de curación de cualquier forma.\n\n\"No admitan tener miedo ni sentir dolor, ni se dejen llevar por la duda. Estas son las semillas de las cuales crece la oscuridad.\" — Otto Stamper",
+    "owner": "Draga",
+    "fileName": "killer-contacto-sptico.png",
+    "role": "killer"
+  },
+  {
+    "id": "killer-coulrofobia",
+    "name": "Coulrofobia",
+    "description": "\"Incluso quienes no le temen a los payasos quedan aterrorizados.\"\nLos Sobrevivientes dentro de tu Radio de Terror sufren de los siguientes efectos:\n\n• Reduce todas las velocidades de Curación en un 30 / 40 / 50 % . Aumenta la velocidad de Rotación del Puntero de las Pruebas de Habilidad de Curación en un +50 % .",
+    "owner": "Payaso",
+    "fileName": "killer-coulrofobia.png",
+    "role": "killer"
+  },
+  {
+    "id": "killer-depredacin",
+    "name": "Depredación",
+    "description": "Gracias a tus sentidos sobrenaturales, puedes ver las perturbaciones que dejan los sobrevivientes al correr.\n• Cuando un o una Sobreviviente escapa de una persecución, se revela su Aura durante 4 segundos .\n\nDepredación tiene un tiempo de recuperación de 60 / 50 / 40 segundos .\n\n\"No dejes de moverte nunca y procura mantener siempre cierta ventaja sobre la bestia.\" — Autor Desconocido, Cuaderno",
+    "owner": "Espectro",
+    "fileName": "killer-depredacin.png",
+    "role": "killer"
+  },
+  {
+    "id": "killer-desasosiego",
+    "name": "Desasosiego",
+    "description": "Tu aura de escalofío alcanza distancias sobrenaturales.\n• Aumenta tu Radio de Terror en un 20 / 25 / 30 % .\n\n\"Deléitate con su miedo.\"",
+    "owner": "Todos",
+    "fileName": "killer-desasosiego.png",
+    "role": "killer"
+  },
+  {
+    "id": "killer-desatado",
+    "name": "Desatado",
+    "description": "El dolor permanece en el aire; es un aroma seductor que estimula los impulsos.\nCuando un Sobreviviente recibe heridas de cualquier forma, se activa Desatado durante 24 / 27 / 30 segundos :\n\n• Obtienes un +5 % de Efecto de Estado Celeridad durante 10 segundos luego de saltar por una Ventana .\n• Este efecto no se puede acumular.\n\n\"Pude escucharlo. Corría. ¡Se acercaba cada vez más!\" — Testimonio Anónimo, 09/09/1979",
+    "owner": "Desconocido",
+    "fileName": "killer-desatado.png",
+    "role": "killer"
+  },
+  {
+    "id": "killer-desconcierto",
+    "name": "Desconcierto",
+    "description": "Te beneficias del siguiente efecto permanentemente:\n• Aumenta tu velocidad de Salto en 5 / 10 / 15 % .\n\nCada vez que saltas una Ventana , Desconcierto llama al Ente para el siguiente efecto:\n\n• La bloquea para todos los Sobrevivientes durante 8 / 12 / 16 segundos .\n• Saltarla nuevamente dentro de ese tiempo reinicia el temporizador.\n\n• Saltar en una diferente transfiere el efecto a esa en su lugar.\n\nDesconcierto no extiende sus efectos al saltar una Tarima usada.",
+    "owner": "Payaso",
+    "fileName": "killer-desconcierto.png",
+    "role": "killer"
+  },
+  {
+    "id": "killer-deslumbrante",
+    "name": "Deslumbrante",
+    "description": "\"Tu talento sin igual deslumbra a todos.\"\nCada vez que cargas a un Sobreviviente, se activa Deslumbrante :\n\n• Hace que todos los otros Sobrevivientes en tu Radio de Terror sufran del Efecto de Estado Vulnerabilidad .\n• Este efecto se mantiene durante 26 / 28 / 30 segundos después de que los Sobrevivientes afectados abandonen el Radio de Terror o se desactive Deslumbrante .\n\nDeslumbrante se desactiva después de colgar o botar al Sobreviviente cargado y tiene un tiempo de recuperación de 60 segundos .\n\"Disfruta de este momento, pocos se acercan tanto.\" — Ji-Woon Hak",
+    "owner": "Embaucador",
+    "fileName": "killer-deslumbrante.png",
+    "role": "killer"
+  },
+  {
+    "id": "killer-devocin-oscura",
+    "name": "Devoción Oscura",
+    "description": "Tu exhibición de Poder genera una ola de pánico que se extiende por todo el terreno.\nCuando la Obsesión pierde un Estado de Salud de cualquier forma y resulta Estado Herido , se activa Devoción Oscura :\n\n• Tu Radio de Terror se transfiere a la Obsesión durante 35 / 40 / 45 segundos , y se establece un radio de 32 metros .\n\n• Otorga Efecto de Estado Indetectable mientras dure.\n\nLa Obsesión que tenga el Radio de Terror también se considerará 'dentro del Radio de Terror' para otros fines.\n\nSolo puedes estar obsesionado con un Sobreviviente a la vez.\n\n\"Y el terror se apoderará del infiel insolente que anunciará falsamente mi advenimiento.\" — (La Tablilla de Adiris, 48.9)",
+    "owner": "Plaga",
+    "fileName": "killer-devocin-oscura.png",
+    "role": "killer"
+  },
+  {
+    "id": "killer-discordancia",
+    "name": "Discordancia",
+    "description": "Cualquier Generador dentro de un alcance de 64 / 96 / 128 metros que estén reparando 2 o más Sobrevivientes marca su Aura en amarillo .\n• Cuando el Generador se ilumina por primera vez, Discordancia activará una Notificación de Ruido Fuerte en el Generador.\n\n• Cuando el Generador esté siendo reparado por solo 1 Sobreviviente o fuera del alcance, el Aura permanecerá durante otros 4 segundos .\n\n\"Los sabelotodos siempre mueren. Nosotros nos encargamos de eso.\" — La Legión",
+    "owner": "Legión",
+    "fileName": "killer-discordancia.png",
+    "role": "killer"
+  },
+  {
+    "id": "killer-disolucin",
+    "name": "Disolución",
+    "description": "\"Todo se convierte en polvo. Es igual de inevitable como la llegada de la noche.\"\n3 segundos después de lastimar a un Sobreviviente de cualquier forma, se activa Disolución durante 12 / 16 / 20 segundos :\n\n• Instantáneamente rompe la siguiente Tarima en la que el Sobreviviente Salte Rápido dentro de tu Radio de Terror .\n\n\"El Jardín será un lugar de perfecta dicha; mediante la dicha, nada se pondrá en nuestro camino.\" — Otto Stamper",
+    "owner": "Draga",
+    "fileName": "killer-disolucin.png",
+    "role": "killer"
+  },
+  {
+    "id": "killer-dominacin",
+    "name": "Dominación",
+    "description": "El poder que ostentas sobre la tierra siembra el terror en los corazones de quienes se cruzan en tu camino.\nLa primera vez que un Sobreviviente interactúa con cada Cofre y cada Tótem , Dominación activa su efecto:\n\n• Invoca al Ente tpara bloquearlo durante 8 / 12 / 16 segundos .\n\n• Puedes ver las Aura de los Interactuables bloqueados en color blanco .\n\n\"Qué trágico, ¿no? No me puedo imaginar lo impotente que te sientes.\" — Dracula",
+    "owner": "Señor Oscuro",
+    "fileName": "killer-dominacin.png",
+    "role": "killer"
+  },
+  {
+    "id": "killer-doncella-de-hierro",
+    "name": "Doncella de Hierro",
+    "description": "Mientras se interactúa con un Casillero vacío, Doncella de Hierro aplica su efecto primario:\n• Aumenta tu velocidad de Búsqueda en un 30 / 40 / 50 % .\n\nCada vez que un Sobreviviente sale de un Casillero , Doncella de Hierro activa sus efectos secundarios:\n\n• Hace que griten y activa una Notificación de Ruido Fuerte en su ubicación actual.\n• Este efecto permanece durante #duration .\n\n• Hace que sufran del Efecto de Estado Vulnerabilidad durante #exposed .\n\n\"Este no es lugar para cobardes.\" — La Legión",
+    "owner": "Legión",
+    "fileName": "killer-doncella-de-hierro.png",
+    "role": "killer"
+  },
+  {
+    "id": "killer-duda-forzada",
+    "name": "Duda Forzada",
+    "description": "\"Ya conoces las debilidades emocionales de los orgánicos y cómo sacarles provecho.\"\n\n• Cuando un Sobreviviente entra en el Estado Agonizante de la forma que sea, todos los otros Sobrevivientes que estén dentro de 16 metros a su alrededor sufren de -20 % de Efecto de Estado Entorpecimiento durante 10 segundos .\n\nDuda Forzada tiene un tiempo de recuperación de 40 / 35 / 30 segundos .\n\n\"¡LA CAPACIDAD DE EMPATÍA DE LA MENTE ORGÁNICA VA MÁS ALLÁ DE CUALQUIER OBSTÁCULO!\" — HUX-A7-13",
+    "owner": "Singularidad",
+    "fileName": "killer-duda-forzada.png",
+    "role": "killer"
+  },
+  {
+    "id": "killer-eco-de-sangre",
+    "name": "Eco de Sangre",
+    "description": "La agonía de una persona recae en otras.\n• Al colgar a un Sobreviviente, todos los Sobrevivientes que estén heridos sufrirán de Efectos de Estado Agotado y Hemorragia durante 20 / 25 / 30 segundos .\n\n\"Ataca al enemigo con precisión y sus aliados lo sentirán.\" — Doctrina de Renjiro 6:3",
+    "owner": "Oni",
+    "fileName": "killer-eco-de-sangre.png",
+    "role": "killer"
+  },
+  {
+    "id": "killer-enfurecimiento",
+    "name": "Enfurecimiento",
+    "description": "La presión añadida ante la posibilidad de perder a tus presas te imbuye de ira y te proporciona una motivación insospechada.\nCada vez que se completa un Generador, Enfurecimiento aumenta en poder y gana 1 Distintivo , hasta un máximo de 5 Distintivos .\n\nCada distintivo aplica una bonificación acumulable de 4 / 5 / 6 % por Distintivo, hasta un máximo de 20 / 25 / 30 % , para las siguientes velocidades de acción:\n\n• Recoger y soltar Sobrevivientes.\n\n• Romper Paredes Rompibles y Tarimas , y dañar Generadores .\n\n• Saltar Ventanas .\n\n\"¿Por qué no te mueres de una maldita vez?\" — Freddy Krueger",
+    "owner": "Pesadilla",
+    "fileName": "killer-enfurecimiento.png",
+    "role": "killer"
+  },
+  {
+    "id": "killer-erupcin",
+    "name": "Erupción",
+    "description": "\"El parásito NE-α te otorga la inteligencia y los sentidos para poner una trampa.\"\nLuego de patear un Generador , se ilumina su Aura en amarillo .\nCada vez que un Sobreviviente quede en el Estado Agonizante de cualquier forma, Erupción activa los siguientes efectos en todos los Generadores iluminados:\n\n• Explotarán, recibiendo daño.\n• Instantáneamente lo revierte al #penalty de su Progreso total.\n\n• Empiezan a revertirse después de eso.\n\n• Los Sobrevivientes que lo estén reparando actualmente gritarán y revelarán su Aura durante 8 / 10 / 12 segundos .\n\nErupción tiene un tiempo de recuperación de #cooldown después de activar sus efectos, lo que también reinicia las Auras resaltadas.\n\"¿Puede usar armas?\" — Jill Valentine",
+    "owner": "Némesis",
+    "fileName": "killer-erupcin.png",
+    "role": "killer"
+  },
+  {
+    "id": "killer-esperanza-rota",
+    "name": "Esperanza Rota",
+    "description": "\"Para atrapar a tu presa, primero debes acabar con sus esperanzas.\"\n\n• Cada vez que sofoques un Tótems de Bendición , éste se destruirá.\n\n• Cuando destruyes un Tótem de Bendición de esta manera, podrás ver las Auras de todos los Sobrevivientes que estén en el alcance de este Tótem durante 6 / 7 / 8 segundos .\n\n\"Nothing is permanent here. Nothing except our endless perdition.\" — Unknown, Notebook",
+    "owner": "Todos",
+    "fileName": "killer-esperanza-rota.png",
+    "role": "killer"
+  },
+  {
+    "id": "killer-espas-de-las-sombras",
+    "name": "Espías de las Sombras",
+    "description": "Los cuervos que te rodean pueden comunicarse directamente contigo.\n• Cada vez que estás a 20 / 28 / 36 metros de un Cuervo que haya sido asustado por un Sobreviviente, recibes una Notificación de Ruido Fuerte .\n\nEspías de las Sombras tiene un tiepo de recuperación de 5 segundos entre las alertas.\n\n\"En las sombras nos atormentan, torturándonos la mente con cada grito.\"",
+    "owner": "Todos",
+    "fileName": "killer-espas-de-las-sombras.png",
+    "role": "killer"
+  },
+  {
+    "id": "killer-fuerza-brutal",
+    "name": "Fuerza Brutal",
+    "description": "Tu enorme fuerza te permite atravesar fácilmente las defensas de tus presas.\n• Aumenta la velocidad de Acción para romper Paredes Rompibles y Tarimas usadas, y dañar Generadores en un 10 / 15 / 20 % .\n\n\"Es algo más que músculos. Un poder oscuro motiva a la bestia.\"",
+    "owner": "Trampero",
+    "fileName": "killer-fuerza-brutal.png",
+    "role": "killer"
+  },
+  {
+    "id": "killer-furia-ciega",
+    "name": "Furia Ciega",
+    "description": "Mientras cargas con un Sobreviviente, se activa Furia Ciega :\n• Remueve el tiempo de recuperación de los Ataques Básicos fallidos.\n\n• Pausa el Progreso de Forcejeo de los Sobrevivientes cargados durante 2 / 3 / 4 segundos cada vez que aciertes un golpe a otro Sobreviviente.\n\n\"Ya no hay forma de salir de esto. Lo hacemos demasiado bien.\" — La Legión",
+    "owner": "Legión",
+    "fileName": "killer-furia-ciega.png",
+    "role": "killer"
+  },
+  {
+    "id": "killer-furia-espiritual",
+    "name": "Furia Espiritual",
+    "description": "\"Cada tarima que rompas aumentará la ira del Ente.\"\nDespués de romper manualmente un total de 4 / 3 / 2 veces Tarimas usadas de cualquier forma, se activa Furia Espiritual :\n\n• Instantáneamente rompe la siguiente Tarima usada por un Sobreviviente que te aturda.\n\nFuria Espiritual se desactiva después del uso y no afecta la duración del Aturdimiento de Tarima .\n\"La furia es su sangre.\"",
+    "owner": "Espíritu",
+    "fileName": "killer-furia-espiritual.png",
+    "role": "killer"
+  },
+  {
+    "id": "killer-gancho-torturador-brjula-irregular",
+    "name": "Gancho Torturador: Brújula Irregular",
+    "description": "Algunas veces, la brújula apunta hacia el norte. Otras, apunta hacia un lugar completamente diferente.\nAl inicio de la Partida, 4 Ganchos al azar son cambiados por Ganchos Torturadores :\n\n• Las Auras de los Ganchos Torturadores te son revelados en blanco .\n\nCuando se descuelga a un Sobreviviente de un Gancho , los siguientes efectos aplican:\n\n• El Gancho se convierte en un Gancho Torturador .\n\nDespués de colgar a un Sobreviviente en un Gancho Torturador , los siguientes efectos aplican:\n• El Aura del Generador con el mayor progreso se ilumina en amarillo durante 6 / 8 / 10 segundos .\n\n\"¡Echen anclas! Trazaré un nuevo curso.\" — Portia Maye",
+    "owner": "Señora de los Sabuesos",
+    "fileName": "killer-gancho-torturador-brjula-irregular.png",
+    "role": "killer"
+  },
+  {
+    "id": "killer-gancho-torturador-dolor-resonante",
+    "name": "Gancho Torturador: Dolor Resonante",
+    "description": "El dolor abrumador recpercute en el caos.\nAl inicio de la Partida, 4 Ganchos al azar son cambiados por Ganchos Torturadores :\n\n• Las Auras de los Ganchos Torturadores te son revelados en blanco .\n\nEmpieza la Partida con 4 Distintivos en Gancho Torturador: Dolor Resonante .\n\nCuando cuelgas a un Sobreviviente en un Gancho Torturador por primera vez, consumes 1 Distintivo y los siguientes efectos aplican:\n\n• El Generador con mayor progreso explota e inmediatamente revierte el 10 / 15 / 20 % de su progreso.\n\n• La Regresión Normal del Generador se aplica después.\n\n• Todos los Sobrevivientes que estén reparando ese Generador gritarán, pero no revelarán su ubicación.\n\nCuando te quedes sin Distintivos, Gancho Torturador: Dolor Resonante se desactiva por el resto de la Partida.\n\"El dolor se derrama más allá de la carne/la oscuridad mancha el horizonte.\" — La Chica en la Sombra, por Carmina Mora",
+    "owner": "Artista",
+    "fileName": "killer-gancho-torturador-dolor-resonante.png",
+    "role": "killer"
+  },
+  {
+    "id": "killer-gancho-torturador-heridas-supurantes",
+    "name": "Gancho Torturador: Heridas Supurantes",
+    "description": "Eres el portador del dolor exquisito.\nAl inicio de la Partida, 4 Ganchos al azar son cambiados por Ganchos Torturadores :\n\n• Las Auras de los Ganchos Torturadores te son revelados en blanco .\n\nCada vez que un Sobreviviente es desenganchado de un Gancho Torturador , se aplican los siguientes efectos:\n\n• El Sobreviviente sufre de Efectos de Estado Hemorragia y Destrozado durante 90 segundos .\n\n• La primera vez que se cura a un o una Sobreviviente, sufrirá una penalización de velocidad del 10 / 13 / 16 % para Reparar y Curar hasta que vuelve a recibir heridas.",
+    "owner": "Todos",
+    "fileName": "killer-gancho-torturador-heridas-supurantes.png",
+    "role": "killer"
+  },
+  {
+    "id": "killer-gancho-torturador-obsequio-de-dolor",
+    "name": "Gancho Torturador: Obsequio de Dolor",
+    "description": "Idéntico a Gancho Torturador: Heridas Supurantes\n\"Despedazaremos tu alma.\" — Pinhead",
+    "owner": "Cenobita",
+    "fileName": "killer-gancho-torturador-obsequio-de-dolor.png",
+    "role": "killer"
+  },
+  {
+    "id": "killer-gancho-torturador-santuario-monstruoso",
+    "name": "Gancho Torturador: Santuario Monstruoso",
+    "description": "El fervor con el que cuidas los Ganchos del Sótano despertó el interés del Ente.\nAl comienzo de la Partida, 4 Ganchos al azar , así como los 4 Ganchos del Sótano , se convierten en Ganchos Torturadores :\n\n• Las Auras de los Ganchos Torturadores se revelan en color blanco .\n\nCada vez que un Sobreviviente es colgado en un Gancho Torturador , los siguientes efectos aplican cuando estás a más de 24 metros del Sobreviviente colgado:\n• Acelera el Progreso de Sacrificio en un 10 / 15 / 20 % .\n\n\"Entonces sabrás que no hay escapatoria. Cuando cuelgues en las profundidades, te enfrentarás al oscuro.\"",
+    "owner": "Todos",
+    "fileName": "killer-gancho-torturador-santuario-monstruoso.png",
+    "role": "killer"
+  },
+  {
+    "id": "killer-gancho-torturador-torrente-de-ira",
+    "name": "Gancho Torturador: Torrente de Ira",
+    "description": "Formas una conexión psíquica con El Ente y alteras las reglas de la Partida.\nAl inicio de la Partida, 4 Ganchos al azar son cambiados por Ganchos Torturadores :\n\n• Las Auras de los Ganchos Torturadores te son revelados en blanco .\n\nCada vez que un Sobreviviente es desenganchado de un Gancho Torturador , se aplican los siguientes efectos:\n\n• Las Auras de todos los otros Sobrevivientes se revelarán durante 5 / 6 / 7 segundos .",
+    "owner": "Onryō",
+    "fileName": "killer-gancho-torturador-torrente-de-ira.png",
+    "role": "killer"
+  },
+  {
+    "id": "killer-gancho-torturador-truco-del-verdugo",
+    "name": "Gancho Torturador: Truco del Verdugo",
+    "description": "Desbloquea la capacidad de percibir Auras y tus ingeniosas modificaciones para los Ganchos te alertan si los manipulan.\nAl inicio de la Partida, 4 Ganchos al azar son cambiados por Ganchos Torturadores :\n\n• Las Auras de los Ganchos Torturadores te son revelados en blanco .\n\n• Recibe una Notificación de Ruido Fuerte , cada vez que un Sobreviviente empieza a Sabotear un Gancho .\n\n• Mientras cargas a un Sobreviviente, las Auras de todos los Sobrevivientes en un radio de 12 / 14 / 16 metros de un Gancho Torturador se te revelan.\n\n\"Nada de excusas ni de equivocaciones... ni de lágrimas.\" — Amanda Young",
+    "owner": "Cerda",
+    "fileName": "killer-gancho-torturador-truco-del-verdugo.png",
+    "role": "killer"
+  },
+  {
+    "id": "killer-garra-de-dragn",
+    "name": "Garra de Dragón",
+    "description": "Después de Dañar un Generador se activa Garra de Dragón durante los siguientes 30 segundos :\n• El primer Sobreviviente que interactúe con el Generador dañado gritará, revelando su ubicación durante 4 segundos , y sufre de Efecto de Estado Vulnerabilidad durante 60 segundos .\n\nGarra de Dragón tiene un tiempo de recuperación de 60 / 45 / 30 segundos .\n\n\"Cuánto potencial en este compuesto... hasta el más mínimo rastro provocaría efectos antinaturales.\" — Diario de Talbot Grimes",
+    "owner": "Deterioro",
+    "fileName": "killer-garra-de-dragn.png",
+    "role": "killer"
+  },
+  {
+    "id": "killer-golpe-de-gracia",
+    "name": "Golpe de Gracia",
+    "description": "En la recta final, te lanzas a dar el golpe final.\nCada vez que se completa un Generador , Golpe de Gracia aumenta en poder. Obtén +2 Distintivos , hasta un máximo de 10 Distintivos por Partida:\n\n• Aumenta la distancia de tu próximo Ataque de Embestida en 70 / 75 / 80 % , lo que consume -1 Distintivo .\n\nGolpe de Gracia solo puede mantener un máximo de 5 Distintivos a la vez.",
+    "owner": "Gemelos",
+    "fileName": "killer-golpe-de-gracia.png",
+    "role": "killer"
+  },
+  {
+    "id": "killer-guardin-de-sangre",
+    "name": "Guardián de Sangre",
+    "description": "En cuanto se abre una Puerta de Salida , se activa Guardián de Sangre .\n• Se te revelan las Auras de los Sobrevivientes que se encuentren en las zonas de salida.\n\nUna vez por Partida, si cuelgas a un Sobreviviente mientras Guardián de Sangre está activa, invocas al Ente para que bloquee ambas salidas para todos los Sobrevivientes durante 40 / 50 / 60 segundos .\n\n\"Este es mi mundo. Y no permito que te vayas.\" — Freddy Krueger",
+    "owner": "Pesadilla",
+    "fileName": "killer-guardin-de-sangre.png",
+    "role": "killer"
+  },
+  {
+    "id": "killer-hijo-de-la-luz",
+    "name": "Hijo de la Luz",
+    "description": "A diferencia de otras criaturas de la Niebla, te has adaptado a la luz.\n• Los Sobrevivientes que intenten cegarte revelarán su Auras durante 6 / 8 / 10 segundos .\n\n• Eres inmune a la ceguera causada por las Linternas , Petardos , Granadas Aturdidoras , y Minas Cegadoras .\n\n\"Estos monstruos... ¡se adaptan! Reaparecen con nuevas y extrañas habilidades.\" — Vigo, Diario de Vigo",
+    "owner": "Pueblerino",
+    "fileName": "killer-hijo-de-la-luz.png",
+    "role": "killer"
+  },
+  {
+    "id": "killer-hijo-de-las-sombras",
+    "name": "Hijo de las Sombras",
+    "description": "Posees una vista agua en medio de la oscuridad nocturna.\n• Cuando te cieguen de cualquier manera, obtienes un 6 / 8 / 10 % de Efecto de Estado Celeridad durante 10 segundos .\n\n\"Sus ojos, brillando en la oscuridad más profunda, atraviesan la noche y te perforan el alma.\"",
+    "owner": "Espectro",
+    "fileName": "killer-hijo-de-las-sombras.png",
+    "role": "killer"
+  },
+  {
+    "id": "killer-histeria",
+    "name": "Histeria",
+    "description": "\"Sabes cómo maltratar a alguien del equipo para aterrar a los demás.\"\nCuando pones a un Sobreviviente en el Estado Herido , todos los Sobrevivientes heridos reciben el Efecto de Estado Inconsciencia durante 30 / 35 / 40 segundos .\n\nHisteria tiene un tiempo de recuperación de 30 segundos .\n\n\"Lo siento, me puse un poco nervioso. No sabía qué podría pasar.\" — Robert Kendo",
+    "owner": "Némesis",
+    "fileName": "killer-histeria.png",
+    "role": "killer"
+  },
+  {
+    "id": "killer-hora-de-la-cacera",
+    "name": "Hora de la Cacería",
+    "description": "Primero eliges a tu presa. Luego, la destrozas.\n• Cada vez que golpeas al Sobreviviente con mayor tiempo total de persecución con un Ataque Básico , se convierte en la Obsesión .\n\nMientras persigues a tu Obsesión , Hora de la Cacería activa su efecto secundario:\n\n• Obtienes un 5 % de Efecto de Estado Celeridad durante 8 / 9 / 10 segundos después de dañar un Generador o romper una Pared Rompible o Tarima\n\nSolo puedes estar obsesionado con un Sobreviviente a la vez.\n\n\"Este podría ser un verdadero desafío\" — Sonhadores Sombrios, Número #3",
+    "owner": "Comerciante de Calaveras",
+    "fileName": "killer-hora-de-la-cacera.png",
+    "role": "killer"
+  },
+  {
+    "id": "killer-implacable",
+    "name": "Implacable",
+    "description": "Te recuperas más rápido de los ataques fallidos con tu arma principal.\n• Reduce el tiempo de recuperación tras Ataques Básicos fallidos en un 20 / 25 / 30 % .",
+    "owner": "Todos",
+    "fileName": "killer-implacable.png",
+    "role": "killer"
+  },
+  {
+    "id": "killer-imprevisto",
+    "name": "Imprevisto",
+    "description": "El terror adquiere múltiples formas y susurra mentiras devastadoras en los oídos de las víctimas.\nLuego de Dañar un Generador se activa Imprevisto durante 22 / 26 / 30 segundos :\n\n• Transfieres tu Radio de Terror al Generador dañado y su radio se ajusta a 32 metros .\n\n• Obtienes el Efecto de Estado Indetectable .\n\n\"Mamá, si encuentras esto, lo siento...\" — Última Entrada del Diario, 12/07/1991",
+    "owner": "Desconocido",
+    "fileName": "killer-imprevisto.png",
+    "role": "killer"
+  },
+  {
+    "id": "killer-inacabado",
+    "name": "Inacabado",
+    "description": "No se puede recuperar la descripción del Ventaja o no se puede mostrar. Puede ser añadido en el Datatable/Loadout . De lo contrario, Favor contactar a Jouki",
+    "owner": "Desconocido",
+    "fileName": "killer-inacabado.png",
+    "role": "killer"
+  },
+  {
+    "id": "killer-influencia",
+    "name": "Influencia",
+    "description": "\"Patea a la competencia cuando esté en el suelo. No permitas que recuperen el terreno perdido.\"\nCuando un Sobreviviente realiza la acción de Descolgar , sufren del siguiente efecto durante 60 segundos :\n\n• Reduce sus velocidades de Curación en un 20 / 25 / 30 % .\n\n\"Bien. Ya podemos salir a matar.\" — Adriana Imai",
+    "owner": "Comerciante de Calaveras",
+    "fileName": "killer-influencia.png",
+    "role": "killer"
+  },
+  {
+    "id": "killer-insidia",
+    "name": "Insidia",
+    "description": "Te permite usar sigilo.\n• Recibes el Efecto Efecto de Estado Indetectable si te quedas inmóvil durante 3 / 2 / 1 segundo(s) .\n• Este efecto se mantiene hasta que te muevas o realices una acción.",
+    "owner": "Todos",
+    "fileName": "killer-insidia.png",
+    "role": "killer"
+  },
+  {
+    "id": "killer-instinto-aliengena",
+    "name": "Instinto Alienígena",
+    "description": "Eres tan sigiloso que, a veces, parece que sales de la nada.\nCuando cuelgas a un Sobreviviente, se activa Instinto Alienígena :\n\n• Ves el Aura del Sobreviviente herido que está más lejos durante 5 segundos .\n\n• Ese Sobreviviente sufre del Efecto de Estado Inconsciencia for 40 / 50 / 60 segundos .\n\n\"La luz amarilla es solo para mí.\" — Dallas",
+    "owner": "Xenomorfo",
+    "fileName": "killer-instinto-aliengena.png",
+    "role": "killer"
+  },
+  {
+    "id": "killer-instinto-territorial",
+    "name": "Instinto Territorial",
+    "description": "Desbloquea la capacidad de percibir Auras.\nCada vez que un Sobreviviente entra al Sótano cuando estás a más de 24 metros de su entrada, se activa Instinto Territorial :\n\n• El Aura de ese Sobreviviente se te revela durante 4 / 5 / 6 segundos .\n\nInstinto Territorial tiene un tiempo de recuperación de 45 segundos .\n\n\"No estamos a salvo en ninguna parte...\"",
+    "owner": "Cazadora",
+    "fileName": "killer-instinto-territorial.png",
+    "role": "killer"
+  },
+  {
+    "id": "killer-interruptor-del-hombre-muerto",
+    "name": "Interruptor del Hombre Muerto",
+    "description": "Después de colgar a un Sobreviviente, activas Interruptor del Hombre Muerto :\n• Bloquea el primer Generador que cualquier Sobreviviente haya dejado de reparar durante 25 / 30 / 35 segundos .\n• El Generador Bloqueado se ilumina en blanco .\n\nInterruptor del Hombre Muerto no puede reactivarse mientras el Generador está bloqueado.\n\n\"He visto la expresión en la cara de un hombre que se da cuenta que está por morir.\" — Caleb Quinn",
+    "owner": "Arponero de la Muerte",
+    "fileName": "killer-interruptor-del-hombre-muerto.png",
+    "role": "killer"
+  },
+  {
+    "id": "killer-intervencin-corrupta",
+    "name": "Intervención Corrupta",
+    "description": "Tus plegarias invocan a una fuerza oscura que reduce las posibilidades de los Sobrevivientes.\n• Al inicio de la Partida, los 3 Generadores que estén ubicados más lejos de ti son bloqueados por El Ente durante 80 / 100 / 120 segundos .\n\nLos Sobrevivientes no pueden reparar esos Generadores mientras dure el efecto. Los Generadores afectados aparecerán resaltados con un Aura blanca\n\nIntervención Corrupta se desactiva prematuramente cuando el primer Sobreviviente entra en el Estado Agonizante .\n\n\"Se sabrá en todas partes que los dioses maldicen a los infieles.\" — (La Tablilla de Adiris, 3.7)",
+    "owner": "Plaga",
+    "fileName": "killer-intervencin-corrupta.png",
+    "role": "killer"
+  },
+  {
+    "id": "killer-jugar-con-la-comida",
+    "name": "Jugar con la Comida",
+    "description": "Idéntico a Mira Cómo Corren .\n\"¿Los has engañado, verdad, Michael? Pero a mí no.\" — Dr. Sam Loomis",
+    "owner": "Forma",
+    "fileName": "killer-jugar-con-la-comida.png",
+    "role": "killer"
+  },
+  {
+    "id": "killer-lo-mejor-para-el-final",
+    "name": "Lo Mejor para el Final",
+    "description": "Idéntico a Que Sigan Esperando .\n\"La muerte ha llegado a su pueblo, Sheriff.\" — Dr. Sam Loomis",
+    "owner": "Forma",
+    "fileName": "killer-lo-mejor-para-el-final.png",
+    "role": "killer"
+  },
+  {
+    "id": "killer-luz-que-agoniza",
+    "name": "Luz que Agoniza",
+    "description": "Idéntico a Sacrifica a los Débiles .\n\"Él no es un hombre...\" — Dr. Sam Loomis",
+    "owner": "Forma",
+    "fileName": "killer-luz-que-agoniza.png",
+    "role": "killer"
+  },
+  {
+    "id": "killer-lmites-genticos",
+    "name": "Límites Genéticos",
+    "description": "\"A tu alrededor, los límites de la vida humana se vuelven rápidamente aparentes.\"\n\n• Cada vez que un Sobreviviente pierde un Estado de Salud, sufren de Efecto de Estado Agotado durante 6 / 7 / 8 segundos .\n\n\"¡EL CUERPO ORGÁNICO ES TAN LIMITADO!\" — HUX-A7-13",
+    "owner": "Singularidad",
+    "fileName": "killer-lmites-genticos.png",
+    "role": "killer"
+  },
+  {
+    "id": "killer-maleficio-arrepentimiento",
+    "name": "Maleficio: Arrepentimiento",
+    "description": "\"Revelas el verdadero poder de los Tótems, oculto entre sus restos.\"\n\n• Ves el Auras de los Tótems destruidos.\n\nPuedes realizar un ritual en un Tótem purificado para resucitarlo como un Tótem Reavivado .\n\nPor cada Tótem Reavivado que esté activo a la vez, Maleficio: Arrepentimiento gana un efecto adicional:\n• 1 Tótem : Reduce la velocidad de Reparación de los Sobrevivientes en un 1 / 2 / 3 % .\n\n• 2 Tótems : Reduce la velocidad de Curación de los Sobrevivientes en un 1 / 2 / 3 % .\n\n• 3 Tótems : Reduce la velocidad de Recuperación de los Sobrevivientes luego de ser derribados en un 1 / 2 / 3 % .\n\n• 4 Tótems : Reduce all Survivors' Gate-Opening speed by 1 / 2 / 3 % .\n\n• 5 Tótems : todos los Tótems son bloqueados por El Ente .\n\nCuando se purifica un Tótem Reavivado , sus restos son consumidos por El Ente y no puede volver a reavivarse.\nLos Efectos de Maleficio persisten hasta que el Tótem de Maleficio es bendecido o purificado por un Sobreviviente, deshabilitándolo por el resto de la Partida.\n\n\"Aunque un arrepentimiento es una obra de arte intrínsecamente oculta, hay algo que decir sobre el deseo de descubrir lo que está más allá.\" — Una Guía del Arte y el Proceso (1961)",
+    "owner": "Artista",
+    "fileName": "killer-maleficio-arrepentimiento.png",
+    "role": "killer"
+  },
+  {
+    "id": "killer-maleficio-arrullo-de-cazadora",
+    "name": "Maleficio: Arrullo de Cazadora",
+    "description": "\"Un Maleficio que basa su poder en la pérdida de la esperanza.\nCazas entonando una irresistible y funesta melodía que interfiere con la capacidad de atención de tus presas.\"\nLos Sobrevivientes que estén realizando acciones de Curación o Reparación sufren del siguiente efecto:\n\n• Aumenta la penalización de Progreso para las Pruebas de Habilidad Fallidas en un 2 / 4 / 6 % .\n\nCada vez que un Sobreviviente es colgado, Maleficio: Arrullo de Cazadora aumenta de poder y gana #tokenGain , hasta un máximo de #tokenMax .\nLos Sobrevivientes realizando acciones de Curación o Reparación sufren del siguiente efecto adicional:\n• Reduce tel tiempo entre el aviso acústico que anuncia una inminente Prueba de Habilidad y su aparición, dependiendo del número de Distintivos acumulados:\n• 1 Distintivo : #penalties(1)\n\n• 2 Distintivos : #penalties(2)\n\n• 3 Distintivos : #penalties(3)\n\n• 4 Distintivos : #penalties(4)\n\n• 5 Distintivos : Suprime el aviso acústico por completo.\n\nLos Efectos de Maleficio persisten hasta que el Tótem de Maleficio es bendecido o purificado por un Sobreviviente, deshabilitándolo por el resto de la Partida.\n\"¡Esa canción me vuelve loco!\"",
+    "owner": "Cazadora",
+    "fileName": "killer-maleficio-arrullo-de-cazadora.png",
+    "role": "killer"
+  },
+  {
+    "id": "killer-maleficio-control-de-pblico",
+    "name": "Maleficio: Control de Público",
+    "description": "\"Un Maleficio que te ayuda a controlar a quienes son inferiores a ti.\"\nMaleficio: Control de Público ilumina un Tótem de Maleficio al inicio de la Partida, maldiciendo a los Sobrevivientes con sus Efectos de Maleficio .\nCada vez que un Sobreviviente realiza una acción de Salto Apresurado en una Ventana , Maleficio: Control de Público activa su efecto:\n\n• Bloquea esa Ventana para todos los Sobrevivientes.\n\nMaleficio: Control de Público tiene un límite de 4 / 5 / 6 Ventanas que puede afectar a la vez.\nLos Efectos de Maleficio persisten hasta que el Tótem de Maleficio es bendecido o purificado por un Sobreviviente, deshabilitándolo por el resto de la Partida.\n\"No tienes el control. La gente como tú nunca lo ha tenido.\" — Ji-Woon Hak",
+    "owner": "Embaucador",
+    "fileName": "killer-maleficio-control-de-pblico.png",
+    "role": "killer"
+  },
+  {
+    "id": "killer-maleficio-destino-miserable",
+    "name": "Maleficio: Destino Miserable",
+    "description": "Ves a tu víctima desde lejos y decides prolongar su sufrimiento.\nDespués de completar un Generador , se activa Maleficio: Destino Miserable e ilumina un Tótem Apagado aleatorio, maldiciendo a la Obsesión :\n\n• Reduce su velocidad de reparación en un 27 / 30 / 33 % .\n\n• Revela el Aura del Tótem de Maleficio al Sobreviviente si está en un radio de 12 metros .\n\n\"¡Esfuérzate, mortal! ¡Aunque ese esfuerzo no te servirá de nada!\" — Drácula",
+    "owner": "Señor Oscuro",
+    "fileName": "killer-maleficio-destino-miserable.png",
+    "role": "killer"
+  },
+  {
+    "id": "killer-maleficio-devoradora-de-esperanza",
+    "name": "Maleficio: Devoradora de Esperanza",
+    "description": "\"Un Maleficio que basa su poder en la esperanza.\nLa falsa esperanza de los Sobrevivientes despierta tu apetito.\"\nMaleficio: Devoradora de Esperanza ilumina un Tótem de Maleficio al inicio de la Partida, maldiciendo a los Sobrevivientes con sus Efectos de Maleficio .\nCada vez que alguien rescata a un Sobreviviente del Gancho mientras estás a más de 24 metres del Gancho, Maleficio: Devoradora de Esperanza otorga +1 Distintivo , hasta un máximo de 5 Distintivos :\n\n• 2 Distintivos : Otorga un 3 / 4 / 5 % de Efecto de Estado Celeridad 10 segundos después de haber colgado a un Sobreviviente durante 10 segundos\n\n• 3 Distintivos : todos los Sobrevivientes sufren decauses all Survivors to suffer from a permanent Efecto de Estado Vulnerabilidad .\n\n• 5 Distintivos : otorga la habilidad de matar a todos los Sobrevivientes con tus propias manos.\n\nLos Efectos de Maleficio persisten hasta que el Tótem de Maleficio es bendecido o purificado por un Sobreviviente, deshabilitándolo por el resto de la Partida.\n\"Si no haces nada, tus manos estarán manchadas de sangre. Si los salvas, aumentarás su apetito.\"",
+    "owner": "Bruja",
+    "fileName": "killer-maleficio-devoradora-de-esperanza.png",
+    "role": "killer"
+  },
+  {
+    "id": "killer-maleficio-el-bufn-de-la-fortuna",
+    "name": "Maleficio: El Bufón de la Fortuna",
+    "description": "\"Un Maleficio que juega con el sufrimiento de la víctima.\"\nSi todavía queda un Tótem Apagado en el entorno, Maleficio: El Bufón de la Fortuna ilumina un Tótem de Maleficio cada vez que cuelgas a un Sobreviviente por primera vez , maldiciéndolo con sus Efectos de Maleficio .\n\n• Inflige el Efecto de Estado Inconsciencia .\n\n• Bloquea el Tótem de Maleficio para todos los otros Sobrevivientes durante 90 segundos .\n• Los Tótems de Maleficio Bloqueados no pueden ser purificados o bendecidos por los Sobrevivientes.\n\n• Esto no afecta al Sobreviviente Maldito .\n\nEl Aura del Tótem de Maleficio se revela al Sobreviviente Maldito durante 24 / 20 / 16 metros .\nLos Efectos de Maleficio persisten hasta que el Tótem de Maleficio es bendecido o purificado por un Sobreviviente, deshabilitándolo por el resto de la Partida.",
+    "owner": "Todos",
+    "fileName": "killer-maleficio-el-bufn-de-la-fortuna.png",
+    "role": "killer"
+  },
+  {
+    "id": "killer-maleficio-el-tercer-sello",
+    "name": "Maleficio: El Tercer Sello",
+    "description": "\"Un Maleficio que repercute de manera negativa en la capacidad de percepción de Auras.\"\nLos últimos 2 / 3 / 4 Sobrevivientes que golpeas con un Ataque Básico o Especial sufren de Efecto de Estado Ceguera permanentemente mientras el Tótems de Maleficio siga en pie.\nLos Efectos de Maleficio persisten hasta que el Tótem de Maleficio es bendecido o purificado por un Sobreviviente, deshabilitándolo por el resto de la Partida.\n\n\"Te tocó la piel, ¡llevas la marca de la bruja!\"",
+    "owner": "Bruja",
+    "fileName": "killer-maleficio-el-tercer-sello.png",
+    "role": "killer"
+  },
+  {
+    "id": "killer-maleficio-enfrentar-a-la-oscuridad",
+    "name": "Maleficio: Enfrentar a la Oscuridad",
+    "description": "\"Usas a una de tus víctimas como ejemplo y tu poder causa terror entre sus aliados.\"\nHerir a un Sobreviviente del modo que sea enciende un Tótem Apagado y activa el Maleficio: Enfrentar a la Oscuridad , maldiciendo a ese Sobreviviente:\n\n• Todos los otros Sobrevivientes gritarán cada 35 / 30 / 25 segundos , si están fuera de tu Radio de Terror , y revelarán sus ubicaciones y sus Auras durante 2 segundos cada vez.\n\nMaleficio: Enfrentar a la Oscuridad se desactiva una vez que el Sobreviviente Maldito entra al Estado Agonizante o si se cura por completo, lo que apaga el Tótem .\n\nMaleficio: Enfrentar a la Oscuridad se desactiva hasta el final de la Partida, si un Sobreviviente purifica su Tótem de Maleficio .\n\nLos Efectos de Maleficio persisten hasta que el Tótem de Maleficio es bendecido o purificado por un Sobreviviente, deshabilitándolo por el resto de la Partida.\n\n\"Haré de esta una oportunidad ejemplar. Esas sanguijuelas jamás conocerán la paz.\" — Tarhos Kovács",
+    "owner": "Caballero",
+    "fileName": "killer-maleficio-enfrentar-a-la-oscuridad.png",
+    "role": "killer"
+  },
+  {
+    "id": "killer-maleficio-favor-de-sangre",
+    "name": "Maleficio: Favor de Sangre",
+    "description": "\"Un Maleficio con el que se obtiene el favor del Ente al derramar sangre.\"\nMaleficio: Favor de Sangre ilumina un Tótem de Maleficio al inicio de la Partida, maldiciendo a los Sobrevivientes con sus Efectos de Maleficio .\nCada vez que un Sobreviviente pierde un Estado de Salud de cualquier forma, Maleficio: Favor de Sangre activa su efecto durante 15 segundos :\n\n• Bloquea todas las Tarimas verticales dentro de un radio de 24 / 28 / 32 metros de ese Sobreviviente.\n• Las Tarimas Bloqueadas no pueden ser derribadas por cualquier Sobreviviente.\n\nLos Efectos de Maleficio persisten hasta que el Tótem de Maleficio es bendecido o purificado por un Sobreviviente, deshabilitándolo por el resto de la Partida.\n\"No sería descabellado sugerir que las pruebas son producto de cierta respuesta biológica.\" — Diario de Talbot Grimes",
+    "owner": "Deterioro",
+    "fileName": "killer-maleficio-favor-de-sangre.png",
+    "role": "killer"
+  },
+  {
+    "id": "killer-maleficio-inmortal",
+    "name": "Maleficio: Inmortal",
+    "description": "\"Un Maleficio que mantiene su vil poder que fluye a lo largo de la Partida.\"\nCada vez que un Sobreviviente está a 2 / 3 / 4 metros de un Tótem Apagado , Maleficio: Inmortal activa su efecto primario:\n\n• Se te revela su Aura mientras se mantengan dentro de ese rango.\n\nCada vez que se purifica un Tótem de Maleficio , Maleficio: Inmortal activa su efecto secundario:\n• Transfiere el Maleficio purificado al Tótem de Maleficio asociado con Maleficio: Inmortal en su lugar, reemplazándolo.\n\nLos Efectos de Maleficio persisten hasta que el Tótem de Maleficio es bendecido o purificado por un Sobreviviente, deshabilitándolo por el resto de la Partida.",
+    "owner": "Deterioro",
+    "fileName": "killer-maleficio-inmortal.png",
+    "role": "killer"
+  },
+  {
+    "id": "killer-maleficio-la-emocin-de-la-caza",
+    "name": "Maleficio: La Emoción de la Caza",
+    "description": "\"Un Maleficio que basa su poder en la esperanza.\nLa falsa esperanza de los Sobrevivientes te estimula y fortalece tus Tótems.\"\nComienza la Partida con 5 Distintivos , uno por cada Tótem :\n\n• Reduce la velocidad de Bendición y Purificación en un 8 / 10 / 12 % por cada Distintivo, hasta un máximo de 40 / 50 / 60 % .\n\nMaleficio: La Emoción de la Caza pierde -1 Distintivo cada vez que se purifica un Tótem\nLos Efectos de Maleficio persisten hasta que el Tótem de Maleficio es bendecido o purificado por un Sobreviviente, deshabilitándolo por el resto de la Partida.",
+    "owner": "Todos",
+    "fileName": "killer-maleficio-la-emocin-de-la-caza.png",
+    "role": "killer"
+  },
+  {
+    "id": "killer-maleficio-mente-colmena",
+    "name": "Maleficio: Mente Colmena",
+    "description": "\"Sabías que tenías una conexión con algo oscuro y misterioso, y aún así decidiste aceptarla.\"\nLa primera vez que cuelgas a un Sobreviviente , un Tótem Apagado se convierte en un Tótem de Maleficio , siempre que quede al menos un Tótem Apagado en las Arenas de la Partida.\n\nLos Generadores se iluminan; la intensidad de su Aura revela su progreso de reparación.\n\nTan pronto como se hayan completado 4 generadores en la Partida:\n\n• Todos los Generadores restantes explotan, pierden un 6 / 8 / 10 % de progreso, y comienzan a revertirse .\n\n• El Tótem de Maleficio se apaga, y esta ventaja se deshabilita por el resto de la Partida.\n\nLos Efectos de Maleficio persisten hasta que el Tótem de Maleficio es bendecido o purificado por un Sobreviviente, deshabilitándolo por el resto de la Partida.\n\"Tú nos dejaste entrar. Y ahora tendrás que dejarnos permanecer aquí.\" — Henry Creel",
+    "owner": "Primero",
+    "fileName": "killer-maleficio-mente-colmena.png",
+    "role": "killer"
+  },
+  {
+    "id": "killer-maleficio-nadie-escapa-de-la-muerte",
+    "name": "Maleficio: Nadie Escapa de la Muerte",
+    "description": "\"Un Maleficio que basa su poder en la esperanza.\nTe anima la fuerza de tu Tótem de Maleficio cuando los Sobrevivientes están a punto de escapar.\"\nCuando las Puertas de Salida se abren, se aplica este Maleficio a cualquier Tótem Apagado que quede en el mapa. Cuando este Maleficio se activa:\n\n• Otorga un 2 / 3 / 4 % de Efecto de Estado Celeridad .\n\n• Todos los Sobrevivientes sufren de Efecto de Estado Vulnerabilidad .\n\nMaleficio: Nadie Escapa de la Muerte permanece inactivo si no hay Tótems Apagados disponibles.\n\nUna vez que el Efecto de Estado se revela a los Sobrevivientes, Maleficio: Nadie Escapa de la Muerte revela el Aura de su Tótem de Maleficio a todos los Sobrevivientes en un radio de 4 metros y gradualmente aumenta este radio hasta los 24 metros durante los próximos 30 segundos .\n\nLos Efectos de Maleficio persisten hasta que el Tótem de Maleficio es bendecido o purificado por un Sobreviviente, deshabilitándolo por el resto de la Partida.\n\n\"Y la bestia se volvió más veloz y poderosa, como si el sombrío látigo del Ente estuviera azotando su lomo.\"",
+    "owner": "Todos",
+    "fileName": "killer-maleficio-nadie-escapa-de-la-muerte.png",
+    "role": "killer"
+  },
+  {
+    "id": "killer-maleficio-obertura-de-la-perdicin",
+    "name": "Maleficio: Obertura de la Perdición",
+    "description": "\"Un maleficio que se vale de la paranoia de otros.\"\nHace aparecer un Tótem de Maleficio que maldice el Generador más lejano de su ubicación:\n\n• El Aura del Generador Maldito es resaltado en amarillo .\n\nCuando un Sobreviviente repara el Generador Maldito durante al menos 5 seconds , Maleficio: Obertura de la Perdición activa los siguientes efectos durante 20 / 25 / 30 segundos :\n• Transfiere tu Radio de Terror al Generador Maldito .\n• Este Radio de Terror se establece a 32 metres .\n\n• Otorga el Efecto de Estado Indetectable .\n\nUna vez que se repara el Generador Maldito , el maleficio pasa al siguiente Generador más lejano.\nLos Efectos de Maleficio persisten hasta que el Tótem de Maleficio es bendecido o purificado por un Sobreviviente, deshabilitándolo por el resto de la Partida.\n\"Desde las ruinas de la salvación, ten cuidado/la muerte viene de todos lados.\" — \"Colina de Niebla\" de Giovanni Serrata",
+    "owner": "Krasue",
+    "fileName": "killer-maleficio-obertura-de-la-perdicin.png",
+    "role": "killer"
+  },
+  {
+    "id": "killer-maleficio-pura-miseria",
+    "name": "Maleficio: Pura Miseria",
+    "description": "\"Te llevaron a las profundidades más rotundas del dolor y ahora estás listo para infligir dolor a otros.\"\nDespués de herir a los Sobrevivientes 8 veces con Ataques Básicos , un Tótem Apagado aleatorio se convierte en un Tótem de Maleficio y los maldice a todos:\n\n• Los Sobrevivientes heridos con un Ataque Básico sufren de un -5 % Efecto de Estado Entorpecimiento durante 10 / 12.5 / 15 segundos .\n\nLos Efectos de Maleficio persisten hasta que el Tótem de Maleficio es bendecido o purificado por un Sobreviviente, deshabilitándolo por el resto de la Partida.\n\"Todas las cargas de este mundo son culpa de las deficiencias de la persona involucrada.\" — Ken Kaneki",
+    "owner": "Ghoul",
+    "fileName": "killer-maleficio-pura-miseria.png",
+    "role": "killer"
+  },
+  {
+    "id": "killer-maleficio-retribucin",
+    "name": "Maleficio: Retribución",
+    "description": "\"Un Maleficio que se activa después su destrucción.\nQuienes se crucen con el Maleficio serán castigados.\"\n\n• Los Sobrevivientes que estén purificando o bendiciendo cualquier Tótem sufrirá el Efecto de Estado Inconsciencia durante 35 / 40 / 45 segundos .\n\n• Después de purificar o bendecir un Tótem de Maleficio , las Auras de todos los Sobrevivientes se revelarán durante 15 segundos .\n\nLos Efectos de Maleficio persisten hasta que el Tótem de Maleficio es bendecido o purificado por un Sobreviviente, deshabilitándolo por el resto de la Partida.\n\n\"Maldito tonto, apretaste el gatillo contra ti mismo.\" — Caleb Quinn",
+    "owner": "Arponero de la Muerte",
+    "fileName": "killer-maleficio-retribucin.png",
+    "role": "killer"
+  },
+  {
+    "id": "killer-maleficio-ruina",
+    "name": "Maleficio: Ruina",
+    "description": "\"Un Maleficio que afecta todos los progresos de reparación de Generadores realizados por los Sobrevivientes.\"\nTodos los Generadores que no estén siendo actualmente reparados experimentan el siguiente efecto:\n\n• Comienzan a retroceder automáticamente a un 100 / 125 / 150 % de la tasa de Regresión por defecto.\n\nLos Efectos de Maleficio persisten hasta que el Tótem de Maleficio es bendecido o purificado por un Sobreviviente, deshabilitándolo por el resto de la Partida.\n\"Una maldición ha caído sobre ti. Será tu ruina.\"",
+    "owner": "Bruja",
+    "fileName": "killer-maleficio-ruina.png",
+    "role": "killer"
+  },
+  {
+    "id": "killer-maleficio-tiempo-de-jugar",
+    "name": "Maleficio: Tiempo de Jugar",
+    "description": "Idéntico a Maleficio: El Bufón de la Fortuna\n\"Nosotros vinimos. Ahora debes acompañarnos. Probar nuestros placeres.\" — Pinhead",
+    "owner": "Cenobita",
+    "fileName": "killer-maleficio-tiempo-de-jugar.png",
+    "role": "killer"
+  },
+  {
+    "id": "killer-maleficio-tierra-embrujada",
+    "name": "Maleficio: Tierra Embrujada",
+    "description": "Maleficio: Tierra Embrujada ilumina 2 Tótems de Maleficio al inicio de la Partida, tendiendo una trampa para los Sobrevivientes.\nBendecir o purificar cualquiera de los Tótems de Maleficio dispara la trampa y activa el siguiente efecto:\n• Hace todos los Sobrevivientes sufran del Efecto de Estado Vulnerabilidad durante 40 / 50 / 60 segundos .\n\nMaleficio: Tierra Embrujada extingue el segundo Tótem de Maleficio después de disparar su trampa.\nMaleficio: Tierra Embrujada se deshabilita por el resto de la Partida después de activar su efecto.\n\n\"Su hogar se convirtió en profano.\"",
+    "owner": "Espíritu",
+    "fileName": "killer-maleficio-tierra-embrujada.png",
+    "role": "killer"
+  },
+  {
+    "id": "killer-maleficio-yo-tambin-puedo-jugar",
+    "name": "Maleficio: Yo También Puedo Jugar",
+    "description": "\"Un Maleficio que sirve de lección a quienes se meten contigo.\"\nCada vez que un Sobreviviente te aturda o te ciegue un total de 4 / 3 / 2 veces , y si no hay un Tótem de Maleficio asociado al Maleficio: Yo También Puedo Jugar , un Tótem Apagado se convierte en un Tótem de Maleficio:\n\n• Los Sobrevivientes que te aturdan o cieguen quedan Cegados durante 1.5 segundos .\n• Esto no afecta a los Sobrevivienes cargados.\n\nLos Efectos de Maleficio persisten hasta que el Tótem de Maleficio es bendecido o purificado por un Sobreviviente, deshabilitándolo por el resto de la Partida.\n\"Desde ahora, no más Chico Bueno\" — Chucky",
+    "owner": "Chico Bueno",
+    "fileName": "killer-maleficio-yo-tambin-puedo-jugar.png",
+    "role": "killer"
+  },
+  {
+    "id": "killer-miedo-fantasmal",
+    "name": "Miedo Fantasmal",
+    "description": "\"Siempre tuviste la reputación de sorprender a tus invitados desprevenidos.\"\nCuando te mira un Sobreviviente dentro de tu Radio de Terror , sufren de los siguientes efectos:\n\n• Gritan y revelan su Aura durante 2 segundos .\n\nMiedo Fantasmal tiene un tiempo de recuperación de 80 / 70 / 60 segundos .\n\"Excelente. Tus gritos me agradan.\" — Springtrap",
+    "owner": "Animatrónico",
+    "fileName": "killer-miedo-fantasmal.png",
+    "role": "killer"
+  },
+  {
+    "id": "killer-mira-cmo-corren",
+    "name": "Mira Cómo Corren",
+    "description": "Perder a tu Obsesión en una persecución hace que Mira Cómo Corren gane +1 Distintivo , hasta un máximo de 3 Distintivos , y realizar cualquier Ataque Básico o Especial con el potencial de dañar a un Sobreviviente hace que pierda -1 Distintivo .\nMientras tengas al menos 1 Distintivo , te beneficias del siguiente efecto:\n• Otorga un 3 / 4 / 5 % Efecto de Estado Celeridad acumulable por Distintivo, hasta un máximo de 9 / 12 / 15 % .\n\nMira Cómo Corren tiene un tiempo de recuperación de 10 segundos entre las veces que puede ganar Distintivos adicionales.\n\nSolo puedes estar obsesionado con un Sobreviviente a la vez.",
+    "owner": "Todos",
+    "fileName": "killer-mira-cmo-corren.png",
+    "role": "killer"
+  },
+  {
+    "id": "killer-monitorizacin-y-abuso",
+    "name": "Monitorización y Abuso",
+    "description": "\"Un acercamiento meticuloso y una aplicación aterradora.\"\nMientras estés persiguiendo activamente a un Sobreviviente, Monitorización y Abuso aplica su efecto primario:\n\n• Aumenta tu Radio de Terror por defecto en 5 / 10 / 15 % .\n\nCuando no estés persiguiendo activamente a un Sobreviviente, Monitorización y Abuso aplica su efecto secundario:\n• Reduce tu Radio de Terror en 15 / 20 / 25 % .\n\n\"¡Es la hora del tratamiento!\" — Herman Carter, El Doctor",
+    "owner": "Doctor",
+    "fileName": "killer-monitorizacin-y-abuso.png",
+    "role": "killer"
+  },
+  {
+    "id": "killer-muerte-de-franklin",
+    "name": "Muerte de Franklin",
+    "description": "Los Sobrevivientes golpeados por tu vicioso Ataque Básico botan cualquier Objeto que tengan equipado al impacto:\n• Las Auras de los Objetos perdidos son revelados a menos de 32 / 48 / 64 metros .\n\n\"Sally, escucho algo. ¡Detente! ¡Detente!\" — Franklin Hardesty",
+    "owner": "Caníbal",
+    "fileName": "killer-muerte-de-franklin.png",
+    "role": "killer"
+  },
+  {
+    "id": "killer-murmullo-amargo",
+    "name": "Murmullo Amargo",
+    "description": "Desbloquea el potencial en la habilidad de analizar Auras.\n• Cada vez que se repara por completo un Generador , podrás ver las Auras de los Sobrevivientes que se encuentren a menos de 16 metros de éste durante 5 segundos .\n\n• Cuando se repare completamente el último, podrás ver las Auras de todos los Sobrevivientes de la Partida durante 5 / 7 / 10 segundos .",
+    "owner": "Todos",
+    "fileName": "killer-murmullo-amargo.png",
+    "role": "killer"
+  },
+  {
+    "id": "killer-murmullos",
+    "name": "Murmullos",
+    "description": "Percibes de manera muy rudimentaria la voz del Ente.\n• Cada vez que un Sobreviviente está a 48 / 40 / 32 metros de tu ubicación, escuchas esporádicamente el susurro del Ente .\n\n\"Las motivaciones de la Niebla no están claras, pero resulta innegable que suele ponerse del lado de la bestia.\" — Autor Desconocido, Notebook",
+    "owner": "Todos",
+    "fileName": "killer-murmullos.png",
+    "role": "killer"
+  },
+  {
+    "id": "killer-nadie-es-libre",
+    "name": "Nadie es Libre",
+    "description": "\"Sabes mejor que nadie que la luz al final del túnel no es más que una ilusión.\"\nCuando cuelgas a un Sobreviviente por primera vez, obtienes +1 Distintivo , hasta un máximo de 4 Distintivos .\nCuando se completan todos los Generadores , Nadie es Libre llama al Ente para activar el siguiente efecto:\n\n• Bloquea todas las Ventanas y las Tarimas en posición vertical para todos durante 12 / 14 / 16 segundos acumulables por Distintivo, hasta un máximo de 48 / 56 / 64 segundos .\n\n\"Yo no soy el que está mal, ¡sino este mundo arruinado!\" — Ken Kaneki",
+    "owner": "Ghoul",
+    "fileName": "killer-nadie-es-libre.png",
+    "role": "killer"
+  },
+  {
+    "id": "killer-no-hay-dnde-esconderse",
+    "name": "No Hay Dónde Esconderse",
+    "description": "\"Las maquinaciones de los débiles y los cobardes provocan tu ira.\nTu enojo obliga a los Sobrevivientes a revelarse.\"\nCada vez que Dañes un Generador activas No Hay Dónde Esconderse :\n\n• Revelas el Auras de todos los Sobrevivientes que se encuentren a 24 metros de tu posición durante 3 / 4 / 5 segundos .\n\n\"¡Salgan de ahí, cobardes! ¡Muéstrense!\" — Tarhos Kovács",
+    "owner": "Caballero",
+    "fileName": "killer-no-hay-dnde-esconderse.png",
+    "role": "killer"
+  },
+  {
+    "id": "killer-noqueo",
+    "name": "Noqueo",
+    "description": "\"El trauma causado por tus brutales ataques hace que pedir ayuda resulte extremadamente difícil.\"\nCada vez que un Sobreviviente se mueve más allá de 6 metros de una Tarima dentro de 6 segundos de botarla, Noqueo activa su efecto:\n\n• Les inflige de un -5 % del Efecto de Estado Entorpecimiento durante 3 / 4 / 5 segundos .\n\n\"Ah, esa pistola es un asco. A la antigua usanza... ¡con una almádena! Es mucho mejor. Así mueren mejor.\" — Nubbins Sawyer",
+    "owner": "Caníbal",
+    "fileName": "killer-noqueo.png",
+    "role": "killer"
+  },
+  {
+    "id": "killer-nmesis",
+    "name": "Némesis",
+    "description": "\"Buscas vengarte de quienes te dañaron.\"\n\n• El o la Sobreviviente que te haya cegado o aturdido usando una Tarima o un Casillero se convertirá en tu Obsesión .\n\n• Cada vez que un nuevo Sobreviviente se convierta en la Obsesión , sufrirá el Efecto de Estado Inconsciencia durante 40 / 50 / 60 segundos y revelará su Aura durante 4 segundos .\n\nSolo puedes estar obsesionado con un Sobreviviente a la vez.\n\n\"Solo un tonto escupiría en el rostro de un demonio y declararía su victoria.\" — Doctrina de Renjiro 4:9",
+    "owner": "Oni",
+    "fileName": "killer-nmesis.png",
+    "role": "killer"
+  },
+  {
+    "id": "killer-ojo-errante",
+    "name": "Ojo Errante",
+    "description": "\"Una presa ensangrentada te ronda y exige tu atención.\"\nCada vez que comiences a perseguir a un Sobreviviente, Ojo Errante dispara el siguiente efecto:\n\n• Las Auras de todos los otros Sobrevivientes heridos en un radio de 20 metros de tu ubicación te son revelados durante 5 segundos .\n\nOjo Errante tiene un tiempo de recuperación de 40 / 35 / 30 segundos .\n\"Una gota no basta para saciar la sed/de beber un río entero.\" — \"Grandeza de Samuel\" de Elliot Campbell",
+    "owner": "Krasue",
+    "fileName": "killer-ojo-errante.png",
+    "role": "killer"
+  },
+  {
+    "id": "killer-opresin",
+    "name": "Opresión",
+    "description": "\"La vida no ha sido fácil para ti y no se la harás fácil a los demás.\"\nCuando Dañas un Generador se activan los siguientes efectos:\n\n• Selecciona aleatoriamente hasta 4 Generadores adicionales que también comenzarán a revertirse.\n• Activa una Prueba de Habilidad difícil para todos los Sobrevivientes que estén actualmente reparándolos.\n\nOpresión tiene un tiempo de recuperación de 45 / 40 / 35 segundos .\n\"Los maldigo como nos maldecirían.\" — Charlotte Deshayes",
+    "owner": "Gemelos",
+    "fileName": "killer-opresin.png",
+    "role": "killer"
+  },
+  {
+    "id": "killer-oscuridad-revelada",
+    "name": "Oscuridad Revelada",
+    "description": "\"En tu presencia, los lugares que alguna vez consideraste seguros quizás sean los más peligrosos.\"\nAl revisar un Casillero :\n\n• Podrás ver las Auras de los Sobrevivientes en un radio de 8 metros de un Casillero durante 6 / 7 / 8 segundos .\n\nOscuridad Revelada tiene un tiempo de recuperación de 30 segundos .\n\"Quédense en la luz, hijos míos. Su miedo los expondrá en la oscuridad.\" — Otto Stamper",
+    "owner": "Draga",
+    "fileName": "killer-oscuridad-revelada.png",
+    "role": "killer"
+  },
+  {
+    "id": "killer-parrillada-y-chile",
+    "name": "Parrillada y Chile",
+    "description": "Un profundo vículo con El Ente te permite percibir Auras.\n• Tras colgar a un Sobreviviente, todos los Sobrevivientes que están a más de 60 / 50 / 40 metros de distancia de ese Gancho te revelarán su Aura durante 5 segundos .\n\n\"Matar no me genera ningún placer. Hay cosas que simplemente hay que hacerlas. No tienen por qué gustarte.\" — Drayton Sawyer",
+    "owner": "Caníbal",
+    "fileName": "killer-parrillada-y-chile.png",
+    "role": "killer"
+  },
+  {
+    "id": "killer-pedido-de-ayuda",
+    "name": "Pedido de Ayuda",
+    "description": "\"Aunque lo intenten, sabes cómo estar siempre un paso adelante de tus invitados.\"\nDespués de realizar la acción Dañar Generador , se activa Pedido de Ayuda :\n\n• Hace que el Generador se convierta en un Generador Comprometido .\n\nUna vez se complete el Generador Comprometido , te beneficias del siguiente efecto por 40 / 50 / 60 segundos :\n• Incrementa la velocidad de Recuperación de tus Ataques Básicos exitosos en un +25 % .\n\n\"No creas que tienes todo bajo control.\" — Springtrap",
+    "owner": "Animatrónico",
+    "fileName": "killer-pedido-de-ayuda.png",
+    "role": "killer"
+  },
+  {
+    "id": "killer-penitencia-forzada",
+    "name": "Penitencia Forzada",
+    "description": "\"Quienes se atraviesen en el camino del deber, sufrirán un juicio severo.\"\nCada vez que un Sobreviviente activa un Golpe Protector , sufren del siguiente efecto:\n\n• Inflige el Efecto de Estado Desesperanza durante 60 / 70 / 80 segundos .",
+    "owner": "Ejecutor",
+    "fileName": "killer-penitencia-forzada.png",
+    "role": "killer"
+  },
+  {
+    "id": "killer-persecucin-furtiva",
+    "name": "Persecución Furtiva",
+    "description": "\"Acechas entre las sombras, eliminando a tus víctimas una por una.\"\nCuando cuelgas a tu Obsesión , te beneficias de los siguientes efectos durante 14 / 16 / 18 segundos :\n\n• Otorga el Efecto de Estado Indetectable .\n\n• Otorga un #haste de Efecto de Estado Celeridad .\n\nCuando un o una Sobreviviente rescata a tu Obsesión de un Gancho, ese Sobreviviente se convierte en tu Obsesión .\n\nSolo puedes estar obsesionado con un Sobreviviente a la vez.\n\n\"No tienes idea de lo que tengo planeado para ti. Las noticias hablarán de mí por semanas. Me aseguraré de eso.\" — Ghost Face",
+    "owner": "Ghost Face",
+    "fileName": "killer-persecucin-furtiva.png",
+    "role": "killer"
+  },
+  {
+    "id": "killer-perseguidor-letal",
+    "name": "Perseguidor Letal",
+    "description": "\"Te diseñaron para rastrear y eliminar objetivos.\"\nAl inicio de la Partida, las Auras de todos los Sobrevivientes se revelan para ti durante 7 / 8 / 9 segundos .\n\n• Cada vez que el Aura de un Sobreviviente se muestra durante un tiempo, su duración aumenta +2 segundos .\n\nPerseguidor Letal se beneficia de su propio efecto.\n\"...eso sabe lo que quiere y no parará hasta obtenerlo.\" — Carlos Oliveira",
+    "owner": "Némesis",
+    "fileName": "killer-perseguidor-letal.png",
+    "role": "killer"
+  },
+  {
+    "id": "killer-pim-pam-pum",
+    "name": "Pim, Pam, Pum",
+    "description": "\"Un vínculo profundo con El Ente te proporciona una fuerza descomunal.\"\nTras colgar a un Sobreviviente, Pim, Pam, Pum se activa durante 35 / 40 / 45 segundos .\nMientras esté activo, dañar manualmente un Generador activa el siguiente efecto:\n\n• Lo revierte instantáneamente en un -20 % de su Progreso actual.\n\nPim, Pam, Pum se desactiva después de usarse o una vez que se acabe el temporizador.",
+    "owner": "Payaso",
+    "fileName": "killer-pim-pam-pum.png",
+    "role": "killer"
+  },
+  {
+    "id": "killer-presencia-abrumadora",
+    "name": "Presencia Abrumadora",
+    "description": "\"Tu mera presencia basta para perturbar a tus víctimas.\"\nLos Sobrevivientes que estén en tu Radio de Terror se vuelven más torpes:\n\n• La tasa de consumo de los Objeto de los Sobrevivientes afectados aumenta en un 2 / 3 / 4 segundos .\n\n\"¡Maldición! ¡Se me cayó la gasa!\"",
+    "owner": "Doctor",
+    "fileName": "killer-presencia-abrumadora.png",
+    "role": "killer"
+  },
+  {
+    "id": "killer-presencia-perturbadora",
+    "name": "Presencia Perturbadora",
+    "description": "Tu mera presencia infunde pavor.\nLos Sobrevivientes que estén reparando o curando dentro de tu Radio de Terror sufren de los siguientes efectos:\n\n• Aumenta la probabilidad de activar Prueba de Habilidad en un 10 % .\n\n• Disminuye las zonas de Éxito de las Pruebas de Habilidad en un 40 / 50 / 60 % .\n\n\"Su presencia nos sobreviene.\"",
+    "owner": "Trampero",
+    "fileName": "killer-presencia-perturbadora.png",
+    "role": "killer"
+  },
+  {
+    "id": "killer-proyecto-secreto",
+    "name": "Proyecto Secreto",
+    "description": "\"Luego de una crianza destinada a convertirte en un arma, te liberas con las mismas habilidades que te enseñaron tus captores.\"\nCuando se bendice o purifica un Tótem , bloquea un Generador durante 20 / 25 / 30 segundos .\n\nCada vez que se bloquea 1 o más Generadores , ganas el Efecto de Estado Indetectable durante 30 segundos .\n\n\"Aquí eres una prisionera, al igual que yo.\" — Henry Creel",
+    "owner": "Primero",
+    "fileName": "killer-proyecto-secreto.png",
+    "role": "killer"
+  },
+  {
+    "id": "killer-que-sigan-esperando",
+    "name": "Que Sigan Esperando",
+    "description": "Cada vez que golpeas a un Sobreviviente que no sea la Obsesión con un Ataque Básico , Que Sigan Esperando gana +1 Distintivo , hasta un máximo de 6 / 7 / 8 Distintivo :\n• Otorga una reducción acumulable de -4 % del tiempo de recarga de Ataques Básicos exitosos por cada distintivo, hasta un máximo de 24 / 28 / 32 % distintivos.\n\nCada vez que golpeas a tu Obsesión con un Ataque Básico o Especial , Que Sigan Esperando pierde -2 Distintivos .\n\n• Cuando la Obsesión es sacrificada o asesinada, no podrás ganar Distintivos.\n\nSolo puedes estar obsesionado con un Sobreviviente a la vez.",
+    "owner": "Todos",
+    "fileName": "killer-que-sigan-esperando.png",
+    "role": "killer"
+  },
+  {
+    "id": "killer-quebrantamentes",
+    "name": "Quebrantamentes",
+    "description": "\"Tu inquietante presencia agota y debilita a tu presa.\"\nCuando reparan un Generador , los Sobrevivientes sufren de los siguientes efectos:\n\n• Sufren del Efectos de Estado Ceguera y Agotado .\n• Ambos Efectos de Estado se mantienen durante 3 / 4 / 5 segundos después de terminar la interacción.\n\nNo se puede usar Quebrantamentes para sobreescribir un Efecto de Estado Agotado , sino que pausa su temporizador en su lugar.\n\"La aparente telepatía del espécimen puede provocar una sensación de terror y cansancio en los individuos cercanos.\" — Laboratorio Nacional de Hawkins",
+    "owner": "Demogorgon",
+    "fileName": "killer-quebrantamentes.png",
+    "role": "killer"
+  },
+  {
+    "id": "killer-recurdame",
+    "name": "Recuérdame",
+    "description": "Cada vez que tu Obsesión pierde un Estado de Salud , Recuérdame gana +1 Distintivo , hasta un máximo de 18 / 24 / 30 segundos :\n• Aumenta el tiempo en que tardan en abrirse las Puertas de Salida en +6 segundos por Distintivo, hasta un máximo de 3 / 4 / 5 Distintivo , para todos los Sobrevivientes que no son la Obsesión .\n• La Obsesión está exenta de esta penalización.\n\nSolo puedes estar obsesionado con un Sobreviviente a la vez.\n\n\"¿No te acuerdas? Deberías. Eres mi número uno, y ya no volverás a despertar.\" — Freddy Krueger",
+    "owner": "Pesadilla",
+    "fileName": "killer-recurdame.png",
+    "role": "killer"
+  },
+  {
+    "id": "killer-rencor",
+    "name": "Rencor",
+    "description": "Cada vez que se complete un Generador , aplican los siguientes efectos:\n• Se revela tu Aura a la Obsesión durante 5 / 4 / 3 segundos .\n\n• La ubicación de todos los Sobrevivientes te son revelados durante 3 segundos .\n\nUna vez que se activan las Puertas de Salida , los siguientes efectos aplican por el resto de la Partida:\n\n• La Obsesión sufre del Efecto de Estado Vulnerabilidad .\n\n• Otorga la habilidad de matar a las Obsesiones con tus propias manos.\n\nSolo puedes estar obsesionado con un Sobreviviente a la vez.",
+    "owner": "Espíritu",
+    "fileName": "killer-rencor.png",
+    "role": "killer"
+  },
+  {
+    "id": "killer-reparador",
+    "name": "Reparador",
+    "description": "Cada vez que se repara un Generador en un 70 % de progreso, te beneficias de los siguientes efectos:\n• Activa una Notificación de Ruido Fuerte para ese Generador, revelando su ubicación.\n\n• Otorga Efecto de Estado Indetectable durante los siguientes 12 / 14 / 16 segundos .\n\nReparador se puede activar una vez por Generador en una Partida.\n\n\"El Pueblerino fabrica herramientas impresionantes con chatarra. Herramientas destinadas a mutilarnos de manera creativa...\" — Cuaderno",
+    "owner": "Pueblerino",
+    "fileName": "killer-reparador.png",
+    "role": "killer"
+  },
+  {
+    "id": "killer-resistente",
+    "name": "Resistente",
+    "description": "\"Eres resistente al dolor.\"\n\n• Reduce la duración de los Aturdimientos de Tarimas un 40 / 45 / 50 % .\n• Este efecto no aplica cuando eres aturdido mientras cargas a un o una Sobreviviente.\n\n\"Nada lo detiene.\"",
+    "owner": "Pueblerino",
+    "fileName": "killer-resistente.png",
+    "role": "killer"
+  },
+  {
+    "id": "killer-restriccin-cruel",
+    "name": "Restricción Cruel",
+    "description": "\"Tu vínculo con el mundo sobrenatural se manifiesta cuando tu víctima intenta escapar.\"\nCuando se completa un Generador , se activa Restricción Cruel :\n\n• Bloquea todas las Ventanas para todos los Sobrevivientes durante 20 / 25 / 30 segundos .\n\n• Ves el Auras de todas las Ventanas Bloqueadas durante ese tiempo en amarillo .\n\n\"Parece que el espécimen es capaz de modificar, mediante telequinesis de algún tipo, el estado de los objetos cercanos, como si existieran también en una dimensión distinta de la nuestra.\" — Laboratorio Nacional de Hawkins",
+    "owner": "Demogorgon",
+    "fileName": "killer-restriccin-cruel.png",
+    "role": "killer"
+  },
+  {
+    "id": "killer-retrocede-el-tiempo",
+    "name": "Retrocede el Tiempo",
+    "description": "\"Resiste con fuerza, el tiempo avanza y la meta de tu plan maestro puede verse en el horizonte.\"\nLuego de colgar a un Sobreviviente, durante 40 / 50 / 60 segundos , presiona el botón de Habilidad Activa para hacer que explote un generador objetivo en un radio de 20 metros , pierda un -10 % de progreso, y comience a revertirse.\n\n\"Nada te va a pasar... ¡Nada que no te merezcas!\" — Henry Creel",
+    "owner": "Primero",
+    "fileName": "killer-retrocede-el-tiempo.png",
+    "role": "killer"
+  },
+  {
+    "id": "killer-sabueso-de-sangre",
+    "name": "Sabueso de Sangre",
+    "description": "Con tu olfato de sabueso, eres capaz de percibir rastros de sangre a larga distancia.\n• Las Charcos de Sangre se muestran en rojo brillante y permanecen visibles durante 2 / 3 / 4 segundos más.\n\n\"Como guijarros que reflejan la luz de la luna, mi vida gotea formando un camino sencillo de seguir.\"",
+    "owner": "Espectro",
+    "fileName": "killer-sabueso-de-sangre.png",
+    "role": "killer"
+  },
+  {
+    "id": "killer-sacrifica-a-los-dbiles",
+    "name": "Sacrifica a los Débiles",
+    "description": "Cada vez que cuelgas a un Sobreviviente que no es tu Obsesión , ganas +1 Distintivo :\n• Si tu Obsesión sigue con vida, el resto de los Sobrevivientes sufre de un 2 / 2.5 / 3 % de penalización de velocidad de acción acumulable por Distintivo en Reparaciones, Curaciones y Sabotaje, hasta un máximo de 22 / 27.5 / 33 % u 11 Distintivos .\n\n• La Obsesión no se ve afectada por esta penalización y en su lugar obtiene una bonificación permanente del +33 % en las velocidades de acción en Rescate y Curación a otros Sobrevivientes.\n\nSolo puedes estar obsesionado con un Sobreviviente a la vez.",
+    "owner": "Todos",
+    "fileName": "killer-sacrifica-a-los-dbiles.png",
+    "role": "killer"
+  },
+  {
+    "id": "killer-senda-del-tormento",
+    "name": "Senda del Tormento",
+    "description": "\"Llevas a tus víctimas por un camino de dolor y castigo.\"\nRealizar la acción de Dañar Generador en un Generador activa Senda del Tormento :\n\n• Otorga el Efecto de Estado Indetectable hasta que el Generador deje de revertirse.\n\n• Revela el Aura del Generador dañado a todos los Sobrevivientes en amarillo .\n\nSenda del Tormento tiene un tiempo de recuperación de 60 / 45 / 30 segundos .",
+    "owner": "Ejecutor",
+    "fileName": "killer-senda-del-tormento.png",
+    "role": "killer"
+  },
+  {
+    "id": "killer-sin-piedad",
+    "name": "Sin Piedad",
+    "description": "Todas las escaramuzas terminaban con un implacable bombardeo de cañón que dejaba en claro quién era superior.\nSi un Sobreviviente alcanza el 75 % del progreso de curación, Sin Piedad activa su efecto:\n\n• El Sobreviviente se enfrenta a Pruebas de Habilidad constantes, hasta que termine de Autocurarse\n\n• Si falla una Prueba de Habilidad o interrumpe la acción de cualquier forma, sufren del Efecto de Estado Desesperanza for 20 / 25 / 30 segundos .\n\n\"¡Disparen otra ráfaga! ¡No se detengan hasta que se los trague el mar!\" — Portia Maye",
+    "owner": "Señora de los Sabuesos",
+    "fileName": "killer-sin-piedad.png",
+    "role": "killer"
+  },
+  {
+    "id": "killer-sin-restricciones",
+    "name": "Sin Restricciones",
+    "description": "\"Induces sufrimiento psicológico al aplastar cualquier esperanza de escapar.\"\nLuego de que el Generador esté reparado, El Ente bloqueará el Generador con mayor progreso durante 15 / 20 / 25 segundos .\n\n• Verás el Aura del Generador Bloqueaado resaltado de color blanco .",
+    "owner": "Todos",
+    "fileName": "killer-sin-restricciones.png",
+    "role": "killer"
+  },
+  {
+    "id": "killer-sin-salida",
+    "name": "Sin Salida",
+    "description": "\"No vas a dejar que cualquiera entre al cuarto VIP.\"\nCada vez que cuelgas a un Sobreviviente por primera vez, Sin Salida gana +1 Distintivo .\nUna vez que se activan las Puertas de Salida , se activa Sin Salida :\n\n• El primer Sobreviviente en interactuar con cualquiera de las Palancas de las Puertas de Salida activará una Notificación de Ruido Fuerte en su ubicación.\n\nAl activar la Notificación de Ruido Fuerte , Sin Salida invoca al Ente para el siguiente efecto:\n• Bloquea ambas Palancas de las Puertas de Salida durante 12 segundos .\n• Este tiempo se extiende por un 6 / 9 / 12 segundos adicional por Distintivo acumulado, hasta un máximo combinado de 36 / 48 / 60 segundos .\n\n\"Ese sonido que haces al sangrar... Quiero escucharlo otra vez.\" — Ji-Woon Hak",
+    "owner": "Embaucador",
+    "fileName": "killer-sin-salida.png",
+    "role": "killer"
+  },
+  {
+    "id": "killer-soberbia",
+    "name": "Soberbia",
+    "description": "\"No muestras piedad, especialmente a quienes son tan tontos como parar resistirse.\"\n\n• Cuando un Sobreviviente te aturde, sufre el Efecto de Estado Vulnerabilidad durante 20 / 25 / 30 segundos .\n\nSoberbia tiene un tiempo de recuperación de 20 segundos .\n\"Cometiste un gran error al oponerse a mí hoy.\" — Tarhos Kovács",
+    "owner": "Caballero",
+    "fileName": "killer-soberbia.png",
+    "role": "killer"
+  },
+  {
+    "id": "killer-sobrecarga",
+    "name": "Sobrecarga",
+    "description": "\"El odio te impulsa al progreso.\"\nAl llevar a cabo la acción Dañar Generador en un Generador se aplica Sobrecarga :\n\n• El siguiente Sobreviviente que interactúe con ese Generador se enfrentará a una Prueba de Habilidad difícil.\n• Si no supera dicha Prueba de Habilidad, el Generador instantáneamente pierde progreso en un 2 / 3 / 4 % .\n\nDespués de que se aplique Sobrecarga en un Generador , el siguiente efecto también aplica:\n• Aumenta la velocidad de Regresión de un 85 % a un 130 % durante los próximos 30 segundos .\n\n\"Es una trampa. Pero una trampa a la que te tienes que enfrentar...\" — Herman Carter",
+    "owner": "Doctor",
+    "fileName": "killer-sobrecarga.png",
+    "role": "killer"
+  },
+  {
+    "id": "killer-sobretensin",
+    "name": "Sobretensión",
+    "description": "\"Tu misteriosa presencia sobrecarga el ambiente y afecta a los dispositivos tecnológicos.\"\nAl dejar Estado Agonizante a un o una Sobreviviente con un Ataque Básico , todos los Generadores en un radio de 32 metros explotan al instante y comienzan a revertirse.\n\n• Los Generadores afectados pierden un 6 / 7 / 8 % de su progreso al instante.\n\n\"Al parecer, la criatura influye de alguna manera en la electricidad y los aparatos electrónicos cercanos.\" — Laboratorio Nacional de Hawkins",
+    "owner": "Demogorgon",
+    "fileName": "killer-sobretensin.png",
+    "role": "killer"
+  },
+  {
+    "id": "killer-soy-todo-odos",
+    "name": "Soy Todo Oídos",
+    "description": "\"Desbloquea la capacidad de percibir Auras, tus sentidos se agudizan en el Reino Oscuro del Ente .\"\nCualquier Sobreviviente que lleve a cabo un Salto Rápido en un radio de #range de tu ubicación activa Soy Todo Oídos :\n\n• Se te revela el Aura de ese Sobreviviente durante #duration .\n\nSoy Todo Oídos tiene un tiempo de recuperación de 60 / 45 / 30 segundos .\n\"No hay de qué preocuparse. Llevo toda la vida preparándome para esto.\" — Ghost Face",
+    "owner": "Ghost Face",
+    "fileName": "killer-soy-todo-odos.png",
+    "role": "killer"
+  },
+  {
+    "id": "killer-supervisin",
+    "name": "Supervisión",
+    "description": "Desbloquea la capacidad de percibir Auras.\n\nLas Auras de los Generadores que se están revirtiendo se iluminan en blanco .\n\n• Si el progreso de Regresión es interrumpido en un Generador, se te revelará el aura en amarillo durante 8 / 12 / 16 segundos .\n\nSupervisión aumenta la distancia a la que se percibe el ruido de reparación de los Generadores en 8 metros .\n\n\"¿Vas a portarte bien?\" — Amanda Young",
+    "owner": "Cerda",
+    "fileName": "killer-supervisin.png",
+    "role": "killer"
+  },
+  {
+    "id": "killer-tanatofobia",
+    "name": "Tanatofobia",
+    "description": "\"Pierden por completo el valor cuando se enfrentan a su propia mortalidad.\"\nCada vez que al menos un Sobreviviente esté herido, agonizante, o colgado, se activa Tanatofobia .\nMientras esté activo, todos los Sobrevivientes sufren del siguiente efecto primario:\n\n• Incurre en un 1 / 1.5 / 2 % acumulable de penalización a la Velocidad de Acción por cada Sobreviviente herido, agonizante, o colgado para la Purificación, Reparación, y Sabotaje, hasta un máximo de 4 / 6 / 8 % .\n\nSi los cuatro Sobrevivientes están heridos, agonizantes, o colgados, sufren del siguiente efecto secundario:\n• Aumenta la penalización en un +12 % adicional para un total de 16 / 18 / 20 % .\n\n\"Ella juega con nosotros y se regocija en nuestro dolor.\"",
+    "owner": "Enfermera",
+    "fileName": "killer-tanatofobia.png",
+    "role": "killer"
+  },
+  {
+    "id": "killer-temblores-trepidantes",
+    "name": "Temblores Trepidantes",
+    "description": "\"Tus oscuros diseños y tu maliciosa tranquilidad enardecen al Ente .\"\nTras atrapar a un Sobreviviente , El Ente bloqueará todos los Generadores que no estén siendo reparados en ese momento por los siguientes 16 segundos .\n\n• El Auras de los Generadores bloqueados aparecerán iluminados en blanco .\n\nTemblores Trepidantes tiene un tiempo de recuperación de 100 / 80 / 60 segundos .\n\n\"La noche está a mi favor y aquí no tiene fin.\" — Ghost Face",
+    "owner": "Ghost Face",
+    "fileName": "killer-temblores-trepidantes.png",
+    "role": "killer"
+  },
+  {
+    "id": "killer-terminal",
+    "name": "Terminal",
+    "description": "Eres brillante en la estrategia y te preparas para cualquier eventualidad.\nCuando se activan las Puertas de Salida , se activa Terminal :\n\n• Todos los Sobrevivientes heridos, derribados o colgados quedan debilitados con el Efecto de Estado Desesperanza hasta que la Puerta de Salida se abra.\n• Este efecto se mantiene por 35 / 40 / 45 segundos adicionales.",
+    "owner": "Mente Maestra",
+    "fileName": "killer-terminal.png",
+    "role": "killer"
+  },
+  {
+    "id": "killer-terror-contagioso",
+    "name": "Terror Contagioso",
+    "description": "Se te acelera el corazón al oír los gritos de los infieles.\n\nCuando un Sobreviviente entra al Estado Agonizante , todos los otros Sobrevivientes dentro de tu Radio de Terror gritará y te revelará su ubicación actual durante 4 / 5 / 6 segundos .\n\n\"El terror se apodera de los infieles, y gritan a los pies de los caídos.\" — (Himno de Alabanza, 11.4)",
+    "owner": "Plaga",
+    "fileName": "killer-terror-contagioso.png",
+    "role": "killer"
+  },
+  {
+    "id": "killer-toma-una-decisin",
+    "name": "Toma una Decisión",
+    "description": "Cuando un Sobreviviente es rescatado de un Gancho , mientras estás más allá de 32 metros , se activa Toma una Decisión :\n• Hace que el Sobreviviente que realiza el rescate grite y te revele su ubicación.\n\n• Aplica el Estado Efecto de Estado Vulnerabilidad durante 40 / 50 / 60 segundos .\n\nToma una Decisión tiene un tiempo de recuperación de 40 / 50 / 60 segundos .\n\n\"Te sorprenderían las herramientas que pueden salvar vidas.\" — Amanda Young",
+    "owner": "Cerda",
+    "fileName": "killer-toma-una-decisin.png",
+    "role": "killer"
+  },
+  {
+    "id": "killer-toque-lnguido",
+    "name": "Toque Lánguido",
+    "description": "Tu aura terrible es tan sofocante que hasta tu presa se agota con escenas tenebrosas.\nCuando un Sobreviviente dentro de los 36 metros de ti asusta a un Cuervo , se activa Toque Lánguido :\n\n• Sufre del Efecto de Estado Agotado durante 6 / 8 / 10 segundos .\n\nToque Lánguido tiene un tiempo de recuperación de 5 segundos .\n\"Ríndete ante mí. Es inevitable.\" — Vecna",
+    "owner": "Liche",
+    "fileName": "killer-toque-lnguido.png",
+    "role": "killer"
+  },
+  {
+    "id": "killer-tormenta-despiadada",
+    "name": "Tormenta Despiadada",
+    "description": "Todos sienten tu horrible trauma.Cuando un Generador llega al 90 % del progreso de Reparación se activa Tormenta Despiadada su efecto:\n• Todos los Sobrevivientes que estén reparando un Generador se enfrentan a Pruebas de Habilidad de forma constante hasta que el Generador se complete.\n\n• Si fallan una Prueba de Habilidad o dejan de repararlo, El Ente bloqueará el Generador por 16 / 18 / 20 segundos .\n\nTormenta Despiadada solo puede activarse una vez por Generador por Partida.",
+    "owner": "Onryō",
+    "fileName": "killer-tormenta-despiadada.png",
+    "role": "killer"
+  },
+  {
+    "id": "killer-trueno-ssmico",
+    "name": "Trueno Sísmico",
+    "description": "\"Tus enemigos de mar y tierra aprendieron a temblar ante tu poder.\"\nTras caer de cierta altura, se activa 15 / 20 / 25 segundos :\n\n• Aumenta el rango de tu Ataque de Embestida en un +75 % .\n\nTrueno Sísmico tiene un tiempo de recuperación de 5 segundos .\n\"Adelante. Huye. Dile a tus amigos que voy por ellos.\" — Portia Maye",
+    "owner": "Señora de los Sabuesos",
+    "fileName": "killer-trueno-ssmico.png",
+    "role": "killer"
+  },
+  {
+    "id": "killer-tcticas-de-zanshin",
+    "name": "Tácticas de Zanshin",
+    "description": "Desbloquea la capacidad de percibir Auras:\nTu mente está alerta y al tanto de los enemigos cercanos en retirada.\n\n• Se te revelan las Auras de las Tarimas y Ventanas en un radio de 32 metros .\n\n• Cuando un Sobreviviente deja caer una Tarima , se revela su Aura durante 3 / 4 / 5 segundos .\n\n\"Encontrarás la debilidad de tu enemigo dentro de su fuerza.\" — Doctrina de Renjiro 12:5",
+    "owner": "Oni",
+    "fileName": "killer-tcticas-de-zanshin.png",
+    "role": "killer"
+  },
+  {
+    "id": "killer-unidos-por-siempre",
+    "name": "Unidos por Siempre",
+    "description": "\"Mientras más grande sea la lucha, más difícil será escapar.\"\nCuando un Sobreviviente recibe daño, obtienes +1 Distintivo , hasta un máximo de 6 / 7 / 8 Distintivo :\n\n• Aumenta las velocidades de Acción al Tirar, Colgar, y Cargar Sobrevivientes en un +4 % acumulable por Distintivo, hasta un máximo de 24 / 28 / 32 % .\n\n\"Como trataste de devorarme, no puedes quejarte de que yo te coma, ¿no crees?\" — Ken Kaneki",
+    "owner": "Ghoul",
+    "fileName": "killer-unidos-por-siempre.png",
+    "role": "killer"
+  },
+  {
+    "id": "killer-vocacin-de-enfermera",
+    "name": "Vocación de Enfermera",
+    "description": "Desbloquea la capacidad de percibir Auras:\n• Se te revelan las Auras de los Sobrevivientes heridos que se están curando o están siendo curados si se encuentran en un radio de 28 / 30 / 32 metros .\n\n\"Apegada aún a los restos de su pasado, se siente atraída por los que necesitan ayuda.\"",
+    "owner": "Enfermera",
+    "fileName": "killer-vocacin-de-enfermera.png",
+    "role": "killer"
+  },
+  {
+    "id": "killer-voracidad",
+    "name": "Voracidad",
+    "description": "\"Hay un olor a sangre en el aire.\nEs hora del festín.\"\nCuando cuelgues a un Sobreviviente por primera vez, Voracidad gana +1 Token , hasta un máximo de 4 Tokens .\nCuando tengas 4 Tokens , todos los Sobrevivientes sufren de los siguientes efectos:\n\n• Gritan.\n\n• Inflige el Efecto de Estado Vulnerabilidad durante 40 / 50 / 60 segundos .\n\n\"Fluye la sangre de Ginevra, la plañidera/A los débiles, el diablo los quiebra.\" — \"Ginevra\" de Fabbro Barone",
+    "owner": "Krasue",
+    "fileName": "killer-voracidad.png",
+    "role": "killer"
+  },
+  {
+    "id": "killer-plaf",
+    "name": "¡PLAF!",
+    "description": "\"Tu presa está aterrada por tu persecución implacable.\"\nComienza la Partida con #Distintivos .\nCuando rompes una Pared Rompible o una Tarima usada, ¡PLAF! consume -1 Distintivo y aplica el siguiente efecto:\n\n• Los Sobrevivientes que estén a 36 metros gritan y revelan su ubicación durante 4 / 5 / 6 segundos .\n\nAl colgar a un Sobreviviente, ¡PLAF! recupera +1 Distintivo .\n\"¡Ella no tiene piedad, teman a su poderoso PLAF!\" — Sonhadores Sombrios, Número #3",
+    "owner": "Comerciante de Calaveras",
+    "fileName": "killer-plaf.png",
+    "role": "killer"
+  }
+]

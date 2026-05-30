@@ -28,14 +28,14 @@ export const systemStatus: SystemStatusItem[] = [
     "label": "Actualizaciones",
     "value": "Actualizado",
     "level": "ok",
-    "detail": "Version actual: 0.0.1"
+    "detail": "Version actual: 0.0.2"
   },
   {
     "id": "action",
     "label": "Actualizar app",
     "value": "Descargar",
     "level": "action",
-    "detail": "https://github.com/Ivimanhm/TigerByte/releases/tag/0.0.1",
-    "actionUrl": "https://github.com/Ivimanhm/TigerByte/releases/tag/0.0.1"
+    "detail": "https://github.com/Ivimanhm/TigerByte/releases/tag/0.0.2",
+    "actionUrl": "https://github.com/Ivimanhm/TigerByte/releases/tag/0.0.2"
   }
 ]

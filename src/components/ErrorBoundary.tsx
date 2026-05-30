@@ -12,7 +12,8 @@ interface ErrorBoundaryState {
 export class ErrorBoundary extends Component<ErrorBoundaryProps, ErrorBoundaryState> {
   state: ErrorBoundaryState = { hasError: false }
 
-  componentDidCatch() {
+  componentDidCatch(error: Error) {
+    console.error('[ErrorBoundary] Uncaught error:', error)
     this.setState({ hasError: true })
   }
 

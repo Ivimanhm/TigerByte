@@ -3,18 +3,23 @@ import type { GameCardData } from '../../types/game'
 import { ChevronLeft, ChevronRight } from 'lucide-preact'
 import { useEffect, useRef, useState } from 'preact/hooks'
 import lolImage from '../../assets/games/lol.png'
+import lolImageBack from '../../assets/games/LOL 2.png'
 import dbdImage from '../../assets/games/dbd.png'
+import dbdImageBack from '../../assets/games/DBD 2.png'
 import tarkovImage from '../../assets/games/tarkov.png'
+import tarkovImageBack from '../../assets/games/TARKOV 2.png'
 import rustImage from '../../assets/games/rust.png'
+import rustImageBack from '../../assets/games/RUST 2.png'
 
 const games: GameCardData[] = [
   {
     id: 'lol',
     game: 'League of Legends',
     alias: 'LOL',
-    href: '#tools-lol',
+    href: '#lol-team-builder',
     tone: 'violet',
     image: lolImage,
+    imageBack: lolImageBack,
     imagePosition: '50% 44%',
     description: 'Creador de equipos y tierlist de campeones.',
     stats: [
@@ -22,14 +27,19 @@ const games: GameCardData[] = [
       { label: 'Partidas', value: '1,248' },
       { label: 'KDA Promedio', value: '3.21' },
     ],
+    actions: [
+      { label: 'Creador de equipos', href: '#lol-team-builder' },
+      { label: 'Tierlist de campeones', href: '#lol-champion-tierlist' },
+    ],
   },
   {
     id: 'dbd',
     game: 'Dead by Daylight',
     alias: 'DBD',
-    href: '#tools-dbd',
+    href: '#dbd-build-creator',
     tone: 'orange',
     image: dbdImage,
+    imageBack: dbdImageBack,
     imagePosition: '50% 42%',
     description: 'Creador de builds.',
     stats: [
@@ -37,14 +47,18 @@ const games: GameCardData[] = [
       { label: 'Partidas', value: '856' },
       { label: 'Killer Rank', value: 'Iridiscente I' },
     ],
+    actions: [
+      { label: 'Creador de builds', href: '#dbd-build-creator' },
+    ],
   },
   {
     id: 'tarkov',
     game: 'Escape from Tarkov',
     alias: 'TARKOV',
-    href: '#tools-tarkov',
+    href: '#tarkov-weapon-builds',
     tone: 'green',
     image: tarkovImage,
+    imageBack: tarkovImageBack,
     imagePosition: '50% 42%',
     description: 'Mapas, builds de armas.',
     stats: [
@@ -52,20 +66,29 @@ const games: GameCardData[] = [
       { label: 'PMC Kills', value: '1,362' },
       { label: 'Rublos', value: '24.6M' },
     ],
+    actions: [
+      { label: 'Builds de armas', href: '#tarkov-weapon-builds' },
+      { label: 'Extraccion de mapas', href: '#tarkov-map-extraction' },
+    ],
   },
   {
     id: 'rust',
     game: 'Rust',
     alias: 'RUST',
-    href: '#tools-rust',
+    href: '#rust-building-plans',
     tone: 'rust',
     image: rustImage,
+    imageBack: rustImageBack,
     imagePosition: '50% 42%',
-    description: 'Planos de casas y calculadora de raids.',
+    description: 'Guia de casas, planos y calculadora de raids.',
     stats: [
       { label: 'Horas jugadas', value: '1,124' },
       { label: 'Conexiones', value: '312' },
       { label: 'K/D Ratio', value: '1.47' },
+    ],
+    actions: [
+      { label: 'Planos de construccion', href: '#rust-building-plans' },
+      { label: 'Calculadora de raideos', href: '#rust-raid-calculator' },
     ],
   },
 ]

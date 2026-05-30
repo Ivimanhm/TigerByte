@@ -3,29 +3,20 @@ import { TroubleshootingPage } from './pages/TroubleshootingPage'
 import { GuidesPage } from './pages/GuidesPage'
 import { ConfigPage } from './pages/ConfigPage'
 import { SpecialFeaturesPage } from './pages/SpecialFeaturesPage'
-import { GameToolsPage } from './pages/GameToolsPage'
+import { TeamBuilderPage } from './pages/games/lol/TeamBuilderPage'
+import { ChampionTierlistPage } from './pages/games/lol/ChampionTierlistPage'
+import { BuildCreatorPage } from './pages/games/dbd/BuildCreatorPage'
+import { WeaponBuildsPage } from './pages/games/tarkov/WeaponBuildsPage'
+import { MapExtractionPage } from './pages/games/tarkov/MapExtractionPage'
+import { BuildingPlansPage } from './pages/games/rust/BuildingPlansPage'
+import { RaidCalculatorPage } from './pages/games/rust/RaidCalculatorPage'
+
 import { useEffect, useState } from 'preact/hooks'
 import { appMeta } from './data/app-meta.generated'
 import { applyVisualSettings, loadSettings } from './utils/settings'
+import { normalizeVersion, isRemoteNewer } from './utils/version'
 
 const UPDATE_NOTICE_STORAGE_KEY = 'tb_update_notice_dismissed_tag'
-
-function normalizeVersion(version: string) {
-  return version.trim().replace(/^v/i, '')
-}
-
-function isRemoteNewer(currentVersion: string, remoteVersion: string) {
-  const a = normalizeVersion(currentVersion).split('.').map((x) => Number.parseInt(x, 10) || 0)
-  const b = normalizeVersion(remoteVersion).split('.').map((x) => Number.parseInt(x, 10) || 0)
-  const max = Math.max(a.length, b.length)
-  for (let i = 0; i < max; i += 1) {
-    const av = a[i] ?? 0
-    const bv = b[i] ?? 0
-    if (bv > av) return true
-    if (bv < av) return false
-  }
-  return false
-}
 
 export function App() {
   const [hash, setHash] = useState(typeof window !== 'undefined' ? window.location.hash : '')
@@ -85,47 +76,18 @@ export function App() {
   }, [])
 
   const page =
-    hash === '#troubleshooting'
-      ? <TroubleshootingPage />
-      : hash === '#guides'
-        ? <GuidesPage />
-      : hash === '#config'
-        ? <ConfigPage />
-        : hash === '#special-features'
-          ? <SpecialFeaturesPage />
-          : hash === '#tools-lol'
-            ? (
-              <GameToolsPage
-                gameName="League of Legends"
-                subtitle="Creador de equipos y tierlist de campeones."
-                features={['Generador de composiciones', 'Tierlist por parche', 'Sinergias y counters']}
-              />
-            )
-            : hash === '#tools-dbd'
-              ? (
-                <GameToolsPage
-                  gameName="Dead by Daylight"
-                  subtitle="Creador de builds."
-                  features={['Builds por asesino/superviviente', 'Perks recomendadas', 'Preset por estilo de juego']}
-                />
-              )
-              : hash === '#tools-tarkov'
-                ? (
-                  <GameToolsPage
-                    gameName="Escape from Tarkov"
-                    subtitle="Mapas, builds de armas."
-                    features={['Mapas interactivos', 'Builds por presupuesto', 'Comparador de municion']}
-                  />
-                )
-                : hash === '#tools-rust'
-                  ? (
-                    <GameToolsPage
-                      gameName="Rust"
-                      subtitle="Planos de casas y calculadora de raids."
-                      features={['Editor de planos', 'Calculadora de c4/cohetes', 'Checklist de defensa de base']}
-                    />
-                  )
-            : <LandingPage />
+    hash === '#troubleshooting' ? <TroubleshootingPage /> :
+    hash === '#guides' ? <GuidesPage /> :
+    hash === '#config' ? <ConfigPage /> :
+    hash === '#special-features' ? <SpecialFeaturesPage /> :
+    hash === '#lol-team-builder' ? <TeamBuilderPage /> :
+    hash === '#lol-champion-tierlist' ? <ChampionTierlistPage /> :
+    hash === '#dbd-build-creator' ? <BuildCreatorPage /> :
+    hash === '#tarkov-weapon-builds' ? <WeaponBuildsPage /> :
+    hash === '#tarkov-map-extraction' ? <MapExtractionPage /> :
+    hash === '#rust-building-plans' ? <BuildingPlansPage /> :
+    hash === '#rust-raid-calculator' ? <RaidCalculatorPage /> :
+    <LandingPage />
 
   return (
     <>
@@ -133,7 +95,7 @@ export function App() {
         <div class="fixed left-1/2 top-4 z-50 w-[min(94%,760px)] -translate-x-1/2 rounded-xl border border-cyan/40 bg-bg/90 px-4 py-3 shadow-[0_16px_40px_rgba(3,10,23,0.7)] backdrop-blur-md">
           <div class="flex items-center justify-between gap-3 text-sm">
             <p class="text-text">
-              Nueva version disponible: <strong class="text-cyan">{updateNotice.version}</strong>
+              Version disponible: <strong class="text-cyan">{updateNotice.version}</strong>
             </p>
             <div class="flex items-center gap-2">
               <a

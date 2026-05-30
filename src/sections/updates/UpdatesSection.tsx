@@ -1,12 +1,71 @@
-﻿import { GlassPanel } from '../../components/ui/GlassPanel'
+import { useEffect, useState } from 'preact/hooks'
+import { GlassPanel } from '../../components/ui/GlassPanel'
 import { updates } from '../../data/updates.generated'
+import { normalizeVersion } from '../../utils/version'
 
 const MAX_VISIBLE_UPDATES = 4
 const COMMITS_HISTORY_URL = 'https://github.com/Ivimanhm/TigerByte/commits/main'
+type UpdateItem = (typeof updates)[number]
+
+type RuntimeUpdateEventDetail = {
+  version: string
+  dateIso: string
+  note: string
+}
+
+function parseSemver(version: string) {
+  const parts = normalizeVersion(version).split('-')[0].split('.').map((x) => Number.parseInt(x, 10))
+  if (parts.length < 3 || parts.some((x) => Number.isNaN(x))) return null
+  return { major: parts[0], minor: parts[1], patch: parts[2] }
+}
+
+function classifyBySemver(currentVersion: string, previousVersion: string) {
+  const current = parseSemver(currentVersion)
+  const previous = parseSemver(previousVersion)
+  if (!current || !previous) return 'ACTUALIZACION'
+  if (current.major > previous.major) return 'CAMBIO MAYOR'
+  if (current.minor > previous.minor) return 'NUEVA FUNCION'
+  if (current.patch > previous.patch) return 'CAMBIO MENOR'
+  return 'ACTUALIZACION'
+}
+
+function formatDate(isoDate: string) {
+  const [y, m, d] = isoDate.split('-').map(Number)
+  const monthNames = ['Ene', 'Feb', 'Mar', 'Abr', 'May', 'Jun', 'Jul', 'Ago', 'Sep', 'Oct', 'Nov', 'Dic']
+  if (!y || !m || !d) return 'Fecha desconocida'
+  return `${d} ${monthNames[m - 1]}, ${y}`
+}
 
 export function UpdatesSection() {
-  const visibleUpdates = updates.slice(0, MAX_VISIBLE_UPDATES)
-  const hasMore = updates.length > MAX_VISIBLE_UPDATES
+  const [updatesFeed, setUpdatesFeed] = useState<UpdateItem[]>(updates)
+  const visibleUpdates = updatesFeed.slice(0, MAX_VISIBLE_UPDATES)
+  const hasMore = updatesFeed.length > MAX_VISIBLE_UPDATES
+
+  useEffect(() => {
+    const onRuntimeUpdate = (event: Event) => {
+      const detail = (event as CustomEvent<RuntimeUpdateEventDetail>)?.detail
+      if (!detail?.version) return
+
+      setUpdatesFeed((prev) => {
+        if (prev.some((item) => normalizeVersion(item.version) === normalizeVersion(detail.version))) {
+          return prev
+        }
+        const previousVersion = prev[0]?.version || detail.version
+        const nextTag = classifyBySemver(detail.version, previousVersion)
+        const nextItem: UpdateItem = {
+          version: detail.version,
+          tag: nextTag,
+          date: detail.dateIso ? formatDate(detail.dateIso) : 'Fecha desconocida',
+          note: detail.note || 'TigerByte',
+        }
+        return [nextItem, ...prev.filter((item) => item.version !== 'Sin datos')]
+      })
+    }
+
+    window.addEventListener('tigerbyte:updates-refresh', onRuntimeUpdate as EventListener)
+    return () => window.removeEventListener('tigerbyte:updates-refresh', onRuntimeUpdate as EventListener)
+  }, [])
+
   const getTagColors = (tag: string) => {
     if (tag === 'IMPORTANTE' || tag === 'CAMBIO MAYOR') {
       return { backgroundColor: '#4A1F0F', color: '#FDBA74' }
@@ -52,32 +111,33 @@ export function UpdatesSection() {
                   'linear-gradient(to bottom, rgba(124,58,237,1) 0%, rgba(124,58,237,0.9) 34%, rgba(124,58,237,0.46) 68%, rgba(124,58,237,0.1) 100%)',
               }
           return (
-          <li class="relative flex items-start gap-3">
-            <span
-              class="pointer-events-none absolute left-2 top-[0.62rem] bottom-1 w-[1.5px] -translate-x-1/2 rounded-full"
-              style={lineStyle}
-            />
-            <span class="relative z-10 mt-[0.1rem] block w-4 shrink-0">
+            <li class="relative flex items-start gap-3">
               <span
-                class="pointer-events-none absolute left-2 top-[0.62rem] h-3 w-3 -translate-x-1/2 -translate-y-1/2 rounded-full"
-                style={dotStyle}
+                class="pointer-events-none absolute left-2 top-[0.62rem] bottom-1 w-[1.5px] -translate-x-1/2 rounded-full"
+                style={lineStyle}
               />
-            </span>
-            <div class="min-w-0 flex-1">
-              <div class="mb-1 flex items-center gap-2">
-              <strong class="text-cyan">{update.version}</strong>
-              <span
-                class="rounded px-1.5 py-[1px] text-[10px] font-semibold uppercase tracking-wide"
-                style={getTagColors(update.tag)}
-              >
-                {update.tag}
+              <span class="relative z-10 mt-[0.1rem] block w-4 shrink-0">
+                <span
+                  class="pointer-events-none absolute left-2 top-[0.62rem] h-3 w-3 -translate-x-1/2 -translate-y-1/2 rounded-full"
+                  style={dotStyle}
+                />
               </span>
-              <span class="ml-auto text-xs text-slate-300/85">{update.date}</span>
+              <div class="min-w-0 flex-1">
+                <div class="mb-1 flex items-center gap-2">
+                  <strong class="text-cyan">{update.version}</strong>
+                  <span
+                    class="rounded px-1.5 py-[1px] text-[10px] font-semibold uppercase tracking-wide"
+                    style={getTagColors(update.tag)}
+                  >
+                    {update.tag}
+                  </span>
+                  <span class="ml-auto text-xs text-slate-300/85">{update.date}</span>
+                </div>
+                <p class="max-w-[95%] leading-relaxed text-slate-300/80">{update.note}</p>
               </div>
-              <p class="max-w-[95%] leading-relaxed text-slate-300/80">{update.note}</p>
-            </div>
-          </li>
-        )})}
+            </li>
+          )
+        })}
       </ol>
       {hasMore ? (
         <a

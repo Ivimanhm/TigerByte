@@ -1,0 +1,1386 @@
+[
+  {
+    "id": "survivor-a-mano-descubierta",
+    "name": "A Mano Descubierta",
+    "description": "Mejora la capacidad de percibir Auras de tu equipo y la tuya.\n• Aumenta el alcance de la percepción de Auras en 8 / 12 / 16 metros para ti y para los otros Sobrevivientes.\n\nLos Sobrevivientes solo pueden recibir un efecto de A Mano Descubierta a la vez.\n\n\"Prestar atención es lo que me ha mantenido con vida todos estos años. Eso y mi atractivo, por supuesto.\" — Ace Visconti",
+    "owner": "Ace",
+    "fileName": "survivor-a-mano-descubierta.png",
+    "role": "survivor"
+  },
+  {
+    "id": "survivor-abandonado-a-tu-suerte",
+    "name": "Abandonado a tu Suerte",
+    "description": "\"Harás el trabajo... cueste lo que cueste.\"\nSi eres el Último Sobreviviente con Vida , se activa Abandonado a tu Suerte :\n\n• El Aura de la Trampilla será revelada a una distancia de 24 / 28 / 32 metros .\n\n\"No estoy jugando. ¡Lo haré solo!\" — Bill Overbeck",
+    "owner": "Bill",
+    "fileName": "survivor-abandonado-a-tu-suerte.png",
+    "role": "survivor"
+  },
+  {
+    "id": "survivor-adrenalina",
+    "name": "Adrenalina",
+    "description": "\"Cuando estás a punto de escapar, te invade una energía inesperada.\"\nUna vez que se abren las Puertas de Salida , se activa Adrenalina y dispara los siguientes efectos:\n\n• Te curas hasta el sigiuente Estado de Salud .\n\n• Otorga un +50 % del Efecto de Estado Celeridad durante 3 segundos .\n\nAdrenalina inflige el Efecto de Estado Agotado durante 60 / 50 / 40 segundos después de usarlo.",
+    "owner": "Meg",
+    "fileName": "survivor-adrenalina.png",
+    "role": "survivor"
+  },
+  {
+    "id": "survivor-agilidad",
+    "name": "Agilidad",
+    "description": "Realizar un Salto Apresurado activa los efectos de Agilidad :\n• Otorga un +50 % de Efecto de Estado Celeridad durante #duration .\n\nNo se puede usar Agilidad mientras estás Agotado .\nAgilidad causa Efecto de Estado Agotado durante 60 / 50 / 40 segundos .\n\n\"¿Te enojaste?\" — Feng Min",
+    "owner": "Feng",
+    "fileName": "survivor-agilidad.png",
+    "role": "survivor"
+  },
+  {
+    "id": "survivor-aguante-el-dolor",
+    "name": "Aguante el Dolor",
+    "description": "El dolor te afecta como a todo el mundo, pero prefieres que los demás no se den cuenta.\nCuando te curas o cuando curas a otro Sobreviviente, te beneficias de los siguientes efectos:\n\n• Suprime todos los sonidos relacionados a Curaciones, incluidos los Gruñidos de Dolor .\n\n• Fallar las Pruebas de Habilidad de Curación no activa una Notificación de Ruido Fuerte .\n• Reduce la penalización a un 3 / 2 / 1 % de la Progresión total.\n\n\"Puedo hacerlo.\" — Leon Scott Kennedy",
+    "owner": "Leon",
+    "fileName": "survivor-aguante-el-dolor.png",
+    "role": "survivor"
+  },
+  {
+    "id": "survivor-alerta",
+    "name": "Alerta",
+    "description": "Tus agudos sentidos están en alerta máxima.\nCuando el Asesino Rompe o Daña algo, se activa Alerta :\n\n• El Aura del Asesino se revela durante 3 / 4 / 5 segundos .\n\n\"Tengo una vista privilegiada.\" — Feng Min",
+    "owner": "Feng",
+    "fileName": "survivor-alerta.png",
+    "role": "survivor"
+  },
+  {
+    "id": "survivor-alianza-reprimida",
+    "name": "Alianza Reprimida",
+    "description": "Ya te acostumbrante a que te persigan las fuerzas del mal, por lo que empezaste a sacarle provecho.\nDespués de reparar Generadores durante un total de 55 / 50 / 45 segundos , se activa Alianza Reprimida :\n\n• Presiona el botón de Habilidad Activa para llamar al Ente para que bloquee el Generador que estás actualmente reparando durante 30 segundos , después de eso se desactiva Alianza Reprimida .\n\n• Se revela el Aura del Generador bloqueado para todos los Sobrevivientes en blanco .\n\nNo puedes usar Alianza Reprimida si otros Sobrevivientes están reparando tu Generador.",
+    "owner": "Cheryl",
+    "fileName": "survivor-alianza-reprimida.png",
+    "role": "survivor"
+  },
+  {
+    "id": "survivor-arenque-rojo",
+    "name": "Arenque Rojo",
+    "description": "\"Te diste cuenta de que las personas prestan atención a cualquier cosa que haga mucho ruido.\"\nDespués de reparar un Generador durante al menos 3 segundos , verás su Aura resaltado en amarillo .\n\n• El Generador permanecerá resaltado hasta que se repara por completo, repares un Generador nuevo, o entres a un Casillero .\n\n• Al entrar en cualquier Casillero se activará una Notificación de Ruido Fuerte para el Asesino en la ubicación del Generador resaltado.\n\nArenque Rojo tiene un tiempo de recuperación de 25 / 20 / 15 segundos .\n\n\"Las noticias editan lo pesado y complejo; es decir, la verdad.\" — Zarina Kassir",
+    "owner": "Zarina",
+    "fileName": "survivor-arenque-rojo.png",
+    "role": "survivor"
+  },
+  {
+    "id": "survivor-arrebato",
+    "name": "Arrebato",
+    "description": "Tienes un espíritu de lucha y haces todo por szafarte del enemigo.\nMientras te carga el Asesino, obtienes los siguientes efectos:\n\n• Aumenta la fuerza de los Efectos de Forcejeo en el Asesino en un 60 / 70 / 80 % .\n\n• Suprime la habilidad el Asesino de ver las Auras de todos los Ganchos en un radio de 16 metros .\n\n• Otorga un +33 % de progreso de forcejeo actual cuando el Asesino cae de una gran altura.\n\n\"A golpes y patadas,\nintento liberarme:\ntus manos no pueden pararme.\" — \"Arrebato\" de Kate Denson",
+    "owner": "Kate",
+    "fileName": "survivor-arrebato.png",
+    "role": "survivor"
+  },
+  {
+    "id": "survivor-as-en-la-manga",
+    "name": "As en la Manga",
+    "description": "Parace que la suerte siempre está de tu parte.\nAl sacar un Objeto de un Cofre , existe una posibilidad de que lleve un Accesorio :\n\n• Hay un 100 % de probabilidades de que obtengas un Accesorio de rareza Ultrarrara o inferior.\n\n• Hay un 50 / 75 / 100 % de probabilidades de obtener un segundo Accesorio de rareza Poco Común o inferior.\n\nAs en la Manga permite que conserves los Accesorios que tenga tu Objeto cuando escapas.\n\"No todo lo que brilla es oro. Pero el oro no vale nada en este lugar, así que esto podría ser útil.\" — Ace Visconti",
+    "owner": "Ace",
+    "fileName": "survivor-as-en-la-manga.png",
+    "role": "survivor"
+  },
+  {
+    "id": "survivor-autoconservacin",
+    "name": "Autoconservación",
+    "description": "\"La vida no perdona.\nA veces, es mejor preocuparte por ti.\"\nCuando otro Sobreviviente a menos de #range de ti termina siendo golpeado por un Ataque Básico o Especial , se activa Autoconservación :\n\n• Suprime tus Gruñidos de Dolor y la creación de Charcos de Sangre y Marcas de Arañazos durante 20 / 25 / 30 segundos .\n\n\"Algo que aprendí en la industria: hay que bajar la cabeza cuando estén atacando a hachazos.\" — Yun-Jin Lee",
+    "owner": "Lee",
+    "fileName": "survivor-autoconservacin.png",
+    "role": "survivor"
+  },
+  {
+    "id": "survivor-autocuracin",
+    "name": "Autocuración",
+    "description": "• Desbloquea la habilidad de Autocuración , lo que te permite curarte sin Botiquín a un 25 / 30 / 35 % de la velocidad normal de Curación.",
+    "owner": "Claudette",
+    "fileName": "survivor-autocuracin.png",
+    "role": "survivor"
+  },
+  {
+    "id": "survivor-autodidacta",
+    "name": "Autodidacta",
+    "description": "Superar Pruebas de Habilidad cuando curas a otro Sobreviviente otorga +1 Distintivo , hasta un máximo de 3 / 4 / 5 Distintivo :\n• Suprime las Pruebas de Habilidad Excelente de Curación .\n\n• Las Pruebas de Habilidad Superadas de Curación otorgan progreso de Curación basado en el número de Distintivos acumulados:\n• 0 Distintivos : -15 % .\n\n• 1 Distintivo : +0 % .\n\n• 2 Distintivos : +15 % .\n\n• 3 Distintivos : +30 % (límite del Nivel I ).\n\n• 4 Distintivos : +45 % (límite del Nivel II ).\n\n• 5 Distintivos : +60 % (límite del Nivel III ).\n\nAutodidacta no aplica cuando curas usando un Botiquín .\n\n\"Puedes conseguir cualquier cosa que te propongas si te esfuerzas realmente por ello.\" — Adam Francis",
+    "owner": "Adam",
+    "fileName": "survivor-autodidacta.png",
+    "role": "survivor"
+  },
+  {
+    "id": "survivor-bada-bada-bum",
+    "name": "Bada, Bada, Bum",
+    "description": "\"Tal vez la pelea no sea lo tuyo, pero tienes uno que otro truco para contraatacar.\"\nTras completar el equivalente a un 20 % de las reparaciones de un Generador , se activa Bada, Bada, Bum :\n\nMientras esté activo, presiona el botón de Habilidad Activa junto a una ventana para instalar una Trampa, la que se mantiene activa durante 40 / 50 / 60 segundos .\n\nLa Trampa se activa cuando el Asesino realiza un salto por la ventana, lo que inflige al Asesino un -50 % Efecto de Estado Entorpecimiento durante 6 segundos .\n\nBada, Bada, Bum se desactiva después de activarse exitosamente o una vez que se acabe el temporizador.\n\nLas Auras de las Ventanas con Trampa se revelan a todos los Sobrevivientes en amarillo .\n\n\"Jamás me digas cuáles son las probabilidades.\" — Dustin Henderson",
+    "owner": "Dustin",
+    "fileName": "survivor-bada-bada-bum.png",
+    "role": "survivor"
+  },
+  {
+    "id": "survivor-baila-conmigo",
+    "name": "Baila Conmigo",
+    "description": "Cuando das un Salto Apresurado en una Ventana o sales corriendo de un Casillero , Baila Conmigo activa este efecto:\n• Suprime la creación de Marcas de Arañazos durante 3 segundos .\n\nBaila Conmigo tiene un tiempo de recuperación de 20 / 20 / 15 segundos .\n\n\"Otra canción empieza a sonar.\nBaila conmigo, se avecina tempestad.\nSigue mis pasos, sígueme el ritmo.\nHasta el amanecer, baila conmigo.\" — \"Baila Conmigo\" de Kate Denson",
+    "owner": "Kate",
+    "fileName": "survivor-baila-conmigo.png",
+    "role": "survivor"
+  },
+  {
+    "id": "survivor-bajo-vigilancia",
+    "name": "Bajo Vigilancia",
+    "description": "Estar cerca del Asesino te llena de determinación.\n\nPor cada 15 segundos que pases dentro del Radio de Terror del Asesino sin que te esté persiguiendo, Bajo Vigilancia gana 1 Distintivo , hasta un máximo de 2 / 3 / 4 Distintivo .\n\n• Cuando Bajo Vigilancia tenga al menos 1 Distintivo , Pruebas de Habilidad Superadas consume 1 Distintivo y se considerará como una Prueba de Habilidad Excelente, otorgándole una bonificación de progreso adicional de un +1 % en Reparaciones.\n\n• Las Pruebas de Habilidad Excelentes no consumen ningún Distintivo.\n\n\"Te tenía de rodillas. Luego huiste, huiste asustado porque te tenía. ¡Voy a cerrar este caso!\" — Detective David Tapp",
+    "owner": "David",
+    "fileName": "survivor-bajo-vigilancia.png",
+    "role": "survivor"
+  },
+  {
+    "id": "survivor-bendicin-crculo-de-curacin",
+    "name": "Bendición: Círculo de Curación",
+    "description": "Una Bendición que ofrece consuelo en medio del terror.\nMantén presionado el botón de Habilidad Activa en un Tótem Apagado o de Maldición para bendecirlo y crear un Tótem de Bendición .\nTodos los Sobrevivientes a menos de 24 metros escuchan suaves campanadas sonando y se benefician de sus Efectos de Bendición :\n\n• Aumenta la velocidad de curación en un 50 / 75 / 100 % adicional cuando no usas un Botiquín .\n\n• Si un Sobreviviente está herido, se revela su Aura a todos los Sobrevivientes.\n\nLos Sobrevivientes solo pueden recibir un efecto de Bendición: Círculo de Curación a la vez.\nSolo puedes bendecir un Tótem a la vez con tus Habilidades de Bendición y todos sus efectos estarán activos en el mismo Tótem de Bendición .\n\n\"Prueba esto, es mejor que cualquier cosa que encuentres en una farmacia.\" — Mikaela Reid",
+    "owner": "Mikaela",
+    "fileName": "survivor-bendicin-crculo-de-curacin.png",
+    "role": "survivor"
+  },
+  {
+    "id": "survivor-bendicin-exponencial",
+    "name": "Bendición: Exponencial",
+    "description": "\"Cuando parece que es tu turno, consideras cómo recalcular las probabilidades.\"\nMantén presionado el botón de Habilidad Activa en un Tótem Apagado o de Maldición para bendecirlo y crear un Tótem de Bendición .\nTodos los Sobrevivientes a menos de 24 metros escuchan suaves campanadas sonando y se benefician de sus Efectos de Bendición :\n\n• Aumenta la velocidad de Recuperación mientras estás en el Estado Agonizante en un 90 / 95 / 100 % .\n\n• Desbloquea la habilidad de Autorrecuperación , permitiéndoles recuperarse completamente del Estado Agonizante .\n\nSolo puedes bendecir un Tótem a la vez con tus Habilidades de Bendición y todos sus efectos estarán activos en el mismo Tótem de Bendición .\n\"Aún no nos llega la hora... creo.\" — Jonah Vasquez",
+    "owner": "Jonah",
+    "fileName": "survivor-bendicin-exponencial.png",
+    "role": "survivor"
+  },
+  {
+    "id": "survivor-bendicin-iluminacin",
+    "name": "Bendición: Iluminación",
+    "description": "Tu sagaz perspicacia es algo que debe compartirse con los demás.\nMantén presionado el botón de Habilidad Activa en un Tótem Apagado o de Maldición para bendecirlo y crear un Tótem de Bendición .\nTodos los Sobrevivientes a menos de 24 metros escuchan suaves campanadas sonando y se benefician de sus Efectos de Bendición :\n\n• Se revelan las Auras de todos los Cofres y Generadores en azul .\n\nAumenta tu velocidad de acción para Bendecir y Purificar en un 6 / 8 / 10 % mientras haya un Tótem de Bendición encendido.\nLos Sobrevivientes solo pueden recibir un efecto de Bendición: Iluminación a la vez.\n\nSolo puedes bendecir un Tótem a la vez con tus Habilidades de Bendición y todos sus efectos estarán activos en el mismo Tótem de Bendición .\n\n\"Un giro en la realidad. Cargado de significados ocultos.\" — Return",
+    "owner": "Alan",
+    "fileName": "survivor-bendicin-iluminacin.png",
+    "role": "survivor"
+  },
+  {
+    "id": "survivor-bendicin-paso-sombro",
+    "name": "Bendición: Paso Sombrío",
+    "description": "Una Bendición que oculta la verdad.\n\nMantén presionado el botón de Habilidad Activa en un Tótem Apagado o de Maldición para bendecirlo y crear un Tótem de Bendición .\nTodos los Sobrevivientes a menos de 24 metros escuchan suaves campanadas sonando y se benefician de sus Efectos de Bendición :\n\n• Se suprimen las Marcas de Arañazos\n\n• El Asesino no puede ver las Auras del Sobreviviente.\n• Ambos efectos se mantienen durante 2 / 3 / 4 segundos después de dejar el alcance del Tótem de Bendición\n\nSolo puedes bendecir un Tótem a la vez con tus Habilidades de Bendición y todos sus efectos estarán activos en el mismo Tótem de Bendición .\n\n\"Quédate en las sombras y oculta tu rastro.\" — Mikaela Reid",
+    "owner": "Mikaela",
+    "fileName": "survivor-bendicin-paso-sombro.png",
+    "role": "survivor"
+  },
+  {
+    "id": "survivor-bendicin-teora-oscura",
+    "name": "Bendición: Teoría Oscura",
+    "description": "Tu estudio compulsivo sobre lo paranormal te proporcionó un conocimiento sin precedentes sobre otros reinos y planos de existencia.\nMantén presionado el botón de Habilidad Activa en un Tótem Apagado o de Maldición para bendecirlo y crear un Tótem de Bendición .\nTodos los Sobrevivientes a menos de 24 metros escuchan suaves campanadas sonando y se benefician de sus Efectos de Bendición :\n\n• Obtienes un +2 % de Efecto de Estado Celeridad .\n• Este efecto se mantiene durante 2 / 3 / 4 segundos después de abandonar el alcance del Tótem de Bendición\n\nSolo puedes bendecir un Tótem a la vez con tus Habilidades de Bendición y todos sus efectos estarán activos en el mismo Tótem de Bendición .",
+    "owner": "Yoichi",
+    "fileName": "survivor-bendicin-teora-oscura.png",
+    "role": "survivor"
+  },
+  {
+    "id": "survivor-camaradera",
+    "name": "Camaradería",
+    "description": "\"La vida te ha demostrado lo importante que es la amistad, que te ha sado fuerzas.\"\nSi te cuelgan y estás en la Fase de Forcejeo , se activa Camaradería :\n\n• Pausa el temporizador de la Fase de Forcejeo durante 26 / 30 / 34 segundos tan pronto como otro Sobreviviente se acerca a 16 metros de tu Gancho .\n\n\"Recuerda: una vez ahí dentro... finge que no te importa. Eso es, vas aprendiendo, camarada. Vas aprendiendo.\" — Steve Harrington",
+    "owner": "Steve",
+    "fileName": "survivor-camaradera.png",
+    "role": "survivor"
+  },
+  {
+    "id": "survivor-cambio-de-planes",
+    "name": "Cambio de Planes",
+    "description": "\"En vez de ceder ante el peligro, recalculas y ajustas tu estrategia.\"\nComienzas la Partida con 2 Distintivos .\n\nAl estar dentro de un Casillero con una Caja de Herramientas que no es parte de un evento, presiona el botón de Habilidad Activa para usar 1 Distintivo y transformar tu Caja de Herramientas en un Botiquín con un accesorio aleatorio, ambos de la misma rareza.\n\nEl Botiquín nuevo tiene un 80 / 90 / 100 segundos de cargas.\n\n\"Por Dios, por Dios, por Dios.\" — Dustin Henderson",
+    "owner": "Dustin",
+    "fileName": "survivor-cambio-de-planes.png",
+    "role": "survivor"
+  },
+  {
+    "id": "survivor-campen-de-la-luz",
+    "name": "Campeón de la Luz",
+    "description": "La luz de la lintera ve algo diferente. Se siente un poco más cálida.\nCuando enciendes una Linterna :\n\n• Obtienes un +50 % de Efecto de Estado Celeridad .\n\nCegar al Asesino de cualquier forma aplica los siguientes efectos:\n• Sufres de un -20 % de Efecto de Estado Entorpecimiento durante 6 segundos .\n• Este efecto no se puede acumular.\n\nCampeón de la Luz tiene un tiempo de recuperación de 60 / 50 / 40 segundos después de cegar al Asesino.\n\"Me así a la linterna como si mi vida dependiera de ella, paa evitar que se acercara aún más.\" — Departure",
+    "owner": "Alan",
+    "fileName": "survivor-campen-de-la-luz.png",
+    "role": "survivor"
+  },
+  {
+    "id": "survivor-cargar-a-cuestas",
+    "name": "Cargar a Cuestas",
+    "description": "Nacida para ser parte de los discípulos. Lista para entregarte a una causa mayor. Esste es tu llamado.\nUna vez por Partida, y mientras no estés por morir en un Gancho , presiona el botón de Habilidad Activa mientras estás de pie en frente de un Sobreviviente Colgado para descolgarlo y activar los siguientes efectos:\n\n• Intercambia 1 Estado de Gancho con el otro Sobreviviente en su beneficio.\n\n• Gritas y sufres de Efecto de Estado Vulnerabilidad durante 30 / 25 / 20 segundos .\n\n\"Aún no es tu momento. ¡Sigue adelante!\" — Taurie Cain",
+    "owner": "Taurie",
+    "fileName": "survivor-cargar-a-cuestas.png",
+    "role": "survivor"
+  },
+  {
+    "id": "survivor-carne-resbaladiza",
+    "name": "Carne Resbaladiza",
+    "description": "Has desarrollado una forma eficiente de liberarte de los Ganchos.\n• Aumenta el número de intentos para Liberarte del Ganchos en +3 .\n\n• Aumenta la Probabilidad de Liberarte del Gancho en un 2 / 3 / 4 % .",
+    "owner": "Todos",
+    "fileName": "survivor-carne-resbaladiza.png",
+    "role": "survivor"
+  },
+  {
+    "id": "survivor-caza-menor",
+    "name": "Caza Menor",
+    "description": "Tienes la capacidad natural de detectar el peligro.\n• Recibe una advertencia sonora cuando miras en dirección a los Tótems en un área cónica de 45 ° con un alcance de 8 / 10 / 12 metros .\n\nCaza Menor tiene un tiempo de recuperación de 14 / 12 / 10 segundos cada vez que se activa.\n\nPor cada Tótem Apagado o de Maleficio purificado por cualquier Jugador, Caza Menor obtiene 1 Distintivo automáticamente:\n\n• Por cada distintivo se reduce en 5 ° el área cónica de detección, hasta un mínimo de 20 ° .\n\n\"Nop.\" — Las Cintas Perdidas: Andy",
+    "owner": "Todos",
+    "fileName": "survivor-caza-menor.png",
+    "role": "survivor"
+  },
+  {
+    "id": "survivor-cada-equilibrada",
+    "name": "Caída Equilibrada",
+    "description": "\"Tu agilidad y reflejos felinos son inigualables.\"\nMientras caes de cierta altura, te beneficias de los siguientes efectos:\n\n• Suprime todos los sonidos asociados a la caída y el aterrizaje.\n\n• Reduce la duración del Tambaleo por caídas en un -75 % .\n\n• Otorga un #haste de Efecto de Estado Celeridad durante #durationHaste .\n\nNo se puede usar Caída Equilibrada mientras estás Agotado .\nCaída Equilibrada causa el Efecto de Estado Agotado durante 60 / 50 / 40 segundos .\n\"He saltado desde lugares más altos.\" — Nea Karlsson",
+    "owner": "Nea",
+    "fileName": "survivor-cada-equilibrada.png",
+    "role": "survivor"
+  },
+  {
+    "id": "survivor-chatarrero",
+    "name": "Chatarrero",
+    "description": "Donde otros ven basura, tú ves herramientas improvisadas de valor.\nAl sostenter una Caja de Herramientas vacía, se activa Chatarrero .\n\n• Superar una Prueba de Habilidad de Reparación Excelente obtienes 1 Distintivo , hasta un máximo de 5 Distintivos .\n\n• Alcanzar el máximo de Distintivos automáticamente los consume y recarga por completo la Caja de Herramientas .\n\n• Recargar la Caja de Herramientas reducirá tu velocidad de reparación en un -50 % durante 40 / 35 / 30 segundos .\n\nChatarrero otorga la habilidad de hurgar en un Cofre abierto una vez por Partida y te garantiza una Caja de Herramientas básica.\n\n\"Es increíble las cosas que la gente de por aquí desecha.\" — Gabriel Soma",
+    "owner": "Gabriel",
+    "fileName": "survivor-chatarrero.png",
+    "role": "survivor"
+  },
+  {
+    "id": "survivor-cinco-movimientos-adelante",
+    "name": "Cinco Movimientos Adelante",
+    "description": "Mientras estés en el Radio de Terror del Asesino o este te esté persiguiendo:\n\n• Bajas Tarimas un 50 % más rápido.\n\n• Ves las Auras de las 5 Tarimas y Ventanas más cercanas.\n\nEsta ventaja tiene un tiempo de recuperación de 40 / 35 / 30 segundos después de que dejas caer una Tarima.\n\"Todos los problemas tienen una solución. En realidad, es una cuestión de complejidad.\" — Kwon Tae-young",
+    "owner": "Kwon",
+    "fileName": "survivor-cinco-movimientos-adelante.png",
+    "role": "survivor"
+  },
+  {
+    "id": "survivor-clarividencia",
+    "name": "Clarividencia",
+    "description": "\"Hay una energía intrínseca en ti que ve más allá de tu visión.\"\nDespués de purificar o bendecir un Tótem , se activa Clarividencia :\nMientras está activo, presiona y mantén presionado el botón para Usar Objeto cuando tengas las manos vacías para desbloquear todo tu potencial para leer Auras:\n\n• Se te revelan las Auras de los siguientes objetos ambientales a una distancia de 64 metros durante el tiempo que mantengas la interacción, hasta un máximo de 10 / 11 / 12 segundos :\n• Cofres\n\n• Palancas de las Puertas de Salida\n\n• Generadores\n\n• Trampilla\n\n• Ganchos\n\n\"¿Alguien más vio eso? ¿Solo yo?\" — Mikaela Reid",
+    "owner": "Mikaela",
+    "fileName": "survivor-clarividencia.png",
+    "role": "survivor"
+  },
+  {
+    "id": "survivor-compaero-de-escena",
+    "name": "Compañero de Escena",
+    "description": "\"Te encierras con tu coprotagonista, interactuando entre sí en un nivel superior.\"\nCuando estás en el Radio de Terror del Asesino, se activa Compañero de Escena :\n\n• Cuando miras en dirección al Asesino, gritarás y verás su Aura durante 4 / 5 / 6 segundos .\n\n• Hay una posibilidad del 50 % de que vuelvas a gritar y, si eso sucede, verás el Aura del Asesino durante +2 segundos más.\n\nCompañero de Escena tiene un tiempo de recuperación de 40 segundos .\n\"¡Esto no estaba en el guion!\" — Nicolas Cage",
+    "owner": "Nicolas",
+    "fileName": "survivor-compaero-de-escena.png",
+    "role": "survivor"
+  },
+  {
+    "id": "survivor-competencia-amistosa",
+    "name": "Competencia Amistosa",
+    "description": "\"Disfrutas del espíritu comunitario de una competencia e inspiras a otros a que hagan lo mismo.\"\nCada vez que completas un Generador con al menos un Sobreviviente más, se activa Competencia Amistosa :\n\n• Aumenta la velocidad de Reparación de todos los Sobrevivientes participantes, incluyéndote, en un +5 % por 100 / 110 / 120 segundos .\n\n\"¡Vamos, terminemos con esto!\" — Thalita Lyra",
+    "owner": "Thalita",
+    "fileName": "survivor-competencia-amistosa.png",
+    "role": "survivor"
+  },
+  {
+    "id": "survivor-conexin-emptica",
+    "name": "Conexión Empática",
+    "description": "Tu presencia se proyecta psíquicamente a quienes están en peligro.\n• Cuando un Sobreviviente está herido, puede ver tu Aura dentro de un radio de 25 / 30 / 35 % de tu ubicación.\n\n• Aumenta tu velocidad de Curación en un #healing .",
+    "owner": "Yoichi",
+    "fileName": "survivor-conexin-emptica.png",
+    "role": "survivor"
+  },
+  {
+    "id": "survivor-conocimiento-de-la-niebla",
+    "name": "Conocimiento de la Niebla",
+    "description": "\"Has visto de todo en tus largos años en la Niebla y, cuando te concentras, puedes recordarlo casi todo.\"\nDesbloquea el potencial en tu habilidad de lectura de Aura mientras reparas Generadores :\n\n• Se te revela el Aura del Asesino durante 4 / 5 / 6 segundos después de superar una Prueba de Habilidad Excelente de Reparación .\n\n\"He visto una enorme crueldad... y también he visto otro camino.\" — Vittorio Toscano",
+    "owner": "Vittorio",
+    "fileName": "survivor-conocimiento-de-la-niebla.png",
+    "role": "survivor"
+  },
+  {
+    "id": "survivor-conocimientos-de-botnica",
+    "name": "Conocimientos de Botánica",
+    "description": "Usas algunas plantas halladas en la fogata para elaborar tinturas que inhiben el sangrado.\n• Aumenta tu velocidad de Curación en un 30 / 40 / 50 % .\n\n• Reduce la eficiencia de Curación de los Botiquines en un -20 % .\n\n\"Unos Conocimientos Básicos de Botánica podrían salvar tu vida algún día.\" — Claudette Morel",
+    "owner": "Claudette",
+    "fileName": "survivor-conocimientos-de-botnica.png",
+    "role": "survivor"
+  },
+  {
+    "id": "survivor-consejos-de-pap",
+    "name": "Consejos de Papá",
+    "description": "Heredaste la habilidad de oír a los muertos y, ahora, los muertos te advierten del peligro.\n• Luego de aturdir al Asesino de cualquier forma, Consejos de Papá suprime tus Marcas de Arañazos , Charcos de Sangre , y Gruñidos de Dolor por 5 / 6 / 7 segundos .",
+    "owner": "Yoichi",
+    "fileName": "survivor-consejos-de-pap.png",
+    "role": "survivor"
+  },
+  {
+    "id": "survivor-consuelo",
+    "name": "Consuelo",
+    "description": "\"Tu presencia le ayuda a tus aliados a concentrarse, lo que alivia el pánico asociado a las condiciones extremas.\"\nMientras están dentro de un radio de 6 metros de un Sobreviviente colgado, presiona el botón de Habilidad Activa para activar los siguientes efectos durante 20 / 25 / 30 segundos :\n\n• Pausa el Proceso de Sacrificio .\n• Esto también pausa las Pruebas de Habilidad de Forcejeo para los Sobrevivientes en la Fase de Forcejeo .\n\n• El contorno de ese Sobreviviente se resalta en blanco .\n\nConsuelo solo puede ser usado una vez por Sobreviviente por Instancia de Gancho .",
+    "owner": "Rebecca",
+    "fileName": "survivor-consuelo.png",
+    "role": "survivor"
+  },
+  {
+    "id": "survivor-contramedida",
+    "name": "Contramedida",
+    "description": "Sabes cómo hacerle frente a un enemigo más fuerte que tú, y para lograrlo cazas y atacas aquello que le da ventaja.\n\nPurificas Tótems 20 % más rápido.\n\n• Recibes una bonificación de velocidad acumulable de 20 % para Purificar Tótems por el resto de la Partida.\n\n• Luego de purificar un Tótem, ves el Aura del Tótem que esté más lejos de ti por 10 / 12 / 14 segundos .\n\n\"No me molesta hacer un poco de trabajo detectivesco.\" — Jill Valentine",
+    "owner": "Jill",
+    "fileName": "survivor-contramedida.png",
+    "role": "survivor"
+  },
+  {
+    "id": "survivor-conviccin",
+    "name": "Convicción",
+    "description": "\"A veces, un último esfuerzo marca la diferencia entre la vida y la muerte.\"\nDespués de haber completado una acción de Curación en ti o en otro Sobreviviente, cada vez que estás en el Estado Agonizante , se activa Convicción .\nMientras esté activo, presiona el botón de Habilidad Activa después de alcanzar al menos un 25 % de progreso de Recuperación para activar los siguientes efectos:\n\n• Desbloquea la habilidad de autorrecuperación , permitiéndote recuperarte por completo del Estado Agonizante .\n• Inflige el Efecto de Estado Desesperanza .\n\n• Vuelves a caer en el Estado Agonizante después de 20 / 25 / 30 segundos .\n\n\"Esto me basta para seguir adelante. Para seguir intentando. Para seguir luchando. Para seguir soñando.\" — Michonne Grimes",
+    "owner": "Michonne",
+    "fileName": "survivor-conviccin.png",
+    "role": "survivor"
+  },
+  {
+    "id": "survivor-corazonada",
+    "name": "Corazonada",
+    "description": "Desbloquea la capacidad de percibir Auras.\n\nCuando se completa un Generador, las Auras de cualquier Generadores , Cofres , y Tótems dentro de un radio de 32 / 48 / 64 metros se te revelan durante 10 segundos . \"¿Puedes decirnos dónde estabas anoche?\" — Detective David Tapp",
+    "owner": "David",
+    "fileName": "survivor-corazonada.png",
+    "role": "survivor"
+  },
+  {
+    "id": "survivor-correccin",
+    "name": "Corrección",
+    "description": "\"Analizas los problemas rápidamente y corriges el trabajo de los demás cuando cometen errores.\"\nComienzas la Partida con 1 / 2 / 3 Distintivo(s) .\nObtienes +1 Distintivo por cada Prueba de Habilidad Excelente , hasta un máximo de #maxTokens :\n\n• Cuando un Sobreviviente Falla una Prueba de Habilidad normal, se consume -1 Distintivo y se convierte en una Prueba de Habilidad Superada .\n\n• Se te revela el Aura de ese Sobreviviente durante 6 segundos .\n\nCorrección no aplica en las Pruebas de Habilidad especiales.\n\"Dos pares de ojos ven más que uno.\" — Jonah Vasquez",
+    "owner": "Jonah",
+    "fileName": "survivor-correccin.png",
+    "role": "survivor"
+  },
+  {
+    "id": "survivor-curacin-reactiva",
+    "name": "Curación Reactiva",
+    "description": "Cuando la situación se vuelve más arriesgada, aumenta tu determinación para completar la operación.\nCuando otro Sobreviviente pierde un Estado de Salud en un radio de 32 metros alrededor de ti y estás en el Estado Herido :\n\n• Tu progreso de curación aumenta de inmediato en un 40 / 45 / 50 % de la progresión de curación faltante.",
+    "owner": "Ada",
+    "fileName": "survivor-curacin-reactiva.png",
+    "role": "survivor"
+  },
+  {
+    "id": "survivor-de-frente",
+    "name": "De Frente",
+    "description": "\"Si algo se te mete entre ceja y ceja, mejor que nadie se interponga en tu camino.\"\nDespués de esconderse en un Casillero durante 3 segundos , se activa De Frente .\nMientras está activo, mantén presionado el botón de Carrera mientras sales del Casillero para activar su efecto:\n\n• Hace que te lances con fuerza desde el Casillero , aturdiendo al Asesino si está muy cerca de él:\n• Tiene un rango de Aturdimiento de 2.5 metros .\n\n• Tiene una duración de Aturdimiento de 3 segundos .\n\n• Activa una Notificación de Ruido Fuerte para el Asesino al fallar.\n\nNo se puede usar De Frente mientras estás Agotado .\nDe Frente causa el Efecto de Estado Agotado durante 60 / 50 / 40 segundos al aturdir exitosamente al Asesino.\n\"A la gente se la recuerda por los obstáculos que superan. Puedes esconderte y olvidar de lo que eres capaz, o puedes enfrentarte a tus miedos y recordarle al mundo quién eres.\" — Jane Romero",
+    "owner": "Jane",
+    "fileName": "survivor-de-frente.png",
+    "role": "survivor"
+  },
+  {
+    "id": "survivor-de-la-calle",
+    "name": "De La Calle",
+    "description": "Las largas salidas nocturnas te enseñaron a sacarle provecho a lo que tienes.\n• Aumenta la Eficiencia de tus Objetos en un 15 / 20 / 25 % .\n\nDe La Calle extiende su efecto para todos los otros Sobrevivientes en un radio de 8 metros de tu ubicación y se mantiene durante 15 segundos .\n\n\"¡Lo estás haciendo mal! Déjame que te enseñe cómo se hace.\" — Nea Karlsson",
+    "owner": "Nea",
+    "fileName": "survivor-de-la-calle.png",
+    "role": "survivor"
+  },
+  {
+    "id": "survivor-de-pies-ligeros",
+    "name": "De Pies Ligeros",
+    "description": "Corres con agilidad y gracia, lo oque hace que sea más difícil seguir tu rastro.\n• Reduce la Vida Útil de tus Marcas de Arañazos en un 3 / 4 / 5 segundos .\n\n• Reduce la aparición de Marcas de Arañazos en un -60 % , por lo que su aparición es inconsistente.\n\n\"Tómatelo con calma. Él sabe dónde has estado... Por eso siempre digo:\n'vive despacio y muere viejo'.\" — Las Cintas Perdidas: Dylan",
+    "owner": "Todos",
+    "fileName": "survivor-de-pies-ligeros.png",
+    "role": "survivor"
+  },
+  {
+    "id": "survivor-defensa-del-alma",
+    "name": "Defensa del Alma",
+    "description": "\"Has pasado por cosas muy difíciles y eres más fuerte gracias a ello.\"\nCada vez que te curas o te recuperas del Estado Agonizante , Defensa del Alma activa su efecto primario:\n\n• Obtienes el Efecto de Estado Resistencia durante 4 / 6 / 8 segundos .\n• Realizar una Acción Destacada de cualquier tipo eliminará Resistencia .\n\n• Esta habilidad tiene un tiempo de recuperación del 30 segundos .\n\nMientras sufras de Efecto de Estado Maldito , Defensa del Alma activa su efecto secundario:\n• Desbloquea la habilidad de Autorrecuperación , permitiéndote recuperarte por completo del Estado Agonizante .",
+    "owner": "Cheryl",
+    "fileName": "survivor-defensa-del-alma.png",
+    "role": "survivor"
+  },
+  {
+    "id": "survivor-dj-vu",
+    "name": "Déjà Vu",
+    "description": "La paranoia unida a tu horror al fracaso te ayuda a prepararte para no repetir los mismos errores.\nDesbloquea la habilidad para ver Auras:\n• Se te revelan las Auras de 3 Generadores próximos entre sí.\n\n• Aumenta tu velocidad de Reparación en los Generadores revelados en un 4 / 5 / 6 % .\n\nSostener un Mapa automáticamente rastrea Auras reveladas por Déjà Vu .",
+    "owner": "Todos",
+    "fileName": "survivor-dj-vu.png",
+    "role": "survivor"
+  },
+  {
+    "id": "survivor-demasiado-entusiasta",
+    "name": "Demasiado Entusiasta",
+    "description": "Luchar contra la Devastación te motiva e inspira.\nLuego de purificar o bendecir un Tótem , se activa Demasiado Entusiasta :\n\n• Tótem Apagado : Aumenta tu velocidad de Reparación en un 8 / 9 / 10 % .\n\n• Tótem de Maleficio : Aumenta tu velocidad de Reparación en un 16 / 18 / 20 % .\n\nDemasiado Entusiasta se desactiva después de perder un Estado de Salud de cualquier forma.\n\"La Devastación nos siente. Tenemos que trabajar rápido.\" — Haddie Kaur, Devastación del Abismo, Episodio 9",
+    "owner": "Haddie",
+    "fileName": "survivor-demasiado-entusiasta.png",
+    "role": "survivor"
+  },
+  {
+    "id": "survivor-demuestra-lo-que-vales",
+    "name": "Demuestra lo que Vales",
+    "description": "Aumenta la velocidad de Reparación acumulable de 6 / 8 / 10 % por cada otro Sobreviviente en un radio de 4 metros de tu ubicación, hasta un máximo de 18 / 24 / 30 % .\nDemuestra lo que Vales extiende su efecto a todos los Sobrevivientes dentro de ese alcance.\n\nLos Sobrevivientes solo pueden recibir un efecto de Demuestra lo que Vales a la vez.\n\n\"¡Muéstrame lo que puedes hacer!\" — Dwight Fairfield",
+    "owner": "Dwight",
+    "fileName": "survivor-demuestra-lo-que-vales.png",
+    "role": "survivor"
+  },
+  {
+    "id": "survivor-detallista",
+    "name": "Detallista",
+    "description": "Tu mirada atenta nota lo que otros ignoran.\nInicias la Partida con 3 Distintivos :\n\n• Si un Cofre ya fue abierto, consume -1 Distintivo para Hurgar en él y buscar un segundo Objeto allí.\n\n• Hurgas en los Cofres un 40 / 60 / 80 % más rápido.\n\nSolo puedes hurgar una vez por cofre.",
+    "owner": "Élodie",
+    "fileName": "survivor-detallista.png",
+    "role": "survivor"
+  },
+  {
+    "id": "survivor-diseado-para-durar",
+    "name": "Diseñado para Durar",
+    "description": "\"Sabes cómo aprovechar tus herramientas al máximo.\"\nMientras te escondes dentro de un Casillero durante 12 / 10 / 8 segundos con un Objeto con cargas agotadas en la mano, se activan los siguientes efectos:\n\n• Recarga el Objeto a uno de los siguientes porcentajes:\n\n• Primer uso : 99 % .\n\n• Segundo uso : 66 % .\n\n• Tercer uso : 33 % .\n\nDiseñado para Durar se desactiva por el resto de la Partida después del tercera vez .\n\"La arquitectura es el alma de la civilización.\" — Felix Richter",
+    "owner": "Felix",
+    "fileName": "survivor-diseado-para-durar.png",
+    "role": "survivor"
+  },
+  {
+    "id": "survivor-distorsin",
+    "name": "Distorsión",
+    "description": "Comienza la Partida con 1 Distintivo .\nCuando el Asesino intenta ver tu Aura , se activa Distorsión y consume -1 Distintivo , aplicando los siguientes efectos durante 8 / 10 / 12 segundos :\n\n• Bloquea tu Aura.\n\n• Suprime la creación de tus Marcas de Arañazos .\n\nDistorsión recarga +1 Distintivo cada 15 segundos que te persiga el Asesino, y puede tener hasta 2 Distintivos .\nDistorsión no se activa cuando estás en el Estado Agonizante .\n\"Muerte Engañada por el Manto de Plumas de Halcón.\nBoceto inspirado por varias noches de insomnio durante el invierno. Estudio de mitología nórdica: el valor puede ocultar tus defectos, incluso cuando eres más vulnerable.\" — Jeff, lápiz sobre cartón coloreado, 12x12",
+    "owner": "Jeff",
+    "fileName": "survivor-distorsin.png",
+    "role": "survivor"
+  },
+  {
+    "id": "survivor-distraccin",
+    "name": "Distracción",
+    "description": "Distracción se carga cuando permaneces dentro del Radio de Terror sin que el Asesino te atrape.\nDespués de cargar durante 30 / 25 / 20 segundos , se activa:\n• Presiona el botón de Habilidad Activa mientras estás inmovil y de cuclillas para lanzar una piedra que produce una distracción para el Asesino a una distancia de 20 metros\n• Activa una Notificación de Ruido Fuerte .\n\n• Crea Marcas de Arañazos falsas.\n\nDistracción se desactiva después de usarse y reinicia su temporizador.\n\n\"Está el camino fácil y el camino correcto. Si no eres capaz de distinguirlos, puedes convertirte en un monstruo.\" — Adam Francis",
+    "owner": "Adam",
+    "fileName": "survivor-distraccin.png",
+    "role": "survivor"
+  },
+  {
+    "id": "survivor-dramaturgia",
+    "name": "Dramaturgia",
+    "description": "\"Cuando la gente te incluye en su proyecto, lo hacen por la magia inesperada que le aportas a tu actuación.\"\nCuando estás completamente sano, se activa Dramaturgia .\nMientras está activo, presiona el botón de Habilidad Activa mientras corres para correr elevando las rodillas durante 0.5 segundos antes de beneficiarte del siguiente efecto primario:\n\n• Otorga un +25 Efecto de Estado Celeridad durante 2 segundos .\n\nLuego, Dramaturgia activa cualquiera de los siguientes efectos secundarios, pero nunca el mismo dos veces seguidas:\n• Otorga una segunda instancia del Efecto de Estado Celeridad .\n\n• Inflige el Efecto de Estado Vulnerabilidad durante 12 segundos .\n\n• Hace que grites.\n\n• Otorga un Objeto Raro aleatoriamente seleccionado, ya equipado con una selección aleatoria de Accesorios .\n• Esto hace que botes automáticamente cualquier otro Objeto que ya estés sosteniendo.\n\nNo se puede usar Dramaturgia mientras estás Agotado .\nDramaturgia aplica el Efecto de Estado Agotado durante 60 / 50 / 40 segundos .\n\"Acepta el papel. Dice que es una buena película. ¿Qué es lo peor que puede suceder?\" — Nicolas Cage",
+    "owner": "Nicolas",
+    "fileName": "survivor-dramaturgia.png",
+    "role": "survivor"
+  },
+  {
+    "id": "survivor-el-deber-de-cuidar",
+    "name": "El Deber de Cuidar",
+    "description": "\"Sigues un código de conducta todos los días de tu vida y, por ello, eres mejor en todo lo que haces.\"\nSi recibes un Golpe Protector cuando no tengas heridas, los demás Sobrevivientes que estén en un radio de 16 metros se benefician del siguiente efecto:\n\n• Les otorga un +25 % Efecto de Estado Celeridad durante 4 / 5 / 6 segundos .",
+    "owner": "Orela",
+    "fileName": "survivor-el-deber-de-cuidar.png",
+    "role": "survivor"
+  },
+  {
+    "id": "survivor-el-temple-del-hombre",
+    "name": "El Temple del Hombre",
+    "description": "El mal siempre tenmina encontrándote.\nDespués de recibir el tercer Golpe Protector , se activa El Temple del Hombre :\n\n• Mientras estás herido, El Temple del Hombre serás invulnerable a cualquier daño recibido que te hubiera dejado agonizante\n\n• La próxima vez que recuperes tu salud por completo, tu Aura se revelará al Asesino si te encuentras a más de 12 / 14 / 16 metros de él.\n\nEl Temple del Hombre se desactiva la próxima vez que quedes Estado Agonizante .\n\nAumenta las posibilidades de que te vuelvas la Obsesión del Asesino al incrementar su valor en un +100 % .\n\nEl Asesino solo puede estar obsesionado con un Sobreviviente a la vez.\n\n\"El mal me ha puesto una diana en la espalda del tamaño de un estadio de fútbol.\" — Ash Williams",
+    "owner": "Ash",
+    "fileName": "survivor-el-temple-del-hombre.png",
+    "role": "survivor"
+  },
+  {
+    "id": "survivor-elegancia",
+    "name": "Elegancia",
+    "description": "La amenaza del peligro motiva a cualquier criatura a fortalecer su determinación.\nCuando estás ileso, se activa Elegancia :\n\n• Aumenta tu velocidad de salto en un Salto Rápido en un +20 % .\n\nElegancia tiene un tiempo de recuperación de 40 / 35 / 30 segundos luego de realizar un Salto Rápido .\n\"Solo necesito esforzarme un poco más.\" — Lara Croft",
+    "owner": "Lara",
+    "fileName": "survivor-elegancia.png",
+    "role": "survivor"
+  },
+  {
+    "id": "survivor-empata",
+    "name": "Empatía",
+    "description": "Desbloquea la capacidad de percibir Auras:\n• Las Auras de los Sobrevivientes agonizantes o heridos se te revelan en un radio de 64 / 96 / 128 metros . Empatía no revela las Auras de los Sobrevivientes cuando están en contacto directo con el Asesino.",
+    "owner": "Claudette",
+    "fileName": "survivor-empata.png",
+    "role": "survivor"
+  },
+  {
+    "id": "survivor-endurecida",
+    "name": "Endurecida",
+    "description": "Si vives lo suficiente, la supervivencia fluirá por tus venas.\nDespués de desbloquear un Cofre y purificar o bendecir un Tótem , se activa Endurecida :\n\n• Suprime la necesidad de gritar por cualquier razón y en su lugar puedes ver el Aura del Asesino durante 3 / 4 / 5 segundos .\n\n\"Hay que guardar silencio. Esa cosa sigue ahí afuera.\" — Lara Croft",
+    "owner": "Lara",
+    "fileName": "survivor-endurecida.png",
+    "role": "survivor"
+  },
+  {
+    "id": "survivor-energa-potencial",
+    "name": "Energía Potencial",
+    "description": "\"Tus habilidades arcanas se adaptaron al reino del Ente tras siglos de deambular, y te otorgan un control sin precedentes sobre sus diversos recursos.\"\nMientras reparas un Generador , presiona el botón de Habilidad Activa para Almacenar Energía Potencial :\n\n• Las Cargas de Reparación ya no hacen progresar el Generador y en su lugar se convierten en Distintivos:\n• Gana 1 Distintivo por el equivalente a un 1 % de Progreso, hasta un máximo de 12 / 10 / 8 segundos .\n\n• Las Pruebas de Habilidad de Reparación Fallidas incurren una penalización dependiendo de cuántos Distintivos se han acumulado:\n• No Estás al Límite de Distintivos : Reduce el número de Distintivos acumulados en un -20 % .\n\n• Al Límite de Distintivos : Revierte el Generador en un -10 % .\n\nAl haber acumulado al menos 1 Distintivo , presiona el botón de Habilidad Activa otra vez en el mismo Generador o uno distinti para Liberar Energía Potencial :\n• Consume todos los Distintivos acumulados.\n\n• Progresa instantáneamente ese Generador en un +1 % por Distintivo.\n\nEnergía Potencial se desactiva después de usarlo o de perder un Estado de Salud de cualquier forma, y perderá todos los Distintivos acumulados en este último caso.\n\"Cuando miras con más profundidad te das cuenta... de que todo está conectado.\" — Vittorio Toscano",
+    "owner": "Vittorio",
+    "fileName": "survivor-energa-potencial.png",
+    "role": "survivor"
+  },
+  {
+    "id": "survivor-enfoque-interno",
+    "name": "Enfoque Interno",
+    "description": "Perfeccionaste tu habilidad para ver a través de las tinieblas de la Devastación.\n• Puedes ver las Marcas de Arañazos de otros Sobrevivientes.\n\n• Cuando el Asesino haga que otro Sobreviviente pierda un Estado de Salud , puedes ver el Aura del Asesino durante 6 / 8 / 10 segundos .\n\n\"La muerte, el trauma y el miedo... todo nos trae aquí. La Superposición.\" — Haddie Kaur, Devastación del Abismo, Episodio 11",
+    "owner": "Haddie",
+    "fileName": "survivor-enfoque-interno.png",
+    "role": "survivor"
+  },
+  {
+    "id": "survivor-engao",
+    "name": "Engaño",
+    "description": "\"Tu estilo de vida aventurero requiere distracciones ingeniosas.\"\nInteractuar con un Casillero mientras presionas el botón de Carrera tiene los siguientes efectos:\n\n• Ya no entrarás a los Casilleros mientras esprintas.\n\n• Abrirás y cerrarás las puertas del Casillero , fingiendo que un Sobreviviente entró en él.\n\n• Activa una Notificación de Ruido Fuerte en la ubicación del Casillero .\n\n• Suprime la creación de Marcas de Arañazos y Charcos de Sangre durante 3 segundos .\n\nEngaño tiene un tiempo de recuperación de 25 / 20 / 15 segundos .",
+    "owner": "Élodie",
+    "fileName": "survivor-engao.png",
+    "role": "survivor"
+  },
+  {
+    "id": "survivor-escalofros",
+    "name": "Escalofríos",
+    "description": "\"Un estremecimiento inusual te advierte de la inminente perdición.\"\nCuando el Asesino está en un radio de 36 metros de tu ubicación y te mira de forma Directa , se activa Escalofríos :\n\n• Advierte de la proximidad del Asesino y su potencial conciencia de tu ubicación al iluminar su ícono.\n\n• Aumenta tu velocidad de Acción al Bendecir, Purificar, Abrir Puertas de Salida, Curar, Reparar, Sabotear, Descolgar y Desbloquear Cofres en un 2 / 4 / 6 % .\n• Este efecto se mantiene durante 0.5 segundos después de que el Asesino Aparte la Mirada o salga del alcance de Activación.\n\n\"Hay una voz que no usa palabras. Escucha.\" — La Cinta Perdidas: Sassy",
+    "owner": "Todos",
+    "fileName": "survivor-escalofros.png",
+    "role": "survivor"
+  },
+  {
+    "id": "survivor-especialista",
+    "name": "Especialista",
+    "description": "Aventura. Exploración. Excavación.\nEstás en tu salsa.\nCada vez que abres o hurgas dentro de un Cofre , Especialista gana +1 Distintivo , hasta un máximo de 6 Distintivos :\n\n• Superar una Prueba de Habilidad de Reparación Excelente mientras reparas un Generador consume todos los Distintivos.\n\n• Reduce permanentemente el progreso máximo requerido de reparación de ese Generador en 2 / 3 / 4 Cargas cargas por Distintivo, hasta un máximo de 12 / 18 / 24 Cargas .\n\n\"Vaya, vaya. Esto me resulta conocido.\" — Lara Croft",
+    "owner": "Lara",
+    "fileName": "survivor-especialista.png",
+    "role": "survivor"
+  },
+  {
+    "id": "survivor-esperanza",
+    "name": "Esperanza",
+    "description": "\"Estar tan cerca de poder escapar renueva tus esperanzas y tus fuerzas.\"\nUna vez que las Puertas de Salida se abren, Puertas de Salida se activa Esperanza por el resto de la Partida:\n\n• Obtienes un 3 / 4 / 5 % del Efecto de Estado Celeridad .\n\n\"¡Ajústense bien los cinturones, idiotas! ¡Nos vamos!.\" — Las Cintas Perdidas: Nikki",
+    "owner": "Todos",
+    "fileName": "survivor-esperanza.png",
+    "role": "survivor"
+  },
+  {
+    "id": "survivor-esprint",
+    "name": "Esprint",
+    "description": "Cuando te pones a correr, se activa Esprint :\n• Otorga un +50 % de Efecto de Estado Celeridad durante 3 segundos .\n\nNo se puede usar Esprint mientras estás Agotado .\nEsprint causa el Efecto de Estado Agotado durante 60 / 50 / 40 segundos .\n\n\"Veamos si puedes alcanzarme...\" — Meg Thomas",
+    "owner": "Meg",
+    "fileName": "survivor-esprint.png",
+    "role": "survivor"
+  },
+  {
+    "id": "survivor-espritu-calmado",
+    "name": "Espíritu Calmado",
+    "description": "\"Parece que los animales confían en ti, ya que mantienen la calma en tu presencia.\"\nExperimentas los siguientes efectos durante una Partida:\n\n• Los Cuervos cercanos ya no pueden salir volando y alertar a otros de tu presencia, a menos de que te acerques lo suficiente como para tocarlos.\n\n• Suprime el impulso de gritar por cualquier causa en todo momento.\n\n• Suprime todos los sonidos relacionados a la interacción de los siguientes Artefactos:\n• Cofres\n\n• Tótems\n\n• Reduce las velocidades de acción para Bendecir, Purificar, y Desbloquear en un 40 / 35 / 30 % .",
+    "owner": "Jake",
+    "fileName": "survivor-espritu-calmado.png",
+    "role": "survivor"
+  },
+  {
+    "id": "survivor-espritu-de-novato",
+    "name": "Espíritu de Novato",
+    "description": "No pierdes de vista a los objetivos cuando estos son escurridizos.\nCompleta 5 / 4 / 3 Pruebas de Habilidad Buenas o Excelentes reparando Generadores para activar Espíritu de Novato hasta el final de la Partida:\n\n• Puedes ver las Auras de los Generadores que se estén revirtiendo.\n\n\"Detendré esta locura, teniente. Lo prometo.\" — Leon Scott Kennedy",
+    "owner": "Leon",
+    "fileName": "survivor-espritu-de-novato.png",
+    "role": "survivor"
+  },
+  {
+    "id": "survivor-estado-de-flujo",
+    "name": "Estado de Flujo",
+    "description": "Cada vez que se complete un Generador, obtienes un distintivo, hasta un máximo de 5.\nPor cada distintivo:\n\n• Bendices y purificas Tótems un 8 / 9 / 10 % más rápido.\n\n• Curas un 8 / 9 / 10 % más rápido.\n\n• Descuelgas a Sobrevivientes un 8 / 9 / 10 % más rápido.\n\n\"Lo siento. No me di cuenta de que estaba trabajando hasta tan tarde.\" — Kwon Tae-young",
+    "owner": "Kwon",
+    "fileName": "survivor-estado-de-flujo.png",
+    "role": "survivor"
+  },
+  {
+    "id": "survivor-esto-no-puede-estar-pasando",
+    "name": "Esto No Puede Estar Pasando",
+    "description": "\"Das lo mejor de ti en las circunstancias de mayor presión.\"\nCada vez que estás en el Estado Herido , se activa Esto No Puede Estar Pasando y te beneficias del siguiente efecto:\n\n• Aumenta el tamaño de las zonas de Éxito para superar Pruebas de Habilidad Excelentes en un 10 / 20 / 30 % por las siguientes interacciones:\n• Curar\n\n• Reparar",
+    "owner": "Todos",
+    "fileName": "survivor-esto-no-puede-estar-pasando.png",
+    "role": "survivor"
+  },
+  {
+    "id": "survivor-estrella-de-la-suerte",
+    "name": "Estrella de la Suerte",
+    "description": "\"Sabes cómo mantener la calma frente al peligro incomprensible.\"\nMientras te escondes en un Casillero :\n\n• Suprimes tus Gruñidos de Dolor .\n\nCuando sales del Casillero obtienes los siguientes efectos durante 30 segundos :\n• Suprimes tus Gruñidos de Dolor y la creación de Charcos de Sangre .\n\n• Se revelan las Auras de todos los otros Sobrevivientes.\n\n• Se revela y resalta el Aura del Generador más cercano a ti en amarillo .\n\nEstrella de la Suerte tiene un tiempo de recuperación de 35 / 30 / 25 segundos .\n\"Eres mi... estrella de la suerte...\" — Ellen Ripley",
+    "owner": "Ellen",
+    "fileName": "survivor-estrella-de-la-suerte.png",
+    "role": "survivor"
+  },
+  {
+    "id": "survivor-evasin-urbana",
+    "name": "Evasión Urbana",
+    "description": "Los años que has pasado huyendo de la policía te han enseñado a moverte con sigilo.\n• Aumenta tu velocidad de Movimiento en Cuclillas en un 90 / 95 / 100 % .\n\n\"La pintura aún está fresca, pero yo me fui hace tiempo.\" — Nea Karlsson",
+    "owner": "Nea",
+    "fileName": "survivor-evasin-urbana.png",
+    "role": "survivor"
+  },
+  {
+    "id": "survivor-extraoficialmente",
+    "name": "Extraoficialmente",
+    "description": "\"Aprendiste que a veces es mejor tener una actitud tranquila.\"\nUna vez que te liberan o escapas del Gancho, Extraoficialmente se activa durante 30 / 35 / 40 segundos :\n\n• Bloquea tu Aura de ser revelada.\n\n• Suprime tus Gruñidos de Dolor cuando estás en el Estado Herido .\n\n• Suprime la creación de Marcas de Arañazos .\n\n• Otorga el Efecto de Estado Resistencia .\n• Realizar una Acción Destacada de cualquier tipo eliminará Resistencia .\n\nExtraoficialmente se desactiva prematuramente y se deshabilita por el resto de la Partida al activar las Puertas de Salida .\n\"Créeme, investigo a fondo y con discreción.\" — Zarina Kassir",
+    "owner": "Zarina",
+    "fileName": "survivor-extraoficialmente.png",
+    "role": "survivor"
+  },
+  {
+    "id": "survivor-exultacin",
+    "name": "Exultación",
+    "description": "La fortuna favorece a los osados, aun en los rincones más oscuros de la existencia.\nAturdir al Asesino con una Tarima mejora la Rareza del Objeto en posesión al siguiente grado.\n\n• Recarga el Objeto en un +25 % .\n\nExultación tiene un tiempo de recuperación de 30 / 25 / 20 segundos .\n\"¡Hoy no me derrotarás!\" — Trevor",
+    "owner": "Trevor",
+    "fileName": "survivor-exultacin.png",
+    "role": "survivor"
+  },
+  {
+    "id": "survivor-fajador",
+    "name": "Fajador",
+    "description": "\"Soportas las golpizas.\nTap into your adrenaline bank to avoid taking further damage.\"\nDespués de ser descolgado de cualquier forma, se activa Fajador :Mientras estés herido y corriendo, presiona el botón de Habilidad Activa para activar el siguiente efecto:\n\n• Otorga el Efecto de Estado Resistencia durante 0.5 segundos .\n\nNo se puede usar Fajador mientras estás Agotado .\nFajador causa el Efecto de Estado Agotado for 60 / 50 / 40 segundos .\n\"Íbamos por un callejón una noche, cuando una botella voló sobre mí, y luego otra, y otra más.\nY yo sólo podía pensar: \"¡Cómo nos vamos a divertir, muchachos! ¡Vamos!\".\nFue una pelea justa, ¡en serio!\" — David King",
+    "owner": "David",
+    "fileName": "survivor-fajador.png",
+    "role": "survivor"
+  },
+  {
+    "id": "survivor-familia",
+    "name": "Familia",
+    "description": "Desbloquea tu habilidad de ver Auras.\nMientras estés en el Gancho, Familia se activa y aplica los siguientes efectos:\n\n• El Aura del Asesino se revela a todos los Sobrevivientes cuando se encuentre a un alcance de 8 / 12 / 16 metros del Gancho .\n\n• Si eres el Sobreviviente Enganchado , las Auras de todos los Sobrevivientes son reveladas al resto.\n\n• Si no eres el Sobreviviente Enganchado , las Auras de todos los Sobrevivientes te son reveladas solo a ti.\n\n\"Trátense bien entre ustedes. Estamos juntos en esto\" — Las Cintas Perdidas: Sujan",
+    "owner": "Todos",
+    "fileName": "survivor-familia.png",
+    "role": "survivor"
+  },
+  {
+    "id": "survivor-farmacia",
+    "name": "Farmacia",
+    "description": "\"Tienes el don de encontrar medicinas.\"\n\n• Aumenta la velocidad de Desbloqueo de Cofres en un 75 / 100 / 125 % .\n\n• Reduce la distancia para escuchar los ruidos de Desbloqueo de Cofres en un -12 metros .\n\n• Garantiza un Botiquín de Emergencia después de completar la interacción.\n\n\"Adrenalina, esto nos mantendrá despiertos. Lo robé de uno de los carritos de la Enfermera.\" — Quentin Smith",
+    "owner": "Quentin",
+    "fileName": "survivor-farmacia.png",
+    "role": "survivor"
+  },
+  {
+    "id": "survivor-fecha-lmite",
+    "name": "Fecha Límite",
+    "description": "La desesperación se apodera de ti y te obligas a esforzarte más.\nCuando estás bajo el Estado Herido , se activa Fecha Límite :\n\n• Aumenta las probabilidades de que aparezcan Pruebas de Habilidad en un 6 / 8 / 10 % mientras reparas o curas.\n• Las Pruebas de Habilidad aparecen en lugares al azar.\n\n• Reduce la penalización de las Pruebas de Habilidad fallidas en un -50 % .\n\n\"La noche trajo una sucesión de situaciones desesperadas.\" — Departure",
+    "owner": "Alan",
+    "fileName": "survivor-fecha-lmite.png",
+    "role": "survivor"
+  },
+  {
+    "id": "survivor-fijacin",
+    "name": "Fijación",
+    "description": "\"Cuando te fijas un objetivo, no hay vuelta atrás: es mejor pedir perdón que pedir permiso.\"\n\n• Aumenta tu velocidad de Caminata en un 10 / 15 / 20 % .\n\n• Ves tus propias Marcas de Arañazos en todo momento.\n\n\"Quiero terminar lo que empezamos. Quiero matarlo.\" — Nancy Wheeler",
+    "owner": "Nancy",
+    "fileName": "survivor-fijacin.png",
+    "role": "survivor"
+  },
+  {
+    "id": "survivor-fortaleza-en-las-sombras",
+    "name": "Fortaleza en las Sombras",
+    "description": "Una oportunidad de renovar el poder allí donde habita el peligro.\nCuando estás en el Sótano , se activa Fortaleza en las Sombras :\n\n• Desbloquea la habilidad Fortaleza en las Sombras , que te permite curarte sin Botiquín a un 70 % de la velocidad normal de curación.\n\n• Cuando terminas una curación en el Sótano, verás el Aura del Asesino durante 6 / 8 / 10 segundos .\n\n\"Me largaré de aquí, aunque sea lo último que haga.\" — Sable",
+    "owner": "Sable",
+    "fileName": "survivor-fortaleza-en-las-sombras.png",
+    "role": "survivor"
+  },
+  {
+    "id": "survivor-fuerza-interior",
+    "name": "Fuerza Interior",
+    "description": "\"Buscas en tu interior y confías en tu instinto siempre que te embarga la desolación y pierdes el rumbo.\"\nDespués de purificar un Tótem de cualquier tipo, se activa Fuerza Interior .\nMientras esté activo, esconderse dentro de un Casillero durante 10 / 9 / 8 segundos activa el siguiente efecto:\n\n• Te cura hasta el siguiente Estado de Salud .\n\nFuerza Interior se desactiva después de usarse.\nNo se puede usar Fuerza Interior mientras sufras del Efecto de Estado Desesperanza .\n\"Todo este tiempo me esforzaba por fingir que todo iba bien, pero no es así.\" — Nancy Wheeler",
+    "owner": "Nancy",
+    "fileName": "survivor-fuerza-interior.png",
+    "role": "survivor"
+  },
+  {
+    "id": "survivor-fuga",
+    "name": "Fuga",
+    "description": "Tu adrenalina sube al máximo nivel cuando los demás están en problemas, lo que los inspira a superar cualquier obstáculo.\nLos siguientes efectos aplican cuando estás a menos de 5 metros de un Asesino que esté cargando a un Sobreviviente:\n\n• Te otorga un 5 / 6 / 7 % de Efecto de Estado Celeridad .\n\n• Aumenta la velocidad de Forcejeo del Sobreviviente en un +25 % .\n\nLos Sobrevivientes solo pueden recibir un efecto de Fuga a la vez.\n\"Andando, vamos a salir de esto.\" — Yui Kimura",
+    "owner": "Yui",
+    "fileName": "survivor-fuga.png",
+    "role": "survivor"
+  },
+  {
+    "id": "survivor-ganas-de-vivir",
+    "name": "Ganas de Vivir",
+    "description": "Usando lo que tengas a mano, apuñalas a tu agresor para intentar escapar.\nDespués de que te descuelguen o de que lo hagas por tus propios medios, se activa Ganas de Vivir por los siguientes 40 / 50 / 60 segundos :\n\n• Cuando te atrape el Asesino, super una Prueba de Habilidad para apuñalar al Asesino y escapar de sus garras.\n• Aturde al Asesino durante 4 segundos .\n\n• Te conviertes en la nueva Obsesión .\n\nGanas de Vivir se desactiva una vez que las Puertas de Salida se abren.\nGanas de Vivir se desactiva durante el resto de la Partida una vez que lo usas.\nGanas de Vivir se desactiva prematuramente cuando se realiza una Acción Destacada y se mantiene desactiva por el resto de la Partida.\n\nAumenta las posibilidades de que te vuelvas la Obsesión del Asesino al incrementar su valor en un +100 % .\nEl Asesino solo puede estar obsesionado con un Sobreviviente a la vez.",
+    "owner": "Todos",
+    "fileName": "survivor-ganas-de-vivir.png",
+    "role": "survivor"
+  },
+  {
+    "id": "survivor-giro-argumental",
+    "name": "Giro Argumental",
+    "description": "Los grandes momentos son importantes, pero sabes que, a veces, una lectura sencilla puede ser igual de poderosa.\nCada vez que estás en el Estado Herido , se activa Giro Argumental .\nMientras esté activo, presiona el botón de Habilidad Activa mientras te agachas y no te mueves para activar los siguientes efectos primarios:\n\n• Pasa silenciosamente al Estado Agonizante sin notificar al Asesino.\n\n• Suprime tus Gruñidos de Dolor y la creación de Charcos de Sangre .\n\n• Desbloquea la habilidad de Autorrecuperación , permitiéndote recuperarte por completo del Estado Agonizante :\n• Aumenta la velocidad de Recuperación en un +25 % .\n\nDespués de autorrecuperarte del Estado Agonizante , te beneficias de los siguientes efectos secundarios:\n• Te curas instantáneamente hasta quedar completamente ileso.\n\n• Otorga un +50 % del Efecto de Estado Celeridad durante 2 / 3 / 4 segundos .\n\nGiro Argumental se deshabilita después de recuperarse de cualquier forma, pero puede volvear a activarse una vez se activen las Puertas de Salida .\n\"Creo que este lugar de rodaje te resultará... fascinante.\" — Pauline Stamper",
+    "owner": "Nicolas",
+    "fileName": "survivor-giro-argumental.png",
+    "role": "survivor"
+  },
+  {
+    "id": "survivor-golpe-decisivo",
+    "name": "Golpe Decisivo",
+    "description": "Idéntico a Ganas de Vivir .\n\"No hay nada que temer.\" — Laurie Strode",
+    "owner": "Laurie",
+    "fileName": "survivor-golpe-decisivo.png",
+    "role": "survivor"
+  },
+  {
+    "id": "survivor-golpe-de-suerte",
+    "name": "Golpe de Suerte",
+    "description": "Ya sufriste suficientes raspones y moretones, pero la suerte siempre te acompaña.\nGolpe de Suerte se activará cada vez que estés Estado Herido :\n\n• Suprime tus Charcos de Sangre y Marcas de Arañazos por un máximo de 40 / 50 / 60 segundos , después de lo cual se desactiva Golpe de Suerte .\n\nCada 1 segundo que pases curando a otro Sobreviviente recargas Golpe de Suerte en 1 segundo . La duración de Golpe de Suerte no puede aumentar más de su valor inicial.\n\nGolpe de Suerte también se desactiva cuando estás Ileso o Estado Agonizante .\n\n\"Eso no basta para vencerme. Ni por asomo.\" — Yui Kimura",
+    "owner": "Yui",
+    "fileName": "survivor-golpe-de-suerte.png",
+    "role": "survivor"
+  },
+  {
+    "id": "survivor-granada-aturdidora",
+    "name": "Granada Aturdidora",
+    "description": "Te has adaptado a un mundo en caos improvisando con lo que encuentras entre las ruinas.\nTras alcanzar un 50 / 45 / 40 % de progreso en Generadores activa Granada Aturdidora :\n\n• Presiona el botón de Habilidad Activa mientras te ocultas dentro de un Casillero para confeccionar una Granada Aturdidora .\n\nGranada Aturdidora se desactiva después de usarse.\n\"¡Fuera de mi vista!\" — Leon Scott Kennedy",
+    "owner": "Leon",
+    "fileName": "survivor-granada-aturdidora.png",
+    "role": "survivor"
+  },
+  {
+    "id": "survivor-hasta-terminar-con-el-ltimo",
+    "name": "Hasta Terminar con el Último",
+    "description": "A medida que tus amigos caigan en manos del Asesino, te embargará la soledad y la capacidad del Asesino para detectar tu Aura se verá perturbada.\nCada vez que asesinen o sacrifiquen a un o una Sobreviviente, Hasta Terminar con el Último obtiene 1 Distintivo , hasta un máximo de 3 Distintivos :\n\n• Otorga un radio de 20 / 22 / 24 metros por Distintivo alrededor tuyo, hasta un máximo de 60 / 66 / 72 metros , en el cual eres inmune a la percepción de Auras del Asesino.\n\nCuando eres el Último Sobreviviente , te beneficias de los siguientes efectos:\n• Aumenta tu velocidad de Reparación en un +75 % .\n\n• Aumenta tu velocidad de Acción al abrir una Puerta de Salida o la Trampilla en un +50 % .\n\nAumenta las posibilidades de que te vuelvas la Obsesión del Asesino al incrementar su valor en un +100 % .\nEl Asesino solo puede estar obsesionado con un Sobreviviente a la vez.",
+    "owner": "Todos",
+    "fileName": "survivor-hasta-terminar-con-el-ltimo.png",
+    "role": "survivor"
+  },
+  {
+    "id": "survivor-hiperconcentracin",
+    "name": "Hiperconcentración",
+    "description": "\"Te abocaste por completo a tus tareas y encontraste formás de ser más eficiente que todos los demás.\"\nCuando superas una Prueba de Habilidad Excelente al reparar o curar recibes +1 Distintivo , hasta un máximo de 6 Distintivos :\n\n• Aumenta las probabilidades de que se active una Prueba de Habilidad y la velocidad del Cursor en un +4 % por cada Distintivo, hasta un máximo de +24 % .\n\n• Aumenta la bonificación del progreso de las Pruebas de Habilidad en un 10 / 20 / 30 % de su valor básico por Distintivo, hasta un máximo de 60 / 120 / 180 % .\n\nHiperconcentración pierde todos los Distintivos cuando superas una Prueba de Habilidad , fallas una, o si la acción es interrumpida de cualquier forma.",
+    "owner": "Rebecca",
+    "fileName": "survivor-hiperconcentracin.png",
+    "role": "survivor"
+  },
+  {
+    "id": "survivor-ilusin-reflejada",
+    "name": "Ilusión Reflejada",
+    "description": "Un hechizo familiar que resulta desconocido en este entorno corrupto.\nDespués de reparar el equivalente de un 20 % de reparación de los Generadores , se activa Ilusión Reflejada :\n\n• Presiona el botón de Habilidad Activa 8cuando estés cerca de un Cofre , Puerta de Salida , Generador , o un Tótem para generar una Ilusión Estática que dura 40 / 50 / 60 segundos .\n\nIlusión Reflejada se desactiva después de usarse.\n\"Quédate... justo ahí... ¡perfecto!\" — Baermar",
+    "owner": "Aestri",
+    "fileName": "survivor-ilusin-reflejada.png",
+    "role": "survivor"
+  },
+  {
+    "id": "survivor-impulso-sangriento",
+    "name": "Impulso Sangriento",
+    "description": "\"Tu cuerpo y mente fueron perfeccionados para lograr grandes hazañas y te permitirán tomar impulso con un esfuerzo extra cuando sea necesario.\"\nDespués de ser descolgado de cualquier forma, se activa Impulso Sangriento durante 40 / 50 / 60 segundos .\nMientras esté activo, presiona el botón de Habilidad Activa para activar el siguiente efecto:\n\n• Te recuperas instantáneamente de un Efecto de Estado Agotado existente.\n\nNo causa el Efecto de Estado Agotado .\nImpulso Sangriento se desactiva prematuramente cuando se realiza una Acción Destacada y se mantiene desactiva por el resto de la Partida.\nImpulso Sangriento se desactiva después del suo y se deshabilita por el resto de la Partida una vez se activen las Puertas de Salida .\n\"¡Solo debo... tomar impulso!\" — Renato Lyra",
+    "owner": "Renato",
+    "fileName": "survivor-impulso-sangriento.png",
+    "role": "survivor"
+  },
+  {
+    "id": "survivor-ingenio-apocalptico",
+    "name": "Ingenio Apocalíptico",
+    "description": "\"Rescatas lo poco que queda para defender a tu equipo.\"\nDesbloquea el potencial de tu habilidad de lectura de Aura:\n\n• Se te revelan las Auras de las Tarimas rotas en un radio de 24 / 28 / 32 metros .\n\nDespués de desbloquear o hurgar en 2 Cofres , Ingenio Apocalíptico gana una habilidad especial.\nMientras estás junto a una Tarima rota, presiona y mantén presionado el botón de Habilidad Activa durante 8 segundos para usarlo:\n• La reconstruye como una Tarima Frágil .\n• Las Tarimas Frágiles se rompen instantáneamente al caer.\n\n\"Sin las rejas, este lugar no sirve para nada.\" — Rick Grimes",
+    "owner": "Rick",
+    "fileName": "survivor-ingenio-apocalptico.png",
+    "role": "survivor"
+  },
+  {
+    "id": "survivor-inquebrantable",
+    "name": "Inquebrantable",
+    "description": "\"Las batallas pasadas te han enseñado un par de cosas sobre superviviencia.\"\nCada vez que estás en el Estado Agonizante , se activa Inquebrantable :\n\n• Aumenta tu velocidad de Recuperación en un 25 / 30 / 35 % .\n\n• Desbloquea la habilidad de Autorrecuperación , permitiéndote recuperarte completamente del Estado Agonizante .\n• Esta habilidad solo puede ser usada una vez por Partida.\n\n\"¡Mierda! ¡Estoy completamente ARRUINADO!\" — Bill Overbeck",
+    "owner": "Bill",
+    "fileName": "survivor-inquebrantable.png",
+    "role": "survivor"
+  },
+  {
+    "id": "survivor-inspiracin-brdica",
+    "name": "Inspiración Bárdica",
+    "description": "Es momento de darle a tu público un espectáculo.\n¿Tendrás éxito o fracasarás al más mínimo obstáculo?\nPresiona el botón de Habilidad Activa mientras estás de pie y sin moverte para iniciar la interacción de Actuación que dura hasta 15 segundos y potencia a los Sobrevivientes en un radio de 16 metros .\n\nEl efecto de potencia depende del resultado de que lanzar un d20 y dura 90 segundos una vez finalizada la Activación :\n\n• 1 : Gritas, pero no pasa nada.\n\n• 2 - 10 : Las Pruebas de Habilidad dan un +1 % de progreso.\n\n• 11 - 19 : Las Pruebas de Habilidad dan un +2 % de progreso.\n\n• 20 : Las Pruebas de Habilidad dan un +3 % de progreso.\n\nInspiración Bárdica tiene un tiempo de recuperación de 110 / 100 / 90 segundos después de finalizar la Actuación o cancelarla.\n\"¡Escucha con atención! ¡Estoy a punto de salvarte la vida!\" — Aestri",
+    "owner": "Aestri",
+    "fileName": "survivor-inspiracin-brdica.png",
+    "role": "survivor"
+  },
+  {
+    "id": "survivor-instinto-de-saqueador",
+    "name": "Instinto de Saqueador",
+    "description": "Permite percibir Auras y mejora tu suerte cuando encuentras Objetos en los Cofres:\n• Se te revelan las Auras de los siguientes objetos dentro de un radio de 32 / 48 / 64 metros :\n• Cofres cerrados en el entorno.\n\n• Objetos dentro de Cofres abiertos.\n\n• Objetos botados en el entorno.\n\n• Aumenta la Probabilidad de encontrar Objetos de mayor Rareza en los Cofres en un +50 % .\n\n\"Los pioneros se pasaban horas con esto.\" — Las Cintas Perdidas: Aizeyu",
+    "owner": "Todos",
+    "fileName": "survivor-instinto-de-saqueador.png",
+    "role": "survivor"
+  },
+  {
+    "id": "survivor-invocacin-araas-tejedoras",
+    "name": "Invocación: Arañas Tejedoras",
+    "description": "El lugar donde se acaba el miedo y comienza el terror es también donde quienes tienen el don pueden atravesar el velo.\nCuando llegas al Sótano cerca del círculo, presiona el botón de Habilidad Activa para comenzar la Invocación , las que toman 60 segundos completar.\nDurante una Invocación , se revela tu Aura al resto de los otros Sobrevivientes y podrán unirse, acelerando el proceso en un +100 % , si ellos también tienen una Ventaja de Invocación equipada, o en un +50 % , si no la tienen.\n\nUna vez que se complete la Invocación :\n\n• Reduce permanentemente las cargas requeridas de reparación de todos los Generadores que estén en la Partida en 8 / 9 / 10 Cargas .\n\n• Automáticamente entras en el Estado Herido desde cualquier Estado de Salud anterior, y sufres del Efecto de Estado Desesperanza hasta el final de la Partida.\n\nCompletar esta Invocación desactiva todas las otras instancias de Invocación: Arañas Tejedoras hasta el final de la Partida.\n\"¡Invoco a los espíritus de la noche para que nos ayuden en nuestra huida desesperada!\" — Sable",
+    "owner": "Sable",
+    "fileName": "survivor-invocacin-araas-tejedoras.png",
+    "role": "survivor"
+  },
+  {
+    "id": "survivor-invocacin-cuervos-traicioneros",
+    "name": "Invocación: Cuervos Traicioneros",
+    "description": "Quien posea el conocimiento arcano carece de motivos para temerles a esas aves vigilantes.\nCuando llegas al Sótano cerca del círculo, presiona el botón de Habilidad Activa para comenzar la Invocación , las que toman 60 segundos completar.\nDurante una Invocación , se revela tu Aura al resto de los otros Sobrevivientes y podrán unirse, acelerando el proceso en un +100 % , si ellos también tienen una Ventaja de Invocación equipada, o en un +50 % , si no la tienen.\n\nUna vez que se complete la Invocación :\n\n• Cuando el Asesino asuste a un Cuervo mientras el Sobreviviente está dentro de su Radio de Terror revelará su Aura atodos los Sobrevivientes durante 1 / 1.5 / 2 segundos .\n\n• Automáticamente entras al Estado Herido y sufres de Efecto de Estado Desesperanza hasta el final de la Partida.\n\n\"Recuerda tu entrenamiento. Te enseñaron todo lo que debías saber sobre los cuervos.\" — Taurie Cain",
+    "owner": "Taurie",
+    "fileName": "survivor-invocacin-cuervos-traicioneros.png",
+    "role": "survivor"
+  },
+  {
+    "id": "survivor-liberacin",
+    "name": "Liberación",
+    "description": "Después de llevar a cabo un rescate de Gancho Seguro a otro Sobreviviente, se activa Liberación :\n• Otorga la habilidad de Descolgarte en cualquier momento durante la primera Fase de Enganche .\n\n• Sufres de Efecto de Estado Desesperanza durante 100 / 80 / 60 segundos después de descolgarte tú mismo.\n\nLiberación no puede ser usado durante la segunda Fase de Enganche o si te cuelgan cuando eres el Último Sobreviviente .\nLiberación se desactiva por el resto de la Partida después de usarse.\n\n\"Me crio un hombre muy estricto que me enseñó a sacar el máxim partido en situaciones desfavorables.\" — Adam Francis",
+    "owner": "Adam",
+    "fileName": "survivor-liberacin.png",
+    "role": "survivor"
+  },
+  {
+    "id": "survivor-lucha-de-poderes",
+    "name": "Lucha de Poderes",
+    "description": "\"Nunca te has rendido y no vas a empezar ahora.\"\nCada vez que estás en el Estado Agonizante , te beneficias del siguiente efecto primario:\n\n• Se te revelan las Auras de las Tarimas verticales.\n\nDespués de alcanzar un 25 / 20 / 15 % de progreso de Forcejeo, Lucha de Poderes desbloquea el siguiente efecto secundario:\n• Otorga la habilidad de bajar una Tarima mientras eres cargado por el Asesino.\n• Aturde al Asesino y hace que te suelte de su agarre.\n\nLucha de Poderes se desactiva después del uso.\n\"Una vez confié en otros para protegerme y lo perdí todo. Nunca más.\" — Élodie Rakoto",
+    "owner": "Élodie",
+    "fileName": "survivor-lucha-de-poderes.png",
+    "role": "survivor"
+  },
+  {
+    "id": "survivor-lder",
+    "name": "Líder",
+    "description": "\"Logras organizar un equipo para que se coordine con mayor eficacia.\"\nTodos los otros Sobrevivientes en un radio de 10 metros de tu ubicación se benefician de los siguientes efectos:\n\n• Aumenta sus velocidades de Acción para Curación, Apertura de Salidas, Sabotaje, Rescate, Purificación y Desbloqueo de Cofres en un 20 / 25 / 30 % .\n• Este efecto se mantiene durante 15 segundos después de dejar el Área de Efecto .\n\nLos Sobrevivientes solo pueden recibir un efecto de Líder a la vez.",
+    "owner": "Dwight",
+    "fileName": "survivor-lder.png",
+    "role": "survivor"
+  },
+  {
+    "id": "survivor-malicia",
+    "name": "Malicia",
+    "description": "\"Pueden intentar lastimarte.\nPero no te derribarán fácilmente.\"\nDespués de que te descuelgas de cualquier forma, Malicia activa el siguiente efecto:\n\n• Ves el Aura del Asesino durante 16 / 18 / 20 segundos .\n\nMientras estás colgado dentro del Sótano , Malicia potencialmente activa el siguiente efecto\n• Primera Fase de Gancho : 100 % de lograr un Desenganche por Ti Mismo exitosamente.\n\n• Segunda Fase de Gancho : No activa el efecto.\n\n• Último Sobreviviente en Pie : No activa el efecto.\n\n\"Nunca dejé que nadie se interponga en mi camino. ¿Crees que voy a empezar ahora?\" — Sable",
+    "owner": "Sable",
+    "fileName": "survivor-malicia.png",
+    "role": "survivor"
+  },
+  {
+    "id": "survivor-manifiesto-residual",
+    "name": "Manifiesto Residual",
+    "description": "Toda una vida de perseguir la oscuridad te enseñó que el mejor desinfectante es la luz.\n• Tras una acción exitosa de Asesino Cegado , el Asesino se ve afectado por Efecto de Estado Ceguera durante 20 / 25 / 30 segundos .\n\n• Manifiesto Residual permite hurgar en un Cofre abierto una vez por Partida y te garantiza una Linterna básica.\n\n\"Jamás podré ver lo que Haddie ve. Pero mientras esté con ella, sé que estoy a salvo.\" — Jordan Rois, Devastación del Abismo, Episodio 5",
+    "owner": "Haddie",
+    "fileName": "survivor-manifiesto-residual.png",
+    "role": "survivor"
+  },
+  {
+    "id": "survivor-me-da-igual",
+    "name": "Me Da Igual",
+    "description": "\"Sal, muchacho, es solo un rasguño.\nTu sangre espesa se coagula prácticamente al instante.\"\nSufres permanentemente del Efecto de Estado Desesperanza a cambio de los siguientes beneficios:\n\n• Sufres del Estado Efecto de Estado Desesperanza .\n\n• Suprime la creación de Charcos de Sangre .\n\n• Suprime el volumen de tus Gruñidos de Dolor cuando estás en el Estado Herido o en el Estado Agonizante .\n\n• Desbloquea la habilidad para recuperarte por completo del Estado Agonizante .\n\nAumenta tu velocidad de Recuperación en un 199b1e / 2f9cd6 / ac3ee3 No se puede recuperar la unidad para los valores de nivel de esta Ventaja. Favor contactar a Jouki .",
+    "owner": "David",
+    "fileName": "survivor-me-da-igual.png",
+    "role": "survivor"
+  },
+  {
+    "id": "survivor-medidas-desesperadas",
+    "name": "Medidas Desesperadas",
+    "description": "\"Te rehúsas a fracasar, incluso en tus peores momentos.\"\nCada vez que cualquier Sobreviviente, incluyéndote a ti mismo, no esté en el Estado Ileso, se activa Medidas Desesperadas :\n\n• Por cada Sobreviviente herido, enganchado o agonizante, aumenta tu velocidad para Curar y Desenganchar en un 16 / 18 / 20 % , hasta un máximo de 64 / 72 / 80 % .\n\n\"Cuando te quieran demoler, construye muros más resistentes.\" — Felix Richter",
+    "owner": "Felix",
+    "fileName": "survivor-medidas-desesperadas.png",
+    "role": "survivor"
+  },
+  {
+    "id": "survivor-mejor-juntos",
+    "name": "Mejor Juntos",
+    "description": "\"Buscas justicia y revelar la verdad sin importar los obstáculos con los que te tropieces por el camino.\"\n\n• Mientras reparas un Generador , su Aura se ilumina en amarillo para todos los otros Sobrevivientes dentro de un radio de 32 metros .\n\n• Si el Asesino derriba a un Sobreviviente mientras estás reparando un Generador , verás el Aura de los demás Sobrevivientes durante 20 / 25 / 30 segundos .\n\n\"Haremos que arda el laboratorio.\" — Nancy Wheeler",
+    "owner": "Nancy",
+    "fileName": "survivor-mejor-juntos.png",
+    "role": "survivor"
+  },
+  {
+    "id": "survivor-mejor-que-nuevo",
+    "name": "Mejor que Nuevo",
+    "description": "\"Tu fuerte es la medicina de combate.\nLos pacientes salen revitalizados de tu tratamiento.\"\nTras completar una acción de Curación sobre otro Sobreviviente les otorga los siguientes beneficios, hasta que reciben daño nuevamente:\n\n• Aumenta la velocidad de acción para Bendecir y Purificar Tótems, Curar, Reparar Generadores y Desbloquear Cofres en un 12 / 14 / 16 % .",
+    "owner": "Rebecca",
+    "fileName": "survivor-mejor-que-nuevo.png",
+    "role": "survivor"
+  },
+  {
+    "id": "survivor-mina-cegadora",
+    "name": "Mina Cegadora",
+    "description": "Encuentras la manera de contraatacar incluso incluso cuando el combate frente a frente no es una opción.\nDespués de reparar Generadores el equivalente al 40 % , se activa Mina Cegadora :\n\n• Presiona el botón de Habilidad Activa cuando estás de pie junto a un Generador para instalar la Trampa, la que se mantiene activa durante 100 / 110 / 120 segundos .\n\n• Cuando el Asesino daña el Generador Entrampado , la Mina Cegadora explota:\n• Aturde al Asesino durante 4 segundos .\n\n• Ciega a todos los Jugadores que estén dentro de 12.5 metros del Generador Entrampado .\n\nMina Cegadora se desactiva después de explotar o cuando el tiempo se acaba.\nLas Auras de los Generadores con Trampas son revelados a todos los Sobrevivientes en amarillo .\n\n\"¿Quieres a S.T.A.R.S.? ¡Toma un poco de S.T.A.R.S.!\" — Jill Valentine",
+    "owner": "Jill",
+    "fileName": "survivor-mina-cegadora.png",
+    "role": "survivor"
+  },
+  {
+    "id": "survivor-mirada-fija",
+    "name": "Mirada Fija",
+    "description": "Una mente lúcida y un carácter sereno siempre encontrarán el medio para escapar.\nDespués de estar de pie sin moverte durante 4 / 3 / 2 segundos , se activa Mirada Fija :\n\n• Puedes ver las Auras del Asesino, así como las de cualquier Cofres y Generadores en un radio de 24 metros de tu ubicación hasta que te vuelves a mover.\n\n\"Inhala. Exhala. Ahora, abre los ojos.\" — Baermar",
+    "owner": "Aestri",
+    "fileName": "survivor-mirada-fija.png",
+    "role": "survivor"
+  },
+  {
+    "id": "survivor-momento-de-gloria",
+    "name": "Momento de Gloria",
+    "description": "Ún héroe siempre debe tener la posibilidad de una revancha.\nDespués de Desbloquear o Hurgar en un Cofres un total de 2 veces , se activa Momento de Gloria :\n\n• Cuando te hieren, sufres del Efecto de Estado Desesperanza .\n\n• Te curas automáticamente 1 Estado de Salud después de 80 / 70 / 60 segundos .\n• Este efecto se cancela automáticamente si entras en el Estado Agonizante .\n\nMomento de Gloria no se activa si ya sufres del Efecto de Estado Desesperanza .\nMomento de Gloria se desactiva después de curarte.\n\"Jamás pierdas la esperanza de un mañana mejor.\" — Trevor",
+    "owner": "Trevor",
+    "fileName": "survivor-momento-de-gloria.png",
+    "role": "survivor"
+  },
+  {
+    "id": "survivor-nacido-para-esto",
+    "name": "Nacido para Esto",
+    "description": "\"Naciste para sobrevivir y creciste para adaptarte.\"\nCuando estás en el Estado Herido , se activa Nacido para Esto :Mientras esté activo, completar una acción Curativa en otro Sobreviviente activa el siguiente efecto primario:\n\n• Otorga el Efecto de Estado Resistencia durante 6 / 8 / 10 segundos .\n• Realizar una Acción Destacada de cualquier tipo eliminará Resistencia .\n\nMientras esté activo y sufran de Efecto de Estado Herida Profunda , correr activa el siguiente efecto secunario:\n• Otorga un 1 / 2 / 3 % de Efecto de Estado Celeridad .\n\n\"¡No vine hasta aquí para ser bocadillo de robot!\" — Gabriel Soma",
+    "owner": "Gabriel",
+    "fileName": "survivor-nacido-para-esto.png",
+    "role": "survivor"
+  },
+  {
+    "id": "survivor-nadie-se-queda-atrs",
+    "name": "Nadie Se Queda Atrás",
+    "description": "Es inconcebible abandonar a alguien.\nCuando las Puertas de Salida estén abiertas, se activa Nadie Se Queda Atrás y aplica los siguientes efectos:\n\n• Aumenta la velocidad de Acción para Curar y Descolgar en un 50 / 75 / 100 % .\n\n• Aumenta la fuerza y duración del Efecto Efecto de Estado Celeridad de los Sobrevivientes que descolgaste en un +10 % y +5 segundos respectivamente.\n\n• Podrás ver las Auras de todos los demás Sobrevivientes.\n\n\"...pues claro que no.\nPero creo que podemos superarlo y vencerlo si trabajamos juntos.\n¡No hay que ser predecibles ni egoístas!\" — Las Cintas Perdidas: Clyde",
+    "owner": "Todos",
+    "fileName": "survivor-nadie-se-queda-atrs.png",
+    "role": "survivor"
+  },
+  {
+    "id": "survivor-niero",
+    "name": "Niñero",
+    "description": "\"A pesar de tener fama de persona egocéntrica, lo arriesgas todo para ayudar a quienes te necesitan.\"\nCuando descuelgas a otro Sobreviviente, se te revela el Aura del Asesino durante 8 segundos , mientras el Sobreviviente descolgado se beneficia de los siguientes efecto durante 20 / 25 / 30 segundos en su lugar:\n\n• Suprime la creación de sus Marcas de Arañazos y Charcos de Sangre .\n\n• Aumenta la fuerza de su Efecto de Estado Celeridad en un +10 % .\n\n\"Prometí mantenerlos a salvo y eso es lo que pienso hacer.\" — Steve Harrington",
+    "owner": "Steve",
+    "fileName": "survivor-niero.png",
+    "role": "survivor"
+  },
+  {
+    "id": "survivor-no-hagas-dao",
+    "name": "No Hagas Daño",
+    "description": "\"Ayudar te resulta natural, sin importar qué tan peliagudas se ponen las cosas.\"\nAl curar a otro Sobreviviente, por cada Estado de Gancho que tengan, te beneficias de los siguientes efectos:\n\n• Aumenta tu velocidad de Curación Altruista en un 30 / 40 / 50 % por Estado de Gancho , hasta un máximo de 60 / 80 / 100 % .\n\n• Aumenta la bonificación de Progreso de las Pruebas de Habilidad Excelente de Curación en un +3 % por Estado de Gancho , hasta un máximo de +6 % .",
+    "owner": "Orela",
+    "fileName": "survivor-no-hagas-dao.png",
+    "role": "survivor"
+  },
+  {
+    "id": "survivor-nos-vemos",
+    "name": "Nos Vemos",
+    "description": "Tienes una habilidad asombrosa para escapar de lo inevitable.\n\n• Cuando estás Estado Agonizante también cargas tu Medidor de Forcejeo en un 50 % de tu progreso de recuperación hasta un máximo de 40 / 45 / 50 % del total.\n\n\"Nos vemos.\" — Ash Williams",
+    "owner": "Ash",
+    "fileName": "survivor-nos-vemos.png",
+    "role": "survivor"
+  },
+  {
+    "id": "survivor-notas-fantasma",
+    "name": "Notas Fantasma",
+    "description": "\"Sabes bien que se necesita un poco de calma antes de que la canción explote.\"\nAl sufrir del Efecto de Estado Agotado , te beneficias de los siguientes efectos:\n\n• Tus Marcas de Arañazos desaparecen un +50 % más rápido.\n\n• Aumenta tu tasa de Recuperación de ese Efecto de Estado en un 5 / 7.5 / 10 % .\n\n\"¡Vamos al puente!\" — Vee Boonyasak",
+    "owner": "Vee",
+    "fileName": "survivor-notas-fantasma.png",
+    "role": "survivor"
+  },
+  {
+    "id": "survivor-objeto-de-obsesin",
+    "name": "Objeto de Obsesión",
+    "description": "Idéntico a Unión Obsesiva .\n\"¡Me estaba mirando!\" — Laurie Strode",
+    "owner": "Laurie",
+    "fileName": "survivor-objeto-de-obsesin.png",
+    "role": "survivor"
+  },
+  {
+    "id": "survivor-ojos-de-belmont",
+    "name": "Ojos de Belmont",
+    "description": "Su pasado como cazadores de vampiros le otorga ciertas habilidades al linaje.\nCuando se completa un Generador , ves el Aura del Asesino durante 1 / 2 / 3 segundos .\n\n• Extiende la duración de todas las instancias en las cuales puedes ver el Aura del Asesino en +2 segundos .\n\nOjos de Belmont se beneficia de su propio efecto.\n\"¡Ja! ¡Se reveló tu secreto!\" — Trevor",
+    "owner": "Trevor",
+    "fileName": "survivor-ojos-de-belmont.png",
+    "role": "survivor"
+  },
+  {
+    "id": "survivor-oportunidades",
+    "name": "Oportunidades",
+    "description": "Desbloquea la capacidad de percibir Auras.\nSe te revelan las Auras de Paredes Rompibles , Tarimas , y Ventanas durante 24 / 28 / 32 metros .\n\n\"Madruga, esfuérzate, trabaja con empeño.\nApunta a la fama y dispara sin dudar.\nLa fe y la familia debes valorar.\nCrea oportunidades para cumplir tus sueños.\" — \"Oportunidades\" de Kate Denson",
+    "owner": "Kate",
+    "fileName": "survivor-oportunidades.png",
+    "role": "survivor"
+  },
+  {
+    "id": "survivor-pacto-de-sangre",
+    "name": "Pacto de Sangre",
+    "description": "Es como si una parte oculta de ti hubiera despertado.\nSientes como si pudieras pedirle ayuda a alguien más.\nCuando te hieran a ti o a quien sea la Obsesión de cualquier forma, se activa Pacto de Sangre :\n\n• Podrán ver sus respectivas Auras\n\n• Completar una Acción de Curación en la Obsesión o que ella te cure por completo, podrán obtener un 5 / 6 / 7 % de Efecto de Estado Celeridad .\n• Este efecto dura mientras se mantengan a menos de 16 metros de distancia.\n\nPacto de Sangre se desactiva temporalmente si eres la Obsesión .\nReduce las posibilidades de que te vuelvas la Obsesión del Asesino al reducir su valor en un -100 % .\nEl Asesino solo puede estar obsesionado con un Sobreviviente a la vez.",
+    "owner": "Cheryl",
+    "fileName": "survivor-pacto-de-sangre.png",
+    "role": "survivor"
+  },
+  {
+    "id": "survivor-percepcin-extrasensorial",
+    "name": "Percepción Extrasensorial",
+    "description": "\"Si bajas la velocidad y te concentras, puedes percibir tanto a tus aliados como al enemigo.\"\nAgáchate durante 4 segundos para activar esta ventaja. Mientras esté activo:\n\n• Ves las Auras de los Sobrevivientes , el Asesino , y una serie de objetos en un radio de 44 metros .\n\n*Los objetos revelados incluyen Cofres , Puerta de Salida , Generadores , Trampilla , Objetos , Tarimas , Tótems , y Ventanas .\n\nGanas los Efectos de Estado Elusivo y Inconsciencia .\n\nCuando te vuelves a parar, o después de 11 segundos , se terminan todos los efectos de esta ventaja, cuyo tiempo de recuperación es de 60 / 50 / 40 segundos .\n\n\"¿Qué significa amigo?\" — Once",
+    "owner": "Once",
+    "fileName": "survivor-percepcin-extrasensorial.png",
+    "role": "survivor"
+  },
+  {
+    "id": "survivor-percepcin-oscura",
+    "name": "Percepción Oscura",
+    "description": "Permite percibir Auras.\nCada vez que se completa un Generador , se activa Percepción Oscura :\n• Se revela el Aura del Asesino por 5 / 7 / 10 segundos cuando ingresa en un radio de #range a tu alrededor.\n\nUna vez que se agota la duración del Aura, Percepción Oscura se desactiva.\n\n\"Te lo dice alguien con experiencia: relájate, no te apresures ¡y no te preocupes tanto! La mejor forma de combatirlo es saber cómo piensa.\" — Cintas Perdidas: Murf",
+    "owner": "Todos",
+    "fileName": "survivor-percepcin-oscura.png",
+    "role": "survivor"
+  },
+  {
+    "id": "survivor-perfil-bajo",
+    "name": "Perfil Bajo",
+    "description": "Trabajas mejor sin compañía.\nCuando solo estás tú y quien te persigue, sabes cómo desaparecer.\nCuando te conviertes en el último Sobreviviente en pie, Perfil Bajo se activa:\n\n• Suprime tus Gruñidos de Dolor y la creación de Charcos de Sangre y Marcas de Arañazos durante 70 / 80 / 90 segundos .\n\nPerfil Bajo se desactiva después de usarse y solo cuenta para los Sobrevivientes que aún estén participando de la Partida.",
+    "owner": "Ada",
+    "fileName": "survivor-perfil-bajo.png",
+    "role": "survivor"
+  },
+  {
+    "id": "survivor-pericia-tcnica",
+    "name": "Pericia Técnica",
+    "description": "Tienes el don de manejar máquinas con precisión y cuidado.\nCuando reparas un Generador se aplican los siguientes efectos:\n\n• Reduce la distancia a la que se escuchan tus reparaciones en -8 metros .\n\n• Suprime la explosión y la Notificación de Ruido Fuerte cuando fallas una Prueba de Habilidad .\n\n• Fallar una Prueba de Habilidad retrocede instantáneamente el Generador en un 5 / 4 / 3 % de su Progreso máximo posible además de la penalización de Progreso por defecto.\n\n\"Voy a usar el sigilo.\" — Feng Min",
+    "owner": "Feng",
+    "fileName": "survivor-pericia-tcnica.png",
+    "role": "survivor"
+  },
+  {
+    "id": "survivor-personaje-secundario",
+    "name": "Personaje Secundario",
+    "description": "\"Por lo general, no eres el centro de atención. En algunos casos, esto puede ser una ventaja.\"\nCada vez que el Asesino recoge a cualquier otro Sobreviviente en el Estado Agonizante , se activa Personaje Secundario durante 10 segundos .\nMientras esté activo, comenzar a correr activa el siguiente efecto:\n\n• Otorga un +50 % de Efecto de Estado Celeridad durante 5 segundos .\n\nNo se puede usar Personaje Secundario mientras estás Agotado .\nPersonaje Secundario causa el Efecto de Estado Agotado durante 30 / 25 / 20 segundos después de usarse.\n\"¿Te olvidaste de mí?\" — Renato Lyra",
+    "owner": "Renato",
+    "fileName": "survivor-personaje-secundario.png",
+    "role": "survivor"
+  },
+  {
+    "id": "survivor-por-cualquier-medio",
+    "name": "Por Cualquier Medio",
+    "description": "Te defiendes con cualquier cosa que tengas a mano para conseguir la ventaja.\nPresiona y mantén presionado el botón de Habilidad Activa durante 5 / 4 / 3 segundos cuando estés de pie junto a una Tarima usada para restablecerla a su posición vertical.\n\n• Otorga la habilidad de ver las Auras de las Tarimas derribadas pero no destruidas que queden en el entorno.\n\n\"Te atacaré con toda mi fuerza. Y cuando acabe, lo haré de nuevo.\" — Yui Kimura",
+    "owner": "Yui",
+    "fileName": "survivor-por-cualquier-medio.png",
+    "role": "survivor"
+  },
+  {
+    "id": "survivor-por-la-gente",
+    "name": "Por la Gente",
+    "description": "\"Arriesgas tu vida y tu salud por los demás.\"\nCuando estás ileso y curando a otro Sobreviviente sin usar un Botiquín , presiona el botón de Habilidad Activa para activar los siguientes efectos:\n\n• Intercambia 1 Estado de Salud con el otro Sobreviviente:\n• Los cura instantáneamente al Estado Herido , si estaban en el estado agonizante o sufriendo del Efecto de Estado Herida Profunda .\n\n• Los cura instantáneamente al estado ileso, si estaban heridos.\n\n• Quedas herido y sufres de Efecto de Estado Desesperanza durante 80 / 70 / 60 segundos .\n\n• Te vuelves la Obsesión , si no lo eres ya.\n\nReduce las posibilidades de que te vuelvas la Obsesión del Asesino al reducir su valor en un -100 % .\nEl Asesino solo puede estar obsesionado con un Sobreviviente a la vez.\n\"Podemos escribir nuestra propia historia y decidir cómo terminarla.\" — Zarina Kassir",
+    "owner": "Zarina",
+    "fileName": "survivor-por-la-gente.png",
+    "role": "survivor"
+  },
+  {
+    "id": "survivor-postratamiento",
+    "name": "Postratamiento",
+    "description": "Desbloquea la capacidad de percibir Auras.\n\n• Ves las Auras de los últimos 1 / 2 / 3 Sobrevivientes que te ayudaron o viceversa:\n• Rescate de un Gancho .\n\n• Completar una acción Curativa.\n\n• Ellos también pueden ver tu Aura.\n\nPostratamiento reinicia sus efectos cuando te cuelga el Asesino.\n\"Una Piedad que Desgarra la Tormenta.\nObra al óleo en honor a mis mejores amigos, que también son los mejores músicos que conozco. Su primer álbum sigue siendo mi favorito. Me ayudó a superar una mala época de mi vida.\" — Jeff, óleo sobre lienzo, 16x16",
+    "owner": "Jeff",
+    "fileName": "survivor-postratamiento.png",
+    "role": "survivor"
+  },
+  {
+    "id": "survivor-premonicin",
+    "name": "Premonición",
+    "description": "Tienes la capacidad natural de detectar el peligro.\n• Recibes una advertencia sonora cuando miras en dirección al Asesino en un área cónica de 45 ° con un alcance de 36 metros .\n\nPremonición tiene un tiempo de recuperación de 60 / 45 / 30 segundos cada vez que se activa.\n\n\"¡Esto me da mala espina!\"",
+    "owner": "Todos",
+    "fileName": "survivor-premonicin.png",
+    "role": "survivor"
+  },
+  {
+    "id": "survivor-punto-y-aparte",
+    "name": "Punto y Aparte",
+    "description": "Al final del día, todos tienen que hacerse caergo de sí mismos.\nCuando terminas de Curar a otro Sobreviviente, se activa Punto y Aparte .\nPresiona el botón de Habilidad Activa mientras te cura otro sobreviviemte para activar los siguientes edectos:\n\n• Sufres de Efecto de Estado Desesperanza .\n\n• Te curas automáticamente healthState Estado de Salud después de 80 / 70 / 60 segundos .\n• Este efecto se cancela prematuramente si entras al Estado Agonizante .\n\nPunto y Aparte no se activa si ya sufres del Efecto de Estado Desesperanza .\nPunto y Aparte se desactiva después de curarte.\n\"¡Estaré bien! No te juegues el pellejo por mí.\" — Taurie Cain",
+    "owner": "Taurie",
+    "fileName": "survivor-punto-y-aparte.png",
+    "role": "survivor"
+  },
+  {
+    "id": "survivor-resiliencia",
+    "name": "Resiliencia",
+    "description": "Te motivas cuando te encuentras en aprietos.\n• Aumenta tu velocidad de Acción para Reparar, Curar, Sabotear, Descolgar, Saltar, Bendecir o Purificar Tótems, Abrir Puertas de Salida y Desbloquear Cofres en un 3 / 6 / 9 % cuando estás Estado Herido .\n\n\"Concéntrate, incluso en los momentos más desesperados.\"",
+    "owner": "Todos",
+    "fileName": "survivor-resiliencia.png",
+    "role": "survivor"
+  },
+  {
+    "id": "survivor-respuesta-rpida",
+    "name": "Respuesta Rápida",
+    "description": "\"Cuando llega el momento, das todo de ti.\nTu supervivencia depende de eso.\"\nCada vez que te ves afectado por el Efecto de Estado Agotado , Respuesta Rápida activa su efecto:\n\n• Se te revela el Aura del Asesino durante 2 segundos .\n\nRealiza una acción Apresurada para salir de un Casillero para activar voluntariamente el Efecto de Estado durante 30 / 25 / 20 segundos .\nNo se puede usar Respuesta Rápida para sobreescribir un Efecto de Estado Agotado ya existente.\n\"Muy bien. Tú puedes. 3... 2... 1... ¡vamos!\" — Orela Rose",
+    "owner": "Orela",
+    "fileName": "survivor-respuesta-rpida.png",
+    "role": "survivor"
+  },
+  {
+    "id": "survivor-resurgimiento",
+    "name": "Resurgimiento",
+    "description": "Te has recuperado de las peores adversidades... y lo harás de nuevo.\n• Recibe un 50 / 60 / 70 % de curación inmediatamente luego de descolgarte o que te descuelguen.\n\n\"¡Es mi turno, maldita!\" — Jill Valentine",
+    "owner": "Jill",
+    "fileName": "survivor-resurgimiento.png",
+    "role": "survivor"
+  },
+  {
+    "id": "survivor-ruptura",
+    "name": "Ruptura",
+    "description": "Cada vez que te liberas de un Gancho por tus medios o con ayuda:\n• El Gancho se rompe instantáneamente.\n• Aumenta el temporizador de autorreparación a 180 segundos .\n\n• Se te revela el Aura del Asesino durante 4 / 5 / 6 segundos .\n\n\"Embiste desde el Vientre de la Bestia.\nEste es un boceto o dibujo en un trozo de madera que vi junto a la carretera. Sentí que la madera tenía una historia que contar. Y no desaprovechó su segunda oportunidad.\" — Jeff, pintura con tinta y óleo sobre trozo de madera, 12x16",
+    "owner": "Jeff",
+    "fileName": "survivor-ruptura.png",
+    "role": "survivor"
+  },
+  {
+    "id": "survivor-sabotear",
+    "name": "Sabotear",
+    "description": "Desbloquea la capacidad de percibir Auras:\n• Cuando el Asesino está cargando a un Sobreviviente, se te revelan las Auras de todos los Ganchos en un radio de 56 metros desde el punto en el que se recoge a un Sobreviviente:\n• Las Auras de los Ganchos normales se ven en blanco .\n\n• Las Auras de los Ganchos Torturadores se ven en amarillo .\n\nDesbloquea la habilidad de sabotear Ganchos sin una Cajas de Herramientas :\n\n• Aumenta la velocidad de Sabotaje sin una Caja de Herramientas en un +30 % .\n• Este efecto tiene un tiempo de recuperación de 70 / 65 / 60 segundos después de usarse.",
+    "owner": "Jake",
+    "fileName": "survivor-sabotear.png",
+    "role": "survivor"
+  },
+  {
+    "id": "survivor-segundo-aliento",
+    "name": "Segundo Aliento",
+    "description": "\"Has aprendido a evitar situaciones incómodas con los padres.\nParte de ti aún piensa que tu mejor opción es escapar y esperar a que las cosas se resuelvan por sí mismas.\"\nCuando curas a otro Sobreviviente por el equivalente a 1 Estado de Salud , se activa Segundo Aliento :\n\n• La próxima vez que te descuelguen o te descuelgues por tus propios medios, sufres de Efecto de Estado Desesperanza hasta que Segundo Aliento se desactiva.\n\n• Te curas automáticamente 1 Estado de Salud después de 28 / 24 / 20 segundos .\n\nMientras Segundo Aliento está activo, las siguientes condiciones lo desactivan:\n• Que te hayas curado completamente con Segundo Aliento .\n\n• Si entras en Estado Agonizante antes de que Segundo Aliento llegue a activarse.\n\nSegundo Aliento no se activará si ya sufres del Efecto de Estado Desesperanza .\n\"Sí, voy a decir que no.\" — Steve Harrington",
+    "owner": "Steve",
+    "fileName": "survivor-segundo-aliento.png",
+    "role": "survivor"
+  },
+  {
+    "id": "survivor-serenidad",
+    "name": "Serenidad",
+    "description": "Alcanzar objetivos te da confianza.\nCuando se completa un Generador , te beneficias del siguiente efecto:\n\n• Suprime la creación de tus Marcas de Arañazos durante 20 / 25 / 30 segundos .\n\nAl comenzar a reparar un Generador , revela el Aura del Asesino durante 8 segundos .\n\"Bien, tranquila. No le des más vueltas y sigue adelante: puedes hacerlo.\" — Jane Romero",
+    "owner": "Jane",
+    "fileName": "survivor-serenidad.png",
+    "role": "survivor"
+  },
+  {
+    "id": "survivor-sistema-de-espionaje",
+    "name": "Sistema de Espionaje",
+    "description": "La mejor forma de permanecer un paso adelante es observar cuidadosamente a la competencia.\nDespués de completar un total de 40 % de progreso de reparación en los Generadores , se activa Sistema de Espionaje :\n\n• Presiona el botón de Habilidad Activa cuando estás cerca de un Generador parcialmente reparado para instalar una Trampa , la que se mantiene activa durante 100 / 110 / 120 segundos .\n\n• Cuando un Asesino ingresa dentro de los 14 metros del Generador Intervenido revelará su Aura a todos los Sobrevivientes.\n\nSistema de Espionaje se desactiva después de que el Asesino dañe el Generador Intervenido o cuando el tiempo se acaba.\nLas Auras de los Generadores Intervenidos son revelados a todos los Sobrevivientes en amarillo .",
+    "owner": "Ada",
+    "fileName": "survivor-sistema-de-espionaje.png",
+    "role": "survivor"
+  },
+  {
+    "id": "survivor-sobreviviremos",
+    "name": "Sobreviviremos",
+    "description": "Ayudar a otros aumenta tu moral.\nCUnado descuelgas a otro Sobreviviente, se activa Sobreviviremos : durante 30 / 60 / 90 segundos :\n\n• Aumenta tu velocidad de Curación Altruista en un +100 % .\n\n\"Seguro que lograremos salir sanos y salvos de esta si nos ayudamos mutuamente.\"",
+    "owner": "Todos",
+    "fileName": "survivor-sobreviviremos.png",
+    "role": "survivor"
+  },
+  {
+    "id": "survivor-solidaridad",
+    "name": "Solidaridad",
+    "description": "Compartir experiencias dolorosas tiene el poder de curar.\nSi te han herido, cuando curas a un Sobreviviente sin un Botiquín , te beneficias de los siguientes efectos:\n\n• Te curas a ti mismo a un 50 / 60 / 70 % de la velocidad normal.\n\n\"Hay que estar ahí cuando las cosas se ponen difíciles, para escuchar los proglemas de la gente y apoyar a quienes lo necesitan: así es como te haces más fuerte, así es como creces.\" — Jane Romero",
+    "owner": "Jane",
+    "fileName": "survivor-solidaridad.png",
+    "role": "survivor"
+  },
+  {
+    "id": "survivor-solo-quedo-yo",
+    "name": "Solo Quedo Yo",
+    "description": "Idéntico a Hasta Terminar con el Último .\n\"Era el Coco.\" — Laurie Strode",
+    "owner": "Laurie",
+    "fileName": "survivor-solo-quedo-yo.png",
+    "role": "survivor"
+  },
+  {
+    "id": "survivor-solucionador-de-problemas",
+    "name": "Solucionador de Problemas",
+    "description": "\"Ninguna distracción te desviará de un objetivo primario.\"\nCuando te persigue el Asesino, se activa Solucionador de Problemas :\n\n• Ves el Aura del Generador con el mayor progreso de reparación.\n\n• Ves el Aura del Asesino durante 4 / 5 / 6 segundos luego de hacer caer una Tarima .\n\nEl efecto dura 6 / 8 / 10 segundos tras entrar en persecución y luego se desactiva.\n\n\"Si yo no hago las cosas por aquí, nadie las hace.\" — Gabriel Soma",
+    "owner": "Gabriel",
+    "fileName": "survivor-solucionador-de-problemas.png",
+    "role": "survivor"
+  },
+  {
+    "id": "survivor-subir-las-apuestas",
+    "name": "Subir las Apuestas",
+    "description": "Al final todo saldrá bien, simplemente lo sabes.\nTu confianza fortalece la esperanza de quienes te rodean.\nPor cada Sobreviviente con vida, Subir las Apuestas obtiene +1 Distintivo :\n\n• Aumenta la suerte del resto de los Sobrevivientes en 1 / 2 / 3 % por Distintivo, hasta un máximo de 3 / 6 / 9 % .\n\n\"¿Qué puedo decir? Solo soy un tipo con mucha suerte... Seguro que algo se te pega.\" — Ace Visconti",
+    "owner": "Ace",
+    "fileName": "survivor-subir-las-apuestas.png",
+    "role": "survivor"
+  },
+  {
+    "id": "survivor-sujtate",
+    "name": "Sujétate",
+    "description": "Cada vez que estés curando a un Sobreviviente agonizante, se activa Sujétate :\nDurante la acción de Curación, el Sobreviviente agonizante y tú se benefician del siguietne efecto primario:\n• Se les revela a ambos el Aura del Asesino.\n\nDespués de completar la acción de Curación, el otro Sobreviviente se beneficia de los siguientes efectos secundarios durante 3 / 4 / 5 segundos :\n\n• Suprime la creación de sus Marcas de Arañazos .\n\n• Les otorga un +50 % de Efecto de Estado Celeridad .\n\nNo causa el Efecto de Estado Agotado .\n\n\"Los Cagafantasmas no abandonan a nadie.\" — Ash Williams",
+    "owner": "Ash",
+    "fileName": "survivor-sujtate.png",
+    "role": "survivor"
+  },
+  {
+    "id": "survivor-superar",
+    "name": "Superar",
+    "description": "\"Calculaste cuánta energía puedes arriesgarte a gastar.\"\nCada vez que pasas al Estado Herido de estar ileso, Superar activa su efecto:\n\n• Extiende la duración del Aumento de Velocidad al Golpe en +2 segundos .\n\nNo se puede usar Superar mientras estás Agotado .\nSuperar causa el Efecto de Estado Agotado durante 60 / 50 / 40 segundos .\n\"Luego de un cuidadoso análisis, ¡nos largamos de aquí!\" — Jonah Vasquez",
+    "owner": "Jonah",
+    "fileName": "survivor-superar.png",
+    "role": "survivor"
+  },
+  {
+    "id": "survivor-sultate",
+    "name": "Suéltate",
+    "description": "\"Te metes en suficientes problemas. Sabes cómo salir de ellos.\"\nRealizar un Salto Apresurado en una persecución activa Suéltate durante 4 / 5 / 6 segundos :\n\n• Suprime todos los sonidos relacionados a la acción de Salto Apresurado , incluyendo la Notificación de Ruido Fuerte para el Asesino.\n\nMientras esté activo, realizar otra acción de Salto Apresurado reinicia el temporizador cada vez que se hace.\nSuéltate tiene un tiempo de recuperación de 45 segundos después de usarse y se haya terminado el tiempo.\n\n\"¡Sé cómo podemos salir de aquí! ¡Rápido, por aquí!\" — Thalita Lyra",
+    "owner": "Thalita",
+    "fileName": "survivor-sultate.png",
+    "role": "survivor"
+  },
+  {
+    "id": "survivor-te-vemos",
+    "name": "Te Vemos",
+    "description": "\"Perfeccionaste tus poderes y puedes darles una lección a quienes intenten encontrarte.\"\nObtienes 1 distintivo cuando el Asesino revela tu Aura .\n\nCuando tengas 4 Distintivos , se consumen todos, y podrás ver el aura tanto del Asesino como de los demás Sobrevivientes durante 10 / 12.5 / 15 segundos .\n\nEsta ventaja tiene un tiempo de recuperación de 10 segundos para obtener distintivos.\n\n\"No soy yo. Eres tú. Tú eres el monstruo.\" — Once",
+    "owner": "Once",
+    "fileName": "survivor-te-vemos.png",
+    "role": "survivor"
+  },
+  {
+    "id": "survivor-tenacidad",
+    "name": "Tenacidad",
+    "description": "\"Nada puede detenerte.\"\nTu feroz tenacidad en las situaciones más extremas te permiten beneficiarte de los siguientes efectos:\n\n• Otorga un 30 / 40 / 50 % de Efecto de Estado Celeridad .\n\n• Reduce el volumen de los Gruñidos de Dolor en -75 % .\n\n• Bloquea tu Aura de ser leída.\n\n\"¿Qué demonios es esto? ¡Voy a acabar con ese bastardo!\" — Detective David Tapp",
+    "owner": "David",
+    "fileName": "survivor-tenacidad.png",
+    "role": "survivor"
+  },
+  {
+    "id": "survivor-tiempo-prestado",
+    "name": "Tiempo Prestado",
+    "description": "\"Te invade una energía inesperada cuando rescatas a un aliado de un gancho.\"\nCada vez que descuelgues a otro Sobreviviente, ellos se benefician de los siguientes efectos:\n\n• Extiende la duración del Efecto de Estado Resistencia por 6 / 8 / 10 segundos a 16 / 18 / 20 segundos .\n• Realizar una Acción Destacada de cualquier tipo eliminará Resistencia .\n\n• Extiende la duración de Efecto de Estado Celeridad por +10 segundos a haste .\n\n\"Seguro que duele un montón, pero este no es tu fin; así que arriba, soldado. ¡En marcha!\" — Bill Overbeck",
+    "owner": "Bill",
+    "fileName": "survivor-tiempo-prestado.png",
+    "role": "survivor"
+  },
+  {
+    "id": "survivor-trabajo-en-equipo-circuito-completo",
+    "name": "Trabajo en Equipo: Circuito Completo",
+    "description": "\"Tras adquirir conocimientos de ingeniería mecánica, les presumes tus habilidades a los demás.\"\nPor cada Sobreviviente que repare un generador contigo, el tamaño de la zona de la Prueba de Habilidad buena aumenta en un 15 / 20 / 25 % .\n\nMientras estés reparando un generador con al menos 1 otro Sobreviviente , lo harás un 5 % más rápido.\n\n\"¿Cuántas veces más tengo que demostrarles que estoy en lo correcto antes de que confíen en mí?\" — Dustin Henderson",
+    "owner": "Dustin",
+    "fileName": "survivor-trabajo-en-equipo-circuito-completo.png",
+    "role": "survivor"
+  },
+  {
+    "id": "survivor-trabajo-en-equipo-el-poder-de-dos",
+    "name": "Trabajo en Equipo: El Poder de Dos",
+    "description": "\"Cuesta mantener tu ritmo, pero eso no detiene a los demás a que lo intenten.\"\nCuando terminas de curar a otro Sobreviviente, Trabajo en Equipo: El Poder de Dos se activa, y tanto tú como el Sobreviviente curado se benefician del siguiente efecto:\n\n• Otorga un +5 % de Efecto de Estado Celeridad mientras se mantengan a menos de 8 / 12 / 16 metros uno del otro.\n• Este efecto se mantiene durante 4 segundos una vez que sales del radio de alcance y vuelves a conseguirlo cuando regresas hasta que termine el temporizador.\n\nLos Sobrevivientes solo pueden recibir un efecto de Trabajo en Equipo: El Poder de Dos a la vez.\n\"¿Estás bien? ¡Entonces sigue!\" — Thalita Lyra",
+    "owner": "Thalita",
+    "fileName": "survivor-trabajo-en-equipo-el-poder-de-dos.png",
+    "role": "survivor"
+  },
+  {
+    "id": "survivor-trabajo-en-equipo-entereza",
+    "name": "Trabajo en Equipo: Entereza",
+    "description": "\"Guardas la compostura incluso al sufrir un inmenso dolor.\"\nAl estar herido, cada vez que otro Sobreviviente dentro de un radio de 24 metros de tu ubicación ciegue al Asesino de cualquier forma o lo aturda usando una Tarima , Trabajo en Equipo: Entereza activa su efecto:\n\n• Suprime tus Gruñidos de Dolor , y la creación de Charcos de Sangre y Marcas de Arañazos durante 20 / 25 / 30 segundos .\n\n\"Se metieron con la gente equivocada.\" — Rick Grimes",
+    "owner": "Rick",
+    "fileName": "survivor-trabajo-en-equipo-entereza.png",
+    "role": "survivor"
+  },
+  {
+    "id": "survivor-trabajo-en-equipo-lanzamiento",
+    "name": "Trabajo en Equipo: Lanzamiento",
+    "description": "\"Sabes que la mejor manera de igualar las condiciones es mediante el empoderamiento de los que te rodean.\"\nCada vez que ciegas al Asesino de cualquier forma o lo aturdes usando una Tarima , Trabajo en Equipo: Lanzamiento activa su efecto:\n\n• Otorga el Efecto de Estado Resistencia a todos los otros Sobrevivientes heridos en un radio de 24 metros de tu ubicación durante 6 / 8 / 10 segundos .\n\n\"Combatir el mal une a las personas buenas.\" — Michonne Grimes",
+    "owner": "Michonne",
+    "fileName": "survivor-trabajo-en-equipo-lanzamiento.png",
+    "role": "survivor"
+  },
+  {
+    "id": "survivor-trabajo-en-equipo-sigilo-colectivo",
+    "name": "Trabajo en Equipo: Sigilo Colectivo",
+    "description": "\"Cuando alguien te ayuda, le devuelves el favor.\"\nCuando otro Sobreviviente termine de curarte, Trabajo en Equipo: Sigilo Colectivo se activa, y tanto tú como el Sobreviviente que te curó se benefician del siguiente efecto:\n\n• Suprime tus Marcas de Arañazos siempre y cuando permanezcan a 8 / 12 / 16 metros el uno del otro.\n• Este efecto permanece 4 segundos al salir del radio de alcance y vuelves a conseguirlo cuando regresas hasta que termine el temporizador.\n\nLos Sobrevivientes solo pueden recibir un efecto de Trabajo en Equipo: Sigilo Colectivo a la vez.\n\"Estoy bien, estoy bien... pero contente.\" — Renato Lyra",
+    "owner": "Renato",
+    "fileName": "survivor-trabajo-en-equipo-sigilo-colectivo.png",
+    "role": "survivor"
+  },
+  {
+    "id": "survivor-trabajo-en-equipo-tono-gentil",
+    "name": "Trabajo en Equipo: Tono Gentil",
+    "description": "\"Cuidas a tus amigos y usas tus habilidades para protegerlos.\"\nPor cada Sobreviviente que repare un Generador contigo, el alcance del ruido del Generador se reduce en un 15 / 20 / 25 % .\n\nMientras lo reparas con al menos un otro Sobreviviente , lo haces un 5 % más rápido.\n\n\"Yo hago mis propias reglas.\" — Once",
+    "owner": "Once",
+    "fileName": "survivor-trabajo-en-equipo-tono-gentil.png",
+    "role": "survivor"
+  },
+  {
+    "id": "survivor-trampa-qumica",
+    "name": "Trampa Química",
+    "description": "En la Niebla, una oficial debe adaptarse a los materiales que tiene a su disposición.\nTras completar un progreso de reparación de Generadores equivalente a un 20 % , se activa Trampa Química :\n\n• Presiona el botón de Habilidad Activa mientras estás de pie cerca de una Tarima usada para instalar una Trampa, la que se mantiene activa durante 40 / 50 / 60 segundos .\n\n• Cuando un Asesino rompe la Tarima Entrampada , su Trampa explota, lo que cubrirá al Asesino con un componente químico:\n• El Asesino sufre de un -50 % de Efecto de Estado Entorpecimiento durante 4 segundos .\n\nTrampa Química se desactiva luego de usarse o una vez que haya terminado el temporizador.\nSe revelan las Auras de las Tarimas Entrampadas en amarillo .\n\n\"¿Cómo la mataremos, Ash?\" — Ellen Ripley",
+    "owner": "Ellen",
+    "fileName": "survivor-trampa-qumica.png",
+    "role": "survivor"
+  },
+  {
+    "id": "survivor-tctica-rpida",
+    "name": "Táctica Rápida",
+    "description": "\"Cuando captas la atención de un Asesino, sabes mantenerla; los demás pueden estar tranquilos de que no los interrumpirán por un tiempo.\"\nMientras te persigue el Asesino, aplican los siguientes efectos:\n\n• Ves las Auras de otros Sobrevivientes.\n\n• Aumenta la velocidad de reparación de otros Sobrevivientes en un 3 / 4 / 5 % .\n\nTáctica Rápida tiene un tiempo de recuperación de 40 segundos cuando pierdes un Estado de Salud .\n\"no es necesario recurrir a la violencia. Y yo lo probaré.\" — Vittorio Toscano",
+    "owner": "Vittorio",
+    "fileName": "survivor-tctica-rpida.png",
+    "role": "survivor"
+  },
+  {
+    "id": "survivor-un-lugar-para-nosotros",
+    "name": "Un Lugar Para Nosotros",
+    "description": "Al curar a otro Sobreviviente, ambos obtienen el Efecto de Estado Elusivo .\nCada vez que terminas de curar a la Obsesión , ellos obtienen el Efecto de Estado Elusivo durante 20 / 25 / 30 segundos .\n\nReduce las posibilidades de que te vuelvas la Obsesión del Asesino al reducir su valor en un -100 % .\nEl Asesino solo puede estar obsesionado con un Sobreviviente a la vez.\n\"Sé mucho de computadoras. Sistemas. Problemas. Pero de esto... dudo que alguna vez logre comprenderlo.\" — Kwon Tae-young",
+    "owner": "Kwon",
+    "fileName": "survivor-un-lugar-para-nosotros.png",
+    "role": "survivor"
+  },
+  {
+    "id": "survivor-unin-obsesiva",
+    "name": "Unión Obsesiva",
+    "description": "\"Un vínculo sobrenatural te une al Asesino.\"\nCuando el Asesino puede ver tu Aura , Unión Obsesiva se activa:\n\n• Puedes ver el Aura del Asesino.\n\n• Aumenta tus velocidades de Acción para Purificar, Curar y Reparar en un 2 / 4 / 6 % .\n\nSi eres la Obsesión actual del Asesino, los siguientes efectos se activan automáticamente cada 30 segundos :\n• Tu Aura se revela al Asesino durante 3 segundos .\n\nAumenta las posibilidades de que te vuelvas la Obsesión del Asesino al incrementar su valor en un +100 % .\nEl Asesino solo puede estar obsesionado con un Sobreviviente a la vez.",
+    "owner": "Todos",
+    "fileName": "survivor-unin-obsesiva.png",
+    "role": "survivor"
+  },
+  {
+    "id": "survivor-vamos-a-vivir-para-siempre",
+    "name": "Vamos a Vivir para Siempre",
+    "description": "Los pocos amigos que tienes merecen la mejor protección.\nTe beneficias del siguiente efecto cuando curas a un Sobreviviente agonizante:\n\n• Aumenta tu velocidad de Curación en un +100 % .\n\nCuando completas la curación, el Sobreviviente curado obtiene el siguiente efecto:\n• Otorga el Efecto de Estado Resistencia durante 6 / 8 / 10 segundos .\n• Este efecto sólo puede activarse una vez cada 30 segundos .\n\n\"¡Ven, atrévete! Pan comido, bro.\" — David King",
+    "owner": "David",
+    "fileName": "survivor-vamos-a-vivir-para-siempre.png",
+    "role": "survivor"
+  },
+  {
+    "id": "survivor-velocidad-silenciosa",
+    "name": "Velocidad Silenciosa",
+    "description": "No haces tanto ruido como los demás cuando saltas sobre obstáculos o te ocultas en los Casilleros a toda velocidad.\n• Suprime tanto la Notificación de Ruido Fuerte y los efectos de sonido para las acciones de salto en Ventanas , Tarimas , o de entrada o salida rápida de los Casilleros .\n\nVelocidad Silenciosa tiene un tiempo de recuperación de 25 / 20 / 15 segundos .",
+    "owner": "Meg",
+    "fileName": "survivor-velocidad-silenciosa.png",
+    "role": "survivor"
+  },
+  {
+    "id": "survivor-vida-itinerante",
+    "name": "Vida Itinerante",
+    "description": "\"Amplificadores defectuosos, clavados sudorosos, camionetas descompuestas... nada te da más vida que esto.\"\nAl tener una herida, y estar reparando un Generador , las Pruebas de Habilidad normales tienen los siguientes efectos:\n\n• Gana +1 Distintivo por Prueba de Habilidad de Reparación Excelente .\n\n• Gana 0 Distintivos por Prueba de Habilidad de Repraración Superada .\n\n• Pierde -1 Distintivo por Prueba de Habilidad de Reparación Fallida .\n\nUna vez tengas 6 / 5 / 4 Distintivo , gástalos todos para obtener el siguiente efecto:\n• Aumenta tu velocidad de Curación en +100 % hasta que dejes de curarte.\n\nVida Itinerante se desactiva después del uso y no se activa mientras sufras del Efecto de Estado Desesperanza .\nVida Itinerante no interactúa con Pruebas de Habilidad especiales disparadas por efectos externos.\n\"Recuérdame que te enseñe a parchar tus propios pedales, Krit.\" — Vee Boonyasak",
+    "owner": "Vee",
+    "fileName": "survivor-vida-itinerante.png",
+    "role": "survivor"
+  },
+  {
+    "id": "survivor-vigilia",
+    "name": "Vigilia",
+    "description": "\"Cuidas a tus amigos hasta en las situaciones más extremas.\"\nTe recuperas un 43 / 55 / 66 % más rápido de los siguientes:\n\n• Los Efectos de Estado Ceguera , Desesperanza , Agotado , Vulnerabilidad , Hemorragia , Entorpecimiento , Destrozado , y Inconsciencia .\n\nVigilia extiende su efecto a todos los Sobrevivientes dentro de un rango de 16 metros de tu ubicación y permanece durante 15 segundos después de dejar su Área de Efecto .\nLos Sobrevivientes solo pueden recibir un efecto de Vigilia a la vez.\n\"Estaré aquí cuando despiertes. Lo lograrás.\" — Quentin Smith",
+    "owner": "Quentin",
+    "fileName": "survivor-vigilia.png",
+    "role": "survivor"
+  },
+  {
+    "id": "survivor-visionario",
+    "name": "Visionario",
+    "description": "\"Te concentras en la vía de escape de una forma extraordinaria.\"\nTe beneficias del siguiente efecto permanente:\n\n• Ves las Auras de los Generadores que estén a menos de 32 metros .\n\nCuando se completa un Generador , Visionario permanecerá desactivado durante 20 / 18 / 16 segundos .",
+    "owner": "Felix",
+    "fileName": "survivor-visionario.png",
+    "role": "survivor"
+  },
+  {
+    "id": "survivor-voluntad-de-hierro",
+    "name": "Voluntad de Hierro",
+    "description": "\"Puedes concentrarte y entrar en estado semimeditativo para atenuar el dolor.\"\nMientras estás herido, te beneficias de los siguientes efectos:\n\n• Reduce el volumen de los Gruñidos de Dolor en un 80 / 90 / 100 % .\n\nNo se puede usar Voluntad de Hierro mientras estás Agotado , pero no causa dicho Efecto de Estado .",
+    "owner": "Jake",
+    "fileName": "survivor-voluntad-de-hierro.png",
+    "role": "survivor"
+  },
+  {
+    "id": "survivor-va-rpida",
+    "name": "Vía Rápida",
+    "description": "\"A veces es necesario sacrificar a otros para avanzar.\"\nCuando enganchan a cualquier otro Sobreviviente, Vía Rápida recibe 1 / 2 / 3 Distintivo(s) , hasta un máximo de 199b1e / 2f9cd6 / ac3ee3 Distintivo .\n\n• Superar una Prueba de Habilidad Excelente de Reparación consume todos los Distintivos.\n\n• Cada Distintivo consumido otorga un #bonus adicional de progreso para Prueba de Habilidad Excelentes al reparar Generadores.\n\n\"Primero se sacrifica a quien es débil. Así es en la naturaleza, en los negocios... una realidad que pocos se atreven a enfrentar.\" — Yun-Jin Lee",
+    "owner": "Lee",
+    "fileName": "survivor-va-rpida.png",
+    "role": "survivor"
+  },
+  {
+    "id": "survivor-vnculo",
+    "name": "Vínculo",
+    "description": "Desbloquea la capacidad de percibir Auras:\n• Se te revelan las Auras de los Sobrevivientes en un radio de 20 / 28 / 36 metros .\n\n\"Tenemos que trabajar como un equipo. ¡Necesito que sobrevivan para poder sobrevivir yo!\" — Dwight Fairfield",
+    "owner": "Dwight",
+    "fileName": "survivor-vnculo.png",
+    "role": "survivor"
+  },
+  {
+    "id": "survivor-despierta",
+    "name": "¡Despierta!",
+    "description": "Desbloquea la capacidad de percibir Auras.\nUna vez que todos los Generadores Generadores se completen, se activa ¡Despierta! :\n• Se revelan las Auras de las Palancas de las Puertas de Salida en un radio de 128 metros .\n\n• Tu Aura se revela a todos los otros Sobrevivientes en un radio de 128 metros de tu ubicación en la Puerta de Salida .\n\n• Aumenta tu velocidad de Apertura de Puertas en un 15 / 20 / 25 % .\n\n\"Ok, mira. Si sobrevivimos las siguientes 24 horas, entonces tendremos una cita de verdad.\" — Quentin Smith",
+    "owner": "Quentin",
+    "fileName": "survivor-despierta.png",
+    "role": "survivor"
+  },
+  {
+    "id": "survivor-uno-dos-tres-cuatro",
+    "name": "¡Uno-Dos-Tres-Cuatro!",
+    "description": "\"Un ritmo estable se refleja en un trabajo estable.\"\nMientras estás de pie e inmóvil, presiona el botón de Habilidad Activa para iniciar un Concierto :\n\n• Dura hasta 15 segundos .\n\n• Potencia a los Sobrevivientes que estén en un radio de 16 metros de tu ubicación.\n\n• Dispara varias Pruebas de Habilidad .\n\nDespués de completar exitosamente el Concierto , los Sobrevivientes potenciados que realicen acciones de Curación o Reparación se beneficiarán del siguiente efecto durante 90 segundos :\n• Aumenta la probabilidad de recibir Pruebas de Habilidad en un +20 % .\n\n¡Uno-Dos-Tres-Cuatro! tiene un tiempo de recuperación de 110 / 100 / 90 segundos después de cancelar o completar el Concierto .\n\"¡Somos ruidosos! ¡Somos pesados! ¡SOMOS AXEKICK!\" — Vee Boonyasak",
+    "owner": "Vee",
+    "fileName": "survivor-uno-dos-tres-cuatro.png",
+    "role": "survivor"
+  },
+  {
+    "id": "survivor-ven-por-m",
+    "name": "¡Ven Por Mí!",
+    "description": "\"Arriesgas la vida para salvar a los demás.\"\nLuego de descolgar a un Sobreviviente, mientras permaneces en cuclillas e inmóvil, presiona el botón de Habilidad Activa para que se activen los siguientes efectos:\n\n• Suprime la creación de Charcos de Sangre y Marcas de Arañazos para todos los Sobrevivientes heridos o agonizantes en un radio de 24 metros de tu ubicación por los siguientes 10 / 12.5 / 15 segundos .\n\n• Gritas y revelas tu Aura al Asesino durante 5 segundos .\n\n\"Somos los que vivimos.\" — Rick Grimes",
+    "owner": "Rick",
+    "fileName": "survivor-ven-por-m.png",
+    "role": "survivor"
+  },
+  {
+    "id": "survivor-gil",
+    "name": "Ágil",
+    "description": "Toparte con asesinos letales te enseñó el valor de la discreción.\nCuando estás ilesa, se activa Ágil :\n\n• Suprime el sonido de tus pisadas cuando corres.\n\nÁgil tiene un tiempo de recuperación de 14 / 12 / 10 segundos después de realizar una acción de Salto Apresurado .\n\"Ven, Jonesy.\" — Ellen Ripley",
+    "owner": "Ellen",
+    "fileName": "survivor-gil.png",
+    "role": "survivor"
+  },
+  {
+    "id": "survivor-xito-arrollador",
+    "name": "Éxito Arrollador",
+    "description": "\"Cuando tu rival comete un error, aprovechas la oportunidad.\"\nTras aturdiar al Asesino con una Tarima se activa Éxito Arrollador :\n\n• Obtienes un +50 % de Efecto de Estado Celeridad durante 4 segundos .\n\nNo se puede usar Éxito Arrollador mientras estás Agotado .\nÉxito Arrollador causa el Efecto de Estado Agotado durante 30 / 25 / 20 segundos .\n\"He lidiado con psicópatas de corbata. Tú solo eres más horrible y vistes peor.\" — Yun-Jin Lee",
+    "owner": "Lee",
+    "fileName": "survivor-xito-arrollador.png",
+    "role": "survivor"
+  },
+  {
+    "id": "survivor-ltimo-enfrentamiento",
+    "name": "Último Enfrentamiento",
+    "description": "\"Aun cuando las cosas están en su peor momento, tu espíritu permanece indomable.\"\nDespués de estar en el Radio de Terror sin ser perseguido durante 80 / 70 / 60 segundos , se activa Último Enfrentamiento .\nMientras esté activo, realiza una acción de Salto Apresurado para activar su efecto:\n\n• Aturde al Asesino durante 3 segundos , si están en un radio de 2.5 metros de esa ubicación de Salto.\n\nÚltimo Enfrentamiento se desactiva por el resto de la Partida después de usarse.\n\"Algunos matones son tolerables. A otros, hay que enfrentarlos.\" — Michonne Grimes",
+    "owner": "Michonne",
+    "fileName": "survivor-ltimo-enfrentamiento.png",
+    "role": "survivor"
+  }
+]

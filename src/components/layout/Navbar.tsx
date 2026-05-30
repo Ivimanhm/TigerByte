@@ -1,4 +1,4 @@
-﻿import { Bell, BookOpen, Boxes, Gamepad2, Headset, Home, Info, Moon, Search, Settings, Sun, UserCircle2 } from 'lucide-preact'
+import { Bell, BookOpen, Boxes, Headset, Home, Info, Moon, Search, Settings, Sun, UserCircle2 } from 'lucide-preact'
 import { useEffect, useRef, useState } from 'preact/hooks'
 import { updates } from '../../data/updates.generated'
 
@@ -70,10 +70,12 @@ export function Navbar() {
     <header class="sticky top-0 z-30 px-2 py-3">
       <nav class="mx-auto flex w-[min(98%,1800px)] items-center justify-between rounded-xl border border-cyan/20 bg-[#041126]/78 px-5 py-3 shadow-[0_10px_34px_rgba(5,12,30,0.52)] backdrop-blur-md">
         <div class="flex items-center gap-3">
-          <span class="rounded-lg border border-violet/60 bg-violet/15 p-2 shadow-[0_0_12px_rgba(139,92,246,0.42)]">
-            <Gamepad2 size={17} class="text-violet" />
-          </span>
-          <strong class="logo-font text-xl">TigerByte</strong>
+          <a href="#" class="inline-flex items-center gap-3 transition hover:opacity-90" aria-label="Ir al menu principal">
+            <span class="grid h-[34px] w-[34px] place-items-center overflow-hidden rounded-lg border border-violet/60 bg-violet/15 p-1 shadow-[0_0_12px_rgba(139,92,246,0.42)]">
+              <img src="/favicon-32.png" alt="" class="h-full w-full object-contain" />
+            </span>
+            <strong class="logo-font text-xl">TigerByte</strong>
+          </a>
           <span class="ml-4 hidden h-7 w-px bg-cyan/20 xl:block" />
         </div>
 
@@ -83,7 +85,7 @@ export function Navbar() {
             const Icon = item.icon
 
             return (
-              <li>
+              <li key={item.href}>
                 <a
                   href={item.href}
                   class={`group relative inline-flex items-center gap-1.5 rounded-md px-3 py-2 transition ${
@@ -149,7 +151,7 @@ export function Navbar() {
                 ) : (
                   <ul class="max-h-72 space-y-2 overflow-y-auto pr-1">
                     {notifications.map((n) => (
-                      <li class="rounded-lg border border-cyan/15 bg-[#091a33]/70 p-3">
+                      <li key={n.id} class="rounded-lg border border-cyan/15 bg-[#091a33]/70 p-3">
                         <p class="inline-flex items-center gap-2 text-sm text-text">
                           <Info size={14} class="text-cyan" />
                           {n.title}
