@@ -27,10 +27,12 @@ type AddonRarity = 'common' | 'uncommon' | 'rare' | 'veryRare' | 'ultraRare'
 type DbdAddon = {
   apiKey?: string
   name: string
+  apiName?: string
   label?: string
   description?: string
   rarity?: AddonRarity
   image?: string
+  iconFile?: string
   apiImage?: string
   parents?: string[]
 }
@@ -94,6 +96,7 @@ const roleTabs: PerkRole[] = ['survivor', 'killer']
 
 const wikiImage = (fileName: string, host = 'deadbydaylight.fandom.com') => `https://${host}/wiki/Special:Redirect/file/${encodeURIComponent(fileName)}`
 const localSurvivorImage = (fileName: string) => `/dbd/survivors/${fileName}`
+const localAddonImage = (imageKey: string) => `/dbd/addons/${imageKey}.png`
 const addonIconFiles: Record<string, string> = {
   'Doom Engravings': 'IconAddon doomEngravings.png',
   'LoPro Chains': 'IconAddon loProChains.png',
@@ -143,19 +146,31 @@ const addonIconFiles: Record<string, string> = {
   'Video Tape': 'IconAddon videoTape.png',
   'Workshop Grease': 'IconAddon workshopGrease.png',
 }
-const addonImageCandidates = (addonName: string, imageKey?: string) => {
+const addonImageCandidates = (addonName: string, imageKey?: string, apiImage?: string, iconFile?: string) => {
   const lowerFirst = toAddonFileName(addonName)
   const upperFirst = toAddonFileName(addonName, false)
+  const apiImageKey = apiImage?.split('/').pop()
   return Array.from(new Set([
+    iconFile ? wikiImage(iconFile, 'deadbydaylight.wiki.gg') : '',
+    iconFile ? wikiImage(iconFile) : '',
+    imageKey ? localAddonImage(imageKey) : '',
+    imageKey ? wikiImage(`IconAddon ${imageKey}.png`, 'deadbydaylight.wiki.gg') : '',
+    imageKey ? wikiImage(`IconAddon ${imageKey}.png`) : '',
     imageKey ? wikiImage(`FulliconAddon ${imageKey}.png`, 'deadbydaylight.wiki.gg') : '',
     imageKey ? wikiImage(`FulliconAddon ${imageKey}.png`) : '',
+    apiImageKey ? wikiImage(`${apiImageKey}.png`, 'deadbydaylight.wiki.gg') : '',
+    apiImageKey ? wikiImage(`${apiImageKey}.png`) : '',
+    imageKey ? wikiImage(`iconAddon_${imageKey}.png`, 'deadbydaylight.wiki.gg') : '',
+    imageKey ? wikiImage(`IconAddon_${imageKey}.png`, 'deadbydaylight.wiki.gg') : '',
+    imageKey ? wikiImage(`FulliconAddon_${imageKey}.png`, 'deadbydaylight.wiki.gg') : '',
+    imageKey ? wikiImage(`iconAddon_${imageKey}.png`) : '',
+    imageKey ? wikiImage(`IconAddon_${imageKey}.png`) : '',
+    imageKey ? wikiImage(`FulliconAddon_${imageKey}.png`) : '',
     wikiImage(`FulliconAddon ${lowerFirst}.png`, 'deadbydaylight.wiki.gg'),
     wikiImage(`FulliconAddon ${upperFirst}.png`, 'deadbydaylight.wiki.gg'),
     wikiImage(`FulliconAddon ${lowerFirst}.png`),
     wikiImage(`FulliconAddon ${upperFirst}.png`),
     addonIconFiles[addonName] ? wikiImage(addonIconFiles[addonName], 'deadbydaylight.wiki.gg') : '',
-    imageKey ? wikiImage(`IconAddon ${imageKey}.png`, 'deadbydaylight.wiki.gg') : '',
-    imageKey ? wikiImage(`IconAddon ${imageKey}.png`) : '',
     wikiImage(`IconAddon ${lowerFirst}.png`, 'deadbydaylight.wiki.gg'),
     wikiImage(`IconAddon ${upperFirst}.png`, 'deadbydaylight.wiki.gg'),
     wikiImage(`IconAddon ${lowerFirst}.png`),
@@ -556,7 +571,7 @@ const killerPopularBuilds: Build[] = dbdKillersData.map((killer, index) => ({
   subtitle: `Asesino - ${killer.name}`,
   role: 'killer',
   killerId: killer.id,
-  addons: killer.addons.slice(0, 2).map((addon) => addon.name),
+  addons: killer.addons.slice(0, 2).map((addon) => addon.apiKey ?? addon.name),
   perkIds: killerBuildCores[index % killerBuildCores.length],
   notes: '',
   updatedAt: Date.now() - index * 1000,
@@ -583,7 +598,7 @@ function normalizeBuild(build: Build, validIds: Set<string>): Build {
     role: build.role === 'survivor' ? 'survivor' : 'killer',
     killerId,
     survivorId,
-    addons: build.role === 'killer' ? (build.addons?.slice(0, 2) ?? []) : [],
+    addons: build.role === 'killer' ? normalizeAddonRefs(killerId, build.addons) : [],
     notes: build.notes ?? '',
     updatedAt: build.updatedAt || Date.now(),
   }
@@ -630,9 +645,10 @@ function isProtectedBuild(build: Build) {
 
 function getAddonLabel(addonName?: string) {
   if (!addonName) return 'Sin addon'
-  const addon = dbdKillersData.flatMap((killer) => killer.addons).find((item) => item.name === addonName)
+  const addon = findAddonByRef(addonName)
   if (addonTranslations[addonName]) return addonTranslations[addonName]
   if (addon?.label) return cleanAddonLabel(addon.label)
+  if (addon?.name) return cleanAddonLabel(addon.name)
   return addonName
 }
 
@@ -646,7 +662,7 @@ function cleanAddonLabel(label: string) {
 
 function getAddonRarity(addonName?: string): AddonRarity | undefined {
   if (!addonName) return undefined
-  const addon = dbdKillersData.flatMap((killer) => killer.addons).find((item) => item.name === addonName)
+  const addon = findAddonByRef(addonName)
   if (addon?.rarity) return normalizeAddonRarity(addon.rarity)
   if (addonRarities[addonName]) return addonRarities[addonName]
   if (addonName.includes('Iridescent') || addonName.includes('Black')) return 'ultraRare'
@@ -666,7 +682,27 @@ function normalizeAddonRarity(rarity?: string): AddonRarity | undefined {
 
 function getAddonData(killer: (typeof dbdKillersData)[number], addonName?: string) {
   if (!addonName) return undefined
-  return killer.addons.find((addon) => addon.name === addonName)
+  return killer.addons.find((addon) => isAddonRef(addon, addonName))
+}
+
+function findAddonByRef(addonName?: string) {
+  if (!addonName) return undefined
+  return dbdKillersData.flatMap((killer) => killer.addons).find((addon) => isAddonRef(addon, addonName))
+}
+
+function isAddonRef(addon: DbdAddon, addonName: string) {
+  return addon.apiKey === addonName || addon.name === addonName || addon.label === addonName || addon.apiName === addonName
+}
+
+function normalizeAddonRefs(killerId?: string, addons?: string[]) {
+  const killer = dbdKillersData.find((item) => item.id === killerId)
+  if (!killer) return []
+  return (addons ?? [])
+    .slice(0, 2)
+    .map((addonName) => {
+      const addon = killer.addons.find((item) => isAddonRef(item, addonName))
+      return addon?.apiKey ?? addonName
+    })
 }
 
 function getBuildNameForKiller(killerName: string, currentName: string) {
@@ -921,11 +957,15 @@ export function BuildCreatorPage() {
 
   function changeAddon(index: number, value: string) {
     const addons = [...(activeBuild.addons ?? [])]
+    if (value && addons.some((addon, addonIndex) => addonIndex !== index && addon === value)) {
+      showToast('Ese addon ya esta seleccionado')
+      return
+    }
     addons[index] = value
     updateBuild({
       ...activeBuild,
       role: 'killer',
-      addons: addons.slice(0, 2),
+      addons: Array.from(new Set(addons.filter(Boolean))).slice(0, 2),
       updatedAt: Date.now(),
     })
   }
@@ -1189,7 +1229,7 @@ export function BuildCreatorPage() {
                       onClick={() => setIsEditingTitle(true)}
                       class="inline-flex max-w-full items-center gap-2 text-left"
                     >
-                      <h1 class="truncate text-2xl font-bold text-text xl:text-3xl">{activeBuild.name}</h1>
+                      <h1 class="truncate text-2xl font-bold text-violet xl:text-3xl">{activeBuild.name}</h1>
                       <Edit3 size={17} class="shrink-0 text-muted" />
                     </button>
                   )}
@@ -1251,6 +1291,7 @@ export function BuildCreatorPage() {
             activeBuild={activeBuild}
             onDropPerk={placePerk}
             onRemovePerk={removePerk}
+            onOpenPerk={(perkId) => setSelectedPerkId(perkId)}
             onAddonChange={changeAddon}
             onEmptyClick={() => showToast('Elige una habilidad del grid')}
           />
@@ -1304,7 +1345,7 @@ export function BuildCreatorPage() {
       </main>
 
       {toast ? (
-        <div class="fixed bottom-5 left-1/2 z-50 -translate-x-1/2 rounded-xl bg-[#071427]/95 px-4 py-3 text-sm text-cyan shadow-[inset_0_0_0_1px_rgba(57,216,255,0.20),0_16px_40px_rgba(0,0,0,0.45)]">
+        <div class="fixed bottom-5 left-1/2 z-50 -translate-x-1/2 rounded-xl bg-[#050d20]/95 px-4 py-3 text-sm text-violet shadow-[inset_0_0_0_1px_rgba(142,107,255,0.20),0_16px_40px_rgba(0,0,0,0.45)]">
           {toast}
         </div>
       ) : null}
@@ -1565,6 +1606,7 @@ function BuildLoadoutPanel({
   activeBuild,
   onDropPerk,
   onRemovePerk,
+  onOpenPerk,
   onAddonChange,
   onEmptyClick,
 }: {
@@ -1573,6 +1615,7 @@ function BuildLoadoutPanel({
   activeBuild: Build
   onDropPerk: (perkId: string, targetIndex: number) => void
   onRemovePerk: (perkId: string) => void
+  onOpenPerk: (perkId: string) => void
   onAddonChange: (index: number, value: string) => void
   onEmptyClick: () => void
 }) {
@@ -1588,6 +1631,7 @@ function BuildLoadoutPanel({
                 key={perk.id}
                 perk={perk}
                 onRemove={() => onRemovePerk(perk.id)}
+                onOpen={() => onOpenPerk(perk.id)}
                 onDropPerk={(perkId) => onDropPerk(perkId, index)}
               />
             ) : (
@@ -1601,7 +1645,7 @@ function BuildLoadoutPanel({
                   const perkId = event.dataTransfer?.getData('text/plain')
                   if (perkId) onDropPerk(perkId, index)
                 }}
-                class="grid min-h-[112px] place-items-center rounded-lg border border-dashed border-cyan/18 bg-[#061126] text-muted transition hover:border-violet/45 hover:text-text"
+                class="grid min-h-[112px] place-items-center rounded-lg border border-dashed border-violet/25 bg-[#061126] text-muted transition hover:border-violet/45 hover:text-text"
               >
                 <Plus size={28} />
               </button>
@@ -1811,11 +1855,15 @@ function AddonSelector({
                 class={`field-control h-[52px] min-w-0 rounded-lg px-3 text-sm ${getAddonRarity(addons[index]) ? addonRarityStyles[getAddonRarity(addons[index]) as AddonRarity].text : ''}`}
               >
                 <option value="">Sin addon</option>
-                {killer.addons.map((addon) => (
-                  <option key={addon.name} value={addon.name}>
-                    {getAddonLabel(addon.name)}
-                  </option>
-                ))}
+                {killer.addons.map((addon) => {
+                  const value = addon.apiKey ?? addon.name
+                  const isAlreadySelected = addons.some((selectedAddon, selectedIndex) => selectedIndex !== index && selectedAddon === value)
+                  return (
+                    <option key={value} value={value} disabled={isAlreadySelected}>
+                      {getAddonLabel(addon.name)}{isAlreadySelected ? ' - ya seleccionado' : ''}
+                    </option>
+                  )
+                })}
               </select>
             </div>
           ))}
@@ -1826,8 +1874,8 @@ function AddonSelector({
 }
 
 function AddonIcon({ addon, addonName }: { addon?: DbdAddon; addonName?: string }) {
-  const name = addon?.name ?? addonName
-  const candidates = name ? addonImageCandidates(name, addon?.image) : []
+  const name = addon?.apiName ?? addon?.name ?? addonName
+  const candidates = name ? addonImageCandidates(name, addon?.image, addon?.apiImage, addon?.iconFile) : []
   const [candidateIndex, setCandidateIndex] = useState(0)
   const src = candidates[candidateIndex]
   const rarity = addon?.rarity ?? getAddonRarity(name)
@@ -1835,7 +1883,7 @@ function AddonIcon({ addon, addonName }: { addon?: DbdAddon; addonName?: string 
 
   useEffect(() => {
     setCandidateIndex(0)
-  }, [name, addon?.image])
+  }, [name, addon?.image, addon?.apiImage, addon?.iconFile])
 
   return (
     <div class={`grid h-12 w-12 place-items-center overflow-hidden rounded-lg ring-1 ${rarityStyle ? `${rarityStyle.bg} ${rarityStyle.ring}` : 'bg-[#050d20] ring-white/10'}`}>
@@ -1861,7 +1909,7 @@ function PerkDetail({ perk, selected, onAdd }: { perk: Perk; selected: boolean; 
       <div class="mb-4 grid grid-cols-[86px_minmax(0,1fr)] gap-4">
         <PerkDiamond perk={perk} size="lg" />
         <div class="min-w-0 self-center">
-          <h2 class="text-lg font-bold leading-6 text-text">{perk.name}</h2>
+          <h2 class="text-lg font-bold leading-6 text-violet">{perk.name}</h2>
           <p class="text-sm text-violet">{perk.owner}</p>
           <p class="text-xs uppercase tracking-[0.08em] text-muted">{roleLabels[perk.role]}</p>
         </div>
@@ -1896,10 +1944,12 @@ function PerkDetail({ perk, selected, onAdd }: { perk: Perk; selected: boolean; 
 function SelectedPerkSlot({
   perk,
   onRemove,
+  onOpen,
   onDropPerk,
 }: {
   perk: Perk
   onRemove: () => void
+  onOpen: () => void
   onDropPerk: (perkId: string) => void
 }) {
   return (
@@ -1912,15 +1962,19 @@ function SelectedPerkSlot({
         const perkId = event.dataTransfer?.getData('text/plain')
         if (perkId) onDropPerk(perkId)
       }}
+      onClick={onOpen}
       class="relative min-h-[100px] rounded-lg bg-[#081226] p-2 text-center shadow-[inset_0_0_0_1px_rgba(148,163,184,0.06)] transition hover:bg-[#0d1830]"
-      title="Arrastra para cambiar orden o reemplazar"
+      title="Clic para ver descripcion. Arrastra para cambiar orden o reemplazar"
     >
       <PerkDiamond perk={perk} size="md" />
       <p class="mt-1 overflow-hidden text-xs font-semibold leading-4 text-text [display:-webkit-box] [-webkit-box-orient:vertical] [-webkit-line-clamp:2]">{perk.name}</p>
       <p class="text-[10px] text-violet">{perk.owner}</p>
       <button
         type="button"
-        onClick={onRemove}
+        onClick={(event) => {
+          event.stopPropagation()
+          onRemove()
+        }}
         aria-label={`Quitar ${perk.name}`}
         title="Quitar"
         class="absolute right-2 top-2 inline-flex h-5 w-5 items-center justify-center rounded-full bg-[#101b34] text-muted transition hover:bg-red-500/18 hover:text-red-200"
@@ -2083,9 +2137,9 @@ function TemplatesModal({
                     </div>
                   )}
                   <div class="min-w-0 self-center">
-                    <h3 class="truncate text-sm font-bold text-text">{build.role === 'killer' ? killer.name : survivor?.name ?? build.name}</h3>
+                    <h3 class="truncate text-sm font-bold text-violet">{build.role === 'killer' ? killer.name : survivor?.name ?? build.name}</h3>
                     <p class="text-xs text-muted">Build popular</p>
-                    {build.role === 'killer' ? <p class="mt-1 truncate text-xs text-cyan">{build.addons?.map(getAddonLabel).join(' + ')}</p> : null}
+                    {build.role === 'killer' ? <p class="mt-1 truncate text-xs text-violet">{build.addons?.map(getAddonLabel).join(' + ')}</p> : null}
                   </div>
                 </div>
                 {build.role === 'killer' ? <div class="mb-3 flex gap-2">
@@ -2122,6 +2176,12 @@ function SavedBuildsModal({
   onClose: () => void
 }) {
   const orderedBuilds = [...builds].sort((a, b) => b.updatedAt - a.updatedAt)
+  const killerBuilds = orderedBuilds.filter((build) => build.role === 'killer')
+  const survivorBuilds = orderedBuilds.filter((build) => build.role === 'survivor')
+  const sections = [
+    { id: 'killer', title: 'Builds de asesino', builds: killerBuilds },
+    { id: 'survivor', title: 'Builds de superviviente', builds: survivorBuilds },
+  ]
 
   return (
     <div class="fixed inset-0 z-50 grid place-items-center bg-[#01040d]/90 px-4 backdrop-blur-md" onClick={onClose}>
@@ -2150,38 +2210,24 @@ function SavedBuildsModal({
         {orderedBuilds.length === 0 ? (
           <p class="rounded-lg bg-[#081226] px-3 py-4 text-sm text-muted">Todavia no tienes builds guardadas.</p>
         ) : (
-          <div class="grid gap-3 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
-            {orderedBuilds.map((build) => {
-              const killer = dbdKillersData.find((item) => item.id === build.killerId) ?? dbdKillersData[0]
-              const survivor = build.survivorId ? dbdSurvivorsData.find((item) => item.id === build.survivorId) : undefined
-              const previewPerk = allPerks.find((perk) => perk.id === build.perkIds[0])
-              return (
-                <article key={build.id} class="rounded-lg bg-[#081226] p-3 shadow-[inset_0_0_0_1px_rgba(148,163,184,0.06)]">
-                  <div class="mb-3 grid grid-cols-[64px_minmax(0,1fr)] gap-3">
-                    {build.role === 'killer' ? (
-                      <KillerPortrait killer={killer} className="h-16 w-16" />
-                    ) : survivor ? (
-                      <SurvivorPortrait survivor={survivor} className="h-16 w-16" />
-                    ) : (
-                      <div class="grid h-16 w-16 place-items-center rounded-lg bg-[#050d20]">
-                        <PerkDiamond perk={previewPerk} size="sm" />
-                      </div>
-                    )}
-                    <div class="min-w-0 self-center">
-                      <h3 class="truncate text-sm font-bold text-text">{build.name}</h3>
-                      <p class="text-xs text-muted">{roleLabels[build.role]} - {build.perkIds.length} perks</p>
-                    </div>
+          <div class="space-y-6">
+            {sections.map((section) => (
+              <section key={section.id} class="rounded-xl bg-[#071126]/70 p-3 shadow-[inset_0_0_0_1px_rgba(148,163,184,0.08)]">
+                <div class="mb-3 flex items-center justify-between gap-3">
+                  <h3 class="text-xs font-bold uppercase tracking-[0.08em] text-violet">{section.title}</h3>
+                  <span class="rounded-full bg-violet/12 px-2 py-1 text-xs font-semibold text-violet-light">{section.builds.length}</span>
+                </div>
+                {section.builds.length === 0 ? (
+                  <p class="rounded-lg bg-[#081226] px-3 py-4 text-sm text-muted">No tienes builds guardadas en esta categoria.</p>
+                ) : (
+                  <div class="grid gap-3 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+                    {section.builds.map((build) => (
+                      <SavedBuildCard key={build.id} build={build} onLoad={onLoad} />
+                    ))}
                   </div>
-                  <button
-                    type="button"
-                    onClick={() => onLoad(build)}
-                    class="inline-flex w-full items-center justify-center rounded-lg bg-violet px-3 py-2.5 text-sm font-semibold text-white transition hover:brightness-110"
-                  >
-                    Cargar build
-                  </button>
-                </article>
-              )
-            })}
+                )}
+              </section>
+            ))}
           </div>
         )}
       </div>
@@ -2189,10 +2235,43 @@ function SavedBuildsModal({
   )
 }
 
+function SavedBuildCard({ build, onLoad }: { build: Build; onLoad: (build: Build) => void }) {
+  const killer = dbdKillersData.find((item) => item.id === build.killerId) ?? dbdKillersData[0]
+  const survivor = build.survivorId ? dbdSurvivorsData.find((item) => item.id === build.survivorId) : undefined
+  const previewPerk = allPerks.find((perk) => perk.id === build.perkIds[0])
+
+  return (
+    <article class="rounded-lg bg-[#081226] p-3 shadow-[inset_0_0_0_1px_rgba(148,163,184,0.06)]">
+      <div class="mb-3 grid grid-cols-[64px_minmax(0,1fr)] gap-3">
+        {build.role === 'killer' ? (
+          <KillerPortrait killer={killer} className="h-16 w-16" />
+        ) : survivor ? (
+          <SurvivorPortrait survivor={survivor} className="h-16 w-16" />
+        ) : (
+          <div class="grid h-16 w-16 place-items-center rounded-lg bg-[#050d20]">
+            <PerkDiamond perk={previewPerk} size="sm" />
+          </div>
+        )}
+        <div class="min-w-0 self-center">
+          <h3 class="truncate text-sm font-bold text-violet">{build.name}</h3>
+          <p class="text-xs text-muted">{roleLabels[build.role]} - {build.perkIds.length} perks</p>
+        </div>
+      </div>
+      <button
+        type="button"
+        onClick={() => onLoad(build)}
+        class="inline-flex w-full items-center justify-center rounded-lg bg-violet px-3 py-2.5 text-sm font-semibold text-white transition hover:brightness-110"
+      >
+        Cargar build
+      </button>
+    </article>
+  )
+}
+
 function GuideBlock({ title, text }: { title: string; text: string }) {
   return (
     <section class="rounded-lg bg-[#081226] p-4 shadow-[inset_0_0_0_1px_rgba(148,163,184,0.06)]">
-      <h3 class="mb-2 text-sm font-semibold text-text">{title}</h3>
+      <h3 class="mb-2 text-sm font-semibold text-violet">{title}</h3>
       <p class="text-sm leading-6 text-muted">{text}</p>
     </section>
   )

@@ -13,20 +13,20 @@ export function TroubleshootingPage() {
       <main class="mx-auto w-[min(98%,1800px)] space-y-6 pt-7">
         <a
           href="#"
-          class="modern-btn inline-flex items-center gap-2 rounded-lg px-3 py-2 text-sm text-cyan transition hover:text-text"
+          class="modern-btn inline-flex items-center gap-2 rounded-lg px-3 py-2 text-sm text-violet transition hover:text-text"
         >
           <ArrowLeft size={15} />
           Volver al inicio
         </a>
 
         <GlassPanel class="p-6">
-          <div class="mb-4 inline-flex items-center gap-2 rounded-full border border-orange-300/35 bg-orange-300/10 px-3 py-1 text-xs text-orange-300">
+          <div class="mb-4 inline-flex items-center gap-2 rounded-lg bg-violet/16 px-3 py-1.5 text-xs font-semibold uppercase text-violet shadow-[inset_0_0_0_1px_rgba(142,107,255,0.16)]">
             <AlertTriangle size={14} />
             Soporte tecnico nivel dios
           </div>
           <div class="grid gap-5 lg:grid-cols-[1.2fr_0.8fr] lg:items-start">
             <div>
-              <h1 class="mb-3 text-3xl">Solucion de problemas</h1>
+              <h1 class="mb-3 text-3xl text-violet">Solucion de problemas</h1>
               <p class="text-lg text-muted">
                 Si algo falla, tranquilo: soy el administrador... y ni yo se que acaba de pasar.
               </p>
@@ -37,7 +37,7 @@ export function TroubleshootingPage() {
             <img
               src={memeSysadmin}
               alt="Meme del admin cuando algo falla"
-              class="w-full max-w-[360px] justify-self-start rounded-panel border border-cyan/20 object-contain lg:justify-self-end"
+              class="w-full max-w-[360px] justify-self-start rounded-xl object-contain shadow-[inset_0_0_0_1px_rgba(91,130,190,0.10)] lg:justify-self-end"
             />
           </div>
         </GlassPanel>

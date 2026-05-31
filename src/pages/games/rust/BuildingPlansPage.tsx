@@ -179,12 +179,12 @@ export function BuildingPlansPage() {
         />
       ) : null}
 
-      <main class="mx-auto w-[min(98%,1800px)] pt-7">
+      <main class="mx-auto min-h-0 flex-1 w-[min(98%,1800px)] pb-3 pt-3">
         <div class="grid gap-6 xl:grid-cols-[260px_minmax(0,1fr)]">
-          <aside class="hidden xl:block">
-            <div class="sticky top-20 space-y-5">
+          <aside class="hidden xl:block xl:sticky xl:top-24 xl:self-start">
+            <div class="space-y-5 pr-1">
               <GlassPanel class="rounded-2xl p-4">
-                <div class="mb-3 flex items-center gap-2 text-xs font-semibold uppercase tracking-widest text-rust">
+                <div class="mb-3 flex items-center gap-2 text-xs font-semibold uppercase tracking-widest text-violet">
                   <MapPin size={13} />
                   Indice
                 </div>
@@ -196,22 +196,22 @@ export function BuildingPlansPage() {
                       onClick={() => handleNav(s.id)}
                       class={`flex w-full items-center gap-2.5 rounded-lg border px-3 py-3 text-left text-sm transition ${
                         activeId === s.id
-                          ? 'border-rust/40 bg-rust/20 text-text'
-                          : 'border-transparent text-muted hover:border-rust/20 hover:bg-rust/8 hover:text-text'
+                          ? 'border-violet/45 bg-violet/20 text-text'
+                          : 'border-transparent text-muted hover:bg-[#0d1d3b] hover:text-text'
                       }`}
                     >
-                      <span class={`text-xs font-medium ${activeId === s.id ? 'text-rust' : 'text-muted'}`}>
+                      <span class={`text-xs font-medium ${activeId === s.id ? 'text-violet' : 'text-muted'}`}>
                         {String(i + 1).padStart(2, '0')}
                       </span>
                       {s.title}
-                      <ArrowRight size={14} class={`ml-auto ${activeId === s.id ? 'text-rust' : 'text-muted/60'}`} />
+                      <ArrowRight size={14} class={`ml-auto ${activeId === s.id ? 'text-violet' : 'text-muted/60'}`} />
                     </button>
                   ))}
                 </nav>
               </GlassPanel>
 
               <GlassPanel class="rounded-2xl p-5">
-                <div class="mb-3 flex items-center gap-2 text-xl font-semibold text-rust">
+                <div class="mb-3 flex items-center gap-2 text-xl font-semibold text-violet">
                   <CircleHelp size={18} />
                   <span>Necesitas ayuda?</span>
                 </div>
@@ -219,7 +219,7 @@ export function BuildingPlansPage() {
                 <button
                   type="button"
                   onClick={() => setGuideOpen(true)}
-                  class="inline-flex w-full items-center justify-center gap-2 rounded-xl border border-rust/35 bg-rust/12 px-4 py-3 text-sm font-semibold text-rust transition hover:bg-rust/18"
+                  class="inline-flex w-full items-center justify-center gap-2 rounded-xl border border-violet/40 bg-violet/12 px-4 py-3 text-sm font-semibold text-violet transition hover:bg-violet/20"
                 >
                   Ver guia completa
                   <ArrowRight size={14} />
@@ -227,7 +227,7 @@ export function BuildingPlansPage() {
               </GlassPanel>
 
               <GlassPanel class="rounded-2xl p-5">
-                <h2 class="mb-3 text-xs font-semibold uppercase tracking-widest text-rust">Notas</h2>
+                <h2 class="mb-3 text-xs font-semibold uppercase tracking-widest text-violet">Notas</h2>
                 <textarea
                   value={notes}
                   onInput={(event) => {
@@ -237,7 +237,7 @@ export function BuildingPlansPage() {
                   }}
                   placeholder="Apunta materiales, cambios para tu squad o mejoras pendientes..."
                   maxLength={700}
-                  class="field-control min-h-[260px] w-full resize-none rounded-xl px-3 py-3 text-sm text-text"
+                  class="field-control min-h-[180px] w-full resize-none rounded-xl px-3 py-3 text-sm text-text 2xl:min-h-[210px]"
                 />
                 <p class="mt-2 text-right text-xs text-muted">{notes.length}/700</p>
               </GlassPanel>
@@ -250,7 +250,7 @@ export function BuildingPlansPage() {
               <div class="pointer-events-none absolute inset-0 hidden bg-gradient-to-r from-[#030916]/6 via-[#030916]/18 to-[#030916]/72 md:block" />
               <div class="relative">
                 <div class="mb-2 text-sm text-muted">Rust &gt; Planos de construccion &gt; Interior</div>
-                <h1 class="mb-1 mt-3 text-3xl font-bold md:text-6xl">Planos de construccion</h1>
+                <h1 class="mb-1 mt-3 text-3xl font-bold text-violet md:text-6xl">Planos de construccion</h1>
                 <p class="text-muted">Guia visual de disenos de bases: starter, compound e interiores.</p>
               </div>
             </GlassPanel>
@@ -259,12 +259,11 @@ export function BuildingPlansPage() {
               <GlassPanel key={section.id} id={section.id} class="scroll-mt-24 rounded-2xl p-6">
                 <div class="mb-5 flex flex-wrap items-start justify-between gap-4">
                   <div class="flex min-w-0 items-start gap-3">
-                    <div class="mt-1 flex h-11 w-11 shrink-0 items-center justify-center rounded-full border border-rust/45 text-lg font-semibold text-rust">
+                    <div class="mt-1 flex h-11 w-11 shrink-0 items-center justify-center rounded-full border border-violet/45 text-lg font-semibold text-violet">
                       {String(idx + 1).padStart(2, '0')}
                     </div>
                     <div>
-                      <h2 class="text-3xl font-semibold text-rust">{section.title}</h2>
-                      
+                      <h2 class="text-3xl font-semibold text-violet">{section.title}</h2>
                     </div>
                   </div>
                   <div class="flex items-center gap-3">
@@ -275,9 +274,9 @@ export function BuildingPlansPage() {
                     <button
                       type="button"
                       onClick={() => setDetailsSection(section)}
-                      class="inline-flex items-center gap-2 rounded-xl border border-rust/35 bg-rust/12 px-4 py-2.5 text-sm font-semibold text-text transition hover:bg-rust/20"
+                      class="inline-flex items-center gap-2 rounded-xl border border-violet/35 bg-violet/12 px-4 py-2.5 text-sm font-semibold text-text transition hover:bg-violet/20"
                     >
-                      <Eye size={15} class="text-rust" />
+                      <Eye size={15} class="text-violet" />
                       {section.detailsCta}
                     </button>
                   </div>
@@ -287,7 +286,7 @@ export function BuildingPlansPage() {
                   <div class="grid gap-5 xl:grid-cols-[minmax(0,1fr)_34%]">
                     <button
                       type="button"
-                      class="relative overflow-hidden rounded-xl border border-rust/20 bg-bg/50 transition hover:border-rust/50"
+                      class="relative overflow-hidden rounded-xl bg-[#09152c]/74 shadow-[inset_0_0_0_1px_rgba(148,163,184,0.06)] transition hover:bg-[#0d1d3b]"
                       onClick={() => setLightbox(section.images[0])}
                     >
                       <div class="relative w-full" style="aspect-ratio: 16/9">
@@ -299,12 +298,12 @@ export function BuildingPlansPage() {
                       </div>
                     </button>
 
-                    <div class="rounded-xl border border-rust/20 bg-[#070f23]/80 p-4">
-                      <h3 class="mb-3 text-sm font-semibold uppercase tracking-[0.08em] text-rust">Informacion clave</h3>
+                    <div class="tb-subpanel p-4">
+                      <h3 class="mb-3 text-sm font-semibold uppercase tracking-[0.08em] text-violet">Informacion clave</h3>
                       <div class="space-y-3">
                         {section.keyInfo?.map((item) => (
                           <div key={item.label} class="flex items-center gap-3 rounded-lg border border-white/5 bg-white/[0.02] p-3">
-                            <div class="grid h-8 w-8 place-items-center rounded-lg border border-rust/25 bg-rust/10 text-rust">
+                            <div class="grid h-8 w-8 place-items-center rounded-lg border border-violet/30 bg-violet/10 text-violet">
                               {item.icon}
                             </div>
                             <div>
@@ -323,7 +322,7 @@ export function BuildingPlansPage() {
                         <button
                           key={img.label}
                           type="button"
-                          class="group overflow-hidden rounded-xl border border-rust/20 bg-bg/50 text-left transition hover:border-rust/50"
+                          class="group overflow-hidden rounded-xl bg-[#09152c]/74 text-left shadow-[inset_0_0_0_1px_rgba(148,163,184,0.06)] transition hover:bg-[#0d1d3b]"
                           onClick={() => setLightbox(img)}
                         >
                           <div class="relative">
@@ -346,10 +345,10 @@ export function BuildingPlansPage() {
                       <button
                         type="button"
                         onClick={() => setDesignsSection(section)}
-                        class="inline-flex min-w-[320px] items-center justify-center gap-2 rounded-xl border border-rust/35 bg-rust/12 px-6 py-3 text-sm font-semibold text-text transition hover:bg-rust/20"
+                        class="inline-flex min-w-[320px] items-center justify-center gap-2 rounded-xl border border-violet/35 bg-violet/12 px-6 py-3 text-sm font-semibold text-text transition hover:bg-violet/20"
                       >
                         Ver mas disenos de {section.title}
-                        <ArrowRight size={14} class="text-rust" />
+                        <ArrowRight size={14} class="text-violet" />
                       </button>
                     </div>
                   </>
@@ -407,9 +406,9 @@ function DetailsModal({ section, onClose }: { section: GuideSection; onClose: ()
             onClose()
             window.setTimeout(() => document.getElementById(section.id)?.scrollIntoView({ behavior: 'smooth', block: 'start' }), 0)
           }}
-          class="self-start rounded-xl border border-rust/35 bg-rust/12 px-4 py-3 text-left text-sm font-semibold text-text transition hover:bg-rust/20"
+          class="self-start rounded-xl border border-violet/35 bg-violet/12 px-4 py-3 text-left text-sm font-semibold text-text transition hover:bg-violet/20"
         >
-          <span class="block text-rust">Ir a la seccion</span>
+          <span class="block text-violet">Ir a la seccion</span>
           <span class="mt-1 block text-xs font-normal text-muted">Revisa las imagenes y datos principales de {section.title}.</span>
         </button>
       </div>
@@ -437,7 +436,7 @@ function DesignsModal({
               onClose()
               onOpenImage(image)
             }}
-            class="group overflow-hidden rounded-xl border border-rust/20 bg-[#070f23]/90 text-left transition hover:border-rust/55"
+            class="group overflow-hidden rounded-xl bg-[#09152c]/90 text-left shadow-[inset_0_0_0_1px_rgba(148,163,184,0.06)] transition hover:bg-[#0d1d3b]"
           >
             <img src={image.src} alt={image.label} class="h-48 w-full object-cover transition duration-300 group-hover:scale-[1.03]" />
             <div class="flex items-center justify-between gap-3 border-t border-white/5 px-3 py-2 text-xs text-muted">
@@ -454,7 +453,7 @@ function DesignsModal({
 function GuideStep({ title, text }: { title: string; text: string }) {
   return (
     <section class="rounded-xl border border-white/5 bg-white/[0.03] p-4">
-      <h3 class="mb-2 text-sm font-semibold text-text">{title}</h3>
+      <h3 class="mb-2 text-sm font-semibold text-violet">{title}</h3>
       <p class="text-sm leading-6 text-muted">{text}</p>
     </section>
   )
@@ -481,7 +480,7 @@ function ModalShell({
       >
         <div class="mb-5 flex flex-wrap items-start justify-between gap-3">
           <div>
-            <h2 class="text-sm font-semibold uppercase text-rust">{title}</h2>
+            <h2 class="text-sm font-semibold uppercase text-violet">{title}</h2>
             <p class="mt-1 text-sm text-muted">{subtitle}</p>
           </div>
           <button

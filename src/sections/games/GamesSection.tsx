@@ -55,20 +55,19 @@ const games: GameCardData[] = [
     id: 'tarkov',
     game: 'Escape from Tarkov',
     alias: 'TARKOV',
-    href: '#tarkov-weapon-builds',
+    href: '#tarkov-map-extraction',
     tone: 'green',
     image: tarkovImage,
     imageBack: tarkovImageBack,
     imagePosition: '50% 42%',
-    description: 'Mapas, builds de armas.',
+    description: 'Mapas 2D y 3D.',
     stats: [
       { label: 'Supervivencia', value: '47.8%' },
       { label: 'PMC Kills', value: '1,362' },
       { label: 'Rublos', value: '24.6M' },
     ],
     actions: [
-      { label: 'Builds de armas', href: '#tarkov-weapon-builds' },
-      { label: 'Extraccion de mapas', href: '#tarkov-map-extraction' },
+      { label: 'Mapas', href: '#tarkov-map-extraction' },
     ],
   },
   {

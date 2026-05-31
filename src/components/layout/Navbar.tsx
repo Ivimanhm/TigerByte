@@ -68,7 +68,7 @@ export function Navbar() {
 
   return (
     <header class="sticky top-0 z-30 px-2 py-3">
-      <nav class="mx-auto flex w-[min(98%,1800px)] items-center justify-between rounded-xl border border-cyan/20 bg-[#041126]/78 px-5 py-3 shadow-[0_10px_34px_rgba(5,12,30,0.52)] backdrop-blur-md">
+      <nav class="mx-auto flex w-[min(98%,1800px)] items-center justify-between rounded-xl bg-[#050d20]/90 px-5 py-3 shadow-[inset_0_0_0_1px_rgba(91,130,190,0.10),0_18px_42px_rgba(1,5,16,0.38)] backdrop-blur-md">
         <div class="flex items-center gap-3">
           <a href="#" class="inline-flex items-center gap-3 transition hover:opacity-90" aria-label="Ir al menu principal">
             <span class="grid h-[34px] w-[34px] place-items-center overflow-hidden rounded-lg border border-violet/60 bg-violet/15 p-1 shadow-[0_0_12px_rgba(139,92,246,0.42)]">
@@ -76,7 +76,7 @@ export function Navbar() {
             </span>
             <strong class="logo-font text-xl">TigerByte</strong>
           </a>
-          <span class="ml-4 hidden h-7 w-px bg-cyan/20 xl:block" />
+          <span class="ml-4 hidden h-7 w-px bg-violet/15 xl:block" />
         </div>
 
         <ul class="hidden items-center gap-2 text-sm text-muted lg:flex">
@@ -92,7 +92,7 @@ export function Navbar() {
                     isActive ? 'text-text' : 'text-muted hover:text-text'
                   }`}
                 >
-                  <Icon size={13} class="text-cyan/85 transition group-hover:text-cyan" />
+                  <Icon size={13} class="text-violet/85 transition group-hover:text-violet" />
                   <span>{item.label}</span>
                   {isActive ? (
                     <span class="absolute inset-x-2 -bottom-1 h-[2px] rounded-full bg-violet shadow-[0_0_12px_rgba(139,92,246,0.95)]" />
@@ -106,7 +106,7 @@ export function Navbar() {
         <div class="flex items-center gap-2">
           <button
             type="button"
-            class="nav-icon-btn inline-flex h-8 w-8 items-center justify-center text-cyan transition hover:text-text"
+            class="nav-icon-btn inline-flex h-8 w-8 items-center justify-center text-violet transition hover:text-text"
             aria-label="Buscar"
             title="Buscar"
           >
@@ -118,7 +118,7 @@ export function Navbar() {
             <button
               type="button"
               onClick={() => setIsNotificationsOpen((v) => !v)}
-              class="nav-icon-btn relative inline-flex h-8 w-8 items-center justify-center text-cyan transition hover:text-text"
+              class="nav-icon-btn relative inline-flex h-8 w-8 items-center justify-center text-violet transition hover:text-text"
               aria-label="Notificaciones"
               title="Notificaciones"
               aria-expanded={isNotificationsOpen}
@@ -130,14 +130,14 @@ export function Navbar() {
             </button>
 
             {isNotificationsOpen ? (
-              <div class="absolute right-0 top-[3.2rem] z-40 w-[min(92vw,380px)] rounded-xl border border-cyan/30 bg-[#071427]/95 p-3 shadow-[0_18px_42px_rgba(0,0,0,0.55)] backdrop-blur-md">
+              <div class="absolute right-0 top-[3.2rem] z-40 w-[min(92vw,380px)] rounded-xl bg-[#050d20]/95 p-3 shadow-[inset_0_0_0_1px_rgba(91,130,190,0.10),0_18px_42px_rgba(0,0,0,0.55)] backdrop-blur-md">
                 <div class="mb-2 flex items-center justify-between">
                   <strong class="text-sm text-text">Notificaciones</strong>
                   {notifications.length > 0 ? (
                     <button
                       type="button"
                       onClick={() => setNotifications([])}
-                      class="text-xs text-cyan transition hover:text-text"
+                      class="text-xs text-violet transition hover:text-text"
                     >
                       Marcar todo leido
                     </button>
@@ -145,15 +145,15 @@ export function Navbar() {
                 </div>
 
                 {notifications.length === 0 ? (
-                  <p class="rounded-lg border border-cyan/20 bg-bg/40 px-3 py-3 text-sm text-muted">
+                  <p class="rounded-lg bg-[#09152c]/74 px-3 py-3 text-sm text-muted shadow-[inset_0_0_0_1px_rgba(148,163,184,0.06)]">
                     No hay notificaciones por ahora.
                   </p>
                 ) : (
                   <ul class="max-h-72 space-y-2 overflow-y-auto pr-1">
                     {notifications.map((n) => (
-                      <li key={n.id} class="rounded-lg border border-cyan/15 bg-[#091a33]/70 p-3">
+                      <li key={n.id} class="rounded-lg bg-[#09152c]/74 p-3 shadow-[inset_0_0_0_1px_rgba(148,163,184,0.06)]">
                         <p class="inline-flex items-center gap-2 text-sm text-text">
-                          <Info size={14} class="text-cyan" />
+                          <Info size={14} class="text-violet" />
                           {n.title}
                         </p>
                         <p class="mt-1 text-xs text-muted">{n.message}</p>
@@ -169,7 +169,7 @@ export function Navbar() {
           <button
             type="button"
             onClick={toggleTheme}
-            class="nav-icon-btn inline-flex h-8 w-8 items-center justify-center text-cyan transition hover:text-text"
+            class="nav-icon-btn inline-flex h-8 w-8 items-center justify-center text-violet transition hover:text-text"
             aria-label={theme === 'dark' ? 'Cambiar a tema claro' : 'Cambiar a tema oscuro'}
             title={theme === 'dark' ? 'Tema claro' : 'Tema oscuro'}
           >
@@ -177,7 +177,7 @@ export function Navbar() {
           </button>
           <button
             type="button"
-            class="nav-icon-btn inline-flex h-8 w-8 items-center justify-center rounded-full text-cyan transition hover:text-text"
+            class="nav-icon-btn inline-flex h-8 w-8 items-center justify-center rounded-full text-violet transition hover:text-text"
             aria-label="Perfil"
             title="Perfil"
           >

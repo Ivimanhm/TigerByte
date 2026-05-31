@@ -181,4 +181,3 @@ export function GameCard({ game }: { game: GameCardData }) {
     </div>
   )
 }
-

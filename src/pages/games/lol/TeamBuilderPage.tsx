@@ -297,7 +297,7 @@ export function TeamBuilderPage() {
 
       <main class="mx-auto w-[min(98%,1800px)] space-y-5 pt-5">
         <section class="grid items-start gap-5 min-[900px]:grid-cols-[274px_minmax(0,1fr)] 2xl:grid-cols-[260px_minmax(0,1fr)_320px] 2xl:items-stretch">
-          <aside class="lol-builder-side-lock self-start rounded-2xl bg-[#050d20]/90 p-5 shadow-[inset_0_0_0_1px_rgba(91,130,190,0.10),0_20px_50px_rgba(1,5,16,0.42)] min-[900px]:sticky min-[900px]:top-24 min-[900px]:p-4 2xl:self-stretch 2xl:p-5">
+          <aside class="lol-builder-side-lock flex self-start flex-col rounded-2xl bg-[#050d20]/90 p-5 shadow-[inset_0_0_0_1px_rgba(91,130,190,0.10),0_20px_50px_rgba(1,5,16,0.42)] min-[900px]:sticky min-[900px]:top-24 min-[900px]:p-4 2xl:self-stretch 2xl:p-5">
             <h2 class="mb-4 text-sm font-semibold uppercase text-violet">Configuracion</h2>
 
             <div class="mb-5 space-y-3">
@@ -333,14 +333,6 @@ export function TeamBuilderPage() {
 
             <button
               type="button"
-              onClick={generateTeam}
-              class="mb-2 inline-flex w-full items-center justify-center gap-2 rounded-lg bg-violet px-3 py-2.5 text-sm font-semibold text-white shadow-[0_10px_24px_rgba(112,64,255,0.26)] transition hover:brightness-110"
-            >
-              <Dices size={15} />
-              Generar equipo
-            </button>
-            <button
-              type="button"
               onClick={resetOptions}
               class="inline-flex w-full items-center justify-center gap-2 rounded-lg bg-[#0b172f] px-3 py-2.5 text-sm text-cyan shadow-[inset_0_0_0_1px_rgba(57,216,255,0.10)] transition hover:bg-[#0d1d3b]"
             >
@@ -348,39 +340,38 @@ export function TeamBuilderPage() {
               Limpiar opciones
             </button>
 
-            <div class="mt-5 rounded-xl bg-[#0a1530]/80 p-4 shadow-[inset_0_0_0_1px_rgba(142,107,255,0.12)] min-[900px]:flex min-[900px]:min-h-[390px] min-[900px]:flex-col min-[900px]:justify-center min-[900px]:p-5 2xl:block 2xl:min-h-0 2xl:p-4">
-              <p class="mb-2 inline-flex items-center gap-2 text-sm font-semibold text-violet">
-                <CircleHelp size={15} />
-                Como funciona
-              </p>
-              <div class="space-y-3 text-sm leading-6 text-muted">
-                <p>
-                  Con roles aleatorios apagado, cada posicion recibe campeones de su rol. Al activarlo, cualquier campeon puede aparecer en cualquier posicion.
-                </p>
-                <ul class="space-y-2 2xl:hidden">
-                  <li class="flex gap-2">
-                    <span class="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-violet" />
-                    Activa todos los roles para crear un equipo completo.
-                  </li>
-                  <li class="flex gap-2">
-                    <span class="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-violet" />
-                    Excluye campeones que no quieras ver en la tirada.
-                  </li>
-                  <li class="flex gap-2">
-                    <span class="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-violet" />
-                    Guarda las combinaciones buenas para recuperarlas despues.
-                  </li>
-                </ul>
+            <section class="mt-5 flex h-[260px] min-h-0 flex-col overflow-hidden">
+              <div class="mb-4 flex items-center gap-3">
+                <span class="grid h-10 w-10 shrink-0 place-items-center rounded-lg bg-violet/16 text-violet shadow-[inset_0_0_0_1px_rgba(142,107,255,0.16)]">
+                  <CircleHelp size={18} />
+                </span>
+                <h2 class="text-sm font-semibold uppercase text-violet">Como funciona?</h2>
               </div>
+
+              <ul class="min-h-0 flex-1 space-y-4 overflow-hidden text-sm leading-5 text-muted">
+                <li class="flex gap-3">
+                  <span class="mt-1.5 h-2 w-2 shrink-0 rounded-full bg-violet shadow-[0_0_14px_rgba(142,107,255,0.85)]" />
+                  <span>Activa los roles que quieres usar para crear un equipo completo.</span>
+                </li>
+                <li class="flex gap-3">
+                  <span class="mt-1.5 h-2 w-2 shrink-0 rounded-full bg-violet shadow-[0_0_14px_rgba(142,107,255,0.85)]" />
+                  <span>Con roles aleatorios, cualquier campeon puede aparecer en cualquier posicion.</span>
+                </li>
+                <li class="flex gap-3">
+                  <span class="mt-1.5 h-2 w-2 shrink-0 rounded-full bg-violet shadow-[0_0_14px_rgba(142,107,255,0.85)]" />
+                  <span>Excluye campeones y guarda las combinaciones que quieras recuperar despues.</span>
+                </li>
+              </ul>
+
               <button
                 type="button"
                 onClick={() => setShowTeamGuide(true)}
-                class="mt-5 inline-flex items-center gap-3 text-sm font-semibold text-violet transition hover:text-cyan 2xl:hidden"
+                class="mt-4 inline-flex w-full shrink-0 items-center justify-center gap-2 rounded-lg bg-[#0b172f] px-3 py-2.5 text-sm font-semibold text-violet shadow-[inset_0_0_0_1px_rgba(142,107,255,0.22)] transition hover:bg-[#0d1d3b] hover:text-violet-light"
               >
                 Ver guia completa
                 <ChevronRight size={15} />
               </button>
-            </div>
+            </section>
           </aside>
 
           <section class="min-w-0 space-y-4 2xl:flex 2xl:flex-col">
@@ -688,7 +679,7 @@ export function TeamBuilderPage() {
               <QuickLink title="Consejos" subtitle="Tips para mejores equipos" />
             </SidePanel>
 
-            <article class="rounded-2xl bg-[linear-gradient(145deg,rgba(73,31,150,0.38),rgba(5,13,32,0.94)_62%)] p-4 shadow-[inset_0_0_0_1px_rgba(142,107,255,0.16),0_18px_42px_rgba(1,5,16,0.30)] min-[900px]:hidden 2xl:block">
+            <article class="rounded-2xl bg-[linear-gradient(145deg,rgba(73,31,150,0.38),rgba(5,13,32,0.94)_62%)] p-4 shadow-[inset_0_0_0_1px_rgba(142,107,255,0.16),0_18px_42px_rgba(1,5,16,0.30)] min-[900px]:hidden 2xl:mt-auto 2xl:block">
               <p class="mb-2 inline-flex items-center gap-2 text-base font-semibold text-violet">
                 <Trophy size={18} />
                 TigerByte Pro
