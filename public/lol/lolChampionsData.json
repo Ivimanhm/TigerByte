@@ -1,0 +1,2158 @@
+{
+  "version": "16.10.1",
+  "champions": [
+    {
+      "id": "Aatrox",
+      "name": "Aatrox",
+      "imageUrl": "/lol/champions/Aatrox.png",
+      "roles": [
+        "Top"
+      ],
+      "types": [
+        "Luchador"
+      ]
+    },
+    {
+      "id": "Ahri",
+      "name": "Ahri",
+      "imageUrl": "/lol/champions/Ahri.png",
+      "roles": [
+        "Mid"
+      ],
+      "types": [
+        "Mago",
+        "Asesino"
+      ]
+    },
+    {
+      "id": "Akali",
+      "name": "Akali",
+      "imageUrl": "/lol/champions/Akali.png",
+      "roles": [
+        "Top",
+        "Mid"
+      ],
+      "types": [
+        "Asesino"
+      ]
+    },
+    {
+      "id": "Akshan",
+      "name": "Akshan",
+      "imageUrl": "/lol/champions/Akshan.png",
+      "roles": [
+        "Mid",
+        "ADC"
+      ],
+      "types": [
+        "Tirador",
+        "Asesino"
+      ]
+    },
+    {
+      "id": "Alistar",
+      "name": "Alistar",
+      "imageUrl": "/lol/champions/Alistar.png",
+      "roles": [
+        "Support"
+      ],
+      "types": [
+        "Tanque",
+        "Support",
+        "Engage"
+      ]
+    },
+    {
+      "id": "Ambessa",
+      "name": "Ambessa",
+      "imageUrl": "/lol/champions/Ambessa.png",
+      "roles": [
+        "Top"
+      ],
+      "types": [
+        "Luchador",
+        "Asesino"
+      ]
+    },
+    {
+      "id": "Amumu",
+      "name": "Amumu",
+      "imageUrl": "/lol/champions/Amumu.png",
+      "roles": [
+        "Jungla",
+        "Support"
+      ],
+      "types": [
+        "Tanque",
+        "Support",
+        "Engage"
+      ]
+    },
+    {
+      "id": "Anivia",
+      "name": "Anivia",
+      "imageUrl": "/lol/champions/Anivia.png",
+      "roles": [
+        "Mid"
+      ],
+      "types": [
+        "Mago"
+      ]
+    },
+    {
+      "id": "Annie",
+      "name": "Annie",
+      "imageUrl": "/lol/champions/Annie.png",
+      "roles": [
+        "Mid",
+        "Support"
+      ],
+      "types": [
+        "Mago",
+        "Support"
+      ]
+    },
+    {
+      "id": "Aphelios",
+      "name": "Aphelios",
+      "imageUrl": "/lol/champions/Aphelios.png",
+      "roles": [
+        "ADC"
+      ],
+      "types": [
+        "Tirador"
+      ]
+    },
+    {
+      "id": "Ashe",
+      "name": "Ashe",
+      "imageUrl": "/lol/champions/Ashe.png",
+      "roles": [
+        "ADC",
+        "Support"
+      ],
+      "types": [
+        "Tirador",
+        "Support"
+      ]
+    },
+    {
+      "id": "AurelionSol",
+      "name": "Aurelion Sol",
+      "imageUrl": "/lol/champions/AurelionSol.png",
+      "roles": [
+        "Mid"
+      ],
+      "types": [
+        "Mago"
+      ]
+    },
+    {
+      "id": "Aurora",
+      "name": "Aurora",
+      "imageUrl": "/lol/champions/Aurora.png",
+      "roles": [
+        "Top",
+        "Mid"
+      ],
+      "types": [
+        "Mago",
+        "Asesino"
+      ]
+    },
+    {
+      "id": "Azir",
+      "name": "Azir",
+      "imageUrl": "/lol/champions/Azir.png",
+      "roles": [
+        "Mid"
+      ],
+      "types": [
+        "Mago",
+        "Tirador"
+      ]
+    },
+    {
+      "id": "Bard",
+      "name": "Bardo",
+      "imageUrl": "/lol/champions/Bard.png",
+      "roles": [
+        "Support"
+      ],
+      "types": [
+        "Support",
+        "Mago"
+      ]
+    },
+    {
+      "id": "Belveth",
+      "name": "Bel'Veth",
+      "imageUrl": "/lol/champions/Belveth.png",
+      "roles": [
+        "Jungla"
+      ],
+      "types": [
+        "Luchador"
+      ]
+    },
+    {
+      "id": "Blitzcrank",
+      "name": "Blitzcrank",
+      "imageUrl": "/lol/champions/Blitzcrank.png",
+      "roles": [
+        "Support"
+      ],
+      "types": [
+        "Tanque",
+        "Support",
+        "Engage"
+      ]
+    },
+    {
+      "id": "Brand",
+      "name": "Brand",
+      "imageUrl": "/lol/champions/Brand.png",
+      "roles": [
+        "Mid",
+        "Support",
+        "Jungla"
+      ],
+      "types": [
+        "Mago",
+        "Support"
+      ]
+    },
+    {
+      "id": "Braum",
+      "name": "Braum",
+      "imageUrl": "/lol/champions/Braum.png",
+      "roles": [
+        "Support"
+      ],
+      "types": [
+        "Tanque",
+        "Support",
+        "Engage"
+      ]
+    },
+    {
+      "id": "Briar",
+      "name": "Briar",
+      "imageUrl": "/lol/champions/Briar.png",
+      "roles": [
+        "Jungla"
+      ],
+      "types": [
+        "Luchador",
+        "Asesino"
+      ]
+    },
+    {
+      "id": "Caitlyn",
+      "name": "Caitlyn",
+      "imageUrl": "/lol/champions/Caitlyn.png",
+      "roles": [
+        "ADC"
+      ],
+      "types": [
+        "Tirador"
+      ]
+    },
+    {
+      "id": "Camille",
+      "name": "Camille",
+      "imageUrl": "/lol/champions/Camille.png",
+      "roles": [
+        "Top"
+      ],
+      "types": [
+        "Luchador",
+        "Asesino",
+        "Engage"
+      ]
+    },
+    {
+      "id": "Cassiopeia",
+      "name": "Cassiopeia",
+      "imageUrl": "/lol/champions/Cassiopeia.png",
+      "roles": [
+        "Mid"
+      ],
+      "types": [
+        "Mago"
+      ]
+    },
+    {
+      "id": "Chogath",
+      "name": "Cho'Gath",
+      "imageUrl": "/lol/champions/Chogath.png",
+      "roles": [
+        "Top",
+        "Mid"
+      ],
+      "types": [
+        "Tanque",
+        "Mago"
+      ]
+    },
+    {
+      "id": "Corki",
+      "name": "Corki",
+      "imageUrl": "/lol/champions/Corki.png",
+      "roles": [
+        "Mid",
+        "ADC"
+      ],
+      "types": [
+        "Tirador",
+        "Mago"
+      ]
+    },
+    {
+      "id": "Darius",
+      "name": "Darius",
+      "imageUrl": "/lol/champions/Darius.png",
+      "roles": [
+        "Top"
+      ],
+      "types": [
+        "Luchador",
+        "Tanque"
+      ]
+    },
+    {
+      "id": "Diana",
+      "name": "Diana",
+      "imageUrl": "/lol/champions/Diana.png",
+      "roles": [
+        "Jungla",
+        "Mid"
+      ],
+      "types": [
+        "Luchador",
+        "Asesino",
+        "Engage"
+      ]
+    },
+    {
+      "id": "DrMundo",
+      "name": "Dr. Mundo",
+      "imageUrl": "/lol/champions/DrMundo.png",
+      "roles": [
+        "Top",
+        "Jungla"
+      ],
+      "types": [
+        "Tanque",
+        "Luchador"
+      ]
+    },
+    {
+      "id": "Draven",
+      "name": "Draven",
+      "imageUrl": "/lol/champions/Draven.png",
+      "roles": [
+        "ADC"
+      ],
+      "types": [
+        "Tirador"
+      ]
+    },
+    {
+      "id": "Ekko",
+      "name": "Ekko",
+      "imageUrl": "/lol/champions/Ekko.png",
+      "roles": [
+        "Jungla",
+        "Mid"
+      ],
+      "types": [
+        "Asesino",
+        "Mago"
+      ]
+    },
+    {
+      "id": "Elise",
+      "name": "Elise",
+      "imageUrl": "/lol/champions/Elise.png",
+      "roles": [
+        "Jungla"
+      ],
+      "types": [
+        "Asesino",
+        "Mago"
+      ]
+    },
+    {
+      "id": "Evelynn",
+      "name": "Evelynn",
+      "imageUrl": "/lol/champions/Evelynn.png",
+      "roles": [
+        "Jungla"
+      ],
+      "types": [
+        "Asesino",
+        "Mago"
+      ]
+    },
+    {
+      "id": "Ezreal",
+      "name": "Ezreal",
+      "imageUrl": "/lol/champions/Ezreal.png",
+      "roles": [
+        "ADC"
+      ],
+      "types": [
+        "Tirador",
+        "Mago"
+      ]
+    },
+    {
+      "id": "Fiddlesticks",
+      "name": "Fiddlesticks",
+      "imageUrl": "/lol/champions/Fiddlesticks.png",
+      "roles": [
+        "Jungla",
+        "Support"
+      ],
+      "types": [
+        "Mago",
+        "Support"
+      ]
+    },
+    {
+      "id": "Fiora",
+      "name": "Fiora",
+      "imageUrl": "/lol/champions/Fiora.png",
+      "roles": [
+        "Top"
+      ],
+      "types": [
+        "Luchador",
+        "Asesino"
+      ]
+    },
+    {
+      "id": "Fizz",
+      "name": "Fizz",
+      "imageUrl": "/lol/champions/Fizz.png",
+      "roles": [
+        "Mid"
+      ],
+      "types": [
+        "Asesino",
+        "Luchador"
+      ]
+    },
+    {
+      "id": "Galio",
+      "name": "Galio",
+      "imageUrl": "/lol/champions/Galio.png",
+      "roles": [
+        "Mid",
+        "Support"
+      ],
+      "types": [
+        "Tanque",
+        "Mago",
+        "Engage"
+      ]
+    },
+    {
+      "id": "Gangplank",
+      "name": "Gangplank",
+      "imageUrl": "/lol/champions/Gangplank.png",
+      "roles": [
+        "Top"
+      ],
+      "types": [
+        "Luchador"
+      ]
+    },
+    {
+      "id": "Garen",
+      "name": "Garen",
+      "imageUrl": "/lol/champions/Garen.png",
+      "roles": [
+        "Top"
+      ],
+      "types": [
+        "Luchador",
+        "Tanque"
+      ]
+    },
+    {
+      "id": "Gnar",
+      "name": "Gnar",
+      "imageUrl": "/lol/champions/Gnar.png",
+      "roles": [
+        "Top"
+      ],
+      "types": [
+        "Luchador",
+        "Tanque"
+      ]
+    },
+    {
+      "id": "Gragas",
+      "name": "Gragas",
+      "imageUrl": "/lol/champions/Gragas.png",
+      "roles": [
+        "Top",
+        "Jungla"
+      ],
+      "types": [
+        "Luchador",
+        "Mago",
+        "Engage"
+      ]
+    },
+    {
+      "id": "Graves",
+      "name": "Graves",
+      "imageUrl": "/lol/champions/Graves.png",
+      "roles": [
+        "Jungla"
+      ],
+      "types": [
+        "Tirador"
+      ]
+    },
+    {
+      "id": "Gwen",
+      "name": "Gwen",
+      "imageUrl": "/lol/champions/Gwen.png",
+      "roles": [
+        "Top",
+        "Jungla"
+      ],
+      "types": [
+        "Luchador"
+      ]
+    },
+    {
+      "id": "Hecarim",
+      "name": "Hecarim",
+      "imageUrl": "/lol/champions/Hecarim.png",
+      "roles": [
+        "Jungla"
+      ],
+      "types": [
+        "Luchador",
+        "Tanque",
+        "Engage"
+      ]
+    },
+    {
+      "id": "Heimerdinger",
+      "name": "Heimerdinger",
+      "imageUrl": "/lol/champions/Heimerdinger.png",
+      "roles": [
+        "Mid",
+        "Top"
+      ],
+      "types": [
+        "Mago",
+        "Support"
+      ]
+    },
+    {
+      "id": "Hwei",
+      "name": "Hwei",
+      "imageUrl": "/lol/champions/Hwei.png",
+      "roles": [
+        "Mid",
+        "Support"
+      ],
+      "types": [
+        "Mago",
+        "Support"
+      ]
+    },
+    {
+      "id": "Illaoi",
+      "name": "Illaoi",
+      "imageUrl": "/lol/champions/Illaoi.png",
+      "roles": [
+        "Top"
+      ],
+      "types": [
+        "Luchador",
+        "Tanque"
+      ]
+    },
+    {
+      "id": "Irelia",
+      "name": "Irelia",
+      "imageUrl": "/lol/champions/Irelia.png",
+      "roles": [
+        "Top",
+        "Mid"
+      ],
+      "types": [
+        "Luchador",
+        "Asesino"
+      ]
+    },
+    {
+      "id": "Ivern",
+      "name": "Ivern",
+      "imageUrl": "/lol/champions/Ivern.png",
+      "roles": [
+        "Jungla"
+      ],
+      "types": [
+        "Support",
+        "Mago"
+      ]
+    },
+    {
+      "id": "Janna",
+      "name": "Janna",
+      "imageUrl": "/lol/champions/Janna.png",
+      "roles": [
+        "Support"
+      ],
+      "types": [
+        "Support",
+        "Mago"
+      ]
+    },
+    {
+      "id": "JarvanIV",
+      "name": "Jarvan IV",
+      "imageUrl": "/lol/champions/JarvanIV.png",
+      "roles": [
+        "Jungla",
+        "Top"
+      ],
+      "types": [
+        "Luchador",
+        "Tanque",
+        "Engage"
+      ]
+    },
+    {
+      "id": "Jax",
+      "name": "Jax",
+      "imageUrl": "/lol/champions/Jax.png",
+      "roles": [
+        "Top",
+        "Jungla"
+      ],
+      "types": [
+        "Luchador"
+      ]
+    },
+    {
+      "id": "Jayce",
+      "name": "Jayce",
+      "imageUrl": "/lol/champions/Jayce.png",
+      "roles": [
+        "Top",
+        "Mid"
+      ],
+      "types": [
+        "Luchador",
+        "Tirador"
+      ]
+    },
+    {
+      "id": "Jhin",
+      "name": "Jhin",
+      "imageUrl": "/lol/champions/Jhin.png",
+      "roles": [
+        "ADC"
+      ],
+      "types": [
+        "Tirador",
+        "Mago"
+      ]
+    },
+    {
+      "id": "Jinx",
+      "name": "Jinx",
+      "imageUrl": "/lol/champions/Jinx.png",
+      "roles": [
+        "ADC"
+      ],
+      "types": [
+        "Tirador"
+      ]
+    },
+    {
+      "id": "KSante",
+      "name": "K'Sante",
+      "imageUrl": "/lol/champions/KSante.png",
+      "roles": [
+        "Top"
+      ],
+      "types": [
+        "Tanque",
+        "Luchador"
+      ]
+    },
+    {
+      "id": "Kaisa",
+      "name": "Kai'Sa",
+      "imageUrl": "/lol/champions/Kaisa.png",
+      "roles": [
+        "ADC"
+      ],
+      "types": [
+        "Tirador",
+        "Mago"
+      ]
+    },
+    {
+      "id": "Kalista",
+      "name": "Kalista",
+      "imageUrl": "/lol/champions/Kalista.png",
+      "roles": [
+        "ADC"
+      ],
+      "types": [
+        "Tirador"
+      ]
+    },
+    {
+      "id": "Karma",
+      "name": "Karma",
+      "imageUrl": "/lol/champions/Karma.png",
+      "roles": [
+        "Support",
+        "Mid",
+        "Top"
+      ],
+      "types": [
+        "Mago",
+        "Support"
+      ]
+    },
+    {
+      "id": "Karthus",
+      "name": "Karthus",
+      "imageUrl": "/lol/champions/Karthus.png",
+      "roles": [
+        "Jungla",
+        "Mid"
+      ],
+      "types": [
+        "Mago"
+      ]
+    },
+    {
+      "id": "Kassadin",
+      "name": "Kassadin",
+      "imageUrl": "/lol/champions/Kassadin.png",
+      "roles": [
+        "Mid"
+      ],
+      "types": [
+        "Asesino",
+        "Mago"
+      ]
+    },
+    {
+      "id": "Katarina",
+      "name": "Katarina",
+      "imageUrl": "/lol/champions/Katarina.png",
+      "roles": [
+        "Mid"
+      ],
+      "types": [
+        "Asesino",
+        "Mago"
+      ]
+    },
+    {
+      "id": "Kayle",
+      "name": "Kayle",
+      "imageUrl": "/lol/champions/Kayle.png",
+      "roles": [
+        "Top",
+        "Mid"
+      ],
+      "types": [
+        "Mago",
+        "Tirador"
+      ]
+    },
+    {
+      "id": "Kayn",
+      "name": "Kayn",
+      "imageUrl": "/lol/champions/Kayn.png",
+      "roles": [
+        "Jungla"
+      ],
+      "types": [
+        "Luchador",
+        "Asesino"
+      ]
+    },
+    {
+      "id": "Kennen",
+      "name": "Kennen",
+      "imageUrl": "/lol/champions/Kennen.png",
+      "roles": [
+        "Top",
+        "Mid"
+      ],
+      "types": [
+        "Mago"
+      ]
+    },
+    {
+      "id": "Khazix",
+      "name": "Kha'Zix",
+      "imageUrl": "/lol/champions/Khazix.png",
+      "roles": [
+        "Jungla"
+      ],
+      "types": [
+        "Asesino"
+      ]
+    },
+    {
+      "id": "Kindred",
+      "name": "Kindred",
+      "imageUrl": "/lol/champions/Kindred.png",
+      "roles": [
+        "Jungla"
+      ],
+      "types": [
+        "Tirador"
+      ]
+    },
+    {
+      "id": "Kled",
+      "name": "Kled",
+      "imageUrl": "/lol/champions/Kled.png",
+      "roles": [
+        "Top"
+      ],
+      "types": [
+        "Luchador",
+        "Engage"
+      ]
+    },
+    {
+      "id": "KogMaw",
+      "name": "Kog'Maw",
+      "imageUrl": "/lol/champions/KogMaw.png",
+      "roles": [
+        "ADC"
+      ],
+      "types": [
+        "Tirador",
+        "Mago"
+      ]
+    },
+    {
+      "id": "Leblanc",
+      "name": "LeBlanc",
+      "imageUrl": "/lol/champions/Leblanc.png",
+      "roles": [
+        "Mid"
+      ],
+      "types": [
+        "Asesino",
+        "Mago"
+      ]
+    },
+    {
+      "id": "LeeSin",
+      "name": "Lee Sin",
+      "imageUrl": "/lol/champions/LeeSin.png",
+      "roles": [
+        "Jungla"
+      ],
+      "types": [
+        "Luchador",
+        "Asesino"
+      ]
+    },
+    {
+      "id": "Leona",
+      "name": "Leona",
+      "imageUrl": "/lol/champions/Leona.png",
+      "roles": [
+        "Support"
+      ],
+      "types": [
+        "Tanque",
+        "Support",
+        "Engage"
+      ]
+    },
+    {
+      "id": "Lillia",
+      "name": "Lillia",
+      "imageUrl": "/lol/champions/Lillia.png",
+      "roles": [
+        "Jungla",
+        "Top"
+      ],
+      "types": [
+        "Luchador",
+        "Mago"
+      ]
+    },
+    {
+      "id": "Lissandra",
+      "name": "Lissandra",
+      "imageUrl": "/lol/champions/Lissandra.png",
+      "roles": [
+        "Mid"
+      ],
+      "types": [
+        "Mago"
+      ]
+    },
+    {
+      "id": "Lucian",
+      "name": "Lucian",
+      "imageUrl": "/lol/champions/Lucian.png",
+      "roles": [
+        "ADC",
+        "Mid"
+      ],
+      "types": [
+        "Tirador",
+        "Asesino"
+      ]
+    },
+    {
+      "id": "Lulu",
+      "name": "Lulu",
+      "imageUrl": "/lol/champions/Lulu.png",
+      "roles": [
+        "Support"
+      ],
+      "types": [
+        "Support",
+        "Mago"
+      ]
+    },
+    {
+      "id": "Lux",
+      "name": "Lux",
+      "imageUrl": "/lol/champions/Lux.png",
+      "roles": [
+        "Mid",
+        "Support"
+      ],
+      "types": [
+        "Mago",
+        "Support"
+      ]
+    },
+    {
+      "id": "MasterYi",
+      "name": "Maestro Yi",
+      "imageUrl": "/lol/champions/MasterYi.png",
+      "roles": [
+        "Jungla"
+      ],
+      "types": [
+        "Luchador",
+        "Asesino"
+      ]
+    },
+    {
+      "id": "Malphite",
+      "name": "Malphite",
+      "imageUrl": "/lol/champions/Malphite.png",
+      "roles": [
+        "Top",
+        "Support"
+      ],
+      "types": [
+        "Tanque",
+        "Mago",
+        "Engage"
+      ]
+    },
+    {
+      "id": "Malzahar",
+      "name": "Malzahar",
+      "imageUrl": "/lol/champions/Malzahar.png",
+      "roles": [
+        "Mid"
+      ],
+      "types": [
+        "Mago"
+      ]
+    },
+    {
+      "id": "Maokai",
+      "name": "Maokai",
+      "imageUrl": "/lol/champions/Maokai.png",
+      "roles": [
+        "Top",
+        "Jungla",
+        "Support"
+      ],
+      "types": [
+        "Tanque",
+        "Support",
+        "Engage"
+      ]
+    },
+    {
+      "id": "Mel",
+      "name": "Mel",
+      "imageUrl": "/lol/champions/Mel.png",
+      "roles": [
+        "Mid",
+        "Support"
+      ],
+      "types": [
+        "Mago",
+        "Support"
+      ]
+    },
+    {
+      "id": "Milio",
+      "name": "Milio",
+      "imageUrl": "/lol/champions/Milio.png",
+      "roles": [
+        "Support"
+      ],
+      "types": [
+        "Support",
+        "Mago"
+      ]
+    },
+    {
+      "id": "MissFortune",
+      "name": "Miss Fortune",
+      "imageUrl": "/lol/champions/MissFortune.png",
+      "roles": [
+        "ADC"
+      ],
+      "types": [
+        "Tirador",
+        "Mago"
+      ]
+    },
+    {
+      "id": "Mordekaiser",
+      "name": "Mordekaiser",
+      "imageUrl": "/lol/champions/Mordekaiser.png",
+      "roles": [
+        "Top"
+      ],
+      "types": [
+        "Luchador",
+        "Mago"
+      ]
+    },
+    {
+      "id": "Morgana",
+      "name": "Morgana",
+      "imageUrl": "/lol/champions/Morgana.png",
+      "roles": [
+        "Support",
+        "Jungla",
+        "Mid"
+      ],
+      "types": [
+        "Support",
+        "Mago"
+      ]
+    },
+    {
+      "id": "Naafiri",
+      "name": "Naafiri",
+      "imageUrl": "/lol/champions/Naafiri.png",
+      "roles": [
+        "Mid",
+        "Jungla"
+      ],
+      "types": [
+        "Asesino",
+        "Luchador"
+      ]
+    },
+    {
+      "id": "Nami",
+      "name": "Nami",
+      "imageUrl": "/lol/champions/Nami.png",
+      "roles": [
+        "Support"
+      ],
+      "types": [
+        "Support",
+        "Mago"
+      ]
+    },
+    {
+      "id": "Nasus",
+      "name": "Nasus",
+      "imageUrl": "/lol/champions/Nasus.png",
+      "roles": [
+        "Top"
+      ],
+      "types": [
+        "Luchador",
+        "Tanque"
+      ]
+    },
+    {
+      "id": "Nautilus",
+      "name": "Nautilus",
+      "imageUrl": "/lol/champions/Nautilus.png",
+      "roles": [
+        "Support"
+      ],
+      "types": [
+        "Tanque",
+        "Support",
+        "Engage"
+      ]
+    },
+    {
+      "id": "Neeko",
+      "name": "Neeko",
+      "imageUrl": "/lol/champions/Neeko.png",
+      "roles": [
+        "Mid",
+        "Support"
+      ],
+      "types": [
+        "Mago",
+        "Support",
+        "Engage"
+      ]
+    },
+    {
+      "id": "Nidalee",
+      "name": "Nidalee",
+      "imageUrl": "/lol/champions/Nidalee.png",
+      "roles": [
+        "Jungla"
+      ],
+      "types": [
+        "Asesino",
+        "Mago"
+      ]
+    },
+    {
+      "id": "Nilah",
+      "name": "Nilah",
+      "imageUrl": "/lol/champions/Nilah.png",
+      "roles": [
+        "ADC"
+      ],
+      "types": [
+        "Luchador",
+        "Asesino"
+      ]
+    },
+    {
+      "id": "Nocturne",
+      "name": "Nocturne",
+      "imageUrl": "/lol/champions/Nocturne.png",
+      "roles": [
+        "Jungla"
+      ],
+      "types": [
+        "Luchador",
+        "Asesino",
+        "Engage"
+      ]
+    },
+    {
+      "id": "Nunu",
+      "name": "Nunu y Willump",
+      "imageUrl": "/lol/champions/Nunu.png",
+      "roles": [
+        "Jungla"
+      ],
+      "types": [
+        "Tanque",
+        "Mago"
+      ]
+    },
+    {
+      "id": "Olaf",
+      "name": "Olaf",
+      "imageUrl": "/lol/champions/Olaf.png",
+      "roles": [
+        "Top",
+        "Jungla"
+      ],
+      "types": [
+        "Luchador",
+        "Tanque"
+      ]
+    },
+    {
+      "id": "Orianna",
+      "name": "Orianna",
+      "imageUrl": "/lol/champions/Orianna.png",
+      "roles": [
+        "Mid"
+      ],
+      "types": [
+        "Mago",
+        "Support"
+      ]
+    },
+    {
+      "id": "Ornn",
+      "name": "Ornn",
+      "imageUrl": "/lol/champions/Ornn.png",
+      "roles": [
+        "Top"
+      ],
+      "types": [
+        "Tanque",
+        "Engage"
+      ]
+    },
+    {
+      "id": "Pantheon",
+      "name": "Pantheon",
+      "imageUrl": "/lol/champions/Pantheon.png",
+      "roles": [
+        "Top",
+        "Mid",
+        "Support"
+      ],
+      "types": [
+        "Luchador",
+        "Asesino",
+        "Engage"
+      ]
+    },
+    {
+      "id": "Poppy",
+      "name": "Poppy",
+      "imageUrl": "/lol/champions/Poppy.png",
+      "roles": [
+        "Top",
+        "Jungla"
+      ],
+      "types": [
+        "Tanque",
+        "Luchador",
+        "Engage"
+      ]
+    },
+    {
+      "id": "Pyke",
+      "name": "Pyke",
+      "imageUrl": "/lol/champions/Pyke.png",
+      "roles": [
+        "Support",
+        "Mid"
+      ],
+      "types": [
+        "Support",
+        "Asesino",
+        "Engage"
+      ]
+    },
+    {
+      "id": "Qiyana",
+      "name": "Qiyana",
+      "imageUrl": "/lol/champions/Qiyana.png",
+      "roles": [
+        "Mid",
+        "Jungla"
+      ],
+      "types": [
+        "Asesino"
+      ]
+    },
+    {
+      "id": "Quinn",
+      "name": "Quinn",
+      "imageUrl": "/lol/champions/Quinn.png",
+      "roles": [
+        "Top",
+        "ADC"
+      ],
+      "types": [
+        "Tirador",
+        "Asesino"
+      ]
+    },
+    {
+      "id": "Rakan",
+      "name": "Rakan",
+      "imageUrl": "/lol/champions/Rakan.png",
+      "roles": [
+        "Support"
+      ],
+      "types": [
+        "Support",
+        "Engage"
+      ]
+    },
+    {
+      "id": "Rammus",
+      "name": "Rammus",
+      "imageUrl": "/lol/champions/Rammus.png",
+      "roles": [
+        "Jungla"
+      ],
+      "types": [
+        "Tanque",
+        "Engage"
+      ]
+    },
+    {
+      "id": "RekSai",
+      "name": "Rek'Sai",
+      "imageUrl": "/lol/champions/RekSai.png",
+      "roles": [
+        "Jungla"
+      ],
+      "types": [
+        "Luchador",
+        "Tanque"
+      ]
+    },
+    {
+      "id": "Rell",
+      "name": "Rell",
+      "imageUrl": "/lol/champions/Rell.png",
+      "roles": [
+        "Support",
+        "Jungla"
+      ],
+      "types": [
+        "Tanque",
+        "Support",
+        "Engage"
+      ]
+    },
+    {
+      "id": "Renata",
+      "name": "Renata Glasc",
+      "imageUrl": "/lol/champions/Renata.png",
+      "roles": [
+        "Support"
+      ],
+      "types": [
+        "Support",
+        "Mago",
+        "Engage"
+      ]
+    },
+    {
+      "id": "Renekton",
+      "name": "Renekton",
+      "imageUrl": "/lol/champions/Renekton.png",
+      "roles": [
+        "Top"
+      ],
+      "types": [
+        "Luchador",
+        "Tanque"
+      ]
+    },
+    {
+      "id": "Rengar",
+      "name": "Rengar",
+      "imageUrl": "/lol/champions/Rengar.png",
+      "roles": [
+        "Jungla",
+        "Top"
+      ],
+      "types": [
+        "Asesino",
+        "Luchador"
+      ]
+    },
+    {
+      "id": "Riven",
+      "name": "Riven",
+      "imageUrl": "/lol/champions/Riven.png",
+      "roles": [
+        "Top"
+      ],
+      "types": [
+        "Luchador",
+        "Asesino"
+      ]
+    },
+    {
+      "id": "Rumble",
+      "name": "Rumble",
+      "imageUrl": "/lol/champions/Rumble.png",
+      "roles": [
+        "Top",
+        "Mid",
+        "Jungla"
+      ],
+      "types": [
+        "Luchador",
+        "Mago"
+      ]
+    },
+    {
+      "id": "Ryze",
+      "name": "Ryze",
+      "imageUrl": "/lol/champions/Ryze.png",
+      "roles": [
+        "Mid",
+        "Top"
+      ],
+      "types": [
+        "Mago"
+      ]
+    },
+    {
+      "id": "Samira",
+      "name": "Samira",
+      "imageUrl": "/lol/champions/Samira.png",
+      "roles": [
+        "ADC"
+      ],
+      "types": [
+        "Tirador",
+        "Asesino"
+      ]
+    },
+    {
+      "id": "Sejuani",
+      "name": "Sejuani",
+      "imageUrl": "/lol/champions/Sejuani.png",
+      "roles": [
+        "Jungla"
+      ],
+      "types": [
+        "Tanque",
+        "Engage"
+      ]
+    },
+    {
+      "id": "Senna",
+      "name": "Senna",
+      "imageUrl": "/lol/champions/Senna.png",
+      "roles": [
+        "ADC",
+        "Support"
+      ],
+      "types": [
+        "Support",
+        "Tirador"
+      ]
+    },
+    {
+      "id": "Seraphine",
+      "name": "Seraphine",
+      "imageUrl": "/lol/champions/Seraphine.png",
+      "roles": [
+        "Support",
+        "ADC",
+        "Mid"
+      ],
+      "types": [
+        "Support",
+        "Mago"
+      ]
+    },
+    {
+      "id": "Sett",
+      "name": "Sett",
+      "imageUrl": "/lol/champions/Sett.png",
+      "roles": [
+        "Top",
+        "Support"
+      ],
+      "types": [
+        "Luchador",
+        "Tanque",
+        "Engage"
+      ]
+    },
+    {
+      "id": "Shaco",
+      "name": "Shaco",
+      "imageUrl": "/lol/champions/Shaco.png",
+      "roles": [
+        "Jungla",
+        "Support"
+      ],
+      "types": [
+        "Asesino"
+      ]
+    },
+    {
+      "id": "Shen",
+      "name": "Shen",
+      "imageUrl": "/lol/champions/Shen.png",
+      "roles": [
+        "Top",
+        "Support"
+      ],
+      "types": [
+        "Tanque",
+        "Engage"
+      ]
+    },
+    {
+      "id": "Shyvana",
+      "name": "Shyvana",
+      "imageUrl": "/lol/champions/Shyvana.png",
+      "roles": [
+        "Jungla",
+        "Top"
+      ],
+      "types": [
+        "Luchador",
+        "Tanque"
+      ]
+    },
+    {
+      "id": "Singed",
+      "name": "Singed",
+      "imageUrl": "/lol/champions/Singed.png",
+      "roles": [
+        "Top",
+        "Mid"
+      ],
+      "types": [
+        "Tanque",
+        "Mago"
+      ]
+    },
+    {
+      "id": "Sion",
+      "name": "Sion",
+      "imageUrl": "/lol/champions/Sion.png",
+      "roles": [
+        "Top"
+      ],
+      "types": [
+        "Tanque",
+        "Luchador",
+        "Engage"
+      ]
+    },
+    {
+      "id": "Sivir",
+      "name": "Sivir",
+      "imageUrl": "/lol/champions/Sivir.png",
+      "roles": [
+        "ADC"
+      ],
+      "types": [
+        "Tirador"
+      ]
+    },
+    {
+      "id": "Skarner",
+      "name": "Skarner",
+      "imageUrl": "/lol/champions/Skarner.png",
+      "roles": [
+        "Jungla",
+        "Top"
+      ],
+      "types": [
+        "Tanque",
+        "Luchador",
+        "Engage"
+      ]
+    },
+    {
+      "id": "Smolder",
+      "name": "Smolder",
+      "imageUrl": "/lol/champions/Smolder.png",
+      "roles": [
+        "ADC",
+        "Mid"
+      ],
+      "types": [
+        "Tirador",
+        "Mago"
+      ]
+    },
+    {
+      "id": "Sona",
+      "name": "Sona",
+      "imageUrl": "/lol/champions/Sona.png",
+      "roles": [
+        "Support"
+      ],
+      "types": [
+        "Support",
+        "Mago"
+      ]
+    },
+    {
+      "id": "Soraka",
+      "name": "Soraka",
+      "imageUrl": "/lol/champions/Soraka.png",
+      "roles": [
+        "Support"
+      ],
+      "types": [
+        "Support",
+        "Mago"
+      ]
+    },
+    {
+      "id": "Swain",
+      "name": "Swain",
+      "imageUrl": "/lol/champions/Swain.png",
+      "roles": [
+        "Mid",
+        "Support"
+      ],
+      "types": [
+        "Mago",
+        "Support"
+      ]
+    },
+    {
+      "id": "Sylas",
+      "name": "Sylas",
+      "imageUrl": "/lol/champions/Sylas.png",
+      "roles": [
+        "Mid",
+        "Top"
+      ],
+      "types": [
+        "Mago",
+        "Asesino"
+      ]
+    },
+    {
+      "id": "Syndra",
+      "name": "Syndra",
+      "imageUrl": "/lol/champions/Syndra.png",
+      "roles": [
+        "Mid"
+      ],
+      "types": [
+        "Mago"
+      ]
+    },
+    {
+      "id": "TahmKench",
+      "name": "Tahm Kench",
+      "imageUrl": "/lol/champions/TahmKench.png",
+      "roles": [
+        "Support",
+        "Top"
+      ],
+      "types": [
+        "Tanque",
+        "Support",
+        "Engage"
+      ]
+    },
+    {
+      "id": "Taliyah",
+      "name": "Taliyah",
+      "imageUrl": "/lol/champions/Taliyah.png",
+      "roles": [
+        "Mid",
+        "Jungla"
+      ],
+      "types": [
+        "Mago",
+        "Support"
+      ]
+    },
+    {
+      "id": "Talon",
+      "name": "Talon",
+      "imageUrl": "/lol/champions/Talon.png",
+      "roles": [
+        "Mid",
+        "Jungla"
+      ],
+      "types": [
+        "Asesino"
+      ]
+    },
+    {
+      "id": "Taric",
+      "name": "Taric",
+      "imageUrl": "/lol/champions/Taric.png",
+      "roles": [
+        "Support"
+      ],
+      "types": [
+        "Support",
+        "Tanque"
+      ]
+    },
+    {
+      "id": "Teemo",
+      "name": "Teemo",
+      "imageUrl": "/lol/champions/Teemo.png",
+      "roles": [
+        "Top"
+      ],
+      "types": [
+        "Tirador",
+        "Mago"
+      ]
+    },
+    {
+      "id": "Thresh",
+      "name": "Thresh",
+      "imageUrl": "/lol/champions/Thresh.png",
+      "roles": [
+        "Support"
+      ],
+      "types": [
+        "Support",
+        "Tanque",
+        "Engage"
+      ]
+    },
+    {
+      "id": "Tristana",
+      "name": "Tristana",
+      "imageUrl": "/lol/champions/Tristana.png",
+      "roles": [
+        "ADC",
+        "Mid"
+      ],
+      "types": [
+        "Tirador",
+        "Asesino"
+      ]
+    },
+    {
+      "id": "Trundle",
+      "name": "Trundle",
+      "imageUrl": "/lol/champions/Trundle.png",
+      "roles": [
+        "Top",
+        "Jungla",
+        "Support"
+      ],
+      "types": [
+        "Luchador",
+        "Tanque"
+      ]
+    },
+    {
+      "id": "Tryndamere",
+      "name": "Tryndamere",
+      "imageUrl": "/lol/champions/Tryndamere.png",
+      "roles": [
+        "Top",
+        "Mid"
+      ],
+      "types": [
+        "Luchador",
+        "Asesino"
+      ]
+    },
+    {
+      "id": "TwistedFate",
+      "name": "Twisted Fate",
+      "imageUrl": "/lol/champions/TwistedFate.png",
+      "roles": [
+        "Mid",
+        "ADC"
+      ],
+      "types": [
+        "Mago",
+        "Tirador"
+      ]
+    },
+    {
+      "id": "Twitch",
+      "name": "Twitch",
+      "imageUrl": "/lol/champions/Twitch.png",
+      "roles": [
+        "ADC",
+        "Support"
+      ],
+      "types": [
+        "Tirador",
+        "Asesino"
+      ]
+    },
+    {
+      "id": "Udyr",
+      "name": "Udyr",
+      "imageUrl": "/lol/champions/Udyr.png",
+      "roles": [
+        "Jungla",
+        "Top"
+      ],
+      "types": [
+        "Luchador",
+        "Tanque"
+      ]
+    },
+    {
+      "id": "Urgot",
+      "name": "Urgot",
+      "imageUrl": "/lol/champions/Urgot.png",
+      "roles": [
+        "Top"
+      ],
+      "types": [
+        "Luchador",
+        "Tanque"
+      ]
+    },
+    {
+      "id": "Varus",
+      "name": "Varus",
+      "imageUrl": "/lol/champions/Varus.png",
+      "roles": [
+        "ADC",
+        "Mid"
+      ],
+      "types": [
+        "Tirador",
+        "Mago"
+      ]
+    },
+    {
+      "id": "Vayne",
+      "name": "Vayne",
+      "imageUrl": "/lol/champions/Vayne.png",
+      "roles": [
+        "ADC",
+        "Top"
+      ],
+      "types": [
+        "Tirador",
+        "Asesino"
+      ]
+    },
+    {
+      "id": "Veigar",
+      "name": "Veigar",
+      "imageUrl": "/lol/champions/Veigar.png",
+      "roles": [
+        "Mid",
+        "Support"
+      ],
+      "types": [
+        "Mago"
+      ]
+    },
+    {
+      "id": "Velkoz",
+      "name": "Vel'Koz",
+      "imageUrl": "/lol/champions/Velkoz.png",
+      "roles": [
+        "Mid",
+        "Support"
+      ],
+      "types": [
+        "Mago",
+        "Support"
+      ]
+    },
+    {
+      "id": "Vex",
+      "name": "Vex",
+      "imageUrl": "/lol/champions/Vex.png",
+      "roles": [
+        "Mid"
+      ],
+      "types": [
+        "Mago"
+      ]
+    },
+    {
+      "id": "Vi",
+      "name": "Vi",
+      "imageUrl": "/lol/champions/Vi.png",
+      "roles": [
+        "Jungla"
+      ],
+      "types": [
+        "Luchador",
+        "Asesino",
+        "Engage"
+      ]
+    },
+    {
+      "id": "Viego",
+      "name": "Viego",
+      "imageUrl": "/lol/champions/Viego.png",
+      "roles": [
+        "Jungla"
+      ],
+      "types": [
+        "Luchador",
+        "Asesino"
+      ]
+    },
+    {
+      "id": "Viktor",
+      "name": "Viktor",
+      "imageUrl": "/lol/champions/Viktor.png",
+      "roles": [
+        "Mid"
+      ],
+      "types": [
+        "Mago"
+      ]
+    },
+    {
+      "id": "Vladimir",
+      "name": "Vladimir",
+      "imageUrl": "/lol/champions/Vladimir.png",
+      "roles": [
+        "Mid",
+        "Top"
+      ],
+      "types": [
+        "Mago",
+        "Luchador"
+      ]
+    },
+    {
+      "id": "Volibear",
+      "name": "Volibear",
+      "imageUrl": "/lol/champions/Volibear.png",
+      "roles": [
+        "Top",
+        "Jungla"
+      ],
+      "types": [
+        "Luchador",
+        "Tanque",
+        "Engage"
+      ]
+    },
+    {
+      "id": "Warwick",
+      "name": "Warwick",
+      "imageUrl": "/lol/champions/Warwick.png",
+      "roles": [
+        "Jungla",
+        "Top"
+      ],
+      "types": [
+        "Luchador",
+        "Tanque"
+      ]
+    },
+    {
+      "id": "MonkeyKing",
+      "name": "Wukong",
+      "imageUrl": "/lol/champions/MonkeyKing.png",
+      "roles": [
+        "Top",
+        "Jungla"
+      ],
+      "types": [
+        "Luchador",
+        "Tanque",
+        "Engage"
+      ]
+    },
+    {
+      "id": "Xayah",
+      "name": "Xayah",
+      "imageUrl": "/lol/champions/Xayah.png",
+      "roles": [
+        "ADC"
+      ],
+      "types": [
+        "Tirador"
+      ]
+    },
+    {
+      "id": "Xerath",
+      "name": "Xerath",
+      "imageUrl": "/lol/champions/Xerath.png",
+      "roles": [
+        "Mid",
+        "Support"
+      ],
+      "types": [
+        "Mago",
+        "Support"
+      ]
+    },
+    {
+      "id": "XinZhao",
+      "name": "Xin Zhao",
+      "imageUrl": "/lol/champions/XinZhao.png",
+      "roles": [
+        "Jungla"
+      ],
+      "types": [
+        "Luchador",
+        "Tanque",
+        "Engage"
+      ]
+    },
+    {
+      "id": "Yasuo",
+      "name": "Yasuo",
+      "imageUrl": "/lol/champions/Yasuo.png",
+      "roles": [
+        "Mid",
+        "Top",
+        "ADC"
+      ],
+      "types": [
+        "Luchador",
+        "Asesino"
+      ]
+    },
+    {
+      "id": "Yone",
+      "name": "Yone",
+      "imageUrl": "/lol/champions/Yone.png",
+      "roles": [
+        "Mid",
+        "Top"
+      ],
+      "types": [
+        "Luchador",
+        "Asesino"
+      ]
+    },
+    {
+      "id": "Yorick",
+      "name": "Yorick",
+      "imageUrl": "/lol/champions/Yorick.png",
+      "roles": [
+        "Top"
+      ],
+      "types": [
+        "Luchador",
+        "Tanque"
+      ]
+    },
+    {
+      "id": "Yunara",
+      "name": "Yunara",
+      "imageUrl": "/lol/champions/Yunara.png",
+      "roles": [
+        "ADC"
+      ],
+      "types": [
+        "Tirador"
+      ]
+    },
+    {
+      "id": "Yuumi",
+      "name": "Yuumi",
+      "imageUrl": "/lol/champions/Yuumi.png",
+      "roles": [
+        "Support"
+      ],
+      "types": [
+        "Support",
+        "Mago"
+      ]
+    },
+    {
+      "id": "Zaahen",
+      "name": "Zaahen",
+      "imageUrl": "/lol/champions/Zaahen.png",
+      "roles": [
+        "Top",
+        "Jungla",
+        "Mid"
+      ],
+      "types": [
+        "Luchador",
+        "Asesino"
+      ]
+    },
+    {
+      "id": "Zac",
+      "name": "Zac",
+      "imageUrl": "/lol/champions/Zac.png",
+      "roles": [
+        "Jungla",
+        "Top",
+        "Support"
+      ],
+      "types": [
+        "Tanque",
+        "Luchador",
+        "Engage"
+      ]
+    },
+    {
+      "id": "Zed",
+      "name": "Zed",
+      "imageUrl": "/lol/champions/Zed.png",
+      "roles": [
+        "Mid",
+        "Jungla"
+      ],
+      "types": [
+        "Asesino"
+      ]
+    },
+    {
+      "id": "Zeri",
+      "name": "Zeri",
+      "imageUrl": "/lol/champions/Zeri.png",
+      "roles": [
+        "ADC"
+      ],
+      "types": [
+        "Tirador"
+      ]
+    },
+    {
+      "id": "Ziggs",
+      "name": "Ziggs",
+      "imageUrl": "/lol/champions/Ziggs.png",
+      "roles": [
+        "ADC",
+        "Mid"
+      ],
+      "types": [
+        "Mago"
+      ]
+    },
+    {
+      "id": "Zilean",
+      "name": "Zilean",
+      "imageUrl": "/lol/champions/Zilean.png",
+      "roles": [
+        "Support",
+        "Mid"
+      ],
+      "types": [
+        "Support",
+        "Mago"
+      ]
+    },
+    {
+      "id": "Zoe",
+      "name": "Zoe",
+      "imageUrl": "/lol/champions/Zoe.png",
+      "roles": [
+        "Mid"
+      ],
+      "types": [
+        "Mago"
+      ]
+    },
+    {
+      "id": "Zyra",
+      "name": "Zyra",
+      "imageUrl": "/lol/champions/Zyra.png",
+      "roles": [
+        "Support",
+        "Jungla",
+        "Mid"
+      ],
+      "types": [
+        "Mago",
+        "Support"
+      ]
+    }
+  ]
+}

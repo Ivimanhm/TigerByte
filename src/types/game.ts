@@ -5,6 +5,11 @@ export interface GameStat {
   value: string
 }
 
+export interface GameAction {
+  label: string
+  href: string
+}
+
 export interface GameCardData {
   id: string
   game: string
@@ -13,7 +18,9 @@ export interface GameCardData {
   description: string
   tone: GameTone
   image: string
+  imageBack?: string
   imageName?: string
   imagePosition?: string
   stats: GameStat[]
+  actions?: GameAction[]
 }

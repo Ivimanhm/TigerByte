@@ -1,14 +1,17 @@
 {
   "name": "app",
   "private": true,
-  "version": "0.0.1",
+  "version": "0.0.3",
+  "main": "electron/main.cjs",
   "type": "module",
   "scripts": {
     "predev": "node scripts/generate-updates.mjs && node scripts/generate-system-status.mjs && node scripts/generate-app-meta.mjs",
     "dev": "vite",
     "prebuild": "node scripts/generate-updates.mjs && node scripts/generate-system-status.mjs && node scripts/generate-app-meta.mjs",
     "build": "tsc -b && vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "dist:win": "npm run build && electron-builder --win nsis",
+    "release:local": "npm run dist:win"
   },
   "dependencies": {
     "lucide-preact": "^1.16.0",
@@ -19,9 +22,41 @@
     "@preact/preset-vite": "^2.10.5",
     "@types/node": "^24.12.3",
     "autoprefixer": "^10.5.0",
+    "electron": "^42.2.0",
+    "electron-builder": "^26.8.1",
     "postcss": "^8.5.15",
     "tailwindcss": "^3.4.17",
     "typescript": "~6.0.2",
     "vite": "^8.0.12"
+  },
+  "build": {
+    "appId": "com.ivimanhm.tigerbyte",
+    "productName": "TigerByte",
+    "files": [
+      "dist/**/*",
+      "electron/**/*",
+      "package.json"
+    ],
+    "directories": {
+      "output": "release"
+    },
+    "win": {
+      "icon": "build/icon.ico",
+      "signAndEditExecutable": false,
+      "target": [
+        {
+          "target": "nsis",
+          "arch": [
+            "x64"
+          ]
+        }
+      ]
+    },
+    "nsis": {
+      "installerIcon": "build/icon.ico",
+      "uninstallerIcon": "build/icon.ico",
+      "oneClick": false,
+      "allowToChangeInstallationDirectory": true
+    }
   }
 }

@@ -157,7 +157,7 @@ async function buildStatus() {
       updatesDetail = `Version actual: ${currentVersion}`
     } else if (hasReleaseData) {
       const days = latestReleaseDate ? daysBetween(latestReleaseDate) : 0
-      updatesValue = days === 0 ? 'Nueva version disponible' : `${days} dia${days === 1 ? '' : 's'} sin actualizar`
+      updatesValue = days === 0 ? 'Version disponible' : `${days} dia${days === 1 ? '' : 's'} sin actualizar`
       updatesLevel = 'warn'
       updatesDetail = latestReleaseDate
         ? `Ultima release: ${latestReleaseTag} (${formatDate(latestReleaseDate)})`

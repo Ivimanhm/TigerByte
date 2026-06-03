@@ -24,29 +24,29 @@ export function ConfigPage() {
     saveSettings(settings)
     applyVisualSettings(settings)
     setSavedMsg('Configuracion guardada')
-    window.setTimeout(() => setSavedMsg(''), 1800)
+    setTimeout(() => setSavedMsg(''), 1800)
   }
 
   return (
     <div class="relative pb-10">
       <HUDBackground />
       <Navbar />
-      <main class="mx-auto w-[min(96%,1000px)] space-y-6 pt-7">
+      <main class="mx-auto w-[min(98%,1800px)] space-y-6 pt-7">
         <a
           href="#"
-          class="modern-btn inline-flex items-center gap-2 rounded-lg px-3 py-2 text-sm text-cyan transition hover:text-text"
+          class="modern-btn inline-flex items-center gap-2 rounded-lg px-3 py-2 text-sm text-violet transition hover:text-text"
         >
           <ArrowLeft size={15} />
           Volver al inicio
         </a>
 
         <GlassPanel class="p-6">
-          <h1 class="mb-2 text-3xl">Configuracion</h1>
+          <h1 class="mb-2 text-3xl text-violet">Configuracion</h1>
           <p class="mb-6 text-muted">Ajustes generales para personalizar la app y preparar futuras funciones.</p>
 
           <div class="grid gap-4 md:grid-cols-2">
-            <section class="rounded-panel border border-cyan/20 bg-bg/45 p-4">
-              <h2 class="mb-3 inline-flex items-center gap-2 text-lg"><UserCog size={16} class="text-cyan" />Perfil</h2>
+            <section class="tb-subpanel p-4">
+              <h2 class="mb-3 inline-flex items-center gap-2 text-lg text-violet"><UserCog size={16} class="text-violet" />Perfil</h2>
               <div class="space-y-3 text-sm text-muted">
                 <label class="block">
                   Nombre del operador
@@ -77,8 +77,8 @@ export function ConfigPage() {
               </div>
             </section>
 
-            <section class="rounded-panel border border-cyan/20 bg-bg/45 p-4">
-              <h2 class="mb-3 inline-flex items-center gap-2 text-lg"><Palette size={16} class="text-cyan" />Interfaz</h2>
+            <section class="tb-subpanel p-4">
+              <h2 class="mb-3 inline-flex items-center gap-2 text-lg text-violet"><Palette size={16} class="text-violet" />Interfaz</h2>
               <div class="space-y-3 text-sm text-muted">
                 <label class="block">
                   Intensidad del glow
@@ -112,8 +112,8 @@ export function ConfigPage() {
               </div>
             </section>
 
-            <section class="rounded-panel border border-cyan/20 bg-bg/45 p-4">
-              <h2 class="mb-3 inline-flex items-center gap-2 text-lg"><Wrench size={16} class="text-cyan" />Actualizaciones</h2>
+            <section class="tb-subpanel p-4">
+              <h2 class="mb-3 inline-flex items-center gap-2 text-lg text-violet"><Wrench size={16} class="text-violet" />Actualizaciones</h2>
               <div class="space-y-3 text-sm text-muted">
                 <label class="inline-flex items-center gap-2">
                   <input
@@ -144,8 +144,8 @@ export function ConfigPage() {
               </div>
             </section>
 
-            <section class="rounded-panel border border-cyan/20 bg-bg/45 p-4">
-              <h2 class="mb-3 inline-flex items-center gap-2 text-lg"><Shield size={16} class="text-cyan" />Seguridad</h2>
+            <section class="tb-subpanel p-4">
+              <h2 class="mb-3 inline-flex items-center gap-2 text-lg text-violet"><Shield size={16} class="text-violet" />Seguridad</h2>
               <div class="space-y-3 text-sm text-muted">
                 <label class="inline-flex items-center gap-2">
                   <input
@@ -161,7 +161,7 @@ export function ConfigPage() {
                   Verificar integridad de archivos
                 </label>
                 <div class="flex items-center gap-3">
-                  <button type="button" onClick={saveConfig} class="modern-btn rounded-lg px-3 py-2 text-cyan transition hover:text-text">
+                  <button type="button" onClick={saveConfig} class="modern-btn rounded-lg px-3 py-2 text-violet transition hover:text-text">
                     Guardar configuracion
                   </button>
                   {savedMsg ? <span class="text-xs text-emerald-300">{savedMsg}</span> : null}

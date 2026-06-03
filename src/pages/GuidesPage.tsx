@@ -39,36 +39,36 @@ export function GuidesPage() {
     <div class="relative pb-10">
       <HUDBackground />
       <Navbar />
-      <main class="mx-auto w-[min(96%,1000px)] space-y-6 pt-7">
+      <main class="mx-auto w-[min(98%,1800px)] space-y-6 pt-7">
         <a
           href="#"
-          class="modern-btn inline-flex items-center gap-2 rounded-lg px-3 py-2 text-sm text-cyan transition hover:text-text"
+          class="modern-btn inline-flex items-center gap-2 rounded-lg px-3 py-2 text-sm text-violet transition hover:text-text"
         >
           <ArrowLeft size={15} />
           Volver al inicio
         </a>
 
         <GlassPanel class="p-6">
-          <div class="mb-4 inline-flex items-center gap-2 rounded-full border border-cyan/30 bg-cyan/10 px-3 py-1 text-xs text-cyan">
+          <div class="mb-4 inline-flex items-center gap-2 rounded-lg bg-violet/16 px-3 py-1.5 text-xs font-semibold uppercase text-violet shadow-[inset_0_0_0_1px_rgba(142,107,255,0.16)]">
             <BookOpen size={14} />
             Guias de uso
           </div>
-          <h1 class="mb-2 text-3xl">Guías rápidas</h1>
+          <h1 class="mb-2 text-3xl text-violet">Guías rápidas</h1>
           <p class="mb-6 text-muted">Una colección de pasos simples para que todo funcione fino en menos tiempo.</p>
 
           <div class="grid gap-4 md:grid-cols-3">
             {guides.map((guide) => {
               const Icon = guide.icon
               return (
-                <section class="rounded-panel border border-cyan/20 bg-bg/45 p-4">
-                  <h2 class="mb-3 inline-flex items-center gap-2 text-lg">
-                    <Icon size={16} class="text-cyan" />
+                <section class="tb-subpanel p-4">
+                  <h2 class="mb-3 inline-flex items-center gap-2 text-lg text-violet">
+                    <Icon size={16} class="text-violet" />
                     {guide.title}
                   </h2>
                   <ol class="space-y-2 text-sm text-muted">
                     {guide.steps.map((step, idx) => (
                       <li>
-                        <span class="mr-2 text-cyan">{idx + 1}.</span>
+                        <span class="mr-2 text-violet">{idx + 1}.</span>
                         {step}
                       </li>
                     ))}

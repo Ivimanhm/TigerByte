@@ -14,10 +14,10 @@ export function LandingPage() {
   }, [])
 
   return (
-    <div class="relative pb-10">
+    <div class="landing-legacy relative pb-10">
       <HUDBackground />
       <Navbar />
-      <main class="mx-auto w-[min(96%,1600px)] space-y-8 pt-7">
+      <main class="mx-auto w-[min(98%,1800px)] space-y-8 pt-7">
         <GamesSection />
         <section class="reveal-group grid gap-5 lg:grid-cols-3">
           <StatusSection />

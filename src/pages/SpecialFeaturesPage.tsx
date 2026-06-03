@@ -9,21 +9,21 @@ export function SpecialFeaturesPage() {
     <div class="relative pb-10">
       <HUDBackground />
       <Navbar />
-      <main class="mx-auto w-[min(96%,900px)] space-y-6 pt-7">
+      <main class="mx-auto w-[min(98%,1800px)] space-y-6 pt-7">
         <a
           href="#"
-          class="modern-btn inline-flex items-center gap-2 rounded-lg px-3 py-2 text-sm text-cyan transition hover:text-text"
+          class="modern-btn inline-flex items-center gap-2 rounded-lg px-3 py-2 text-sm text-violet transition hover:text-text"
         >
           <ArrowLeft size={15} />
           Volver al inicio
         </a>
 
         <GlassPanel class="p-6">
-          <div class="mb-4 inline-flex items-center gap-2 rounded-full border border-cyan/30 bg-cyan/10 px-3 py-1 text-xs text-cyan">
+          <div class="mb-4 inline-flex items-center gap-2 rounded-lg bg-violet/16 px-3 py-1.5 text-xs font-semibold uppercase text-violet shadow-[inset_0_0_0_1px_rgba(142,107,255,0.16)]">
             <Sparkles size={14} />
             Proximamente
           </div>
-          <h1 class="mb-3 text-3xl">Funciones especiales</h1>
+          <h1 class="mb-3 text-3xl text-violet">Funciones especiales</h1>
           <p class="text-muted">
             Esta seccion ya esta creada y preparada. En el siguiente paso iremos metiendo las funcionalidades avanzadas.
           </p>

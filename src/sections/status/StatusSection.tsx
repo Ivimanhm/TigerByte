@@ -3,6 +3,7 @@ import { useState } from 'preact/hooks'
 import { GlassPanel } from '../../components/ui/GlassPanel'
 import { appMeta } from '../../data/app-meta.generated'
 import { systemStatus } from '../../data/system-status.generated'
+import { normalizeVersion } from '../../utils/version'
 
 const iconById = {
   repo: Server,
@@ -18,10 +19,6 @@ const valueToneByLevel = {
   action: 'text-cyan',
 } as const
 
-function normalizeVersion(version: string) {
-  return version.trim().replace(/^v/i, '')
-}
-
 function daysBetween(isoDate: string) {
   const start = new Date(`${isoDate}T00:00:00Z`)
   const now = new Date()
@@ -34,6 +31,7 @@ type ReleaseInfo = {
   tagName: string
   publishedDate: string
   url: string
+  note: string
 }
 
 async function fetchLatestRelease(repo: string): Promise<ReleaseInfo | null> {
@@ -49,7 +47,14 @@ async function fetchLatestRelease(repo: string): Promise<ReleaseInfo | null> {
     const url = String(
       release?.assets?.[0]?.browser_download_url || release?.html_url || `https://github.com/${repo}/releases`
     )
-    return { tagName, publishedDate, url }
+    const note =
+      String(release?.name || '').trim() ||
+      String(release?.body || '')
+        .split('\n')
+        .find((line: string) => line.trim())
+        ?.trim() ||
+      'TigerByte'
+    return { tagName, publishedDate, url, note }
   }
 
   try {
@@ -101,10 +106,20 @@ export function StatusSection() {
             }
           }
 
+          window.dispatchEvent(
+            new CustomEvent('tigerbyte:updates-refresh', {
+              detail: {
+                version: release.tagName,
+                dateIso: release.publishedDate,
+                note: release.note,
+              },
+            })
+          )
+
           const days = release.publishedDate ? daysBetween(release.publishedDate) : 0
           return {
             ...row,
-            value: days === 0 ? 'Nueva version disponible' : `${days} dia${days === 1 ? '' : 's'} sin actualizar`,
+            value: days === 0 ? 'Version disponible' : `${days} dia${days === 1 ? '' : 's'} sin actualizar`,
             level: 'warn',
             detail: `Ultima release: ${release.tagName}`,
           }

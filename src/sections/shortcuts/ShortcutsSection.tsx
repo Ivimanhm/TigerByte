@@ -14,7 +14,7 @@ export function ShortcutsSection() {
       <h3 class="mb-5 text-2xl">Accesos rapidos</h3>
       <ul class="space-y-2 text-sm">
         {shortcuts.map((item) => (
-          <li>
+          <li key={item.href}>
             <a
               href={item.href}
               class="modern-btn flex min-h-[42px] w-full items-center justify-between rounded-lg px-3 py-2 text-left text-muted transition hover:translate-x-1 hover:text-text"
