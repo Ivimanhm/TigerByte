@@ -2,10 +2,10 @@ import {
   Calendar,
   ChevronRight,
   Copy,
+  FileJson,
   Edit3,
   Filter,
   Globe2,
-  Play,
   Plus,
   Save,
   Search,
@@ -848,6 +848,7 @@ export function BuildCreatorPage() {
   const [showGuide, setShowGuide] = useState(false)
   const [showTemplates, setShowTemplates] = useState(false)
   const [showAllBuilds, setShowAllBuilds] = useState(false)
+  const [showBuildTransfer, setShowBuildTransfer] = useState(false)
   const [deleteTarget, setDeleteTarget] = useState<Build | null>(null)
   const [bannerSurvivor, setBannerSurvivor] = useState<DbdSurvivor>(() => getRandomSurvivor())
   const [toast, setToast] = useState('')
@@ -1144,6 +1145,55 @@ export function BuildCreatorPage() {
     showToast('Build cargada')
   }
 
+  function getBuildExportText() {
+    const buildsById = new Map<string, Build>()
+    savedBuilds.forEach((build) => buildsById.set(build.id, build))
+    if (activeBuild.perkIds.length > 0 && !isProtectedBuild(activeBuild)) {
+      buildsById.set(activeBuild.id, activeBuild)
+    }
+
+    return JSON.stringify({
+      app: 'TigerByte',
+      type: 'dbd-builds',
+      version: 1,
+      exportedAt: new Date().toISOString(),
+      activeBuildId: activeBuild.id,
+      builds: Array.from(buildsById.values()),
+    }, null, 2)
+  }
+
+  function importBuildsFromJson(jsonText: string) {
+    const parsed = JSON.parse(jsonText) as unknown
+    const source = Array.isArray(parsed)
+      ? parsed
+      : Array.isArray((parsed as { builds?: unknown })?.builds)
+        ? (parsed as { builds: unknown[] }).builds
+        : (parsed as { build?: unknown })?.build
+          ? [(parsed as { build: unknown }).build]
+          : [parsed]
+
+    const importedBuilds = source
+      .filter((build): build is Build => Boolean(build && typeof build === 'object' && (build as Build).name))
+      .map((build) => normalizeBuild({
+        ...build,
+        id: build.id && !isProtectedBuild(build) ? build.id : createId(),
+      }, validIds))
+      .filter((build) => build.perkIds.length > 0)
+
+    if (importedBuilds.length === 0) {
+      showToast('No se encontraron builds validas')
+      return 0
+    }
+
+    const importedIds = new Set(importedBuilds.map((build) => build.id))
+    const nextBuilds = [...importedBuilds, ...savedBuilds.filter((build) => !importedIds.has(build.id))]
+    setSavedBuilds(nextBuilds)
+    saveBuilds(nextBuilds)
+    loadBuild(importedBuilds[0])
+    showToast(`${importedBuilds.length} build${importedBuilds.length === 1 ? '' : 's'} importada${importedBuilds.length === 1 ? '' : 's'}`)
+    return importedBuilds.length
+  }
+
   return (
     <div class="relative flex min-h-screen flex-col overflow-x-hidden [@media(min-width:1280px)_and_(min-height:900px)]:h-screen [@media(min-width:1280px)_and_(min-height:900px)]:overflow-hidden">
       <HUDBackground />
@@ -1315,7 +1365,7 @@ export function BuildCreatorPage() {
           <div class="grid shrink-0 gap-4 md:grid-cols-3 2xl:hidden">
             <BuildInfoPanel activeBuild={activeBuild} selectedKiller={selectedKiller} />
             <QuickActionsPanel
-              onSave={saveCurrentBuild}
+              onTransfer={() => setShowBuildTransfer(true)}
               onDuplicate={duplicateCurrentBuild}
               onShare={shareCurrentBuild}
               onDelete={requestDeleteCurrentBuild}
@@ -1331,7 +1381,7 @@ export function BuildCreatorPage() {
         <aside class="hidden min-h-0 flex-col gap-4 overflow-hidden 2xl:flex">
           <BuildInfoPanel activeBuild={activeBuild} selectedKiller={selectedKiller} />
           <QuickActionsPanel
-            onSave={saveCurrentBuild}
+            onTransfer={() => setShowBuildTransfer(true)}
             onDuplicate={duplicateCurrentBuild}
             onShare={shareCurrentBuild}
             onDelete={requestDeleteCurrentBuild}
@@ -1368,6 +1418,13 @@ export function BuildCreatorPage() {
             setShowAllBuilds(false)
           }}
           onClose={() => setShowAllBuilds(false)}
+        />
+      ) : null}
+      {showBuildTransfer ? (
+        <BuildTransferModal
+          exportText={getBuildExportText()}
+          onImport={importBuildsFromJson}
+          onClose={() => setShowBuildTransfer(false)}
         />
       ) : null}
       {deleteTarget ? (
@@ -1765,12 +1822,12 @@ function InfoLine({ icon, label, value }: { icon: preact.ComponentChildren; labe
 }
 
 function QuickActionsPanel({
-  onSave,
+  onTransfer,
   onDuplicate,
   onShare,
   onDelete,
 }: {
-  onSave: () => void
+  onTransfer: () => void
   onDuplicate: () => void
   onShare: () => void
   onDelete: () => void
@@ -1778,7 +1835,7 @@ function QuickActionsPanel({
   return (
     <Panel title="Accesos rapidos">
       <div class="space-y-2">
-        <SideAction icon={<Play size={15} />} label="Probar en partida privada" onClick={onSave} />
+        <SideAction icon={<FileJson size={15} />} label="Importar / exportar builds" onClick={onTransfer} />
         <SideAction icon={<Copy size={15} />} label="Duplicar build" onClick={onDuplicate} />
         <SideAction icon={<Share2 size={15} />} label="Compartir build" onClick={onShare} />
         <SideAction icon={<Trash2 size={15} />} label="Eliminar build" onClick={onDelete} danger />
@@ -2230,6 +2287,144 @@ function SavedBuildsModal({
             ))}
           </div>
         )}
+      </div>
+    </div>
+  )
+}
+
+function BuildTransferModal({
+  exportText,
+  onImport,
+  onClose,
+}: {
+  exportText: string
+  onImport: (jsonText: string) => number
+  onClose: () => void
+}) {
+  const [importText, setImportText] = useState('')
+  const [error, setError] = useState('')
+
+  async function copyExport() {
+    try {
+      await copyShareText(exportText)
+      setError('')
+    } catch {
+      setError('No se pudo copiar el JSON.')
+    }
+  }
+
+  function downloadExport() {
+    const blob = new Blob([exportText], { type: 'application/json;charset=utf-8' })
+    const url = URL.createObjectURL(blob)
+    const link = document.createElement('a')
+    link.href = url
+    link.download = 'tigerbyte-dbd-builds.json'
+    document.body.appendChild(link)
+    link.click()
+    link.remove()
+    URL.revokeObjectURL(url)
+  }
+
+  function importFile(file?: File) {
+    if (!file) return
+    const reader = new FileReader()
+    reader.onload = () => setImportText(String(reader.result ?? ''))
+    reader.onerror = () => setError('No se pudo leer el archivo.')
+    reader.readAsText(file)
+  }
+
+  function submitImport() {
+    try {
+      const count = onImport(importText)
+      if (count > 0) onClose()
+      else setError('El JSON no contiene builds validas.')
+    } catch {
+      setError('JSON invalido o incompatible.')
+    }
+  }
+
+  return (
+    <div class="fixed inset-0 z-50 grid place-items-center bg-[#01040d]/90 px-4 backdrop-blur-md" onClick={onClose}>
+      <div
+        class="grid max-h-[90vh] w-[min(94vw,980px)] gap-4 overflow-hidden rounded-xl bg-[#050d20] p-5 text-left shadow-[inset_0_0_0_1px_rgba(91,130,190,0.18),0_24px_80px_rgba(0,0,0,0.78)] lg:grid-cols-2"
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="build-transfer-title"
+        onClick={(event) => event.stopPropagation()}
+      >
+        <div class="lg:col-span-2 flex items-start justify-between gap-3">
+          <div>
+            <h2 id="build-transfer-title" class="text-sm font-semibold uppercase text-violet">Importar / exportar builds</h2>
+            <p class="mt-1 text-sm text-muted">Pega un JSON de TigerByte o descarga tus builds guardadas.</p>
+          </div>
+          <button
+            type="button"
+            onClick={onClose}
+            class="inline-flex h-9 w-9 items-center justify-center rounded-lg bg-[#0b142a] text-muted transition hover:bg-[#111e39] hover:text-text"
+            aria-label="Cerrar importador"
+          >
+            <X size={17} />
+          </button>
+        </div>
+
+        <section class="min-h-0 rounded-lg bg-[#081226] p-4 shadow-[inset_0_0_0_1px_rgba(148,163,184,0.06)]">
+          <div class="mb-3 flex items-center justify-between gap-3">
+            <h3 class="text-xs font-bold uppercase tracking-[0.08em] text-violet">Importar</h3>
+            <label class="inline-flex cursor-pointer items-center rounded-lg bg-[#0b142a] px-3 py-2 text-xs font-semibold text-text transition hover:bg-[#101d38]">
+              Cargar JSON
+              <input
+                type="file"
+                accept="application/json,.json"
+                class="hidden"
+                onChange={(event) => importFile(event.currentTarget.files?.[0])}
+              />
+            </label>
+          </div>
+          <textarea
+            value={importText}
+            onInput={(event) => setImportText(event.currentTarget.value)}
+            spellcheck={false}
+            placeholder="{ &quot;type&quot;: &quot;dbd-builds&quot;, &quot;builds&quot;: [...] }"
+            class="tiger-scrollbar h-[340px] w-full resize-none rounded-lg bg-[#050d20] p-3 font-mono text-xs leading-5 text-text outline-none shadow-[inset_0_0_0_1px_rgba(148,163,184,0.08)] transition focus:shadow-[inset_0_0_0_1px_rgba(142,107,255,0.42)]"
+          />
+          {error ? <p class="mt-2 text-xs text-red-300">{error}</p> : null}
+          <button
+            type="button"
+            onClick={submitImport}
+            disabled={!importText.trim()}
+            class="mt-3 inline-flex w-full items-center justify-center rounded-lg bg-violet px-4 py-2.5 text-sm font-bold text-white transition hover:brightness-110 disabled:cursor-not-allowed disabled:opacity-45"
+          >
+            Importar builds
+          </button>
+        </section>
+
+        <section class="min-h-0 rounded-lg bg-[#081226] p-4 shadow-[inset_0_0_0_1px_rgba(148,163,184,0.06)]">
+          <div class="mb-3 flex items-center justify-between gap-3">
+            <h3 class="text-xs font-bold uppercase tracking-[0.08em] text-violet">Exportar</h3>
+            <div class="flex gap-2">
+              <button
+                type="button"
+                onClick={copyExport}
+                class="rounded-lg bg-[#0b142a] px-3 py-2 text-xs font-semibold text-text transition hover:bg-[#101d38]"
+              >
+                Copiar
+              </button>
+              <button
+                type="button"
+                onClick={downloadExport}
+                class="rounded-lg bg-violet px-3 py-2 text-xs font-bold text-white transition hover:brightness-110"
+              >
+                Descargar
+              </button>
+            </div>
+          </div>
+          <textarea
+            value={exportText}
+            readOnly
+            spellcheck={false}
+            class="tiger-scrollbar h-[390px] w-full resize-none rounded-lg bg-[#050d20] p-3 font-mono text-xs leading-5 text-muted outline-none shadow-[inset_0_0_0_1px_rgba(148,163,184,0.08)]"
+          />
+        </section>
       </div>
     </div>
   )
